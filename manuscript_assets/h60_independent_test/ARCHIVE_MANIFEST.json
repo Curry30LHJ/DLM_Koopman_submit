@@ -1,0 +1,121 @@
+{
+  "schema": "manuscript-assets-v1",
+  "scientific_source_commit": "c12e955b8fe80030ac1e6c7dc131e8f4ec91cc44",
+  "files": [
+    {
+      "path": "data/figure4_median_window_H60.csv",
+      "bytes": 197134,
+      "sha256": "4919c5c8de57b86fe455b41f4cc4865893aeba9a9b1cf25c2c6173064db717f1"
+    },
+    {
+      "path": "data/independent_test_H1_H60.csv",
+      "bytes": 84009,
+      "sha256": "d457708655d92c7c6655aa94b4551ac5da2e5ad82e32efeecc1f3c29e11f6b2a"
+    },
+    {
+      "path": "data/independent_test_per_trajectory_H1_H100.csv",
+      "bytes": 1110583,
+      "sha256": "75c993049506b814277401788e944b57f8fb1044189a88035bbba80f4605cb10"
+    },
+    {
+      "path": "data/lorenz_fixed_origin_H60.csv",
+      "bytes": 72746,
+      "sha256": "38746ef74da31dbcf1fe4dbb9d1404835787c3f0a67d14171123797e9e0ec0ea"
+    },
+    {
+      "path": "data/selected_prescribed_inputs.csv",
+      "bytes": 3393,
+      "sha256": "e55cdeed866a5e1bd8f3ade1b05175b2277d209095e24ce50dfe3aaa3e81449e"
+    },
+    {
+      "path": "figures/fig_2_lorenz_evaluation_h60.pdf",
+      "bytes": 30499,
+      "sha256": "0bdb5514e4c5336df86d0020bc2d487631a61d6a4475a0456cb601f2445dfe55"
+    },
+    {
+      "path": "figures/fig_2_lorenz_evaluation_h60.png",
+      "bytes": 1419312,
+      "sha256": "b5bdbc4cd6541ea1c9ea748e1120011239982a16d441d48ba3aa0fec05cc3ef1"
+    },
+    {
+      "path": "figures/fig_2_lorenz_evaluation_h60.svg",
+      "bytes": 77002,
+      "sha256": "38c575022a1f2b2e91da663533a7cfa2d503ad943974a3639feefe6e05fe7798"
+    },
+    {
+      "path": "figures/fig_4_cstr_representative_h60.pdf",
+      "bytes": 45229,
+      "sha256": "3656337c00483b26cc40fdcd874b2dce21339f6fca075538ee913c68e03a0853"
+    },
+    {
+      "path": "figures/fig_4_cstr_representative_h60.png",
+      "bytes": 1054219,
+      "sha256": "0c932894a8a773ca704e29d64280a5c33a3e56bef73ec236838ed0a33c9c9c55"
+    },
+    {
+      "path": "figures/fig_4_cstr_representative_h60.svg",
+      "bytes": 152350,
+      "sha256": "7606c172502ee0fbe5ad7ea9fe10504ff2857e8abe53040285e5a422d6729ce8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5925,
+      "sha256": "971e69d634bb6aed472d0dd86cc30da99653f052e822033be932f9267d4e2e30"
+    },
+    {
+      "path": "requirements-figures.txt",
+      "bytes": 144,
+      "sha256": "764247410ea058c66effefa681728bea63b3b7c1d9b6cd78e7caefcb92143baa"
+    },
+    {
+      "path": "scripts/render_figures.py",
+      "bytes": 7050,
+      "sha256": "526bd0416194c33533d0edac43989cb23cc33c23740b2be27fbe89772bdcadee"
+    },
+    {
+      "path": "scripts/verify_data.py",
+      "bytes": 5168,
+      "sha256": "e80cc9bd50a7d75c21dc9666d718331bf1d679c67c39473a1dcc3b616c73e845"
+    },
+    {
+      "path": "selection/SELECTION_RESULT.json",
+      "bytes": 723,
+      "sha256": "d797cdce6165652963fc0c182dfa632573c841ffed04e69f248f989655ad2079"
+    },
+    {
+      "path": "selection/SELECTION_RULE.json",
+      "bytes": 1262,
+      "sha256": "7a9b99c7d8525e4dbe76463636a25bc0820ba555e348bcbc92c1ab06e9f1ab95"
+    },
+    {
+      "path": "selection/trajectory_candidates.csv",
+      "bytes": 1368,
+      "sha256": "f197b449ad44a065e4105df80bf642ac69cf5b1995f87eff5f87ce2529d42f9b"
+    },
+    {
+      "path": "selection/window_candidates.csv",
+      "bytes": 47607,
+      "sha256": "93e9d250b3753bfb06b3ab016795bd1023af7a5b0b594f94d22f0b91ae37e221"
+    },
+    {
+      "path": "SOURCE_SNAPSHOT_MAP.json",
+      "bytes": 68141,
+      "sha256": "30fe966f8f0965ad80e720c4db8bfac2601d3358a943999ea6413c2ad90e0d24"
+    },
+    {
+      "path": "tables/lorenz_table.tex",
+      "bytes": 961,
+      "sha256": "f9d57a163cb64179dba8b6940afc611efe0cb046367273faa2123219989dba76"
+    },
+    {
+      "path": "tables/three_tank_table.tex",
+      "bytes": 994,
+      "sha256": "34f733c0ea0c374a1703ebfa12136282f2921df057f1a14f6bc0d9726e8b831b"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 986,
+      "sha256": "ab59abb0eb9e703c614706cf32e6a68d7c478bbf60683695b04e140ccc3262d7"
+    }
+  ]
+}

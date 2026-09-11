@@ -62,3 +62,7 @@ python scripts/evaluate_figure5.py --protocol evaluation/figure5/PROTOCOL.json -
 The replay output must be new. Historical non-independent simulation arrays were never included in this submission repository; the natural fresh-holdout archive and training/validation datasets remain intact.
 
 License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
+
+## Manuscript Tables 2/3 and Figures 2/4
+
+[Independent-test manuscript assets](manuscript_assets/h60_independent_test/README.md) archive the six-model table data, accepted Figure 2/4 PDF/SVG/600 dpi PNG files, portable rendering and verification scripts, and Figure 4's post-hoc median-error selection records. The scientific source remains `c12e955b8fe80030ac1e6c7dc131e8f4ec91cc44`; these assets reuse stored predictions without training, simulation or inference. The separate Figure 5 archive above is unchanged.

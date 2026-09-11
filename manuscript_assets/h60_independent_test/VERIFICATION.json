@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "scientific_source_commit": "c12e955b8fe80030ac1e6c7dc131e8f4ec91cc44",
+  "rendering": {
+    "order": [
+      "mlp",
+      "lstm",
+      "hakan",
+      "m6",
+      "m8",
+      "m5"
+    ],
+    "font": "STIXGeneral",
+    "effective_font_pt_at_0.8_linewidth": 8.5,
+    "new_uncertainty_bands": false,
+    "fig_2_lorenz_evaluation_h60": {
+      "axes": 4,
+      "accepted_png_pixels_equal": true
+    },
+    "fig_4_cstr_representative_h60": {
+      "axes": 9,
+      "accepted_png_pixels_equal": true
+    },
+    "lorenz_table_matches": true,
+    "three_tank_table_matches": true
+  },
+  "source_verification": "python scripts/verify_data.py --source-root <repository>",
+  "notes": [
+    "Both accepted figure PNGs match the portable renderer pixel-for-pixel.",
+    "Both generated LaTeX tables match the archived table text.",
+    "Only stored arrays and existing table data are used; no model inference, training or simulation."
+  ]
+}
