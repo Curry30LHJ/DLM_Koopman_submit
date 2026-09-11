@@ -1,0 +1,7 @@
+model,conditions,nonfinite_prediction_values,nonfinite_conditions,fresh000_A_B_prediction_exact
+mlp_koopman,168,0,0,True
+lstm_koopman,168,0,0,True
+hakan_koopman,168,0,0,True
+dlm_koopman,168,0,0,True
+rbf_markov,168,0,0,True
+rbf_physical_delay,168,0,0,True

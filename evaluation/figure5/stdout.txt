@@ -1,0 +1,30 @@
+{"event": "conditions", "panel": "A", "history": 0, "total": 7, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 1, "total": 14, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 2, "total": 21, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 3, "total": 28, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 4, "total": 35, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 5, "total": 42, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 6, "total": 49, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 7, "total": 56, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 8, "total": 63, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 9, "total": 70, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 10, "total": 77, "base_delta": 0.0}
+{"event": "conditions", "panel": "A", "history": 11, "total": 84, "base_delta": 0.0}
+{"event": "conditions", "panel": "B", "history": 0, "total": 91, "base_delta": 0.0}
+{"event": "conditions", "panel": "B", "history": 1, "total": 98, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 2, "total": 105, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 3, "total": 112, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 4, "total": 119, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 5, "total": 126, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 6, "total": 133, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 7, "total": 140, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 8, "total": 147, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 9, "total": 154, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 10, "total": 161, "base_delta": null}
+{"event": "conditions", "panel": "B", "history": 11, "total": 168, "base_delta": null}
+{"event": "model", "model": "mlp_koopman", "conditions": 168, "nonfinite_prediction_values": 0, "nonfinite_conditions": 0, "fresh000_A_B_prediction_exact": true}
+{"event": "model", "model": "lstm_koopman", "conditions": 168, "nonfinite_prediction_values": 0, "nonfinite_conditions": 0, "fresh000_A_B_prediction_exact": true}
+{"event": "model", "model": "hakan_koopman", "conditions": 168, "nonfinite_prediction_values": 0, "nonfinite_conditions": 0, "fresh000_A_B_prediction_exact": true}
+{"event": "model", "model": "dlm_koopman", "conditions": 168, "nonfinite_prediction_values": 0, "nonfinite_conditions": 0, "fresh000_A_B_prediction_exact": true}
+{"event": "model", "model": "rbf_markov", "conditions": 168, "nonfinite_prediction_values": 0, "nonfinite_conditions": 0, "fresh000_A_B_prediction_exact": true}
+{"event": "model", "model": "rbf_physical_delay", "conditions": 168, "nonfinite_prediction_values": 0, "nonfinite_conditions": 0, "fresh000_A_B_prediction_exact": true}

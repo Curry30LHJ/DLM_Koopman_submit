@@ -43,4 +43,22 @@ python scripts/evaluate_fresh_holdout.py --protocol evaluation/fresh_holdout/PRO
 ```
 
 Both directories must be new; the archived inputs/results are never overwritten. This repeats the published fixed-seed test, not a new independent test. See [INPUTS.md](INPUTS.md) for other evaluation inputs.
- License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
+## Figure 5: controlled A/B conditions
+
+[Figure 5 summary](evaluation/figure5/SUMMARY_H20_H30_H50_H60_H100.csv) and [condition manifest](evaluation/figure5/CONDITIONS.csv) archive both panels:
+
+- A: fix each of 12 causal histories; vary its future inputs across seven profiles (base and each Q channel plus/minus one training standard deviation).
+- B: fix each of the seven future-input profiles from `fresh_000`; apply it to all 12 histories with the same future noise. Histories include different terminal current states; this is not an isolated memory-only intervention.
+
+Each panel has 84 conditions (12 x 7), rather than the historical 77 (11 x 7). All six frozen models are included: 1008 model-condition predictions. Full past replay rebuilds the 26-state internal delay buffer; base continuation is checked at absolute tolerance 1e-10. Applied inputs are clipped to plant bounds and shared with every model. `evaluation/figure5/inputs/` saves complete branch buffers, past actions, original process noise, future noise, histories, requested/applied inputs and new plant truth. Model NPZ files retain all H100 predictions and condition IDs. H60/H100 curves, per-state/per-condition metrics and grouped mean/min/max are supplied; min/max are condition ranges, not confidence intervals. No images are generated.
+
+These are pre-frozen operating-condition extensions on the same fresh holdout already reported in the natural evaluation, not a second previously unseen confirmation sample. Models were not retrained or selected using these tests. See [REPORT.md](evaluation/figure5/REPORT.md) and [PROTOCOL.json](evaluation/figure5/PROTOCOL.json).
+
+```sh
+python scripts/verify_figure5.py
+python scripts/evaluate_figure5.py --protocol evaluation/figure5/PROTOCOL.json --output-dir outputs/figure5-replay --device cpu
+```
+
+The replay output must be new. Historical non-independent simulation arrays were never included in this submission repository; the natural fresh-holdout archive and training/validation datasets remain intact.
+
+License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).

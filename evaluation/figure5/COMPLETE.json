@@ -1,0 +1,12 @@
+{
+  "state": "completed",
+  "pid": 53544,
+  "started_at": "2026-09-11T13:36:49.546204+00:00",
+  "conditions": 168,
+  "model_conditions": 1008,
+  "protocol_sha256": "f1ec6a26237423a515115e11cf70f1ab44be60d02ab7e18e21de928bfff31f02",
+  "updated_at": "2026-09-11T13:36:57.253856+00:00",
+  "elapsed_seconds": 10.233999999938533,
+  "finished_at": "2026-09-11T13:36:59.782520+00:00",
+  "nonfinite_conditions": 0
+}
