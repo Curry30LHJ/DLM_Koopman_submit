@@ -1,0 +1,12 @@
+{
+  "state": "completed",
+  "pid": 27720,
+  "started_at": "2026-09-11T12:38:46.690275+00:00",
+  "generated": 24,
+  "evaluated": 144,
+  "protocol_sha256": "5081a2ab4c6a3c5d65fc4da0d0f47734fb4891571c9b3086bad44ebde4cb9d80",
+  "updated_at": "2026-09-11T12:39:54.813051+00:00",
+  "elapsed_seconds": 68.4069999998901,
+  "finished_at": "2026-09-11T12:39:55.084871+00:00",
+  "nonfinite_prediction_windows": 0
+}

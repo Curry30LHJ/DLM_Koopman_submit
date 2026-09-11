@@ -1,0 +1,16 @@
+{
+  "smoke": false,
+  "rollout_horizon": 30,
+  "seed": 2,
+  "stage_a_epochs": 800,
+  "stage_c_epochs": 40,
+  "stage_d_epochs": 80,
+  "patience_limit": 0,
+  "stage_a_patience": 50,
+  "stage_c_patience": 10,
+  "stage_d_patience": 10,
+  "batch_size": 256,
+  "current_state_conditioning": true,
+  "spectral_radius_weight": 1.0,
+  "spectral_radius_max": 1.0
+}

@@ -1,6 +1,6 @@
 # DLM-Koopman model source
 
-This repository contains model definitions, system equations, neural training, RBF fitting and evaluation code. Training defaults, both systems' frozen training/validation trajectories and their normalization statistics are included. Trained weights, RBF experiment rosters, formal-public/confirmation data and result archives are not included. It is **not a self-contained reproduction package for manuscript results**.
+This repository contains model definitions, system equations, neural training, RBF fitting and evaluation code. Training defaults, both systems' frozen training/validation trajectories and their normalization statistics are included. Frozen selected weights and a new simulated holdout evaluation are also included. Historical formal-public/confirmation arrays and previous result archives are not included.
 
 ## Installation and interface
 
@@ -30,4 +30,17 @@ python scripts/evaluate.py --artifacts /path/to/artifacts --mode report --output
 
 Neural defaults use H30/B256. DLM uses A/C/D stages, and Lorenz DLM includes its spectral loss term. `train.py --smoke` runs small synthetic stages without trajectory data; `fit_rbf.py --smoke` still requires an explicit RBF roster. `evaluate.py` supports table regeneration, model inference and the controlled protocol, with no training. These are protocol-specific loaders, not generic dataset adapters.
 
-No experiment results or trained models are bundled. License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
+## Frozen models and fresh holdout
+
+`checkpoints/` contains the 8 neural seed-2 and 4 frozen RBF weights. Their identities and configurations are fixed in [PROTOCOL.json](evaluation/fresh_holdout/PROTOCOL.json). `datasets/fresh_holdout/` contains 12 newly generated trajectories per system, isolated from training. [SUMMARY_H20_H30_H50_H60_H100.csv](evaluation/fresh_holdout/tables/SUMMARY_H20_H30_H50_H60_H100.csv) reports the new evaluation; `evaluation/fresh_holdout/raw/` retains every H100 prediction, truth and origin. Per-trajectory and per-state curves, logs and data hashes accompany the summary. [REPORT.md](evaluation/fresh_holdout/REPORT.md) records execution and checks; `python scripts/verify_fresh_holdout.py` verifies the archive. No plots are generated.
+
+Previous formal-public results were used during development diagnostics. Historical confirmation sets had also been accessed; neither is presented here as a fresh test. The present holdout was generated after freezing model weights, training scalers, generation seeds and metrics, without retraining or selecting samples using its results. It is a new simulated sample from the original system distributions, not external physical validation. All 12 trajectories per system contribute equally; neural weights still represent one training seed, not a multi-seed study.
+
+To regenerate the fixed seeds and evaluate into new directories (CPU supported; archived execution used CUDA):
+
+```sh
+python scripts/evaluate_fresh_holdout.py --protocol evaluation/fresh_holdout/PROTOCOL.json --data-dir outputs/replay-data --output-dir outputs/replay-results --device cpu
+```
+
+Both directories must be new; the archived inputs/results are never overwritten. This repeats the published fixed-seed test, not a new independent test. See [INPUTS.md](INPUTS.md) for other evaluation inputs.
+ License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).

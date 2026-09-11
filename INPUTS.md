@@ -1,6 +1,6 @@
 # Training data and external input contracts
 
-The public CLI is in `scripts/`. The bundled `datasets/three_tank` and `datasets/lorenz` contain frozen train/validation arrays and normalization statistics. Validation is required by early stopping and checkpoint selection. No formal-public/confirmation data, trained weights or result archives are bundled. External files must follow these protocol-specific schemas; arbitrary datasets need an explicit adapter.
+The public CLI is in `scripts/`. The bundled `datasets/three_tank` and `datasets/lorenz` contain frozen train/validation arrays and normalization statistics. Validation is required by early stopping and checkpoint selection. Historical formal-public/confirmation data are not bundled. Frozen checkpoints and the separately generated fresh holdout data/results are provided under `checkpoints/`, `datasets/fresh_holdout/` and `evaluation/fresh_holdout/`. External files must follow these protocol-specific schemas; arbitrary datasets need an explicit adapter.
 
 ## Neural training
 
@@ -23,3 +23,9 @@ Lorenz data root: `manifest.json` has `access.formal_public_access` and `access.
 `--mode infer` additionally requires checkpoints and `datasets/<system>/formal_public/<raw-stem>.npz` (three-tank states/actions) or `.npy` (Lorenz states). Each origin must have 20 history states and 100 future states. Future truth is excluded from model inputs. Frozen raw is not overwritten; `--require-exact` rejects any prediction difference after recording it.
 
 `--mode controlled` uses the original three-tank five-model protocol, excluding Markov RBF. Under `controlled/`, provide `FROZEN_INPUTS.npz` (`histories`, `past_actions`, `profiles`, `fixed_actions`), `ORIGINAL_A_CONDITIONS.csv` and `ORIGINAL_B_CONDITIONS.csv` (100 rows each), frozen `PANEL_<A|B>_FROZEN_TRUTH.npz`, and both `PANEL_<A|B>_RAW.npz`/`PANEL_<A|B>_RBF_RAW.npz`. Condition rows identify `condition_id`, `history_id`, `profile_index` (A) or `slice` (B), and SHA256 fields for history, historical/applied actions, noise and normalized truth. Exact array/key contracts and deterministic noise/clipping are defined in `evaluation/reproduce.py:controlled` and `controlled_protocol.py`; these files are required protocol inputs, not generic plotting samples.
+
+## Bundled fresh holdout
+
+Use `scripts/evaluate_fresh_holdout.py` with the frozen protocol, not the legacy 11-trajectory formal-public package loader above. Its six models per system and 12 trajectories per system are defined by `evaluation/fresh_holdout/PROTOCOL.json`. Checkpoint/source/scaler hashes are checked before execution. Each fresh data NPZ contains `states`, `actions` and `seed`; `MANIFEST.json` identifies every file. `LOCK.json` marks training access false. Fresh data are not in either training manifest.
+
+The frozen evaluation uses 882 origins for three-tank and 880 for Lorenz, H100 predictions, H60 main reporting, float32 neural inference in batches of 128 and float64 metrics. Per-trajectory RMS is followed by an equal mean over all 12 trajectories. Nonfinite predictions are retained and counted, never clipped or excluded; a nonfinite generated trajectory stops execution after data preservation, without seed replacement. Summary CSVs can contain nonfinite entries if a model fails.

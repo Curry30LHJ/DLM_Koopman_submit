@@ -1,0 +1,5 @@
+{
+  "training_access": false,
+  "status": "EVALUATION_ONLY",
+  "purpose": "fresh_holdout_evaluation_only"
+}

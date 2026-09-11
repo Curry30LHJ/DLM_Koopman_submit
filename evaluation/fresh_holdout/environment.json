@@ -1,0 +1,14 @@
+{
+  "python": "3.10.21",
+  "numpy": "1.26.4",
+  "torch": "2.1.2+cu121",
+  "device": "cuda",
+  "cuda": "12.1",
+  "command": [
+    "scripts/evaluate_fresh_holdout.py",
+    "--protocol",
+    "evaluation/fresh_holdout/PROTOCOL.json",
+    "--device",
+    "cuda"
+  ]
+}

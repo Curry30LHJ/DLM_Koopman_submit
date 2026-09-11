@@ -1,0 +1,386 @@
+[
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_000",
+    "seed": 2026091100,
+    "file": "datasets/fresh_holdout/three_tank/fresh_000.npz",
+    "sha256": "cf5779eabdfae0d224257ab153e67c3238c890c4fb837b2cf39da43a1d36013b",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_001",
+    "seed": 2026092109,
+    "file": "datasets/fresh_holdout/three_tank/fresh_001.npz",
+    "sha256": "d063cfc67b9c670d99bd538c048bc7440c095f270f9027a416e16106c5b5905d",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_002",
+    "seed": 2026093118,
+    "file": "datasets/fresh_holdout/three_tank/fresh_002.npz",
+    "sha256": "a8f1824d6da76996ff5419d4d0d4c0d1dfce14f9cd60edb9c79c4eb7a28c491f",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_003",
+    "seed": 2026094127,
+    "file": "datasets/fresh_holdout/three_tank/fresh_003.npz",
+    "sha256": "6ec5e8ff71ff6559d63c87dfbde0eb3c11619d2262aa33d948c2c3dce07c33c3",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_004",
+    "seed": 2026095136,
+    "file": "datasets/fresh_holdout/three_tank/fresh_004.npz",
+    "sha256": "6f1964b7dc4402ea2cf649fef54d6fac4b5622fba1781397272333c2e9d8f044",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_005",
+    "seed": 2026096145,
+    "file": "datasets/fresh_holdout/three_tank/fresh_005.npz",
+    "sha256": "805da8f5683bec120c71843cea8413375b7fd1c44f536076a6debfdac4bbe955",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_006",
+    "seed": 2026097154,
+    "file": "datasets/fresh_holdout/three_tank/fresh_006.npz",
+    "sha256": "b0ed41421fb9bac524d0040ec53f4cf558c4b010d59f097a77583025ad863c10",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_007",
+    "seed": 2026098163,
+    "file": "datasets/fresh_holdout/three_tank/fresh_007.npz",
+    "sha256": "e66bf5d6c2478b0e5dde731997a3a73e73fcfd6b3f4a2a330f304aae85ebed5c",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_008",
+    "seed": 2026099172,
+    "file": "datasets/fresh_holdout/three_tank/fresh_008.npz",
+    "sha256": "fcd0dbfb21b8ca2a8b859060d206d32b23102c43cd92b4ad45adea11cca2bf9a",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_009",
+    "seed": 2026100181,
+    "file": "datasets/fresh_holdout/three_tank/fresh_009.npz",
+    "sha256": "ab32b2c53c99d4acb9499efeec03e46e99012da755a1b4c4df52048b972255ff",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_010",
+    "seed": 2026101190,
+    "file": "datasets/fresh_holdout/three_tank/fresh_010.npz",
+    "sha256": "65619d927fad30b9bedfc4c6122ea2ef6993a052703f19ea0f8fdb92bf530282",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "three_tank",
+    "trajectory": "fresh_011",
+    "seed": 2026102199,
+    "file": "datasets/fresh_holdout/three_tank/fresh_011.npz",
+    "sha256": "d79e32175b45717b96d4e22f51b6bbbc8e6dab841c164bf9e5f04d455c95e7c9",
+    "state_shape": [
+      1001,
+      9
+    ],
+    "action_shape": [
+      1000,
+      3
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_000",
+    "seed": 2026091200,
+    "file": "datasets/fresh_holdout/lorenz/fresh_000.npz",
+    "sha256": "4a37496b985705ffdfa2158087bcc70fbcc7613a23aa79b3a2575e2d56d69518",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_001",
+    "seed": 2026091201,
+    "file": "datasets/fresh_holdout/lorenz/fresh_001.npz",
+    "sha256": "ebd4d92d982e69ecae3a7c66746900607e29d90f23ac8406d88791f2d5db8364",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_002",
+    "seed": 2026091202,
+    "file": "datasets/fresh_holdout/lorenz/fresh_002.npz",
+    "sha256": "b7123cec1c0d5e2ed11281a31f6f377b80c7430b27f3ba08fd236e7f8ee0dbf0",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_003",
+    "seed": 2026091203,
+    "file": "datasets/fresh_holdout/lorenz/fresh_003.npz",
+    "sha256": "61f792c71c57f18b93e4d1da70faa6d0dd09b8d2930a2cf15608828a29cea954",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_004",
+    "seed": 2026091204,
+    "file": "datasets/fresh_holdout/lorenz/fresh_004.npz",
+    "sha256": "1375d3f5d1de3be51498bfff251ac56867ad5fdb7ca6ccc32d8f04ddb0f6b27e",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_005",
+    "seed": 2026091205,
+    "file": "datasets/fresh_holdout/lorenz/fresh_005.npz",
+    "sha256": "205cb46acab91e1e36cb6418018a86948d739731be8251a7b26747e01b90ca64",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_006",
+    "seed": 2026091206,
+    "file": "datasets/fresh_holdout/lorenz/fresh_006.npz",
+    "sha256": "b0537f92e0b4e8495dbdace6f7e352c44a31d9a8d9fcaafa6cf484bb746bd42f",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_007",
+    "seed": 2026091207,
+    "file": "datasets/fresh_holdout/lorenz/fresh_007.npz",
+    "sha256": "fb792804fad9eaffda7670405a0762d53b6959f809505612926f83b04fd50c1a",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_008",
+    "seed": 2026091208,
+    "file": "datasets/fresh_holdout/lorenz/fresh_008.npz",
+    "sha256": "b6b8541bd47219bf89d24323b8e7322c04c2debdfc7657f5c39b57400f4fa537",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_009",
+    "seed": 2026091209,
+    "file": "datasets/fresh_holdout/lorenz/fresh_009.npz",
+    "sha256": "a11fa3c825e9d455b00ca84dc9eec289f37dd0224029cf8d1fba01c4449308c8",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_010",
+    "seed": 2026091210,
+    "file": "datasets/fresh_holdout/lorenz/fresh_010.npz",
+    "sha256": "5c7bda851eb87ca16a40fca8ce6370e09c7e7370cee55140db37e1b64add8de2",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  },
+  {
+    "system": "lorenz",
+    "trajectory": "fresh_011",
+    "seed": 2026091211,
+    "file": "datasets/fresh_holdout/lorenz/fresh_011.npz",
+    "sha256": "67db26721338844c451a6f71c8f74c6ac671af5edac60965333d1e15993673c3",
+    "state_shape": [
+      1000,
+      3
+    ],
+    "action_shape": [
+      999,
+      0
+    ],
+    "all_finite": true
+  }
+]
