@@ -1,0 +1,25 @@
+# External input contracts
+
+The public CLI is in `scripts/`. No input assets are bundled. Supplied files must follow these protocol-specific schemas; arbitrary datasets need an explicit adapter.
+
+## Neural training
+
+`train.py` requires `--data-dir` except with `--smoke`. Models are `mlp_koopman`, `lstm_koopman`, `hakan_koopman`, `dlm_koopman`; systems are `three_tank` and `lorenz`. `--resume` reads a compatible training-state checkpoint, while `--output-dir` must be a new directory for a fresh run. Training defaults are defined in `training/baselines.py`, `three_tank.py` and `spectral.py`: H30/B256; baseline cap 800/patience 50; DLM A/C/D caps 800/40/80 and patience 50/10/10. Lorenz DLM uses lambda=1, rho_max=1; validation prediction loss selects checkpoints.
+
+Three-tank data root: `manifest.json` contains `trajectories` rows with `split` (`train` or `val`) and `file`, plus `state_mean`, `state_std` (9 channels), `action_mean`, `action_std` (3 channels). Each `train/<file>` or `val/<file>` NPZ has `states[T+1,9]`, `actions[T,3]`. Standard deviations must be positive. Normalization is train-fitted. Evaluation rows must retain their locked split labels and are not training inputs.
+
+Lorenz data root: `manifest.json` has `access.formal_public_access` and `access.independent_confirmation_access` equal to `locked_not_loaded`. `scaler.json` has `fit_split: train`, `state_mean[3]`, `state_std[3]`. Arrays are `train/train_000.npy` through `train_049.npy` and `val/val_000.npy` through `val_011.npy`, each `[1000,3]`. History length is 20; H30 produces 47500/11400 train/validation windows. Actions have zero width. A `LOCK.json` with `training_access: false` or `status: LOCKED_NOT_LOADED` rejects training access.
+
+## RBF fit
+
+`fit_rbf.py` requires `--roster` even with `--smoke`; real fitting also requires `--data-dir`. The roster is a JSON list of objects with `system`, `model` (`rbf_markov` or `rbf_physical_delay`) and `config`. Configuration fields are `mode`, `n_centers`, `kernel_width`, `ridge_alpha`, optional `random_seed`, `physical_delay_steps`, `physical_delay_variant`; see `RBFEDMDcConfig`. Both systems use `mode=markov` for Markov RBF. Physical-delay RBF uses `mode=physical_delay` for three-tank and `mode=physical_delay_d3` for Lorenz. The chosen row is fitted once without a search. Three-tank validation horizon is 20, Lorenz 30; both report MSE and its square root. An example synthetic-only config is `{"mode":"markov","n_centers":4,"kernel_width":0.5,"ridge_alpha":0.0001}`; this is not a manuscript recipe.
+
+## Evaluation artifact package
+
+`evaluate.py --artifacts PATH` requires an external package with `MODEL_ROSTER.json` (8 neural rows) and `RBF_ROSTER.json` (4 RBF rows). Each row has `system`, `model`, `seed` (null for RBF), relative `checkpoint`, `checkpoint_sha256`; RBF rows also have `config`. Neural checkpoints are plain state dictionaries and load strictly into the current-state classes. RBF NPZ keys are `A`, `B`, `C`, `centers`. Only load checkpoints from trusted sources.
+
+`datasets/three_tank/manifest.json` and `datasets/lorenz/scaler.json` provide the scaler fields above. For each of the six model names and each system, `raw/<system>/<model>/` contains 11 NPZ files. Each has `prediction_physical`, `truth_physical` shaped `[windows,100,state_dim]` and `origins`: three-tank `19..900` (882), Lorenz `20..899` (880). `--mode report` needs these raw/scaler/roster inputs; it does not load weights. Metrics normalize by training standard deviation, compute RMS over origins/state channels per trajectory, then equally average 11 trajectories. The tables retain H100 and export H60.
+
+`--mode infer` additionally requires checkpoints and `datasets/<system>/formal_public/<raw-stem>.npz` (three-tank states/actions) or `.npy` (Lorenz states). Each origin must have 20 history states and 100 future states. Future truth is excluded from model inputs. Frozen raw is not overwritten; `--require-exact` rejects any prediction difference after recording it.
+
+`--mode controlled` uses the original three-tank five-model protocol, excluding Markov RBF. Under `controlled/`, provide `FROZEN_INPUTS.npz` (`histories`, `past_actions`, `profiles`, `fixed_actions`), `ORIGINAL_A_CONDITIONS.csv` and `ORIGINAL_B_CONDITIONS.csv` (100 rows each), frozen `PANEL_<A|B>_FROZEN_TRUTH.npz`, and both `PANEL_<A|B>_RAW.npz`/`PANEL_<A|B>_RBF_RAW.npz`. Condition rows identify `condition_id`, `history_id`, `profile_index` (A) or `slice` (B), and SHA256 fields for history, historical/applied actions, noise and normalized truth. Exact array/key contracts and deterministic noise/clipping are defined in `evaluation/reproduce.py:controlled` and `controlled_protocol.py`; these files are required protocol inputs, not generic plotting samples.

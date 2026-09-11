@@ -1,6 +1,6 @@
 # DLM-Koopman model source
 
-This repository contains **model definitions and system equations only**. The training/evaluation pipeline, trained weights, datasets and complete experiment configuration are not included. It is **not a self-contained reproduction package for manuscript results**.
+This repository contains model definitions, system equations, neural training, RBF fitting and evaluation code. Training defaults are provided in code; trained weights, datasets, scalers, experiment rosters and result archives are not included. It is **not a self-contained reproduction package for manuscript results**.
 
 ## Installation and interface
 
@@ -18,4 +18,16 @@ The neural interface accepts normalized tensors: `states_history` has shape `[ba
 - `src/koopman_delay/models/hakan/` and `aft/`: model components.
 - `src/koopman_delay/systems/three_tank/dynamics.py` and `systems/lorenz/dynamics.py`: system equations and integration code.
 
-No experiment results or trained models are claimed by this source-only release. License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
+## Training and evaluation
+
+Provide external inputs using the schema in [INPUTS.md](INPUTS.md). Output directories are separate from inputs.
+
+```sh
+python scripts/train.py --system lorenz --model dlm_koopman --data-dir /path/to/data --output-dir /path/to/new-run --device cpu
+python scripts/fit_rbf.py --system lorenz --model rbf_markov --roster /path/to/rbf-roster.json --data-dir /path/to/data --output-dir /path/to/new-fit
+python scripts/evaluate.py --artifacts /path/to/artifacts --mode report --output-dir /path/to/tables
+```
+
+Neural defaults use H30/B256. DLM uses A/C/D stages, and Lorenz DLM includes its spectral loss term. `train.py --smoke` runs small synthetic stages without trajectory data; `fit_rbf.py --smoke` still requires an explicit RBF roster. `evaluate.py` supports table regeneration, model inference and the controlled protocol, with no training. These are protocol-specific loaders, not generic dataset adapters.
+
+No experiment results or trained models are bundled. License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
