@@ -1,0 +1,18 @@
+{
+  "fit_split": "train",
+  "n_train_samples": 50000,
+  "n_train_trajectories": 50,
+  "state_dim": 3,
+  "state_mean": [
+    1.4052982487886923,
+    1.3763437377194772,
+    22.913415127219647
+  ],
+  "state_mean_sha256": "f6e1d6e9bfeb00d3b827d13dee5399404bce8a059f70bacb89ff05cccbe5192a",
+  "state_std": [
+    16.81329126805251,
+    23.236557998434396,
+    19.50647657872247
+  ],
+  "state_std_sha256": "c98865df78ce0dc41f5d543deb3a6f152892415d6ef689a78f2ef8bac2ffbb5b"
+}

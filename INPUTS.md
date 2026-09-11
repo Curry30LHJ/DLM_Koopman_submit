@@ -1,6 +1,6 @@
-# External input contracts
+# Training data and external input contracts
 
-The public CLI is in `scripts/`. No input assets are bundled. Supplied files must follow these protocol-specific schemas; arbitrary datasets need an explicit adapter.
+The public CLI is in `scripts/`. The bundled `datasets/three_tank` and `datasets/lorenz` contain frozen train/validation arrays and normalization statistics. Validation is required by early stopping and checkpoint selection. No formal-public/confirmation data, trained weights or result archives are bundled. External files must follow these protocol-specific schemas; arbitrary datasets need an explicit adapter.
 
 ## Neural training
 

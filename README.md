@@ -1,6 +1,6 @@
 # DLM-Koopman model source
 
-This repository contains model definitions, system equations, neural training, RBF fitting and evaluation code. Training defaults are provided in code; trained weights, datasets, scalers, experiment rosters and result archives are not included. It is **not a self-contained reproduction package for manuscript results**.
+This repository contains model definitions, system equations, neural training, RBF fitting and evaluation code. Training defaults, both systems' frozen training/validation trajectories and their normalization statistics are included. Trained weights, RBF experiment rosters, formal-public/confirmation data and result archives are not included. It is **not a self-contained reproduction package for manuscript results**.
 
 ## Installation and interface
 
@@ -20,11 +20,11 @@ The neural interface accepts normalized tensors: `states_history` has shape `[ba
 
 ## Training and evaluation
 
-Provide external inputs using the schema in [INPUTS.md](INPUTS.md). Output directories are separate from inputs.
+Training data are in `datasets/lorenz` and `datasets/three_tank`, each with 50 training and 12 validation trajectories. Validation supports the existing early stopping and checkpoint selection. Dataset identities are recorded in `datasets/SHA256.csv` and `datasets/SOURCES.json`. For other inputs use [INPUTS.md](INPUTS.md). Output directories are separate from inputs.
 
 ```sh
-python scripts/train.py --system lorenz --model dlm_koopman --data-dir /path/to/data --output-dir /path/to/new-run --device cpu
-python scripts/fit_rbf.py --system lorenz --model rbf_markov --roster /path/to/rbf-roster.json --data-dir /path/to/data --output-dir /path/to/new-fit
+python scripts/train.py --system lorenz --model dlm_koopman --data-dir datasets/lorenz --output-dir /path/to/new-run --device cpu
+python scripts/fit_rbf.py --system lorenz --model rbf_markov --roster /path/to/rbf-roster.json --data-dir datasets/lorenz --output-dir /path/to/new-fit
 python scripts/evaluate.py --artifacts /path/to/artifacts --mode report --output-dir /path/to/tables
 ```
 

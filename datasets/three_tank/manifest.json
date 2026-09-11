@@ -1,0 +1,1937 @@
+{
+  "system": "three_tank_recycle_delay",
+  "plant": "threetanks_recycle_delay",
+  "measurement_delay": false,
+  "delay_type": "recycle_state_delay",
+  "state_dim": 9,
+  "action_dim": 3,
+  "state_names": [
+    "xA1",
+    "xB1",
+    "T1",
+    "xA2",
+    "xB2",
+    "T2",
+    "xA3",
+    "xB3",
+    "T3"
+  ],
+  "action_names": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ],
+  "split_counts": {
+    "train": 50,
+    "val": 12
+  },
+  "independent_confirmation_access": "locked_not_loaded",
+  "formal_public_access": "locked_not_loaded",
+  "normalization_fit_split": "train",
+  "recycle_delay_tau_h": 0.025,
+  "recycle_delay_integration_steps": 25,
+  "recycle_delay_sample_steps": 5,
+  "steps_per_episode": 1000,
+  "seed": 6,
+  "state_mean": [
+    0.19067275303387551,
+    0.6729044951007772,
+    477.3029313139158,
+    0.21043046904676915,
+    0.6536271348403654,
+    469.7945888681078,
+    0.07160764334210781,
+    0.684690879779583,
+    471.85841332338555
+  ],
+  "state_std": [
+    0.01751855472170415,
+    0.00616119137239688,
+    4.020784582472842,
+    0.01690431615098897,
+    0.006007516460313743,
+    3.8735048079785863,
+    0.007711954332425277,
+    0.01987143562449358,
+    3.887627204365961
+  ],
+  "action_mean": [
+    2885390.348628643,
+    968400.1255423828,
+    2886146.9910729225
+  ],
+  "action_std": [
+    462428.77083528123,
+    310858.45280959684,
+    463199.97101580154
+  ],
+  "trajectories": [
+    {
+      "id": "train_000",
+      "split": "train",
+      "file": "train_000.npz",
+      "seed": 6,
+      "initial_state": [
+        0.1809416076879004,
+        0.7029939074149805,
+        449.65679501684406,
+        0.19582224663597858,
+        0.6701641751439305,
+        488.7681532674399,
+        0.06616404059563738,
+        0.6953879524147407,
+        478.3301323415376
+      ],
+      "initial_state_sha256": "b0b4b183de051581f3e432644c17bb8002a417d4c7f7fad54b7f8c14266a6e52",
+      "action_sequence_sha256": "ecf8a5dc041b193018fac0af05a8ab11731cad3fe18c7e9b642187b2e12ece1b",
+      "state_sequence_sha256": "dfa451db19a538d694d1f679699f2591c0a2e7658310011ec56c9534998a46c4",
+      "sha256": "bbcd11d8d659ea4a6b728b3d7c27ff6b18421e83f42aaaf6263baaa3305560d4",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_001",
+      "split": "train",
+      "file": "train_001.npz",
+      "seed": 1015,
+      "initial_state": [
+        0.17032397968411472,
+        0.6587563333586111,
+        483.93609884222025,
+        0.20200885659619103,
+        0.6496990876682315,
+        474.42887547270436,
+        0.06604188179297239,
+        0.6341951683445749,
+        459.38539858023995
+      ],
+      "initial_state_sha256": "6893ba4b39120553682fa630a0c47fe63f2c308333e8673a11799858bed4bade",
+      "action_sequence_sha256": "baee5763847457718156b13d4cb9532c6c6de8e668a032c188ae061e315da170",
+      "state_sequence_sha256": "20ace257075b7a2770c444752bfdded2f8ae97e634a77da71610f32a66f46869",
+      "sha256": "d988677d6839638001cd5f6cc90956ddfc0c0e1eeb6786e3a93aad2b82142f00",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_002",
+      "split": "train",
+      "file": "train_002.npz",
+      "seed": 2024,
+      "initial_state": [
+        0.18083468667194302,
+        0.7007294094843939,
+        494.08620777343725,
+        0.1917192556302312,
+        0.6308416464252019,
+        473.5805379021887,
+        0.06650184861894805,
+        0.6788326977816566,
+        496.3797588180067
+      ],
+      "initial_state_sha256": "4abc8901a94f902ab79f35b7ebf6e7da82796dcbcc52f5104dc1b3a33de77cef",
+      "action_sequence_sha256": "f7371a0fe1989b3b44c2c648d2f373b9ad6b6d74af5c9b57b306cbbb62566957",
+      "state_sequence_sha256": "083ab1027bc212101b05efac69fced021e4639d7dbff94d208eb06a1f0405e20",
+      "sha256": "8df0f75fc29c67ad922fa17db12b670d9f90988b1d1741d171213b0359fa048e",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_003",
+      "split": "train",
+      "file": "train_003.npz",
+      "seed": 3033,
+      "initial_state": [
+        0.17085039041802702,
+        0.7066143883462391,
+        484.16109252044845,
+        0.19584407256801237,
+        0.6414100458847137,
+        469.2754606322597,
+        0.06738569238857692,
+        0.6944760770874139,
+        461.8625182853642
+      ],
+      "initial_state_sha256": "b6a363c75724b67756b6f04ee9e3b700a64fe725ac8f014f52e5d52011c0f6c0",
+      "action_sequence_sha256": "9e9693f27c1c916abb9d6cde52f8e376ad18bbcb227d27f37e28fcd6b0b808e5",
+      "state_sequence_sha256": "7aaeb9ea0451f2ed3f29daf0ecdbbafb51e0ced1c0a9a5e71c2e6df970b17297",
+      "sha256": "e5d6a94993a479ce3df54ee57e0bbd6fcc24fe1fb45c6694442fc0b5647a3e18",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_004",
+      "split": "train",
+      "file": "train_004.npz",
+      "seed": 4042,
+      "initial_state": [
+        0.18281743245002108,
+        0.6567768081706222,
+        462.4899987465694,
+        0.2017491520330413,
+        0.644557402947966,
+        455.4115239153049,
+        0.06680599583270316,
+        0.6612300142359675,
+        490.4406130246278
+      ],
+      "initial_state_sha256": "42275c411a0e251400ebca843d49522ee0a3c29ad682f7f048c9cfc917a1961a",
+      "action_sequence_sha256": "de32b33daa69681ca0e7d39f64c213775f0b37218390761c9b8bb9b3df5dc1af",
+      "state_sequence_sha256": "014649a34a61fbc63106dcbed97bc3391d4c4733c713538340cbaef0c0894279",
+      "sha256": "02e8896d2c98d5331f275a8192afb90e46a19d159ad563a2b82b14cfa29c2690",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_005",
+      "split": "train",
+      "file": "train_005.npz",
+      "seed": 5051,
+      "initial_state": [
+        0.18303547888892632,
+        0.6979663006364224,
+        513.669573027956,
+        0.19761021307916682,
+        0.6424725388434882,
+        472.6316247933039,
+        0.06328527346755412,
+        0.7104154298220611,
+        459.95514968956985
+      ],
+      "initial_state_sha256": "0af29d38446082155bb3dac51b78b62f3002abe42b7490e0c1a6afb20a113e8e",
+      "action_sequence_sha256": "2fb0098ca56efc617f212940964e6fdc46a119bdf9fc574827bf3ae2c8ab1163",
+      "state_sequence_sha256": "a7bba9fcbbf361a929636d0f1369208b4b115356af41b60a561db7d67c01f189",
+      "sha256": "69fcba90f13412d684b0bebd8846812ab0f753e3930ea4e058b3cc645a7f6004",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_006",
+      "split": "train",
+      "file": "train_006.npz",
+      "seed": 6060,
+      "initial_state": [
+        0.17491036731813767,
+        0.6665369556024653,
+        470.9299116066294,
+        0.19799711844202567,
+        0.6505334572090025,
+        488.2403723121276,
+        0.06769471740097703,
+        0.6296822852983511,
+        458.02308976288356
+      ],
+      "initial_state_sha256": "3bcb03850036a22069c069691a776ff33a5963d43e89241626175760856082a6",
+      "action_sequence_sha256": "ddeb3af8a35b12278b7c44501ad279aeafe7658cae9bee03a2cb6cb78f79a682",
+      "state_sequence_sha256": "6cc1c9abf41d568ed932eee662fa30c0bcf6fbdd9c4636798ea8b3f1971c7bb3",
+      "sha256": "268893abe0d504d5476ea46732cbad06b9d91a97f61def0d8c64434cbff50424",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_007",
+      "split": "train",
+      "file": "train_007.npz",
+      "seed": 7069,
+      "initial_state": [
+        0.17548317574724223,
+        0.6698920997849226,
+        487.4596547982779,
+        0.19653001895482497,
+        0.6536149684706292,
+        460.6463226521532,
+        0.06553527646968128,
+        0.6837850905127371,
+        483.12774749710997
+      ],
+      "initial_state_sha256": "d077c0616664821670e7639ae050525e4750f22100707bbf24a1b9c3bc1bd797",
+      "action_sequence_sha256": "8c224c9bc39f596caa86060bc90ff8ba99c3d2b51e87c60e8408318d8c6f5e0e",
+      "state_sequence_sha256": "0103847fa7ab7fdc9f182e3e42e9da34044e406ce7dbf79ae0fb19d95bbf0970",
+      "sha256": "efefc7a39660ca0d6f9c101234b2b4a2e217d35ae4dccf9efdf5601c9b6839aa",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_008",
+      "split": "train",
+      "file": "train_008.npz",
+      "seed": 8078,
+      "initial_state": [
+        0.18194728733214754,
+        0.6815848904699957,
+        484.850946725731,
+        0.19720995388719031,
+        0.6781677516702095,
+        465.68923888987746,
+        0.06287335752212911,
+        0.6724604146514931,
+        462.08171351847295
+      ],
+      "initial_state_sha256": "e2dc2f22a6fc57f550782f505eaa3e2f0240b180c3074121e53ec9c131fdda41",
+      "action_sequence_sha256": "713f8dbf4ea3d20634d45649e329f7a41574b8c96accca56d97bfe0a87871f67",
+      "state_sequence_sha256": "67b42d3ffa9b76917b61de8342575d758acb901f53a178bbc1034b14eda8e9de",
+      "sha256": "e9681add1004d5367457f3be8582452d51692731f6c5758ca83c58712ff79b12",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_009",
+      "split": "train",
+      "file": "train_009.npz",
+      "seed": 9087,
+      "initial_state": [
+        0.17078127634239587,
+        0.6913507354974218,
+        470.8030739739255,
+        0.2055405985881711,
+        0.6611057763706054,
+        466.62755315443303,
+        0.06367873678339439,
+        0.6826206955935934,
+        467.7187721391195
+      ],
+      "initial_state_sha256": "0831cfd77b6592e7e57557eaffe6189cef1e69fb6bbedcfcd1e291de5de042af",
+      "action_sequence_sha256": "be5767dee42d1e3f6b0cea8959dcadc6c620d72e8c1e9be5131baf4a514d4363",
+      "state_sequence_sha256": "44897ea1cc3ed15e64a12ead51b133053b7568566f429a22800e58567fc05b97",
+      "sha256": "7aa22c03492594e1863a7c2f897444e55a20d0b857e6faf173f9382927838d98",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_010",
+      "split": "train",
+      "file": "train_010.npz",
+      "seed": 10096,
+      "initial_state": [
+        0.17373533773692357,
+        0.6710320915750988,
+        489.23947011584255,
+        0.18785950295207557,
+        0.6392525810340178,
+        498.2804633019899,
+        0.06662617462826281,
+        0.6790660840258819,
+        476.56127023191334
+      ],
+      "initial_state_sha256": "a6a30ae31ee38248ba2ce810d0d9c30738e04d88f1fef8a01b0fe4e4a98d9a57",
+      "action_sequence_sha256": "f89c0a6347f1ee499303bb0ee479232feeb3fcb5fda06999f2a05f7ba1063af5",
+      "state_sequence_sha256": "26d90ca649690a9b8be9a399efd83dbcb5ebb9976ea2d9237e4d8dce81aedd1c",
+      "sha256": "d123f8c90e65e44fa7ce4e682a2e58a9e3fa36db6ad936c91c2ae5cd93804722",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_011",
+      "split": "train",
+      "file": "train_011.npz",
+      "seed": 11105,
+      "initial_state": [
+        0.17725034176757562,
+        0.6961207562365531,
+        484.9082275571988,
+        0.1967717607956662,
+        0.638053883361873,
+        465.3494198284845,
+        0.06491052420039314,
+        0.6925489294648308,
+        490.20944604753714
+      ],
+      "initial_state_sha256": "4d1417fabc568043d7304d698b32aac17c4cd7f1c038383d69ac86d881dcf47f",
+      "action_sequence_sha256": "a8f8a00c1e833015b5b82b0b5bbb9d26aed251d0f0d889a7ea80086ba8927647",
+      "state_sequence_sha256": "df2fc14a189cecdc97dacfd28132bbe752a1d1452260d9e0458ad90b39b2f4d0",
+      "sha256": "553b02b74355e3f94731a0f9e7490eb9b3bb274769dbaf982723593889c62809",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_012",
+      "split": "train",
+      "file": "train_012.npz",
+      "seed": 12114,
+      "initial_state": [
+        0.1725262262703321,
+        0.6658059603641299,
+        489.6880425811998,
+        0.2037321991237674,
+        0.6422014238442589,
+        457.40074702040783,
+        0.06483894561319273,
+        0.657486084526918,
+        466.61535684913036
+      ],
+      "initial_state_sha256": "1e0ef5b9ffe69a3674f973764bd87e10710d94ee2ee2e26bb94105fd1d02208a",
+      "action_sequence_sha256": "0d77de7c140f9f9f5d5eb4e2f77d6ea0eef38415e8732fefbf8630f1f4233061",
+      "state_sequence_sha256": "6e5e47ff6202a1ecc229c674013edabcdf97a55c592b238ddd7c2d8ff7df3f38",
+      "sha256": "368dd9fd834a2c392da03aff18fa87a9222be158cb47ff6611b2374b0e120cc0",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_013",
+      "split": "train",
+      "file": "train_013.npz",
+      "seed": 13123,
+      "initial_state": [
+        0.1756466749278067,
+        0.6796574265248276,
+        497.7255910256428,
+        0.2003165286924004,
+        0.6777661234261467,
+        476.22624846535484,
+        0.0661367718008667,
+        0.6681161228620995,
+        470.5563319960132
+      ],
+      "initial_state_sha256": "e8fb0ff2cce69d0dd29e6bd3fe7a6d700a0b8b22e2fab84ae6e29ec9b6d45aa2",
+      "action_sequence_sha256": "0382a5f267d3a933e7e128588309183ca38b4e250966ad9054b93972ab88dddb",
+      "state_sequence_sha256": "af8f5958b027b5a0a47a1c0444fb104759e5e1a87fcc3ddde093c0fc5c731dd0",
+      "sha256": "caac857c68faea791bc0fc71594a6e090af945403dd4b57f95bac7cc7a80677c",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_014",
+      "split": "train",
+      "file": "train_014.npz",
+      "seed": 14132,
+      "initial_state": [
+        0.18121819723669275,
+        0.6596672296709158,
+        475.587150560568,
+        0.19238686413939693,
+        0.6546919460009689,
+        477.54462249310546,
+        0.0646366673617957,
+        0.6664602122924469,
+        483.44334209263934
+      ],
+      "initial_state_sha256": "8278c2161f2b771eed8cb7c94855659913b015d2b8815d6569a92e88ddf065d2",
+      "action_sequence_sha256": "0b66074ca1a9687377f5f09800484247c17241d3455064b5d4ae2f4e6212b12d",
+      "state_sequence_sha256": "7101bc666d9be00b30e242a42c6eb5431d68bfe80373b92fd060632f2613c25c",
+      "sha256": "eb85f8f2fbf52a7a311994458fb28f8949165b8ae84fa6370f52e206d789ccce",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_015",
+      "split": "train",
+      "file": "train_015.npz",
+      "seed": 15141,
+      "initial_state": [
+        0.1745393040129335,
+        0.6668171646578922,
+        462.3562513027926,
+        0.1943494035627148,
+        0.655954324645408,
+        464.97288195349074,
+        0.06350730173665746,
+        0.6695172687097651,
+        472.58724087455784
+      ],
+      "initial_state_sha256": "eff41bed972c6a227963c0988b365d1c290178ac18329d7c994dbb0bba851689",
+      "action_sequence_sha256": "3c2a171ea80d86e6fabddc0e229734424120497a6d56d2a93bd77b01b9a28c9a",
+      "state_sequence_sha256": "831514a9633f7be3fd2ba4e9add25a5b512b9961f4f09345170e9cb118976375",
+      "sha256": "36a2b8e2b2dfce23014db21d763690320ea91770d2315d3004a9b70a6d5c0cea",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_016",
+      "split": "train",
+      "file": "train_016.npz",
+      "seed": 16150,
+      "initial_state": [
+        0.1848843127458655,
+        0.6714005726540645,
+        486.43601393554513,
+        0.19852336633719556,
+        0.6498623928108854,
+        460.78505198573595,
+        0.0644450253157886,
+        0.6883826452685653,
+        459.7504656219143
+      ],
+      "initial_state_sha256": "5d30140c24d41f872280006d4342ce907513e76d763cc4e6184a971c3d8db11a",
+      "action_sequence_sha256": "4c454e93da3c6feb31f07a1d070c3dc1abc20084eaa86748391e1235e1e0a615",
+      "state_sequence_sha256": "ea1f8d1f02af8fd34257dcc498be9a9f79202b6459a6da10e29c6db2177cb6cb",
+      "sha256": "438a2acb52064b7370e6eeb162e5a4c99b05a93bd4d3c45f5f88f60a880fe7e0",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_017",
+      "split": "train",
+      "file": "train_017.npz",
+      "seed": 17159,
+      "initial_state": [
+        0.16470309455239496,
+        0.6421661650202374,
+        471.651353770678,
+        0.1963640973996909,
+        0.6639462666757445,
+        487.99387378240624,
+        0.06729510995290355,
+        0.6841715776804971,
+        478.0231655487624
+      ],
+      "initial_state_sha256": "b3dc3035425dabf27a173cebe3b5703da2e2c22b51ec0fb9cecc12c2efff6887",
+      "action_sequence_sha256": "e900850cfd17152eacd9fe60b80df21250ee0f4332236c134ee4b195caffc2c6",
+      "state_sequence_sha256": "8c888d78e2b1f1dd8196a5cc7e7d1854ee4ee26cf146d7cd0030421770019693",
+      "sha256": "3c0b71159108ca7ed459ff1518756fb1399c1ee68a8890a6aaab2cc856010b21",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_018",
+      "split": "train",
+      "file": "train_018.npz",
+      "seed": 18168,
+      "initial_state": [
+        0.18054711371714824,
+        0.6952052308251059,
+        495.8759335276063,
+        0.19456979600828736,
+        0.6495879982911861,
+        479.3813487063964,
+        0.06656374024826783,
+        0.6669358252303309,
+        477.99967617796347
+      ],
+      "initial_state_sha256": "26656726e8d731acfc9363c5e9386c18a7be2ee6227e4ed5a79e1883672999e8",
+      "action_sequence_sha256": "b21a4c45abd7129d4d6790c72e140bd8eb41eac9db87d398dd73bf6cd85baf5b",
+      "state_sequence_sha256": "431b96738cbb33993774096f39c02d4a15916584515304fa2f3c1dc58222c828",
+      "sha256": "f5ae8fb5f89ac23f7a61b9d94983bd6144ebf25b6672be0c5719baf1bd6ee2ca",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_019",
+      "split": "train",
+      "file": "train_019.npz",
+      "seed": 19177,
+      "initial_state": [
+        0.18231746367923266,
+        0.6728550490199902,
+        474.5371001168803,
+        0.20078006126324116,
+        0.651982577510908,
+        490.7067210635834,
+        0.0630903739044321,
+        0.6691162605830862,
+        467.6267282762324
+      ],
+      "initial_state_sha256": "e42a23ee1ecb24a5703f8240dae6dd34841206fed798a6ec8a5c052a9c039952",
+      "action_sequence_sha256": "cc679ca8719d09297e3c13506701979c16fba0b1fd28758822c215d08d7da45b",
+      "state_sequence_sha256": "ce385bd5e1349751801e9d07fdce9720fb5344e422aec8e6003f88e1e8b0aefc",
+      "sha256": "80e4b35531abc8a06ca3016e7f0fe56ec5f7ffd5ecdd8652c8a8859960b216f2",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_020",
+      "split": "train",
+      "file": "train_020.npz",
+      "seed": 20186,
+      "initial_state": [
+        0.16901681099493795,
+        0.66866033316074,
+        476.20879762058166,
+        0.2050579464318682,
+        0.6253373283167234,
+        455.3867432819959,
+        0.06721141970241987,
+        0.6537085879176242,
+        491.2058548428284
+      ],
+      "initial_state_sha256": "a1ae83c4e76f906018b9fef151f704ead226af2077ad83f6ca9b903c2a47ee66",
+      "action_sequence_sha256": "8807c0bf078cc69db4a103c953b7325162936bdcf1e21132263247b91edbb026",
+      "state_sequence_sha256": "899e45db5d34b3d1f38edf169cd23047cda08aa84e5ae6f602f7ebda14edca8b",
+      "sha256": "d5e79cb568eb6a46eb9e0227cb26618ac4f91d4a16401887e41b51495e193473",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_021",
+      "split": "train",
+      "file": "train_021.npz",
+      "seed": 21195,
+      "initial_state": [
+        0.17950101944287936,
+        0.6586263116548866,
+        487.88960235753854,
+        0.2043236037772898,
+        0.6567887997659145,
+        482.48721088549235,
+        0.06662837072935157,
+        0.6468148022489969,
+        475.03903432238144
+      ],
+      "initial_state_sha256": "bca964dc945df88fcf506c4f666bb32cd1832dbe507a9f723f0a8d0912b98ae4",
+      "action_sequence_sha256": "3da17076401ede49c1049348614b39631e80851361a595659d5e42176e4b3dbc",
+      "state_sequence_sha256": "18671cb07766afe2e133589d251878250b337c42dce1f7dddb5b7fb4ab92f16c",
+      "sha256": "fee72c348ae4ea4854f46ad7e38c970589356764b3afa88406bb8164caec782c",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_022",
+      "split": "train",
+      "file": "train_022.npz",
+      "seed": 22204,
+      "initial_state": [
+        0.17067738242843195,
+        0.6707871242097794,
+        467.38024537688005,
+        0.19245611882587377,
+        0.6541103166021113,
+        465.2008862738294,
+        0.06525013779898822,
+        0.6629231820016558,
+        474.43155217760165
+      ],
+      "initial_state_sha256": "8d3e647cc1bc70aec1250ca74c3a0f60731fa28da4f76d847d679c2ec50d51fa",
+      "action_sequence_sha256": "b1584c04ec1e946b8292cfc149fb61dbe5f7384b743da5dbc30b1522c0cc1375",
+      "state_sequence_sha256": "c0df9e14c179f9aaa6a2226068c9805a74607318c1ea97405b3bcc5864f0b4d8",
+      "sha256": "4f5c95aa8e55745cec748c500bdc13ef5b46b8077bad2365927e4e85917a1b1a",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_023",
+      "split": "train",
+      "file": "train_023.npz",
+      "seed": 23213,
+      "initial_state": [
+        0.17724785586310077,
+        0.6661606689073182,
+        486.6430613128408,
+        0.20405151741143804,
+        0.6421524581860597,
+        469.8177652821038,
+        0.06443783116383721,
+        0.6886904082748913,
+        461.1235560053138
+      ],
+      "initial_state_sha256": "5005a5ad75f4fc1ff1c5e002785ab8a51d53525716ccc17cc4b24a9c9419f3a9",
+      "action_sequence_sha256": "d7463fe534efeea5f48a0b8c1b4ff4287894a96ea5658ca90884399a012c356e",
+      "state_sequence_sha256": "de552f75d70345ef61513ced39b5970d6fca535c4b90e4f0755b0064c1750197",
+      "sha256": "8d50449aaa99e07890dcd7b77bc232f13fda147cd6a9aadc5fb138d5fb1bb495",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_024",
+      "split": "train",
+      "file": "train_024.npz",
+      "seed": 24222,
+      "initial_state": [
+        0.1884965890638675,
+        0.6817238798540487,
+        495.6338053067179,
+        0.2031571413684754,
+        0.6186541429954472,
+        483.3275614998095,
+        0.06589702379990417,
+        0.6879179912747538,
+        480.4286272695283
+      ],
+      "initial_state_sha256": "c29f2037d5e633996989f6081bcf3d31cc20baaedd5b35d610fb22fcf7d973ab",
+      "action_sequence_sha256": "3347ceae67714d023bc454c0b90a8a7d16ce32b87c91f99fffe71bb99713e55c",
+      "state_sequence_sha256": "e9f825d161f0c8d56fcc8d408ef5882d1422d23a4f74dacd6ba6c3ca9da6263e",
+      "sha256": "c770d03d6094896370b7d71fb85632bf7bf7c3741ce18f13a59ec92ad39a0907",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_025",
+      "split": "train",
+      "file": "train_025.npz",
+      "seed": 25231,
+      "initial_state": [
+        0.17359935224703252,
+        0.6575948742601909,
+        492.2342250818837,
+        0.1985267251840122,
+        0.6680507290274694,
+        468.899108017688,
+        0.06560230097471512,
+        0.6524195547913094,
+        505.54424970157277
+      ],
+      "initial_state_sha256": "73b319fddb56f603ed63d3d007983596db75fddaf045ae56f9ccd9df357282b5",
+      "action_sequence_sha256": "4b7c6cc1bdf7580be56212a27c75cabac32b0c1095546db5b20c0aae3ebaacd4",
+      "state_sequence_sha256": "67b9c3569182e3e73a3db6be9112167ab772fc59a4a3a641080562d2836d252d",
+      "sha256": "d3d16164117c4ce12b9effa1555a1e8c81c7f0de9fa4cfce231f9ad061bbb1c4",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_026",
+      "split": "train",
+      "file": "train_026.npz",
+      "seed": 26240,
+      "initial_state": [
+        0.18014699563061742,
+        0.6419318296745583,
+        490.1446629497022,
+        0.19727207700012578,
+        0.6491933424961144,
+        476.55195532898847,
+        0.06416681422640512,
+        0.7091383342647023,
+        492.7348533349394
+      ],
+      "initial_state_sha256": "e63dee3732103a66eff5fc004eda6b0fe98ad4f589a1eefd72a5d8d6fe169c89",
+      "action_sequence_sha256": "ac78ac3b08220fd44ddbf3f17932bf6eb3756b53eabf4d75e8eaa53b90a7b2ed",
+      "state_sequence_sha256": "bcaf635fb31cf1c346b8ca8f51c9b15291218c9671667726a3a47cdf85729ee0",
+      "sha256": "9a8264fb4c00821ce11b93f80f85b928fd5adfc5703424bc85010401fc8ecc46",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_027",
+      "split": "train",
+      "file": "train_027.npz",
+      "seed": 27249,
+      "initial_state": [
+        0.17360900981439084,
+        0.6774078134258592,
+        465.5569768118525,
+        0.19120613106536744,
+        0.6543422704171871,
+        489.3991637243933,
+        0.06553653679962672,
+        0.6630042850186347,
+        468.7894589551975
+      ],
+      "initial_state_sha256": "b397064f2eb1cff24a1d22e288f045df6af947ec59645f2c84ef31628aa41345",
+      "action_sequence_sha256": "fccefbc12a345be2d68660bfd1fc8812fd0cf19dfcc4c71e6d4e00ad5aee3b9c",
+      "state_sequence_sha256": "91f820eaacf3123e0197bba5eaff8f1043b1900b430743b8ec2bc1ac9a7a8ab6",
+      "sha256": "d1921e064922a6b33bff29f27504241d60000fd4f73d5c15533a230710b4b02d",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_028",
+      "split": "train",
+      "file": "train_028.npz",
+      "seed": 28258,
+      "initial_state": [
+        0.1710850504743209,
+        0.657752152228054,
+        454.1630262891925,
+        0.19199201962872017,
+        0.6591288894575569,
+        479.3717413709917,
+        0.0658510558009117,
+        0.6830953987929212,
+        482.4274915048592
+      ],
+      "initial_state_sha256": "b5bc3e83fa80568c856ee5cbb8550a1df5ac37b3f89c203335382e819dc8038a",
+      "action_sequence_sha256": "d62d3485518dcd4b250c88a0786c1e58f8226f4b21d68a968405474ff161e9ea",
+      "state_sequence_sha256": "284be3a7588fcbd7435a7ac238f8b4bb8e9b8bba228a519bfc1dd4d5ee38a573",
+      "sha256": "33e9cba2ac85f883a4d9644c24abf2d96b5031eb287a7ef038a35ddea64288ba",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_029",
+      "split": "train",
+      "file": "train_029.npz",
+      "seed": 29267,
+      "initial_state": [
+        0.17040053236054747,
+        0.6542901715687566,
+        486.31092799042665,
+        0.19191883442925767,
+        0.6703507715263438,
+        461.1099699524065,
+        0.0642956008820504,
+        0.6847383894815491,
+        486.4059919430791
+      ],
+      "initial_state_sha256": "638e0eb7d420c583bd57d3b5105c0e4e1ca14b8cfeffbfb167e689feadcb2677",
+      "action_sequence_sha256": "01e6e3dcf870eda756587caab9947f0298990edd5c75173ff78117aa5505bb83",
+      "state_sequence_sha256": "a020acdd7ada93c760bf28a81872af96db14645f8c83c9073cb9f5ce8285621e",
+      "sha256": "64c259061c18f7acce710fa3ddcbf04be8b9076f31b8da8f57e22da5c0d62eae",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_030",
+      "split": "train",
+      "file": "train_030.npz",
+      "seed": 30276,
+      "initial_state": [
+        0.17716773161587296,
+        0.664864096463269,
+        483.07324922748234,
+        0.19383873563434065,
+        0.6467530269717064,
+        480.3586934664811,
+        0.06372140519896319,
+        0.6750754102113132,
+        485.7892110302508
+      ],
+      "initial_state_sha256": "0d8ec7e950ceda8fc63f54483de61fe3b6bd2addfb849d639f1a547b768b4d40",
+      "action_sequence_sha256": "1ccd2989eb4168d785bb715e2a2597007c774143227f74e1b7ba0f36d9056cc2",
+      "state_sequence_sha256": "f6884d3ab2758464d77e661e936a95a11154186744103966f22d096bd8c4e711",
+      "sha256": "36cd57b97afc3aacd5a580ce460d663dcc58f4c7af5574221bef2e58505d1b5a",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_031",
+      "split": "train",
+      "file": "train_031.npz",
+      "seed": 31285,
+      "initial_state": [
+        0.18321452103716473,
+        0.6968822211110691,
+        465.1052151683962,
+        0.19873801759864854,
+        0.6482386159858181,
+        493.7843721619087,
+        0.06392372990327183,
+        0.6562306270613814,
+        458.0577360628177
+      ],
+      "initial_state_sha256": "e3bfdccdcaecb14e512426bb238b30b24bce2f4d4b5c6ae13412c5c4dd7796d8",
+      "action_sequence_sha256": "c44c2eb705df54cf79b667e3d6766d8518c715a8193a4c0df97ceb34da269030",
+      "state_sequence_sha256": "d03e7b3d90eca606fc24fe5f8852dd65ef82be23d99da11fb69ca2a85db89abb",
+      "sha256": "0b37acec56e7c2bc63b1658843b9ae405d58b8985ebe1c8eb9da4554eff5c99a",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_032",
+      "split": "train",
+      "file": "train_032.npz",
+      "seed": 32294,
+      "initial_state": [
+        0.18418382123625743,
+        0.6863462544405118,
+        491.4988073991327,
+        0.19130888322143647,
+        0.6349115739264352,
+        447.6933192379082,
+        0.06527346423114888,
+        0.6780463964432578,
+        480.20352485990566
+      ],
+      "initial_state_sha256": "1044a007a0643338119b865065e01c58dd330410272b6b9e5fa356bc5dba2bff",
+      "action_sequence_sha256": "b6210e36c1cc53d8a7f42da4c7ed31837de1f5fb8ee0c1374db9ba14f928d792",
+      "state_sequence_sha256": "72639aa2c351f65fb72ba0dca9bd26a0e15b862c8c4129eeb8d487a84fd2636e",
+      "sha256": "3ff020d31f6a93c8d5f8c610667e482ead940461eb894d9188d7ec938b75e0b4",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_033",
+      "split": "train",
+      "file": "train_033.npz",
+      "seed": 33303,
+      "initial_state": [
+        0.17680845700548198,
+        0.6718199575689372,
+        462.9927980909803,
+        0.19547998026091537,
+        0.6617510033418371,
+        476.8009668939973,
+        0.06533021979651947,
+        0.6516283023745923,
+        479.2742039900358
+      ],
+      "initial_state_sha256": "525fa61da716b38f91d7812012febecfab753046803349dafeb18b2785bd0ce7",
+      "action_sequence_sha256": "7d7788051a71a69b4d15cf4b323f38f2e1c83b479c8c10802fbd9731de5b7fb2",
+      "state_sequence_sha256": "36a42cd45bb6470c741924d11a1ca3a15239ddb138b1a00e9ed34e4b9d4c9957",
+      "sha256": "b963db9cb3d47e6bef80b6418253840baa3ca76e0a6fa0d0fd68b629ad99f3e8",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_034",
+      "split": "train",
+      "file": "train_034.npz",
+      "seed": 34312,
+      "initial_state": [
+        0.1747688404773951,
+        0.6638824685018146,
+        464.0911208779547,
+        0.1899761349668615,
+        0.6437105041434344,
+        497.4782991204799,
+        0.06294908871667812,
+        0.6765501343923896,
+        493.97624582316945
+      ],
+      "initial_state_sha256": "bf4a0870dd3723dba4b00c0bb6aa2e6e5eb5fd3ed54b5fbdcd82ff8225d6b184",
+      "action_sequence_sha256": "51da7c62e395a131449dd6876f14639b1f080b597625604deea90a440ff6124d",
+      "state_sequence_sha256": "4988dcff1fc62794d40e83abd353bb9be768b2252475107fbe314d1553c2e356",
+      "sha256": "7b1aeab7cc029d15933fe3effe2739f4f5c1973360a17cf47795b9b21d9df465",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_035",
+      "split": "train",
+      "file": "train_035.npz",
+      "seed": 35321,
+      "initial_state": [
+        0.1711414209701812,
+        0.6694604855997327,
+        461.1870065208278,
+        0.19293872637634893,
+        0.6579923420854263,
+        461.7760106317126,
+        0.06386741676824463,
+        0.6920709309285925,
+        487.24806890704906
+      ],
+      "initial_state_sha256": "18e34b8bb02c102b0d309670a36bb35001cb0894e65c723c63c4884905cbd69d",
+      "action_sequence_sha256": "0f0ded45d34354cc3c7b688d6bfd71140e31de094647ee8d9d1f95651a26ab83",
+      "state_sequence_sha256": "e06ab240521bef38f78dead8929409c8a228ebc3ac44a3f3f7674b1e92069b0d",
+      "sha256": "a04491a8fe16b4f1776fa61fa7fcb5b148d1778bf0b6651e1d3ae74ef1b13c07",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_036",
+      "split": "train",
+      "file": "train_036.npz",
+      "seed": 36330,
+      "initial_state": [
+        0.1733912373601964,
+        0.6694030347876458,
+        482.4546139505702,
+        0.19530520441145327,
+        0.6581210221389326,
+        459.12971560114056,
+        0.06375643153261835,
+        0.6979772364112403,
+        469.780949221276
+      ],
+      "initial_state_sha256": "af2eb6387a25df08e4b555766c72560ec579929bf9bb7dd25d33cc82ce65374c",
+      "action_sequence_sha256": "3e8dafa78170dd89bd275f888cb522aace5912fa8987e86693d97959ffe512bf",
+      "state_sequence_sha256": "658ae85730d22e2667596014a61d2cc75ea08d4719ef99fbaa64fd276992c1d2",
+      "sha256": "b7950826d6181ed7fa5529e559cd66df8383d9eb6ed6930f3c611dab02c2fa9d",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_037",
+      "split": "train",
+      "file": "train_037.npz",
+      "seed": 37339,
+      "initial_state": [
+        0.18180250696698852,
+        0.7039671730681203,
+        470.58915163365896,
+        0.1984878451850324,
+        0.6681211727631243,
+        478.4534354063782,
+        0.07047004920005247,
+        0.6743217808386548,
+        473.2339937030362
+      ],
+      "initial_state_sha256": "7a76df4307f2bcc780578a01b56c311f1a88fb3b441326cebb16178fe7dd2151",
+      "action_sequence_sha256": "acf8339e25a640cb6d1f6a9455f0387bdae800b84ea620de83b83941cee7b9e6",
+      "state_sequence_sha256": "da6d5e285815f42bb13aa2a16a674e258e2ec71d35a271b5665bdb0d528e5c03",
+      "sha256": "8566c7eb6f3fc92130062cf3bed7db3aa495b3737431b7c9226b44c2d266ce36",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_038",
+      "split": "train",
+      "file": "train_038.npz",
+      "seed": 38348,
+      "initial_state": [
+        0.16820133881148783,
+        0.6972184232651958,
+        473.04159155344246,
+        0.19324062817250898,
+        0.6463282750090144,
+        479.86492764828336,
+        0.06331608952558776,
+        0.6435329560358883,
+        469.23731116638686
+      ],
+      "initial_state_sha256": "e9d30607d6d63435ab9e75ceb3b287ebe856dbf0338b5a7de95ce64804a0a467",
+      "action_sequence_sha256": "c1cbbbeb9139b62b77d3edbeacdb29616eebe35de9303fdfb34e2ece7590d9ae",
+      "state_sequence_sha256": "8dceb21484f9d64ca96621a8e1539617567768a812f2c7eec847fc987eb843aa",
+      "sha256": "e0be08f397e8fcdeb39219596bfa989adf9fcf5026cd396a1a3df2e7713b865e",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_039",
+      "split": "train",
+      "file": "train_039.npz",
+      "seed": 39357,
+      "initial_state": [
+        0.17855397050580857,
+        0.6753232632272521,
+        456.26747542743,
+        0.19674289574370668,
+        0.6650184919014914,
+        478.11287725270853,
+        0.06252265135277439,
+        0.6496403138091088,
+        482.9894499153823
+      ],
+      "initial_state_sha256": "f69db8db726c9e68caef3d83b721d62c8eea3f9c3de0a2ec48b089b3fca3f14b",
+      "action_sequence_sha256": "4fcb3a3c03f6ea50c880d825e0dc83e40903f859914955c1fe8cc5e4234829fa",
+      "state_sequence_sha256": "d53a8ab67dfd374f4e9eaa5802b9a4e6de044e2fc2577eb1fb05e2482a6cc8e5",
+      "sha256": "81323d83a2dc77818c1c6d9540bd428227fa148ea96198b9757d2c5706a48283",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_040",
+      "split": "train",
+      "file": "train_040.npz",
+      "seed": 40366,
+      "initial_state": [
+        0.1712352885509325,
+        0.6745370389130495,
+        475.4650188472924,
+        0.19984780283943726,
+        0.6344160581658431,
+        455.71847225093177,
+        0.06673289566420909,
+        0.6701115796314517,
+        472.5683092908141
+      ],
+      "initial_state_sha256": "dacb047417108e5352c7ff74db6a68f80290ca014e6449ce85465525bfb65275",
+      "action_sequence_sha256": "537fc398df6c25e20f19fd17502be6600ae383baf9683a065a08d15f90ca9285",
+      "state_sequence_sha256": "db942f2dfa1ce85d30353ba3e088f549b3e508137e8738f8346467fac0c53508",
+      "sha256": "26f8cc45f4aceaaf71dc371db37623b10d318bd034a0404f1fb2b1ac32fec9b8",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_041",
+      "split": "train",
+      "file": "train_041.npz",
+      "seed": 41375,
+      "initial_state": [
+        0.17134673253818494,
+        0.6616941169444988,
+        497.8718144395914,
+        0.19586640506109537,
+        0.6665079650364036,
+        483.16661955099374,
+        0.06719722902668099,
+        0.6681915815454929,
+        458.4151084788799
+      ],
+      "initial_state_sha256": "ecaae6f72c47827f1a138ff7d24b10aadc24352398a22e800309bf1d4d03099a",
+      "action_sequence_sha256": "67178654a22cff2a4a75372dc414d188170f269d2c175ac9dcba5a7f82c98a61",
+      "state_sequence_sha256": "a294030ef9a1efab9b0f40902212dff5b64f2990947187243b5d37135a82acc1",
+      "sha256": "359e2297231474724ae6276d81d3c83a46f072c3c30be4522aaa5d4845b7b1c9",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_042",
+      "split": "train",
+      "file": "train_042.npz",
+      "seed": 42384,
+      "initial_state": [
+        0.18118670342958546,
+        0.6593088360942677,
+        473.171028468429,
+        0.1950051484322504,
+        0.6661801715332729,
+        469.09816596242547,
+        0.06585015406090351,
+        0.6854976420985314,
+        456.4073127421795
+      ],
+      "initial_state_sha256": "73d3fb2830aff7ebf7031ca057147e6cc71754cdf0a556c435976c7d5fddb99d",
+      "action_sequence_sha256": "1ab5b91a731aae32e0e6f7a0288014ab93d2f43e4cc762b86ade084c51afa725",
+      "state_sequence_sha256": "d05e1cbd4ae984231efb0cd6287d071da5fde39ad55769c85010e9aac4ab6e30",
+      "sha256": "20266aa185eab8a9f832a7cb9c6540b2df57b2f8d544802579f37a773431e9fb",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_043",
+      "split": "train",
+      "file": "train_043.npz",
+      "seed": 43393,
+      "initial_state": [
+        0.17915018969530802,
+        0.6560783381808212,
+        488.91240824088555,
+        0.19524138438282146,
+        0.637859832821738,
+        459.35402117077126,
+        0.06430211319627462,
+        0.6826524843253905,
+        482.0009160793771
+      ],
+      "initial_state_sha256": "1727793d77e9065f32a2fc840ab13d76b9d6b7d73393156ca568164a2b663df1",
+      "action_sequence_sha256": "11c5131ccd287cc53e71bb913a4259615f19eb3f10d746644966a9f6ed280a84",
+      "state_sequence_sha256": "67a18456905373c555002ca0bdfacc924522fffcdd65822ab52e430756e34bca",
+      "sha256": "0f5380e3d6e9193cacf390a1bcc152445614341db786fce442db9eda8bb7f534",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_044",
+      "split": "train",
+      "file": "train_044.npz",
+      "seed": 44402,
+      "initial_state": [
+        0.1798503797738473,
+        0.6813889668011851,
+        503.59297906766307,
+        0.19572430403546814,
+        0.6435624275329536,
+        483.22777981502065,
+        0.06447811104089983,
+        0.6886673339887004,
+        468.9433152396074
+      ],
+      "initial_state_sha256": "4de5a35dc3d93d92dd0ad192f7666f1b459ee0790e55421f70bc972003a2bd5a",
+      "action_sequence_sha256": "b774540a83cbb6a4493f285a43bd7a61f8558388778277b2b30feee046f1c28b",
+      "state_sequence_sha256": "69da19c7a44fe9db733116bfff974835d87b0c40421c35e223fe08abaf6d5249",
+      "sha256": "b580c8f647bdb8a1f03266b3ebedd36a858558fe16671ed0274b58786d862b40",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_045",
+      "split": "train",
+      "file": "train_045.npz",
+      "seed": 45411,
+      "initial_state": [
+        0.17535343141867818,
+        0.6970528789674867,
+        481.9007210808932,
+        0.19989403401773267,
+        0.6698782814549996,
+        469.55692409765186,
+        0.06461692852533057,
+        0.6736647642176652,
+        492.66379433700837
+      ],
+      "initial_state_sha256": "6f038010729da259f68e97f112987b3c9440f24d6a767ec6584bec81f8f15111",
+      "action_sequence_sha256": "29eed1f4c52a1d80b9b75277c9d2eaba50faed09dc2d23bc4c8c984d9ec16f31",
+      "state_sequence_sha256": "db99942365213cdb21d36c1199eec21d3a9ad6a80ee688dc60672dbc93573fa0",
+      "sha256": "4d6927c348fb82e46c69c369772988238b8dc64ad42640f2a28ce7661ad9a349",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_046",
+      "split": "train",
+      "file": "train_046.npz",
+      "seed": 46420,
+      "initial_state": [
+        0.1760719382636687,
+        0.632639704996651,
+        488.62025973543774,
+        0.1994697329426615,
+        0.6375346696953913,
+        471.52475928184674,
+        0.06361537605727278,
+        0.6985373355283944,
+        469.4267858907772
+      ],
+      "initial_state_sha256": "32ef360ecb59b3bdae56b397727787a13764dd8697dfeaaf379f0d35c8e76f18",
+      "action_sequence_sha256": "99c83ad71a9fd9303b0907d3e48c4a09e17658d5c1dd46c877a2579c519ced41",
+      "state_sequence_sha256": "3a3f980cac916ca7028a784a4263796a08e749bc073a74a1a01d2279b681b279",
+      "sha256": "c134f8952d7c38b25a6080d28784e903b7316f1215b37468215502b24bfa77ff",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_047",
+      "split": "train",
+      "file": "train_047.npz",
+      "seed": 47429,
+      "initial_state": [
+        0.17311716220854206,
+        0.6709074078259436,
+        503.47088828531497,
+        0.19191813562802462,
+        0.6561723764486918,
+        485.81555406812447,
+        0.06351718783371037,
+        0.6989003386485999,
+        448.4561832678656
+      ],
+      "initial_state_sha256": "796582709d0f5ec6bf218feeb21fd143e1c03c36d15b5ec159b945aec9443d45",
+      "action_sequence_sha256": "c578252c682fcea51a120aa29358fb9260c51a39b91204aa3180f26598929587",
+      "state_sequence_sha256": "a24134c735b0144b91c6ba566c61433bea70325cdb8f4e9f0242ae57269e8581",
+      "sha256": "74223f70117129abfba104dd10bd364f34bbde9c4565617821c213eb1349a2ea",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_048",
+      "split": "train",
+      "file": "train_048.npz",
+      "seed": 48438,
+      "initial_state": [
+        0.1719052572316461,
+        0.6481830290105893,
+        478.95592323366907,
+        0.19369188080755323,
+        0.6236275137244707,
+        480.3657236981892,
+        0.06543778651188895,
+        0.6569487606615456,
+        456.48273330993294
+      ],
+      "initial_state_sha256": "df4fc5854a4f1f73fa3c33067c968296cd02b84b6aaf4e1ece1966a92f17c553",
+      "action_sequence_sha256": "3192fbb55c57d50c43ce32bb09b7710144030809a0fc24d99837d9aaf2e3d70f",
+      "state_sequence_sha256": "3cfbb0c84b828e6cb66aa10aa11805468bda14e76904d822457951be5e291346",
+      "sha256": "a80cc0a84a4ab64df2c2d6de318ae703ef77740a2bdf9704eebbce5f2452e98e",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "train_049",
+      "split": "train",
+      "file": "train_049.npz",
+      "seed": 49447,
+      "initial_state": [
+        0.1685023751081485,
+        0.6735529026246132,
+        486.8591467391829,
+        0.1999460710355927,
+        0.6633030360263742,
+        458.8655692600164,
+        0.06666769896299189,
+        0.645912925490109,
+        478.14149831976783
+      ],
+      "initial_state_sha256": "ba03aa555f8116b3edc2cf87b440199e59c9a564e0ea1c67f6d89d9aa0df848b",
+      "action_sequence_sha256": "e445db8c6d26d37f1fa0897b0830dd5096a67cde0e4cb639ca923bbb29668a68",
+      "state_sequence_sha256": "2debf00c20a28cedee1bc22b11f32ae0ffca61a3f54f0c509084ab540ba0ac1c",
+      "sha256": "3cfc915508792745bf5daccdee5fd831aaf6b5e3c895fad2e17cd6dc26eddea0",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_000",
+      "split": "val",
+      "file": "val_000.npz",
+      "seed": 50456,
+      "initial_state": [
+        0.18359086765853005,
+        0.7181299744294148,
+        485.77146719642377,
+        0.1952983102101273,
+        0.6990125027293261,
+        452.4276520412432,
+        0.06441503430891858,
+        0.6360291978437324,
+        476.6954888444716
+      ],
+      "initial_state_sha256": "1d445e21ff544fc1c82d9e42f4260068a65d14676807d2c2e35ad36b6583bdd9",
+      "action_sequence_sha256": "6ccf063b2cc109ac39d12ebbab0b2b1633d45b8663672afdd8c3e57005f3257b",
+      "state_sequence_sha256": "5d6cc48deb8174772f5539a565dd1613c7f64164d51cd6d3db0e1f91c7797959",
+      "sha256": "02869b7b110d2b02999ffe949b68aa50287b0d1b6420ecd5f4a9f3c882541f2d",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_001",
+      "split": "val",
+      "file": "val_001.npz",
+      "seed": 51465,
+      "initial_state": [
+        0.16917065559624944,
+        0.6598892687615263,
+        479.9207531163828,
+        0.19409520550984885,
+        0.6385599024096957,
+        484.7316847661424,
+        0.06330891437243559,
+        0.6735927432055862,
+        497.0239169370663
+      ],
+      "initial_state_sha256": "0ef404de02093b5da3c7674ae07c917b619e1b5180b2c1cfddd549c31294089c",
+      "action_sequence_sha256": "e17388e34660911f91f1c396e29624e622860a57c624df86cf324d2a28d1de9a",
+      "state_sequence_sha256": "062b999213a972620e2e99a81bc0cb6b02d44ece974fb4abf40a0076f645ae5c",
+      "sha256": "74472efec45575bc610992855e0492195e9e19e00d2dc42906631801e069d13c",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_002",
+      "split": "val",
+      "file": "val_002.npz",
+      "seed": 52474,
+      "initial_state": [
+        0.1732446385141266,
+        0.6620584311824403,
+        490.3323060448892,
+        0.2044350551834358,
+        0.6517466406684991,
+        469.3556613386675,
+        0.06353269849974878,
+        0.6906360441772759,
+        485.845825354275
+      ],
+      "initial_state_sha256": "ec2d2da557217be40ceb926d0a1319df641b48c07594d7405b515502f02d8fc2",
+      "action_sequence_sha256": "cf82b56e64cdabd917c4e7298047b8ca8877eb0c2fb3ed54c3a3858998a59eac",
+      "state_sequence_sha256": "ed78dee5bc0ce3188c7772298a4e90e37f5ab3c5d570977df05e5b5b5651f547",
+      "sha256": "8d1211b6604247de8fd1da03de61b0871f6b5d9ea0856c243f2bbb572c03c47e",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_003",
+      "split": "val",
+      "file": "val_003.npz",
+      "seed": 53483,
+      "initial_state": [
+        0.17314127316710512,
+        0.7049982255080224,
+        476.73360242366664,
+        0.19114132126455455,
+        0.6677008472255181,
+        495.5582645889024,
+        0.06369071049434472,
+        0.6772685828083166,
+        473.53763356464657
+      ],
+      "initial_state_sha256": "c9b00fca54ed66a20ad786d2a5f269f59c0c2173e80a96a38894d283c274b241",
+      "action_sequence_sha256": "ce1561a7dae1da1affa3b3fa1fc06de0a40bfefcec020212ae1b6c6fe1c6f5aa",
+      "state_sequence_sha256": "2ad940a096ca34519b14c701eeb84022c8ea924995908b1e1411867cf231ef9c",
+      "sha256": "d45af33ffe2b95c19656b44b252fc60a6c12cf0e19db7dc14e5544a684295e2c",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_004",
+      "split": "val",
+      "file": "val_004.npz",
+      "seed": 54492,
+      "initial_state": [
+        0.17397070373281603,
+        0.6415521514203832,
+        469.99773702480144,
+        0.18359939252081758,
+        0.6496557619371648,
+        460.4379566626632,
+        0.06625708885977857,
+        0.6836533610016254,
+        487.32136562110867
+      ],
+      "initial_state_sha256": "629d653bb682bb7fe4c9e5073352a20a0fe263681fabfb95afc3772e34e44dc8",
+      "action_sequence_sha256": "7ef5f8d21f7244d36afec3f0a7f35877b4786cbab02b67c901f471c8d6ef6821",
+      "state_sequence_sha256": "6041185cca38970da4aa39c8ebba3d5369d62d64d68b019b3294af6dee4efd8c",
+      "sha256": "4486ea90385f303c016494ea5889107cbee9077402ffc1ebc3fb0ea30ef4dbeb",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_005",
+      "split": "val",
+      "file": "val_005.npz",
+      "seed": 55501,
+      "initial_state": [
+        0.16787936500486586,
+        0.6674313855084272,
+        479.17664829918584,
+        0.20055144056792995,
+        0.6721346005698855,
+        488.5245545765744,
+        0.0679745530140448,
+        0.6955301595569552,
+        489.6687398040353
+      ],
+      "initial_state_sha256": "3d34b03e7b10bf894bb0e2cdd92c10413afe6fc4d7d9d222767b65cd490825b0",
+      "action_sequence_sha256": "fcdba1b58b15f365bb2604d097009a9c43a36f767154a6dfcdd0ad5907644a92",
+      "state_sequence_sha256": "ec88effbc331cd71bc79b4aec48f6fc3500ed16953b4ed73cb1a40795fb78fe5",
+      "sha256": "212abc919ab35c95e26b97d9a6fe5be774ceb02460bbff48d809bb7a938b8211",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_006",
+      "split": "val",
+      "file": "val_006.npz",
+      "seed": 56510,
+      "initial_state": [
+        0.17391244380252158,
+        0.674232944628094,
+        489.531604557639,
+        0.18233353248732787,
+        0.6559007031012002,
+        470.0874711063434,
+        0.0651066422901854,
+        0.6673858198032767,
+        500.5079015874006
+      ],
+      "initial_state_sha256": "bccb680eb7363dfc05e3859d9a3573266769f626c161b22c966c14900a083aad",
+      "action_sequence_sha256": "7e1e639a12cadfa1bfd62537fb16d13d65a93e920302a3eb633d14e7c43d30ac",
+      "state_sequence_sha256": "943ce41a6c5f377b2846333da758c447331cefa989df530a404919f9b95696d4",
+      "sha256": "866889f1cdd012b4890afc7057934a4038e4f34ba8c63bd6e2c57eaaedeee18c",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_007",
+      "split": "val",
+      "file": "val_007.npz",
+      "seed": 57519,
+      "initial_state": [
+        0.16873521990847767,
+        0.6840133794308996,
+        456.0069458081769,
+        0.192769931716148,
+        0.6374768126534989,
+        448.09940494297484,
+        0.06340351029916239,
+        0.680213567686587,
+        476.02738671856577
+      ],
+      "initial_state_sha256": "b13ceb07d4aea30a9ce2d384901981ecb9be3f48de74b61c40b4b249df04f2ba",
+      "action_sequence_sha256": "4cbf2f4110b63335ca9c69c198f66719dc80b6f73f7e63c7b9fa3e56cb91ee6a",
+      "state_sequence_sha256": "701d6183d50096427712a8ea1e2072abc6929838b8de9156831fe922d96dd40c",
+      "sha256": "4ed40f12d78af4d9f94eb50f9e5437cf886484c33a8204aa6ad30b4eeaa30239",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_008",
+      "split": "val",
+      "file": "val_008.npz",
+      "seed": 58528,
+      "initial_state": [
+        0.18130646265385675,
+        0.6782550337908874,
+        485.80384120944905,
+        0.2044116093549524,
+        0.6396099288999563,
+        481.58552975285914,
+        0.0655798449145627,
+        0.6593022146446191,
+        474.6785605378625
+      ],
+      "initial_state_sha256": "9bb84f5675c601587c64a45ad83e07d0616dd29260af50f29d995c8554dfdabe",
+      "action_sequence_sha256": "abf0e6322e631e57832a9d0abfa0ac5cd6e6bee11d08f357b0a1e8442475a851",
+      "state_sequence_sha256": "7e890d1f2c269576a467ad235c49a74bb4cf466e7bdf18387df7821217170013",
+      "sha256": "60d087ade23be886deaf8c4f4dd4ac41334e205e3b94040711fa275221cf1b64",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_009",
+      "split": "val",
+      "file": "val_009.npz",
+      "seed": 59537,
+      "initial_state": [
+        0.17678226262530614,
+        0.6706088538393066,
+        497.7481062046986,
+        0.19901736946450557,
+        0.6404298734688256,
+        452.9088816807331,
+        0.06815532243557104,
+        0.6794102372437519,
+        448.77283505923157
+      ],
+      "initial_state_sha256": "424ac7b7bd3c05440e270dbb4c67eaa60968a72d664cecb69c93b9e8d0a8afe8",
+      "action_sequence_sha256": "2098f2be813ad78b4bf2992ee51558ca2326c8d58bc24b1131ab896c502510b9",
+      "state_sequence_sha256": "4ff003bc9753ff9d37c56bed62b98a3d0d11b918e5b1ddb45254bf028b58ecff",
+      "sha256": "23ec1108f4a6d886c72bb7efba473ed2a70c42a559d2163d49bdc2f3c892e74f",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_010",
+      "split": "val",
+      "file": "val_010.npz",
+      "seed": 60546,
+      "initial_state": [
+        0.17480703385540824,
+        0.6758892421514239,
+        488.51583388156956,
+        0.19697552315728467,
+        0.6473538066278985,
+        452.4207363647158,
+        0.06431962773739489,
+        0.6763588259007322,
+        455.2884746258042
+      ],
+      "initial_state_sha256": "ac58eeea52aa710845378d753d86805d1ce17aedbe23d112bd936a585384b4c6",
+      "action_sequence_sha256": "3c258d7cc1d6d2f3c93e15416741306eb0224439b7079bae038d54ce01c94ff0",
+      "state_sequence_sha256": "95800142bbb926f1884546eb2d3a80cf56afb8ecf713ff9a0c24ecf195141544",
+      "sha256": "79f8340e9da83344aa4b7d27a855f4f41777c31f4bad45f399480e22d73eb6fe",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    },
+    {
+      "id": "val_011",
+      "split": "val",
+      "file": "val_011.npz",
+      "seed": 61555,
+      "initial_state": [
+        0.17202794225688525,
+        0.6826691199654072,
+        482.69225794278987,
+        0.19444780956825033,
+        0.6573972861856537,
+        467.6093714934902,
+        0.06379675822219338,
+        0.6710800575956853,
+        473.87335226524715
+      ],
+      "initial_state_sha256": "59cbaf60e10589af725cee4656441945eff49fe3ef072b3dafa617f8d129cd69",
+      "action_sequence_sha256": "758bb85e95ff70a7be49a47533555b42416f6b991a71adccf984b329a5bb3dd5",
+      "state_sequence_sha256": "cb7bfca85a3cd1994759fc3840bcb0b4355f0946448e57d9c03c20758e8a6440",
+      "sha256": "6fc67abdb0516943e28de564964893997ff2fa0b85421bbeb5966cf576e00cc7",
+      "steps": 1000,
+      "state_shape": [
+        1001,
+        9
+      ],
+      "action_shape": [
+        1000,
+        3
+      ]
+    }
+  ],
+  "release_scope": "train_and_validation_only",
+  "omitted_splits": [
+    "formal_public",
+    "confirmation",
+    "public_smoke"
+  ],
+  "source_manifest_sha256": "b26ca0f026e2f2a87adb6c2f19c10467cdea02cc804bc46072fd4e132272a3fd"
+}

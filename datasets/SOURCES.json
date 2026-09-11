@@ -1,0 +1,26 @@
+[
+  {
+    "system": "three_tank",
+    "source_repository": "https://github.com/Curry30LHJ/DLM_Koopman",
+    "source_commit": "680b9a1cac7a12140f985baeb32e7fdba1950c1e",
+    "source_path": "artifacts/datasets/three_tank",
+    "source_manifest_sha256": "b26ca0f026e2f2a87adb6c2f19c10467cdea02cc804bc46072fd4e132272a3fd",
+    "training_arrays": 50,
+    "validation_arrays": 12,
+    "manifest_adaptations": "train/val subset; root-relative paths; omitted-split labels; removed non-shipped references and stale self-hash",
+    "array_bytes_preserved": true,
+    "normalization_statistics_unchanged": true
+  },
+  {
+    "system": "lorenz",
+    "source_repository": "https://github.com/Curry30LHJ/DLM_Koopman",
+    "source_commit": "680b9a1cac7a12140f985baeb32e7fdba1950c1e",
+    "source_path": "artifacts/datasets/lorenz",
+    "source_manifest_sha256": "90f58d2d438006661290331ac59e4b4c3fa2e785c7ac53dae86f4654247cf713",
+    "training_arrays": 50,
+    "validation_arrays": 12,
+    "manifest_adaptations": "train/val subset; root-relative paths; omitted-split labels; removed non-shipped references and stale self-hash",
+    "array_bytes_preserved": true,
+    "normalization_statistics_unchanged": true
+  }
+]
