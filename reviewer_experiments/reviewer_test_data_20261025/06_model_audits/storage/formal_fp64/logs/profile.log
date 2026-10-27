@@ -1,0 +1,24 @@
+{"event": "inference", "system": "lorenz", "model": "mlp_koopman", "extra_peak_MiB": 4.6328125}
+{"event": "inference", "system": "lorenz", "model": "lstm_koopman", "extra_peak_MiB": 11.51318359375}
+{"event": "inference", "system": "lorenz", "model": "hakan_koopman", "extra_peak_MiB": 128.70703125}
+{"event": "inference", "system": "lorenz", "model": "dlm_koopman", "extra_peak_MiB": 129.36328125}
+{"event": "inference", "system": "three_tank", "model": "mlp_koopman", "extra_peak_MiB": 6.384765625}
+{"event": "inference", "system": "three_tank", "model": "lstm_koopman", "extra_peak_MiB": 12.185546875}
+{"event": "inference", "system": "three_tank", "model": "hakan_koopman", "extra_peak_MiB": 129.041015625}
+{"event": "inference", "system": "three_tank", "model": "dlm_koopman", "extra_peak_MiB": 144.97265625}
+{"event": "inference", "system": "three_tank", "model": "rbf_markov", "extra_peak_MiB": 5.173828125}
+{"event": "inference", "system": "three_tank", "model": "rbf_physical_delay", "extra_peak_MiB": 11.21875}
+{"event": "inference", "system": "lorenz", "model": "rbf_markov", "extra_peak_MiB": 1.13671875}
+{"event": "inference", "system": "lorenz", "model": "rbf_physical_delay", "extra_peak_MiB": 1.212890625}
+{"event": "training", "system": "lorenz", "model": "mlp_koopman", "stage": "single", "peak_MiB": 21.615234375}
+{"event": "training", "system": "lorenz", "model": "lstm_koopman", "stage": "single", "peak_MiB": 38.78759765625}
+{"event": "training", "system": "lorenz", "model": "hakan_koopman", "stage": "single", "peak_MiB": 1543.884765625}
+{"event": "training", "system": "lorenz", "model": "dlm_koopman", "stage": "A", "peak_MiB": 1552.6005859375}
+{"event": "training", "system": "lorenz", "model": "dlm_koopman", "stage": "B", "peak_MiB": 732.11376953125}
+{"event": "training", "system": "lorenz", "model": "dlm_koopman", "stage": "C", "peak_MiB": 2205.67333984375}
+{"event": "training", "system": "three_tank", "model": "mlp_koopman", "stage": "single", "peak_MiB": 25.4794921875}
+{"event": "training", "system": "three_tank", "model": "lstm_koopman", "stage": "single", "peak_MiB": 41.43896484375}
+{"event": "training", "system": "three_tank", "model": "hakan_koopman", "stage": "single", "peak_MiB": 1545.49755859375}
+{"event": "training", "system": "three_tank", "model": "dlm_koopman", "stage": "A", "peak_MiB": 1554.2236328125}
+{"event": "training", "system": "three_tank", "model": "dlm_koopman", "stage": "B", "peak_MiB": 850.0625}
+{"event": "training", "system": "three_tank", "model": "dlm_koopman", "stage": "C", "peak_MiB": 2323.33349609375}

@@ -1,0 +1,234 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/els-cas-templates\cas-sc
+.cls
+Document Class: cas-sc 2024/05/04, 2.4: Formatting class for CAS single column 
+articles
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cf
+g)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def)
+)) (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\l3backend-pdfte
+x.def))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse
+.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+new hooks used!!
+) (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/sttools\stfloats.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+ (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\svgnam.def)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
+eys.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.st
+y (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.
+sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.st
+y))) (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitl
+estring.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty)
+))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.st
+y) (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.
+sty)))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
+check.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqueco
+unter.sty)))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/els-cas-templates\cas-co
+mmon.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/moreverb\moreverb.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\stix.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e.
+sty (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty)
+ (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\t1stix.fd)
+(main.aux)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stix.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls2stix.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
+i
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
+se.sty
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cf
+g)) (main.out) (main.out)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ts1stix.fd)
+[0{C:/Users/Dell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Del
+l/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix/stix-t1.enc}{C:/Users/Dell
+/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix/stix-ts1.enc}]
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixscr.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls2stixex.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixfrak.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixbb.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls2stixcal.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixsf.fd)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls2stixtt.fd)
+Overfull \hbox (117.0831pt too wide) detected at line 72
+[]
+(main.abs)
+
+Package hyperref Warning: Ignoring empty anchor on input line 72.
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 72.
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 72.
+
+[1 <./thumbnails/cas-email.jpeg>] [2] [3] [4 <./figures/fig_1_architecture.pdf>
+] [5] [6] [7]
+Underfull \hbox (badness 1931) in paragraph at lines 336--338
+\T1/stix/m/n/10 This nor-mal-ized root-mean-square er-ror is termed \T1/stix/m/
+it/10 er-ror \T1/stix/m/n/10 be-low. For each tra-jec-tory, the er-ror at step 
+$\LS1/stix/m/it/10 h$ \T1/stix/m/n/10 is
+[8] [9] [10 <./figures/fig_2_lorenz_evaluation_h60.pdf>] [11 <./figures/fig_3_p
+rocess.pdf>] [12 <./figures/fig_4_cstr_representative_h60.pdf>] [13 <./figures/
+fig_5_cstr_cross_condition_h60.pdf>] [14 <./figures/fig_6_cstr_delay_sensitivit
+y.pdf>] [15]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.564 \begin{equation}
+                       [16 <./figures/fig_7_cstr_history_sensitivity.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.573 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.587 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.587 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.590 \begin{subequations}
+                          \label{eq:cstr1-delay}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.606 \begin{subequations}
+                          \label{eq:cstr2}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.7}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.621 \begin{subequations}
+                          \label{eq:separator} [17] [18] [19] [20] (main.bbl)
+[21] (main.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information) <C:\Users\Dell\AppData\Loc
+al\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Dell\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi525\ecss0800.pk> <C:\Users\Dell\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0900.pk> <C:\Users\D
+ell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Us
+ers\Dell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk><C
+:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/STIXGeneral-
+Bold.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/S
+TIXGeneral-Italic.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/stix/STIXGeneral-Regular.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/stix/stix-mathbb.pfb><C:/Users/Dell/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/stix/stix-mathcal.pfb><C:/Users/Dell/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/stix/stix-mathex.pfb><C:/Users/Dell/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/stix/stix-mathit-bold.pfb><C:/Users/Del
+l/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathit.pfb><C:/Use
+rs/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathrm-bold.
+pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-m
+athrm.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/
+stix-mathscr.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/stix/stix-mathsf.pfb>
+Output written on main.pdf (22 pages, 979142 bytes).
+SyncTeX written on main.synctex.gz.
+Transcript written on main.log.

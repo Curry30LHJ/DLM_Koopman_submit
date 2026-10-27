@@ -1,0 +1,5 @@
+Verified hist006 dlm_koopman
+Traceback (most recent call last):
+  File "D:\lhj\Reaserah\LSTM_HaKAN_Koopman\revision_experiments\cstr_history_20261022\verify_results.py", line 98, in <module>
+    assert scores[e] == chosen['selection_evidence']['validation_h30_mse']
+AssertionError

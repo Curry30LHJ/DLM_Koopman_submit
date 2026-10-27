@@ -1,0 +1,51 @@
+Verified hist006 dlm_koopman
+Verified hist006 mlp_koopman
+Verified hist006 lstm_koopman
+Verified hist006 hakan_koopman
+Verified hist006 rbf_markov
+Verified hist006 rbf_physical_delay
+Verified hist020 dlm_koopman
+Verified hist020 mlp_koopman
+Verified hist020 lstm_koopman
+Verified hist020 hakan_koopman
+Verified hist020 rbf_markov
+Verified hist020 rbf_physical_delay
+Verified hist040 dlm_koopman
+Verified hist040 mlp_koopman
+Verified hist040 lstm_koopman
+Verified hist040 hakan_koopman
+Verified hist040 rbf_markov
+Verified hist040 rbf_physical_delay
+{
+  "status": "VERIFIED",
+  "training_repeated": false,
+  "source_and_data_hashes_verified": true,
+  "independent_fits_verified": 14,
+  "new_test_trajectories": 12,
+  "prediction_archives_verified": 216,
+  "per_trajectory_rows_verified": 21600,
+  "aggregate_rows_verified": 1800,
+  "selected_step_rows_verified": 108,
+  "nonfinite_predictions": 0,
+  "common_training_origins": [
+    39,
+    970
+  ],
+  "common_test_origins": [
+    39,
+    900
+  ],
+  "shared_rbf_predictions_exactly_equal": true,
+  "checkpoint_selection_verified": true,
+  "parameter_counts_verified": true,
+  "maximum_absolute_recomputation_difference": 1.1102230246251565e-16,
+  "largest_archived_trajectory_endpoint": [
+    0.5756492297268394,
+    [
+      "hist006",
+      "rbf_markov",
+      0,
+      65
+    ]
+  ]
+}
