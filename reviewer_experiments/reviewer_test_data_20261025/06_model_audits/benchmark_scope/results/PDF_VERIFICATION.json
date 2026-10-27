@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "pages": 32,
+  "viewer_pages_with_new_content": [
+    10,
+    20,
+    21,
+    22
+  ],
+  "printed_pages": [
+    9,
+    19,
+    20,
+    21
+  ],
+  "visual_review_pages": [
+    10,
+    20,
+    21,
+    22
+  ],
+  "blue_spot_checks": [
+    {
+      "viewer_page": 10,
+      "term": "complementary",
+      "blue": true
+    },
+    {
+      "viewer_page": 10,
+      "term": "autonomous",
+      "blue": true
+    },
+    {
+      "viewer_page": 10,
+      "term": "transport",
+      "blue": true
+    },
+    {
+      "viewer_page": 10,
+      "term": "actuator",
+      "blue": true
+    },
+    {
+      "viewer_page": 20,
+      "term": "demonstrated",
+      "blue": true
+    },
+    {
+      "viewer_page": 20,
+      "term": "generalization",
+      "blue": true
+    },
+    {
+      "viewer_page": 20,
+      "term": "separately",
+      "blue": true
+    },
+    {
+      "viewer_page": 20,
+      "term": "weights",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "lags,",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "derivatives,",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "uniform",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "complementary",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "task-specific",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "uniformly",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "validation.",
+      "blue": true
+    }
+  ],
+  "no_color_bleed_after_conclusion": true,
+  "no_undefined_references_or_citations": true,
+  "no_new_overfull_boxes": true,
+  "preexisting_overfull_boxes": [
+    "117.0831pt too wide"
+  ],
+  "layout": "Four affected pages visually checked: no clipped text, overlapping elements, or table overflow.",
+  "pdf_sha256": "24b376c309517868244c5d62e4145ba3bb6ab51137b1354aab0f588dcefc832f"
+}

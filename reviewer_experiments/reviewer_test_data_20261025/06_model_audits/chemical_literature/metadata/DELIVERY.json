@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETE",
+  "reviewer_item": "R1-7",
+  "date": "2026-10-24",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.pdf",
+  "pdf_pages": 33,
+  "sections": [
+    "Introduction",
+    "4.2",
+    "4.4"
+  ],
+  "viewer_pages": [
+    2,
+    3,
+    14,
+    23,
+    32,
+    33
+  ],
+  "new_paragraphs": 3,
+  "new_reference_keys": [
+    "Narasingam2019KLMPC",
+    "Woelk2026Noisy",
+    "Narasingam2023Feedback"
+  ],
+  "formal_issue_years": [
+    2019,
+    2026,
+    2023
+  ],
+  "all_new_text_and_references_blue": true,
+  "previous_twelve_rounds_preserved": true,
+  "original_blocks_preserved": 180,
+  "original_label_numbers_preserved": 74,
+  "original_reference_entries_preserved": 33,
+  "final_reference_count": 36,
+  "new_training": false,
+  "new_experiments": false,
+  "further_work_started": false,
+  "output_sha256": {
+    "write\\\u7a3f\u4ef6\\main.tex": "9067643706fabee476b695c5a30b0ce1106d8cbfe69564ddc9acf439e116ddb0",
+    "write\\\u7a3f\u4ef6\\main.pdf": "a9d0911fcb63eca742e381bf3b759759d175004f42d8f1a630587ba0baa3a4a8",
+    "write\\\u7a3f\u4ef6\\references.bib": "b0fd5d92e5eb1c751d818c3d295c3c3eab40868660311cd9eb342d04088ce859",
+    "revision_experiments\\chemical_literature_20261024\\reviewer_response_R1-7.html": "1b58ce09fb9135d32b0c3c7226a29a4bd90683d7f5cc48371a32a533c63a7c0b",
+    "revision_experiments\\chemical_literature_20261024\\reviewer_response_R1-7.txt": "9d2aac9a5cd8822d578e989b16c0ddd3e07873938afc8bd7031c84dac18b4d81",
+    "revision_experiments\\chemical_literature_20261024\\RESULTS_AND_REVISION.txt": "8eacdcf2ce617d5c7afe186e253d144be55aeb3781395a5f6884043827b54ba2",
+    "revision_experiments\\chemical_literature_20261024\\PROTOCOL.json": "734c973ec447f34c176bae7d6d43648b57b45258fbab76cf3aa9ff78d84ff870",
+    "revision_experiments\\chemical_literature_20261024\\results\\CITATION_VERIFICATION.json": "1b70342b68a0a10f2f74a0fa5127507263a9d837cd9b794cc5ac21d431990441",
+    "revision_experiments\\chemical_literature_20261024\\results\\VERIFICATION.json": "480c2f42a90fe5ebe86a97b7dff5a66020aa536f86d1138e4f453c6c6800085b",
+    "revision_experiments\\chemical_literature_20261024\\results\\PDF_VERIFICATION.json": "6937e7f2e90d3b8b3633dae00f6d9dc92fa646180bb1b8e56a36c5da5ec4687c",
+    "revision_experiments\\chemical_literature_20261024\\results\\INTEGRITY_REVIEW.json": "60b4b834e8b1548400449194d7ca41271d0537148b3aadbfd675fc7ba3dc119a",
+    "revision_experiments\\chemical_literature_20261024\\results\\MANUSCRIPT_PATCH_LANDED.json": "d3be6a736ddf8b88d44ae29ed84c31fdf446da7db2aa4bd0364b3151db7ba850",
+    "revision_experiments\\chemical_literature_20261024\\manuscript_revision.diff": "6290e0126d3e1c26dc71ab5d308d0c1fa314bf04c648d28e470a30a2cba30e84"
+  }
+}

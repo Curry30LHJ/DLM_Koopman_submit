@@ -1,4 +1,4 @@
-"""Independent causal attention-free latent memory; no reference code is copied."""
+"""Causal attention-free latent-memory correction used by the predictor."""
 
 from __future__ import annotations
 

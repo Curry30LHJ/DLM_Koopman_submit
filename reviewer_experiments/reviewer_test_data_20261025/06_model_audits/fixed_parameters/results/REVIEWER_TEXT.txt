@@ -1,0 +1,68 @@
+1
+Reviewer 1
+Comments
+Reviewer 1 - Initial submission, 13/10/2026
+I appreciate the authors' efforts in developing this interesting framework. The proposed
+approach has potential applications in chemical process systems, particularly where time
+delays play an important role. I have several questions and suggestions that I hope will
+help further strengthen the manuscript.
+1. I would be interested to know how the proposed framework could be extended to
+larger-scale systems with many interacting states and inputs. It would be helpful if the
+authors could discuss potential computational challenges and limitations when applying
+the method to more complex systems.
+2. In practical chemical processes, it is quite common to encounter multiple time delays
+associated with variables measured or sampled at different frequencies. Could the authors
+elaborate on how the proposed framework could accommodate such situations? Even if a
+numerical demonstration is beyond the scope of the current work, a conceptual discussion
+would be valuable for understanding its applicability to realistic chemical processes.
+3. This may be a rather fundamental question, but I wonder whether the presence of time
+delays introduces additional considerations when selecting observables for the Koopman
+framework. Conversely, could an appropriate choice of observables help represent or
+handle the delays more effectively? For example, would it be beneficial to treat
+individual delayed terms as separate observables and construct the lifted representation
+accordingly? I would appreciate the authors' insights into whether such an approach
+would be theoretically reasonable or practically useful.
+4. I would also be interested in understanding how measurement noise affects the
+performance of the proposed method. I fully understand that a comprehensive noise
+analysis may be beyond the scope of the present study. However, I suspect that the
+performance could depend on the noise level, particularly when delayed measurements
+are involved. Could the authors provide some discussion of this issue? Additionally,
+might a weak-form formulation or a related noise-robust identification approach be useful
+in this context?
+5. One potentially interesting application of the proposed framework would be its
+integration with MPC. Are there any particular considerations or limitations that should
+be taken into account when using the resulting model for prediction and control? For
+instance, how might the delays affect prediction accuracy, closed-loop stability, or
+computational requirements?
+6. Could the authors provide some insight into how the magnitude of the time delay
+affects the performance of the proposed method? In particular, are there any conditions
+under which reliable prediction or performance can be guaranteed? I understand that
+establishing quantitative bounds may be challenging, but even a qualitative discussion of
+how performance is expected to change as the delays increase would be very helpful.
+7. Finally, there has been a growing body of research on Koopman-based modeling and
+control in chemical engineering, including applications to nonlinear process systems and
+2
+MPC. I would encourage the authors to consider citing a few additional studies from the
+chemical engineering literature to better highlight the relevance of the proposed
+framework to this community.
+https://aiche.onlinelibrary.wiley.com/doi/full/10.1002/aic.16743
+https://www.sciencedirect.com/science/article/pii/S0098135425003692
+https://www.tandfonline.com/doi/full/10.1080/00207179.2021.2013541
+Reviewer 2
+Comments
+Reviewer 2 - Initial submission, 13/10/2026
+Interesting contribution of a model for nonlinear systems identification and prediction.
+However, the generality of the method is to be further discussed along with the following
+issued
+1.- How long a history do you need and how does affect your approach compared to
+others?
+2. What about differences is "information”" storage needs for your approach compared to
+others?
+3.-The profile of the model may affect the performance of the method. If the dynamics is
+stiff at some point , how does it affect the approach?
+4.-The parameters involved in eq 1 are said to be fixed. How did you get them and are the
+valid in general?
+5.-How many parameters do you optimize?
+6.- Doe she delay play a role in the model parameters? Verify using several values
+7.- Why do you select those examples, the CSTR system and the Lorenz 63. Do you
+cover all the typical delays systems so as to generalize the conclusions of the approach?

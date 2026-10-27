@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "reviewer_comment": "R2-5",
+  "training_runs": 0,
+  "verified_neural_models": 8,
+  "pdf_verified": true,
+  "response_prepared": true,
+  "previous_two_revisions_preserved": true,
+  "next_issue_started": false,
+  "completed_at_utc": "2026-10-22T12:13:15.438156+00:00"
+}

@@ -1,0 +1,2 @@
+Lorenz Markov RBF float32 H60 conversion failed the fixed output agreement threshold (max_abs_error=0.012777414307856838, RMS=0.00019661577631099078). Preserve pilot results; compare all models at float64 without downcasting the RBF models. No threshold relaxed and no model retrained.
+Formal outputs: formal_fp64/. Original pilot logs and partial outputs retained.

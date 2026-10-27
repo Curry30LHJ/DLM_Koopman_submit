@@ -1,0 +1,60 @@
+Delay-aware latent-memory Koopman-structured modeling
+The process-control studies of Narasingam and Kwon (2019) and Narasingam et al. (2023) provide concrete
+precedents for Lyapunov-based MPC designs with auxiliary stabilizing feedback. Their stability results rely on the
+respectivemodelandcontrollerassumptions.AdaptingthisroutetoDLM–Kwouldrequirecheckingthoseassumptions
+for its nonlinear history-dependent propagation and receding-horizon reinitialization, rather than transferring the
+control guarantees from a different lifted model.
+Computational requirements include repeated candidate rollouts and derivative evaluations inside the optimizer,
+ratherthanasingleforecast.Withallmovesfree,asingle-shootingformulationhas𝐻 𝑝𝑛𝑢inputdecisionvariables,while
+eachcandidateretainsthenonlinearrecurrentcostgiveninAppendixB.Increasingthephysicalhorizonorreducingthe
+samplingintervalincreasestherolloutlengthandusuallytheoptimizationsize;increasing𝑀addscontextcomputation
+and differentiation storage. Caching initialization, move blocking, warm starts, and the final-query AFT evaluation
+described in the appendix are possible implementation choices requiring controller-level checks. Total update time
+alsoincludesestimation,constraintandderivativeassembly,solveriterations,andcommunication.Thereportedbatch
+predictionandtrainingallocationsthereforedonotestablishanMPCsamplingdeadline.Solverconvergence,constraint
+violations, closed-loop tracking under delay and noise, and worst-case update time on the intended hardware remain
+controller validation tasks.
+5. Conclusions
+This study presented DLM–K, a latent-memory Koopman-structured model for multi-step prediction of delayed
+nonlinearsystems.Ahistory-conditionednonlinearliftconstructstheinitialpredictiverepresentation,whilerecursively
+available latent states inform subsequent transitions without new observations. Recursively available latent states
+inform subsequent transitions without new observations. On the primary independent simulated Lorenz and CSTR
+test sets, DLM–K gives the lowest mean error among the six compared predictors at the tabulated steps. The Lorenz
+error nevertheless grows substantially when prediction is extended from 30 to 60 steps. Separate CSTR diagnostics
+furthershowthatlowertime-averagederrorcancoexistwithalate-horizondisadvantageunderinput-profilevariation.
+These findings support the complete predictor for open-loop forecasting of new trajectories under the specified
+simulated dynamics. With a fixed architecture and separate fits, the CSTR delay experiment retains DLM–K’s lowest
+meanerroratthesixreportedstepsacrossdelaysof2,5,and10samplingintervals.Furtherworkmayexaminetransfer
+to unseen or time-varying delays, wider operating ranges, physical process data, and integration into state estimation
+and control.
+The complementary examples support the reuse of history-conditioned initialization and latent-memory propa-
+gation for the two evaluated identification tasks with task-specific fitted weights. The empirical scope is open-loop
+prediction from uniformly sampled full-state histories under the stated fixed-delay simulation conditions and reported
+horizons.Claimsforotherdelaymechanisms,observationpatterns,plantparameters,orclosed-loopoperationrequire
+separate validation.
+A. CSTR–separator dynamics and simulation parameters
+Let𝑥 𝑗𝑖 denote the mass fraction of component𝑗∈ {𝐴, 𝐵, 𝐶}in vessel𝑖, and let𝑇 𝑖 denote the corresponding
+temperature. The state and prescribed heat-input vectors are
+𝒙= [𝑥 𝐴1, 𝑥𝐵1, 𝑇1, 𝑥𝐴2, 𝑥𝐵2, 𝑇2, 𝑥𝐴3, 𝑥𝐵3, 𝑇3]⊤,𝒖= [𝑄 1, 𝑄2, 𝑄3]⊤.(A.1)
+For reactors𝑖∈ {1,2}, the two Arrhenius reaction rates are
+𝑟1𝑖 =𝑘 1 exp
+(
+− 𝐸1
+𝑅𝑇𝑖
+)
+𝑥𝐴𝑖, 𝑟 2𝑖 =𝑘 2 exp
+(
+− 𝐸2
+𝑅𝑇𝑖
+)
+𝑥𝐵𝑖.(A.2)
+Theflashcalculationclosesthethirdmassfractionthrough𝑥 𝐶3 = 1 −𝑥 𝐴3 −𝑥 𝐵3.Theomittedcomponentfractions
+ineveryvesselarereconstructedas𝑥 𝐶𝑖 = 1 −𝑥 𝐴𝑖 −𝑥 𝐵𝑖,𝑖= 1,2,3.Giventherelativevolatilities𝛼 𝑗,theinstantaneous
+and delayed recycle compositions are
+𝐷(𝑡) =
+∑
+𝑗∈{𝐴,𝐵,𝐶}
+𝛼𝑗𝑥𝑗3(𝑡), 𝑥 𝑗𝑟(𝑡) =
+𝛼𝑗𝑥𝑗3(𝑡)
+𝐷(𝑡) ,(A.3)
+H. Lin et al.:Preprint submitted to ElsevierPage 22 of 32

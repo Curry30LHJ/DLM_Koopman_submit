@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "Local inline evidence-to-claim and preservation review; not independent peer review or journal submission certification.",
+  "causal_history_and_planned_inputs_distinguished": true,
+  "current_action_candidate_semantics_verified": true,
+  "gradients_checked_without_weight_updates": true,
+  "nonlinear_memory_not_misrepresented_as_linear_QP": true,
+  "reencoding_and_context_reset_in_closed_loop_scope": true,
+  "physical_delay_types_distinguished": true,
+  "terminal_design_route_conditional": true,
+  "rmse_not_uniform_robustness_bound": true,
+  "derivative_probe_not_closed_loop_control": true,
+  "mpc_latency_not_inferred_from_batch_storage": true,
+  "previous_eleven_rounds_preserved": true,
+  "old_reference_entries_preserved": 32,
+  "new_reference": "Rawlings2024MPC",
+  "new_training": false,
+  "new_plant_simulation": false,
+  "citation_scope": "Korda et al. supports a contrast with fixed linear lifted MPC; Rawlings et al. supports conditional control-design ingredients only."
+}

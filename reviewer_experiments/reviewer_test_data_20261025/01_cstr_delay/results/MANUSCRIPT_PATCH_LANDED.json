@@ -1,0 +1,12 @@
+{
+  "source": "write/稿件/main.tex",
+  "sha256": "ff2e77ddac0520b304aecd26f023254c5244b0d52a574847d9dabd0e198bdf2b",
+  "modified_existing_blocks": 6,
+  "inserted_blocks": "see phase6_revision/draft.rev1.md.apply-report.json",
+  "blue_command": "rev; blue table and figure captions; blue figure text",
+  "original_preserved_blocks": 106,
+  "new_citations": 0,
+  "final_revision_round": 2,
+  "final_format_patch": "phase6_revision/draft.rev2.md.apply-report.json",
+  "verified_at": "2026-10-21T20:12:59.797951+00:00"
+}

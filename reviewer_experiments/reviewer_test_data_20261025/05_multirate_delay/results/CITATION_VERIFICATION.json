@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED_FOR_THE_CITED_CONCEPT",
+  "citation_key": "Che2018GRUD",
+  "claim": "Use of per-variable observation masks and elapsed time since observations as representations of missingness.",
+  "publication": {
+    "title": "Recurrent Neural Networks for Multivariate Time Series with Missing Values",
+    "authors": [
+      "Zhengping Che",
+      "Sanjay Purushotham",
+      "Kyunghyun Cho",
+      "David Sontag",
+      "Yan Liu"
+    ],
+    "journal": "Scientific Reports",
+    "year": 2018,
+    "volume": 8,
+    "article": 6085,
+    "doi": "10.1038/s41598-018-24271-9"
+  },
+  "publisher_url": "https://www.nature.com/articles/s41598-018-24271-9",
+  "publisher_access": "Indexed publisher metadata and Methods/Notations text verified; direct page/PDF open redirected to unavailable authentication.",
+  "primary_full_text": "https://arxiv.org/pdf/1606.01865",
+  "inspected_version": "arXiv:1606.01865v2, 7 November 2016",
+  "locator": "Section 2, pages 2-3: masking vector and elapsed time per variable; concatenation and decay-model discussion.",
+  "boundary": "The citation supports a representation choice. No GRU-D performance or delayed-process guarantee is transferred to DLM-K."
+}

@@ -1,0 +1,1519 @@
+{
+  "metric_recomputation_passed": true,
+  "shared_rbf_predictions_equal": true,
+  "raw_archives": 216,
+  "checks": [
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "37947edf0c3f984e80c6ba4994deeaa78efcba4258bf17394f2f195fe50df2cf"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "966f3d233b75d4e8af1a33fe2acf3379ab9cbf7753b4b96cc8f1817f6281e2b9"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f7da99185550f624c33b847b7754f077330a8d2036d1191278624020b9fa6073"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "bff300382137057954639cbffbe969d186ffedcfd49029b13cbe644093370941"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "3c590a49c824798e5604e3b32108879d92d8da8366597519de3110f273370d3d"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "812aa2168455a50fc4e9ad61d56aae7a215473d4144b29075ca4f4a6d6dd9490"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "42b8d3b4e12e75dfe3a67d74be8e4c36782fd681c8d751cff6e45fe49fa553d0"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "899c3a557e10a990803d3178921c07aadb55ab0f48c09ae831fdc63f1f48c737"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e31dce9c5beccbd6ccb3b20dd983aa83cf0a5d05e8513482833e8dafbf0ce705"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "70e6c1b77cd8508506344ed3bc0aa0bea069eaa6ced986f96858ef894895150d"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "b3971cd9fab6684495977460d0adf449b8bbcd9a90e3ed7fe08212445723f4e8"
+    },
+    {
+      "condition": "hist006",
+      "model": "dlm_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "895ac4a4da7548a22e229950320bc3e043b84fb2e583147e4546a4a4320cbbef"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5b993dffb0b66d5ddfde709b0899e99089f7493a2e21d05b905ca88ab058fb33"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "7c435b9e040ea226cde9f49d349bfbbf09d2a6723a6c663682b072342ff63b11"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "2a163933f5a54ce2fc597e5ae7ac888eced94ce27572e498fbaf55371511e188"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "a09295e6c2fdc750d4dd843fa574f3fdf4d9ffc4173a46a0d1f978ca618b9720"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "a7103f4c90daad66f87c928eeac44fde3627f4f245ee7083c8432fd3759b001d"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "8ce8f157f5bb36fe0207445d4f0218a73583583b0a4368ba21de04af2d92c1eb"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "689d521c93e453b3e888e8df75be543eb5f70cf88b92c3b21135643a37ae3bb1"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "bd2ae877cefc3af2c1d697b6f400480ca7d2a0bd737d3266480e0af7f861f09e"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "7eabebc878d3b8c7b811c958e833900063e70fe9211a68c61ef4d3b2d5b12b03"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5cbfcb79550f3eae0c4ab90630c080b449035dcdf843b8eb388d007e2293095e"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5ad1553dc3875dd074c50cbd3cc87299cfb593026358de7635f30c4c1bc2f379"
+    },
+    {
+      "condition": "hist006",
+      "model": "mlp_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "2ec57c0b44f93507ce18b320648dbaf677972a9bef9e00fcd156325f65c70639"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6c4dfe98440acea3d36dba270a58c20cdc97ec49e4bb2bc510bcb25208b25b95"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "12fa69d050580c6d4396531f80bdc2cda6fedd353ad03cfdf76fe0f1599864d7"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "70e5d0f5b7849a62a4c07fd661c87ac4157f2c944dad3d4c26a99787037a0381"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "69673ff040ed2d36344799b1e4df14bab6d8c5998a2b24c284f48a903fdd3b12"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "ed1cbe4d929247cc3c549283de236ebd558d27e2d7c0fd7160995b6b5f284d72"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0068af4e7a2b5aa3d59f0df3e777e7935be983a029cb14da5c2415d561322ba7"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "41e5a45d863293dbcb92b181a9f644d941c808569cd0f1831ed49a2c46e40318"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "3f3f4c5c6c817c6a8c7f8426e7e3760f2be8181502352b772e06e8eea55e157e"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f553e80a912511d9b3316974543d2f2086302857792ff5ed1fc6f112dd2332c6"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0d9cf607a56c8cd28c07cb132794948dd7e45240ba568b72df6a02d89be5554d"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d36c3cb59ffce5520ca5435e116eaa38c6bf2d6831bf7d0e7007e45c8c7fc233"
+    },
+    {
+      "condition": "hist006",
+      "model": "lstm_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6d0458c01712c741ebb46fa21a598055f9f338dd92e233b417769a1df3d4e78e"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "7ce35110a0aa7f7feb246e95c3edc5fbe569402b96021d3d448bb35e50bd6663"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "26f2b0eff446ae590bffa9b52b0a6ed40f4b646bd7fcc0b2e60ec6aa317b6cfa"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e18cdb0e306ac60d39166058a2ff121baaf0d2f65a647650f2e17976d95e51c4"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d92075d87ec5829c1661f364127de96518a297bcdc979a8dcea61cc86f07e663"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0ceceb1be2fd36a3ef372f7ec6728767cd0c875d6dd6ac03349b137d120464f5"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "cc4dc6ffb50713749fcd81e4dfd32db141dd76f658e85073e2e5defc00cca349"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "9ad7223369ab9aa5f5e667d5d556720edc136c9102cd284114823e58e49b2812"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5445f3319b9a713584a6118b96810d29901e9ea537988352e496f5e96c2e75b7"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "1239ceaed3df818e34f38affa02907d0f1ccd7eda36491d67de0829d9e43c40c"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "120afcb06ecfc5aaa3f1dd5f3a52b0a718f696904f21478c778002a528426b31"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "60b5990a208b5dd86e7484bfb5d6b10288a5ea349139806aae198a472c5bc70e"
+    },
+    {
+      "condition": "hist006",
+      "model": "hakan_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "168f0e93f36d6fa4f30611fe34e1870b88a648db80d6f5f2e58b44aa6c7225ae"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6a331582c20836f66649137bd611968c17262364c80809c2ac4bec371cdb01c4"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "42cb4fa3665cef3e4e9a151ffd1db88efdaffe054ba1ab270c8ea81aa8fed229"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0f78b861de9a82625cb627c3b2a2b4e161bbf283aaf19382f8ac4e50e7768dbf"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "aa1ed3983a7c0e9375a1dbf51e50d4aff29af4690853677c058cf51a3e3e9070"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f4381a5326f25342f3517b099929965825113299fbc07ef1b4371efa22c0a438"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "da83852c2dcba4c1509bf3a467334d942135cb3c1888c64ec96ff4b2eedbeaa0"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "98d5d883d5a65a46780d21e9211af594956e3ad51375d374295214e442265d75"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d4ffd898eec964a3441c5cd7f90d85c380fdbfc37b7750556cdfefa2a3879e81"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "b17540bac79340d9ae19625ce8d7071355e9c0373c55188f9d274ff1ed5cfc68"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e4c676c61acd571eac76c1db1a1283c128e83f72da54b24bf46c56729aad56f6"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "c718c4c91686c3264750af7b9e51c0009c7e9a796b9e902eceec756af862d6b0"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_markov",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "dcac3deddfea8e89aa1197850cbab715f1099b49d375b9e105a90a0c61c38bb6"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6933cc378a21ecf548d711ecc16a83596d599588f5bd983148b2cc39e98ffd3e"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "382239e549702ae070df785f157487d35270d7f0570ee1c76e80164d0a1e8608"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e99c85f76fe76652737fd723080c704d608e41c7e79af5b3995ede1071b40436"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "9433a1de4f41cb785533b305db87037a69e9c28a2fd159af49e9e6217b00f92f"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "69e1e40268a8d00197ffe28f06745273a70c1fe2d10f2cc588be848c1b554c4c"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "dc9980e5c5d4b0504085e85c748abc1613c7dd5ba014fcc017094e095db2aefe"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "775bb8c7331a7e8b4eac9141c68bcf2189777f06658d2b2ade1df09ac78c4bdc"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "86351a0d903a5bc9b4c512a0bab53e80bd590a2502e60d9ba95dea00d0823e05"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f2c28ccec88094a767204168738ba0ac5ae5618ebb010112e131b7d8ff0051b0"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "2ed97b966021f209ee0cebe34760e03247d98f5c14db74ff0f1ec7ef443a75d9"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "98b73da425cc1b82605925e5dade687f29c1b0cd466ef64027a6498e9c645894"
+    },
+    {
+      "condition": "hist006",
+      "model": "rbf_physical_delay",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "4670b818d7319f80f486009284cd5c41fc96afb478a52b963f2046f505fa009a"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "ab93aac1ad59138ff94a4ad728ae0cc9e80c5a7fc94302f1e3a500d8ecfedaf4"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0470b10cead59ff4c95a13a823a972d9db22b492b3c9683879709ee887f81a7c"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "50252bc0f722cef171eed339afed28f22de9e6c2db9f7ad474a4d936220d4c54"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "82b05d9787eeb31229a63c6069681102e1aa88975702388bfce79cbddfe5d592"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "badff9515eb3895a75731d1939d568e6f15382dc14432769384ff28f15a29cda"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "c2c282f507dd7db2f73d60821f4c349d2c5210cd4521ce6276416631d60e4526"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "afc59fe5682fbbe327701e15eb2dce48ef43e1d835e71781bc155109a696e24c"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6bdcef9a10872eb93a3cb09abb47ff0444a42a81ccaff3ad30dc9d22c514fea9"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "8139e3c860e172dbbfd0bdf52e89009036d605c3599fb449290e03a9a9e6f58f"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "96eca13b5aa11d4903282e51a4d419911ab94618cb67841905192a151acb7a26"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "fecb4cf5f723163c98d73f7d5a190b40ecdbc07bbb05923048396c86e80294e9"
+    },
+    {
+      "condition": "hist020",
+      "model": "dlm_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "9e311ee8fda08696998045822dfc432e7428b0485f13fffe8518f2d8b016f8a7"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "cf032effe44dd512a915ffd4b2b849b3a62b75937e1e3820b87c82322ff78bd6"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "cd108d4b15bd3796b74a6477e77231b90eb6cdeebcc7a4190e3887ecacf62648"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "1107fb2f5d60a03b7e48f643cd55057d690c7645e44834f830239e28c8c000e3"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "36041ffeb1ab8407ee51e0df73f44bfcd1f06c030c1c3d0e8198df6d3dea51b3"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "9005ec06ab98e398aabaa48db2741f49fa52e9a74cc59180cca45b574bd6fe1a"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "b4e16275b2609972672e487013e8200689f6e148fa48e9be6db3b2a2870ee44e"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "81dd2785f652b210d4edb57fd0189c60ff18e962fc60265779d925c18977312c"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e3b8ce19414367ff6fb881772c6111760d3cdeed43a42f025551ab36b6f94ddc"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "71ccaf107ad1cc7ed56e68e24f5aa2f86a476f1f37752edb6dcc669d21220da0"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "4b839f2b2a9d7f44e6d540884a57ec93d343b48f36122b4f129af614527747cf"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "47455c889cdfe6cc8d092c1d28df00f0b0b9b6b86856fa9983c361415869fef2"
+    },
+    {
+      "condition": "hist020",
+      "model": "mlp_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "043b71b9ddf96bece4521db54981c0374674d7fd1c2ecfe0cbf875b258569790"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "c5b6b3c2bb8e5677e71ef9cc4ca4115dc5b026ce15f09813948626429d4e062a"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "a431a5d66de1dd84a57bff14300d8f2565bdf4e493d97638f3c064292585ee80"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0b3dcf4bdad5250120d233b22c40027165afa9d8d6850ff928c354e0035cc5af"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "ca64601d3c864fd99a01d91d5d22a424764721629ec5c63f79db92b98809b26e"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "eb8ca5f19f154f42c5ebe94cc514ca7b691f3bfc71353163af123d072dc89a50"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "4c5dfc0d5cff8a464caeec9f86b1b866eee7472a9cb790fdc69e83ed0ca09d65"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0f32a462ac61e85f0cabe8f0143fe68b08594eec8da206da705567215c7bc944"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "460df2304d4f22e55b7d2515cd6b7937209defe923d50a059581482f854cc8a8"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d5af2aac2d5e338dad7de33e8aa60a7fc70a5b153122c81284b563916381bbe9"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "154731165c275825b5c8ca7083a4cdd39e6fb8ff1285dae415f70b77676a9fa5"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "02330ea1cd07b60cd41a5de9c43944fc115c3fbf3b537184c58c072bbdf5472a"
+    },
+    {
+      "condition": "hist020",
+      "model": "lstm_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "303db73477c67847f97c0a60857216ddf7bb0074be9805005c4393c94bcaab9f"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "ca73c982adcf8773535d91a75c351944e83e3fd2be3831f5ff3bbab1a13aa96b"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "24382d5c8171b221e94e491547f9b104e24730e551383ddf45ec98aaf845ab25"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "cbaedd82e238feb8abc8ed611f21139aa8a82998036e4162503f99d95282400b"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "1ee024f2ff63a60ee60c093fbe8db4f74e414ca6c6319b079732955f67f0f884"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e30f8ff91910b5bec68cd657c8767c5a4ced2c3611b17d8bff8a4365a6a75a86"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "38f8a6ce9be98b023f58e20d1cd20fe4a0cc45fdb491776d88dc4fb5209fc3a4"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "2fbbc3eec31eefcb33b486a556874015ef7bd4258f1e7167dfe13dbff4c4a6fb"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6e7aa3c791a31616331eb9822952d691f6eeace012aa989705734ce711c5606d"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "65c822763ae1aa25b59149fa40ec30a673f8a29a90c539938afa8a6a8d0e376c"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "05f0354cd7a94a69d2984d10e61a91cd910cba37b600044ae994c5bc5aa86c66"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "8f3990717222a66490148c5b848657ac6d5d811401fef1bb4c97058bddfc99c7"
+    },
+    {
+      "condition": "hist020",
+      "model": "hakan_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "c7bd7f6dec3885b469f927ecde1377e693a2dd5b8a020a9e5cd3c434174e40a3"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6a331582c20836f66649137bd611968c17262364c80809c2ac4bec371cdb01c4"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "42cb4fa3665cef3e4e9a151ffd1db88efdaffe054ba1ab270c8ea81aa8fed229"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0f78b861de9a82625cb627c3b2a2b4e161bbf283aaf19382f8ac4e50e7768dbf"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "aa1ed3983a7c0e9375a1dbf51e50d4aff29af4690853677c058cf51a3e3e9070"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f4381a5326f25342f3517b099929965825113299fbc07ef1b4371efa22c0a438"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "da83852c2dcba4c1509bf3a467334d942135cb3c1888c64ec96ff4b2eedbeaa0"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "98d5d883d5a65a46780d21e9211af594956e3ad51375d374295214e442265d75"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d4ffd898eec964a3441c5cd7f90d85c380fdbfc37b7750556cdfefa2a3879e81"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "b17540bac79340d9ae19625ce8d7071355e9c0373c55188f9d274ff1ed5cfc68"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e4c676c61acd571eac76c1db1a1283c128e83f72da54b24bf46c56729aad56f6"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "c718c4c91686c3264750af7b9e51c0009c7e9a796b9e902eceec756af862d6b0"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_markov",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "dcac3deddfea8e89aa1197850cbab715f1099b49d375b9e105a90a0c61c38bb6"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6933cc378a21ecf548d711ecc16a83596d599588f5bd983148b2cc39e98ffd3e"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "382239e549702ae070df785f157487d35270d7f0570ee1c76e80164d0a1e8608"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e99c85f76fe76652737fd723080c704d608e41c7e79af5b3995ede1071b40436"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "9433a1de4f41cb785533b305db87037a69e9c28a2fd159af49e9e6217b00f92f"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "69e1e40268a8d00197ffe28f06745273a70c1fe2d10f2cc588be848c1b554c4c"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "dc9980e5c5d4b0504085e85c748abc1613c7dd5ba014fcc017094e095db2aefe"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "775bb8c7331a7e8b4eac9141c68bcf2189777f06658d2b2ade1df09ac78c4bdc"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "86351a0d903a5bc9b4c512a0bab53e80bd590a2502e60d9ba95dea00d0823e05"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f2c28ccec88094a767204168738ba0ac5ae5618ebb010112e131b7d8ff0051b0"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "2ed97b966021f209ee0cebe34760e03247d98f5c14db74ff0f1ec7ef443a75d9"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "98b73da425cc1b82605925e5dade687f29c1b0cd466ef64027a6498e9c645894"
+    },
+    {
+      "condition": "hist020",
+      "model": "rbf_physical_delay",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "4670b818d7319f80f486009284cd5c41fc96afb478a52b963f2046f505fa009a"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "92c4be3eba2ce124852deb4298887a7e1e1f4fc899bc9e4f5277843322f54ce2"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "19b1559b48183316e0d237afef8b4f9bbdc8389c3b5c5166b1108b63b54cf3d3"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "4ce5e661515369b97df3d20d38f646e284bd3b2231561fa9dd6c8a8be0cb9c11"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f32fb479b8e6f3fab212423f46dded039f7742916c33d8c7333f53b4445e3608"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f394a36d8dd576212088aa30bb482b07da01e2d8a0419057f70231954373d188"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "7544c0f30956cc23aa8283ce7da1e1931b4621bf3b78ef0c9f7d3713525b0527"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "9eec336fea1ab82bf0ff5182ced312fd966e257a27d36d822a5a0822b5fde89f"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "a79f9a695b29e7d331fd30e1005a1b7c0b40661f6f39620d16f5d44d26ea7b19"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "fec32b5fbf2853147023bb7c2d8832f51d0c14c9e0c127625f5ef9f4df39c470"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "b3cff7e9299f9fdacde4f9153620a92bb46d49dad685f3de84a3b9240800bed8"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0c2225743ffc45d69f575b7f02e7c7abb9a241990f02c111d52b917c100d073d"
+    },
+    {
+      "condition": "hist040",
+      "model": "dlm_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d6ea4601292a31fae6a8d6571c08ecfc662b686eaf590b5b5fae1150c01c4149"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f80e7a5f2702961b3200b54e6e11c4cd67982b8b9a635cf0291b3c0623bfa9b8"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f7ed7af93d1de1576af2852c9e93aab55d6569c4cb03e9c188dd5108da0ecd17"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "ea3bc62b30fe97e25435f5cc71b8a1089c80f41ab9730591672af151282677a2"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "624b33c7cf275c0aeac268af4db613a68907a5b514ed0d22308de738ea460fd1"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "bb5b78d7d78a3d00cf1ae722ad49dac0db83c90cac5ca66a75b484e14b7ba4c7"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "33ec5a549440a2d3bdacf010335b501ea94c0014e1dcaf4f58d37ce18d280242"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "41b5e09ad8b0f5efab5e7e2df948df59bbaad5f96e1fda848a32b06882479a8f"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "99c04425f70677af2f71367e8eaf946922adaa14a4ea610873d879ffac52b1e3"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5cd40712d8c3333ae985b09f56e7d3783852dc4c2ea11507a24fdfc900697475"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5d53bcb3753772555eee91f661b1f398a53a01203201bc700d09fe1e9c9a9c08"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "3feac34722d8a2626890cb94146243783e07948c58820d5d3ffa462acf4e3651"
+    },
+    {
+      "condition": "hist040",
+      "model": "mlp_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "ba806605534def214dfcd31c0fbb3ef7c321ea53dc8d77e1d7f31b34a91ebb1c"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "bcbff6d96ce397d3c3614e1da3fca888e2f21fb4d5d807be8dfccdc2fafddfd3"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "41e0ee6a245864675b66443c9f4fe87a97f61ff4200a897556fdcb7bfe06dbb1"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5076b8e07be8815819f7661b567675bd4cd7ebfd2a3ebcc53425c644ec33d6fe"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "bf6fb1c1f6de38cfa5bb8eed00eead16d94c3de77291bc001eb7513c61dbc798"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d4d371d8a10ecc02f3fa3f9d3e7c655b78b06fa538538d3e13f9637c01e42780"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "a4770155aeb6b71f0dd5840e6494a99cd38ad09dd9284075d7f0dd00b4b0c043"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "aa755500b29aeb7a5a4bd94c74c3f98d6097447d0dfd9e8874c93b00e36c2e92"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5612b824d4e06d8ed368e072a0a57e4afad04b96a4d3dc0a4c67615677bca00e"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6b550a82f176f5e96071de1ce9b07333adf9b2ac65b976acd7c41067e2ec5e0a"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "a4d31ae725ad9d8a254530d992ed3da217380b86236d1e40880fda247b78057d"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "63ba6dc4b24d98c96373997e8eda991e84dcb66e2e53c7895482539689d1659c"
+    },
+    {
+      "condition": "hist040",
+      "model": "lstm_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "fd847d4746ca202dfe911431817fa888b4cb7d2c755251444d0d37fb4b43a3d0"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "4d22cbad4d8743d7fb048d8d9a30a793bc0dcf59f30384f4fa017605a1d951a0"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d8b9c5c165ff9f9fdd3c49bbca810fdef00ad93fca6c014d54106cde2c49287c"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "ddcb41b248d639ea8ce8f7a39d624b02bcbc6c51d97b033e1880e9e4139a5f72"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "5c8fc23cb5c9cba24d573933377b0ca42fa0ae36f78a9c87e5a721a681780787"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "b705510f3d2ef13cca375ce99ad8debbab20001e91a8f0e4f6c36829358ac6c6"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "82aa181221af107576782d12e4d014e6d857ac337465426aa280f7006becf253"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "25842f928d05860df35b99f886f1cb3d9a3ff0d842382db5427f3e612bd2acfe"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6a94f5e7dfb4f9f61d8bbbb5db66c9c4d06e32ac8e03d537e74bc8ec7b2c1893"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "fc19cd138ef2d3c9f216368cfb1da9bd5405a1eb42331eed5d71ffe68c851db1"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "7409e7d321927e129847dfb341653e3ebc679f5dd1e24c8a73798a6c124f91e1"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "7b459189ef42d1e0804789d2dcb426b8a9cc3d007d2a446160d14bc0f16aca5c"
+    },
+    {
+      "condition": "hist040",
+      "model": "hakan_koopman",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "601c2c479e6ee24e8c6377b4588f30ed08d5b2cb10602245ef25c2af031666a6"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6a331582c20836f66649137bd611968c17262364c80809c2ac4bec371cdb01c4"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "42cb4fa3665cef3e4e9a151ffd1db88efdaffe054ba1ab270c8ea81aa8fed229"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "0f78b861de9a82625cb627c3b2a2b4e161bbf283aaf19382f8ac4e50e7768dbf"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "aa1ed3983a7c0e9375a1dbf51e50d4aff29af4690853677c058cf51a3e3e9070"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f4381a5326f25342f3517b099929965825113299fbc07ef1b4371efa22c0a438"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "da83852c2dcba4c1509bf3a467334d942135cb3c1888c64ec96ff4b2eedbeaa0"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "98d5d883d5a65a46780d21e9211af594956e3ad51375d374295214e442265d75"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "d4ffd898eec964a3441c5cd7f90d85c380fdbfc37b7750556cdfefa2a3879e81"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "b17540bac79340d9ae19625ce8d7071355e9c0373c55188f9d274ff1ed5cfc68"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e4c676c61acd571eac76c1db1a1283c128e83f72da54b24bf46c56729aad56f6"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "c718c4c91686c3264750af7b9e51c0009c7e9a796b9e902eceec756af862d6b0"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_markov",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "dcac3deddfea8e89aa1197850cbab715f1099b49d375b9e105a90a0c61c38bb6"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 0,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "6933cc378a21ecf548d711ecc16a83596d599588f5bd983148b2cc39e98ffd3e"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 1,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "382239e549702ae070df785f157487d35270d7f0570ee1c76e80164d0a1e8608"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 2,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "e99c85f76fe76652737fd723080c704d608e41c7e79af5b3995ede1071b40436"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 3,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "9433a1de4f41cb785533b305db87037a69e9c28a2fd159af49e9e6217b00f92f"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 4,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "69e1e40268a8d00197ffe28f06745273a70c1fe2d10f2cc588be848c1b554c4c"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 5,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "dc9980e5c5d4b0504085e85c748abc1613c7dd5ba014fcc017094e095db2aefe"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 6,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "775bb8c7331a7e8b4eac9141c68bcf2189777f06658d2b2ade1df09ac78c4bdc"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 7,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "86351a0d903a5bc9b4c512a0bab53e80bd590a2502e60d9ba95dea00d0823e05"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 8,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "f2c28ccec88094a767204168738ba0ac5ae5618ebb010112e131b7d8ff0051b0"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 9,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "2ed97b966021f209ee0cebe34760e03247d98f5c14db74ff0f1ec7ef443a75d9"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 10,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "98b73da425cc1b82605925e5dade687f29c1b0cd466ef64027a6498e9c645894"
+    },
+    {
+      "condition": "hist040",
+      "model": "rbf_physical_delay",
+      "trajectory": 11,
+      "nonfinite_predictions": 0,
+      "raw_sha256": "4670b818d7319f80f486009284cd5c41fc96afb478a52b963f2046f505fa009a"
+    }
+  ]
+}

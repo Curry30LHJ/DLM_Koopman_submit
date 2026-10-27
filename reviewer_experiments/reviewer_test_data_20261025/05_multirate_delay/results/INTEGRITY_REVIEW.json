@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "Local evidence-to-claim and preservation review, inline; not independent peer review or journal submission certification.",
+  "current_implementation_and_proposed_extensions_distinguished": true,
+  "synthetic_interface_probe_not_mislabeled_as_plant_performance": true,
+  "common_clock_acquisition_arrival_and_causal_cutoffs_explicit": true,
+  "coverage_not_sufficiency_guarantee": true,
+  "asynchronous_current_state_and_missing_targets_addressed": true,
+  "fixed_grid_forecast_and_variable_interval_propagation_distinguished": true,
+  "no_new_multidelayed_or_asynchronous_process_accuracy_claim": true,
+  "previous_ten_rounds_preserved": true,
+  "old_reference_entries_preserved": 31,
+  "new_reference": "Che2018GRUD",
+  "citation_boundary": "Che et al. supports mask/time-interval representations only; no classification results or guarantees are transferred."
+}

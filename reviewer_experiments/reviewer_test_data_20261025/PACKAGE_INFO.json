@@ -1,0 +1,12 @@
+{
+  "zip_path": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\reviewer_test_data_20261025.zip",
+  "reporting_steps": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    60
+  ],
+  "full_source_archives_not_copied": true
+}

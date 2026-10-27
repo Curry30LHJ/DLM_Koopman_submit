@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.pdf",
+  "pages": 30,
+  "compile": "PASS",
+  "undefined_references": 0,
+  "undefined_citations": 0,
+  "fatal_errors": 0,
+  "new_overfull_boxes": 0,
+  "preexisting_overfull_box": "line 72, 117.0831pt (unchanged preexisting title/metadata layout)",
+  "measurement_noise_section": "visible and blue on physical pages 12-13",
+  "measurement_noise_caption": "blue",
+  "new_references": [
+    "Dawson2016SensorNoise",
+    "Messenger2021WeakSINDy"
+  ],
+  "new_reference_text_color": "blue",
+  "visual_pages": [
+    "rendered_final/noise-12.png",
+    "rendered_final/noise-13.png",
+    "rendered_final/refs-29.png",
+    "rendered_final/refs-30.png"
+  ]
+}

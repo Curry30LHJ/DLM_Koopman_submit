@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "reviewer_item": "R1-7",
+  "previous_twelve_rounds_preserved": true,
+  "original_blocks_preserved": 180,
+  "preserved_original_ratio": 1.0,
+  "original_label_numbers_preserved": 74,
+  "original_reference_entries_preserved": 33,
+  "original_evidence_files_unchanged": 72,
+  "figure_assets_unchanged": 23,
+  "new_reference_keys": [
+    "Narasingam2019KLMPC",
+    "Woelk2026Noisy",
+    "Narasingam2023Feedback"
+  ],
+  "citation_reference_correspondence_all_36": true,
+  "no_duplicate_reference_keys": true,
+  "all_three_reviewer_sources_exactly_resolved": true,
+  "final_issue_years_verified": [
+    2019,
+    2026,
+    2023
+  ],
+  "old_bibliography_source_and_rendered_entries_preserved": true,
+  "primary_source_scope_documented": true,
+  "context_not_numerical_baselines": true,
+  "no_new_training_estimator_or_control_experiment": true,
+  "no_other_paper_guarantee_transferred": true
+}

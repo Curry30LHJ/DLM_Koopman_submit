@@ -1,0 +1,24 @@
+[
+  {
+    "id": "Hahn",
+    "url": "https://arxiv.org/html/2601.18837v2",
+    "location": "Section 3.2 Eqs. (4)-(7), Section 4.1",
+    "support": "Hahn recurrence, learnable expansion coefficients, a=b=1, n=7, d=3.",
+    "publication": "https://proceedings.mlr.press/v300/hasan26a.html",
+    "boundary": "Do not infer that our LSTM, patch sizes, widths, optimizer or Koopman construction reproduce the original HaKAN experiment."
+  },
+  {
+    "id": "CSTR",
+    "url": "https://arxiv.org/pdf/2404.00553",
+    "location": "Section 5.1 Eqs. (26)-(27); Section 5.2 Tables 2-4",
+    "support": "Reactor-separator balances; first nominal heat-input vector (2.87,1.00,2.87)e6 kJ/h.",
+    "publication": "https://doi.org/10.1016/j.compchemeng.2023.108440",
+    "boundary": "This accessible author version refers individual physical constants to earlier papers [12,55]. Exact literature provenance of every retained simulator coefficient is not established here. Current initial-reference state, ranges, delay, sampling and perturbation protocol must not be attributed wholesale to Zhang et al."
+  },
+  {
+    "id": "Lorenz",
+    "url": "https://docs.dart.ucar.edu/en/v10.10.1/models/lorenz_63/readme.html",
+    "support": "Standard Lorenz-63 parameter triplet 10,28,8/3, also matched by the frozen local solver.",
+    "boundary": "No attribution of the imposed delayed variant to the original 1963 nondelayed system."
+  }
+]

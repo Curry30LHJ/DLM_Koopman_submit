@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Local evidence-to-claim and preservation review, performed inline; not independent peer review or submission certification.",
+  "empirical_scope": "New trajectories within the specified simulation conditions; separate fitted models across systems and declared delay/history conditions.",
+  "no_universal_class_coverage_claim": true,
+  "no_cross_plant_frozen_weight_transfer_claim": true,
+  "no_new_empirical_results": true,
+  "no_new_citation_claims": true,
+  "previous_nine_rounds_preserved": true,
+  "original_blocks_preserved": 163
+}

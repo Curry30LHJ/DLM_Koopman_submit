@@ -1,0 +1,133 @@
+system,model,name,shape,scalars,dtype,module
+lorenz,mlp_koopman,A,"[35, 35]",1225,torch.float32,A
+lorenz,mlp_koopman,B,"[0, 35]",0,torch.float32,B
+lorenz,mlp_koopman,mlp_lift.0.weight,"[210, 57]",11970,torch.float32,mlp_lift
+lorenz,mlp_koopman,mlp_lift.0.bias,[210],210,torch.float32,mlp_lift
+lorenz,mlp_koopman,mlp_lift.2.weight,"[32, 210]",6720,torch.float32,mlp_lift
+lorenz,mlp_koopman,mlp_lift.2.bias,[32],32,torch.float32,mlp_lift
+lorenz,mlp_koopman,current_state_projection.weight,"[210, 3]",630,torch.float32,current_state_projection
+lorenz,lstm_koopman,A,"[35, 35]",1225,torch.float32,A
+lorenz,lstm_koopman,B,"[0, 35]",0,torch.float32,B
+lorenz,lstm_koopman,lstm.weight_ih_l0,"[64, 3]",192,torch.float32,lstm
+lorenz,lstm_koopman,lstm.weight_hh_l0,"[64, 16]",1024,torch.float32,lstm
+lorenz,lstm_koopman,lstm.bias_ih_l0,[64],64,torch.float32,lstm
+lorenz,lstm_koopman,lstm.bias_hh_l0,[64],64,torch.float32,lstm
+lorenz,lstm_koopman,history_lift.weight,"[32, 304]",9728,torch.float32,history_lift
+lorenz,lstm_koopman,history_lift.bias,[32],32,torch.float32,history_lift
+lorenz,lstm_koopman,current_state_projection.weight,"[16, 3]",48,torch.float32,current_state_projection
+lorenz,hakan_koopman,A,"[35, 35]",1225,torch.float32,A
+lorenz,hakan_koopman,B,"[0, 35]",0,torch.float32,B
+lorenz,hakan_koopman,token_adapter.weight,"[16, 3]",48,torch.float32,token_adapter
+lorenz,hakan_koopman,token_adapter.bias,[16],16,torch.float32,token_adapter
+lorenz,hakan_koopman,hakan_backbone.patch_embedding.position,"[1, 8, 32]",256,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.patch_embedding.projection.weight,"[32, 5]",160,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.patch_embedding.projection.bias,[32],32,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.0.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.0.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.1.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.1.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.2.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.2.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.3.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.3.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.4.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+lorenz,hakan_koopman,hakan_backbone.blocks.4.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+lorenz,hakan_koopman,lift.weight,"[32, 4096]",131072,torch.float32,lift
+lorenz,hakan_koopman,lift.bias,[32],32,torch.float32,lift
+lorenz,hakan_koopman,current_state_projection.weight,"[16, 3]",48,torch.float32,current_state_projection
+lorenz,dlm_koopman,A,"[35, 35]",1225,torch.float32,A
+lorenz,dlm_koopman,B,"[0, 35]",0,torch.float32,B
+lorenz,dlm_koopman,lstm.weight_ih_l0,"[64, 3]",192,torch.float32,LSTM
+lorenz,dlm_koopman,lstm.weight_hh_l0,"[64, 16]",1024,torch.float32,LSTM
+lorenz,dlm_koopman,lstm.bias_ih_l0,[64],64,torch.float32,LSTM
+lorenz,dlm_koopman,lstm.bias_hh_l0,[64],64,torch.float32,LSTM
+lorenz,dlm_koopman,hakan_backbone.patch_embedding.position,"[1, 8, 32]",256,torch.float32,Patch positional embedding
+lorenz,dlm_koopman,hakan_backbone.patch_embedding.projection.weight,"[32, 5]",160,torch.float32,Patch projection
+lorenz,dlm_koopman,hakan_backbone.patch_embedding.projection.bias,[32],32,torch.float32,Patch projection
+lorenz,dlm_koopman,hakan_backbone.blocks.0.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.0.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.1.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.1.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.2.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.2.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.3.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.3.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.4.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+lorenz,dlm_koopman,hakan_backbone.blocks.4.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+lorenz,dlm_koopman,lift.weight,"[32, 4096]",131072,torch.float32,Observable projection
+lorenz,dlm_koopman,lift.bias,[32],32,torch.float32,Observable projection
+lorenz,dlm_koopman,current_state_projection.weight,"[16, 3]",48,torch.float32,Current-state projection
+lorenz,dlm_koopman,aft.position_bias,"[20, 20]",400,torch.float32,AFT positional bias
+lorenz,dlm_koopman,aft.alpha,[],1,torch.float32,AFT gate
+lorenz,dlm_koopman,aft.Wq.weight,"[35, 35]",1225,torch.float32,AFT Q/K/V projections
+lorenz,dlm_koopman,aft.Wq.bias,[35],35,torch.float32,AFT Q/K/V projections
+lorenz,dlm_koopman,aft.Wk.weight,"[35, 35]",1225,torch.float32,AFT Q/K/V projections
+lorenz,dlm_koopman,aft.Wk.bias,[35],35,torch.float32,AFT Q/K/V projections
+lorenz,dlm_koopman,aft.Wv.weight,"[35, 35]",1225,torch.float32,AFT Q/K/V projections
+lorenz,dlm_koopman,aft.Wv.bias,[35],35,torch.float32,AFT Q/K/V projections
+three_tank,mlp_koopman,A,"[41, 41]",1681,torch.float32,A
+three_tank,mlp_koopman,B,"[3, 41]",123,torch.float32,B
+three_tank,mlp_koopman,mlp_lift.0.weight,"[210, 228]",47880,torch.float32,mlp_lift
+three_tank,mlp_koopman,mlp_lift.0.bias,[210],210,torch.float32,mlp_lift
+three_tank,mlp_koopman,mlp_lift.2.weight,"[32, 210]",6720,torch.float32,mlp_lift
+three_tank,mlp_koopman,mlp_lift.2.bias,[32],32,torch.float32,mlp_lift
+three_tank,mlp_koopman,current_state_projection.weight,"[210, 9]",1890,torch.float32,current_state_projection
+three_tank,lstm_koopman,A,"[41, 41]",1681,torch.float32,A
+three_tank,lstm_koopman,B,"[3, 41]",123,torch.float32,B
+three_tank,lstm_koopman,lstm.weight_ih_l0,"[64, 12]",768,torch.float32,lstm
+three_tank,lstm_koopman,lstm.weight_hh_l0,"[64, 16]",1024,torch.float32,lstm
+three_tank,lstm_koopman,lstm.bias_ih_l0,[64],64,torch.float32,lstm
+three_tank,lstm_koopman,lstm.bias_hh_l0,[64],64,torch.float32,lstm
+three_tank,lstm_koopman,history_lift.weight,"[32, 304]",9728,torch.float32,history_lift
+three_tank,lstm_koopman,history_lift.bias,[32],32,torch.float32,history_lift
+three_tank,lstm_koopman,current_state_projection.weight,"[16, 9]",144,torch.float32,current_state_projection
+three_tank,hakan_koopman,A,"[41, 41]",1681,torch.float32,A
+three_tank,hakan_koopman,B,"[3, 41]",123,torch.float32,B
+three_tank,hakan_koopman,token_adapter.weight,"[16, 12]",192,torch.float32,token_adapter
+three_tank,hakan_koopman,token_adapter.bias,[16],16,torch.float32,token_adapter
+three_tank,hakan_koopman,hakan_backbone.patch_embedding.position,"[1, 8, 32]",256,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.patch_embedding.projection.weight,"[32, 5]",160,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.patch_embedding.projection.bias,[32],32,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.0.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.0.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.1.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.1.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.2.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.2.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.3.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.3.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.4.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,hakan_backbone
+three_tank,hakan_koopman,hakan_backbone.blocks.4.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,hakan_backbone
+three_tank,hakan_koopman,lift.weight,"[32, 4096]",131072,torch.float32,lift
+three_tank,hakan_koopman,lift.bias,[32],32,torch.float32,lift
+three_tank,hakan_koopman,current_state_projection.weight,"[16, 9]",144,torch.float32,current_state_projection
+three_tank,dlm_koopman,A,"[41, 41]",1681,torch.float32,A
+three_tank,dlm_koopman,B,"[3, 41]",123,torch.float32,B
+three_tank,dlm_koopman,lstm.weight_ih_l0,"[64, 12]",768,torch.float32,LSTM
+three_tank,dlm_koopman,lstm.weight_hh_l0,"[64, 16]",1024,torch.float32,LSTM
+three_tank,dlm_koopman,lstm.bias_ih_l0,[64],64,torch.float32,LSTM
+three_tank,dlm_koopman,lstm.bias_hh_l0,[64],64,torch.float32,LSTM
+three_tank,dlm_koopman,hakan_backbone.patch_embedding.position,"[1, 8, 32]",256,torch.float32,Patch positional embedding
+three_tank,dlm_koopman,hakan_backbone.patch_embedding.projection.weight,"[32, 5]",160,torch.float32,Patch projection
+three_tank,dlm_koopman,hakan_backbone.patch_embedding.projection.bias,[32],32,torch.float32,Patch projection
+three_tank,dlm_koopman,hakan_backbone.blocks.0.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.0.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.1.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.1.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.2.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.2.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.3.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.3.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.4.intra_patch_hahn_kan.coeffs,"[32, 32, 4]",4096,torch.float32,Intra-patch Hahn coefficients
+three_tank,dlm_koopman,hakan_backbone.blocks.4.inter_patch_hahn_kan.coeffs,"[8, 8, 4]",256,torch.float32,Inter-patch Hahn coefficients
+three_tank,dlm_koopman,lift.weight,"[32, 4096]",131072,torch.float32,Observable projection
+three_tank,dlm_koopman,lift.bias,[32],32,torch.float32,Observable projection
+three_tank,dlm_koopman,current_state_projection.weight,"[16, 9]",144,torch.float32,Current-state projection
+three_tank,dlm_koopman,aft.position_bias,"[20, 20]",400,torch.float32,AFT positional bias
+three_tank,dlm_koopman,aft.alpha,[],1,torch.float32,AFT gate
+three_tank,dlm_koopman,aft.Wq.weight,"[41, 41]",1681,torch.float32,AFT Q/K/V projections
+three_tank,dlm_koopman,aft.Wq.bias,[41],41,torch.float32,AFT Q/K/V projections
+three_tank,dlm_koopman,aft.Wk.weight,"[41, 41]",1681,torch.float32,AFT Q/K/V projections
+three_tank,dlm_koopman,aft.Wk.bias,[41],41,torch.float32,AFT Q/K/V projections
+three_tank,dlm_koopman,aft.Wv.weight,"[41, 41]",1681,torch.float32,AFT Q/K/V projections
+three_tank,dlm_koopman,aft.Wv.bias,[41],41,torch.float32,AFT Q/K/V projections

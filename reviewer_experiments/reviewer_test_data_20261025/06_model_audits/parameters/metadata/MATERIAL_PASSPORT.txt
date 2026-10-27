@@ -1,0 +1,8 @@
+Origin Skill: academic-research-suite
+Mode: parameter audit and local manuscript revision
+Concern: R2-5
+Source: frozen submission_release code/checkpoints and read-only original training artifacts
+Verification: strict loading, scalar census, independent formulas, actual optimizer groups, saved Adam moments, stage histories, frozen-parameter equality, source hashes, PDF color/layout checks
+New experiments or fitting: none
+External citations added: none
+Prior revisions retained: cstr_delay_20261021 and cstr_history_20261022

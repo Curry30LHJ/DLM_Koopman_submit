@@ -1,0 +1,36 @@
+[
+  {
+    "system": "three_tank",
+    "model": "rbf_markov",
+    "seed": null,
+    "checkpoint_sha256": "58c4df90fd9f97398501811fe0527cc9090d80c7d1b34f36ebefac9d3a2aea5e",
+    "checkpoint": "checkpoints/three_tank/rbf_markov/best_model.npz",
+    "config": {
+      "mode": "markov",
+      "n_centers": 64,
+      "kernel_width": 2.0,
+      "ridge_alpha": 0.0001,
+      "random_seed": 6,
+      "physical_delay_steps": null,
+      "physical_delay_variant": "separator_state"
+    },
+    "source_checkpoint": "models/three_tank/rbf_markov/best_model.npz"
+  },
+  {
+    "system": "three_tank",
+    "model": "rbf_physical_delay",
+    "seed": null,
+    "checkpoint_sha256": "bf60a31fdd3c511777ffc902e3bb9acdc76bd5f3afcfb6811d5e626250ec7804",
+    "checkpoint": "checkpoints/three_tank/rbf_physical_delay/best_model.npz",
+    "config": {
+      "mode": "physical_delay",
+      "n_centers": 128,
+      "kernel_width": 0.5,
+      "ridge_alpha": 0.0001,
+      "random_seed": 6,
+      "physical_delay_steps": 5,
+      "physical_delay_variant": "separator_state"
+    },
+    "source_checkpoint": "models/three_tank/rbf_physical_delay/best_model.npz"
+  }
+]

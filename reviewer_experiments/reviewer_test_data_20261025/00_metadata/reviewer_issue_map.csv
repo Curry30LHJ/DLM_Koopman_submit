@@ -1,0 +1,15 @@
+item,topic,package_location,evidence
+Reviewer 1.1,Scalability and memory,06_model_audits/scalability,module scaling and storage audit
+Reviewer 1.2,Multiple delays and asynchronous sampling,05_multirate_delay,sampling-interface audit; no asynchronous claim
+Reviewer 1.3,Delay coordinates and observables,06_model_audits/observables_theory,representation audit
+Reviewer 1.4,Measurement noise,03_measurement_noise,frozen-checkpoint input-noise sensitivity audit
+Reviewer 1.5,MPC integration,06_model_audits/mpc_integration,causal information and future-input interface audit
+Reviewer 1.6,Delay magnitude,01_cstr_delay,three separately fitted delay conditions
+Reviewer 1.7,Chemical-process literature,06_model_audits/chemical_literature,citation-role audit
+Reviewer 2.1,History length,02_cstr_history,three history lengths and common-origin comparison
+Reviewer 2.2,Information storage,06_model_audits/storage,parameter/history/latent-buffer accounting
+Reviewer 2.3,Integration and sampling resolution,04_rigid_dynamics,resolution and convergence audit
+Reviewer 2.4,Fixed parameters,06_model_audits/fixed_parameters,basis and spectral settings audit
+Reviewer 2.5,Parameter counts and optimization stages,06_model_audits/parameters,module and stage-wise parameter audit
+Reviewer 2.6,Delay-dependent fitted parameters,01_cstr_delay,condition-specific fits and paired tests
+Reviewer 2.7,Benchmark choice and scope,06_model_audits/benchmark_scope,scope and applicability audit

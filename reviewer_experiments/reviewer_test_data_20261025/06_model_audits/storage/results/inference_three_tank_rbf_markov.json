@@ -1,0 +1,55 @@
+{
+  "system": "three_tank",
+  "model": "rbf_markov",
+  "kind": "inference",
+  "batch": 256,
+  "horizon": 60,
+  "precision": "float32",
+  "implementation": "torch RBF adapter",
+  "adapter_parity": [
+    {
+      "precision": "float64",
+      "max_abs_error": 1.8970935933282362e-13,
+      "rms_error": 2.181548606734577e-14,
+      "passed": true,
+      "atol": 1e-09,
+      "rtol": 1e-08
+    },
+    {
+      "precision": "float32",
+      "max_abs_error": 0.00010372470615513385,
+      "rms_error": 1.1634455480148995e-05,
+      "passed": true,
+      "atol": 0.0001,
+      "rtol": 0.001
+    }
+  ],
+  "source_weights_unchanged": true,
+  "maximum_history_length_passed_to_advance": null,
+  "records": [
+    {
+      "rep": 0,
+      "resident_bytes": 8978432,
+      "peak_bytes": 11699200,
+      "extra_peak_bytes": 2720768,
+      "output_bytes": 552960,
+      "retained_after_output_release_bytes": 0
+    },
+    {
+      "rep": 1,
+      "resident_bytes": 8978432,
+      "peak_bytes": 11699200,
+      "extra_peak_bytes": 2720768,
+      "output_bytes": 552960,
+      "retained_after_output_release_bytes": 0
+    },
+    {
+      "rep": 2,
+      "resident_bytes": 8978432,
+      "peak_bytes": 11699200,
+      "extra_peak_bytes": 2720768,
+      "output_bytes": 552960,
+      "retained_after_output_release_bytes": 0
+    }
+  ]
+}

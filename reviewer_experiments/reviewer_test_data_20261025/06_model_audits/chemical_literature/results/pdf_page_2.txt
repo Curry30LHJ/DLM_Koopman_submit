@@ -1,0 +1,56 @@
+A delay-aware latent-memory Koopman-structured model for
+nonlinear system identification and prediction
+Haojie Lina,∗, Xuyang Loua, Xiasheng Shia and Zhe Wub
+aSchool of Automation and Intelligent Science, Jiangnan University, Wuxi, 214122, China
+bDepartment of Chemical and Biomolecular Engineering, National University of Singapore, 117585, Singapore
+ARTICLE INFO
+Keywords:
+Koopman modeling
+Latent-memory correction
+Multi-step prediction
+System identification
+Time-delay systems
+ABSTRACT
+Accurate prediction of delayed nonlinear systems requires a representation of both the current
+state and preceding trajectories. This paper proposes a delay-aware latent-memory Koopman-
+structured model (DLM-K) for data-driven identification and open-loop prediction. A unidirec-
+tional long short-term memory network encodes observed histories and associated inputs when
+present. A learned projection of the current state conditions the full recurrent feature sequence
+before a Kolmogorov–Arnold lift with Hahn polynomial-based learnable activation functions
+constructs nonlinear observables. The current state is also retained explicitly in the lifted repre-
+sentationandrecoveredthroughafixedprojection.Afterone-timeinitialization,anattention-free
+residualaggregatesrecursivelyavailablelatentstatesbeforepropagationbyasharedlinearcore.
+Primary independent simulated tests on a delayed Lorenz–63 system and a continuous stirred-
+tank reactor–separator process show that DLM–K has the lowest mean prediction error among
+the six compared predictors at the reported prediction steps. Prediction errors still increase at
+longer horizons, and separate CSTR diagnostics reveal operating-condition-dependent relative
+performance under variations in future inputs and causal histories. The findings support the
+proposedlatent-memoryKoopman-structuredpredictoronpreviouslyunusedtrajectoriesunder
+the evaluated delayed dynamics.
+1. Introduction
+Data-driven dynamical models support prediction, monitoring, and model-based decision-making in nonlinear
+industrial processes (Korda and Mezić, 2018; Li et al., 2024a). Transport and recycle delays complicate this task
+because future evolution depends on preceding trajectories as well as the current state (Han et al., 2024; Qin et al.,
+2026).Underthesameprescribedinputs,identicalinstantaneousstatescanthereforeleadtodifferentfutureresponses
+when the relevant histories differ. A predictive representation must capture both nonlinear interactions and temporal
+dependence. This requirement becomes especially demanding during multi-step open-loop forecasting: once new
+observations are unavailable, errors in the initial representation and subsequent updates can accumulate recursively.
+Themodelingproblemisthustopreserveusefulhistoricalinformationthroughoutprediction,ratherthanonlyfitlocal,
+one-step transitions.
+The Koopman framework provides an alternative perspective by representing nonlinear dynamics through linear
+evolution in a space of observables (Koopman, 1931). Extended dynamic mode decomposition approximates this
+operator using a finite dictionary (Williams et al., 2015), while input-dependent formulations extend Koopman
+modeling to externally driven systems (Iacob et al., 2024; Korda and Mezić, 2018; Proctor et al., 2018). Neural
+approacheslearntheliftingfunctionsfromdataratherthanprescribethedictionary(Luschetal.,2018;Takeishietal.,
+2017); further developments address time-varying dynamics and input-augmented process models (Hao et al., 2024;
+Li et al., 2024b). Reduced-order and physics-informed formulations tailor these representations to process prediction
+and state estimation (Liu et al., 2025; Yan et al., 2025; Zhang et al., 2023). These advances improve how predictive
+coordinates are constructed, but an approximate lifted transition can still accumulate errors when applied recursively.
+Fordelayedsystems,therepresentationanditspropagationmustalsoaccountfordependenceonprecedingtrajectories.
+Chemical-processstudiesalsoconnecttheliftedmodeltoitsidentificationandcontrolobjectives.Narasingamand
+Kwon (2019) integrate EDMD-based linear predictors with Lyapunov-based MPC for nonlinear chemical processes,
+including reactor stabilization. Narasingam et al. (2023) use Koopman eigenfunction coordinates to construct bilinear
+∗Corresponding author.
+linhj@stu.jiangnan.edu.cn(H. Lin)
+ORCID(s):
+H. Lin et al.:Preprint submitted to ElsevierPage 1 of 32

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "reviewer_item": "R2-7",
+  "old_blocks_preserved": 163,
+  "preserved_ratio": 1.0,
+  "previous_nine_rounds_preserved": true,
+  "original_label_numbers_preserved": 74,
+  "original_evidence_files_unchanged": 72,
+  "figure_assets_unchanged": 23,
+  "bibliography_unchanged": true,
+  "abstract_and_intro_already_scoped_and_preserved": true,
+  "no_new_numerical_performance_claims": true,
+  "no_new_training_or_simulation": true,
+  "all_prior_numerical_tables_figures_equations_preserved": true,
+  "claim_checks": [
+    "Rationale follows the specified delayed equations and information flow.",
+    "Autonomous Lorenz and prescribed-input CSTR are distinguished.",
+    "Two delayed Lorenz coordinates share one numerical lag.",
+    "Recycle state delay is distinguished from input/measurement delay.",
+    "New-trajectory prediction is distinguished from plant or frozen-weight transfer.",
+    "Additional delay and history results retain their original fitting scope.",
+    "No coverage of every typical delay-system class is claimed."
+  ]
+}

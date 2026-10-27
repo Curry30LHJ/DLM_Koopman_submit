@@ -1,0 +1,20 @@
+{
+  "status": "VERIFIED",
+  "numerical_inputs_unchanged": true,
+  "independent_unit_checks": true,
+  "all_24_cases_included": true,
+  "all_replicate_extra_peaks_identical": true,
+  "native_neural_precision": "float32",
+  "native_RBF_precision": "float64",
+  "formal_comparison_precision": "float64",
+  "failed_float32_pilot_retained": true,
+  "pilot_results_used_in_manuscript": false,
+  "statistical_fallacy_scan": {
+    "items_checked": 11,
+    "inferential_tests": 0,
+    "scope": "Deterministic byte census and same-process allocation replicates; no independent accuracy samples, population inference or causal efficiency claim"
+  },
+  "source_training_batch_scope": "one batch from first training trajectory; disposable allocation probes only",
+  "reporting_rule": "use maximum extra peak of all three post-warmup repetitions; report all models and DLM stages",
+  "GPU_RBF_PARITY.json": "verified"
+}

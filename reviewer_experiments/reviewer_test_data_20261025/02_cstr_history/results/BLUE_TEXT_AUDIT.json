@@ -1,0 +1,218 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "characters": 405,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 2,
+      "characters": 3931,
+      "blue_chars": 32,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 3,
+      "characters": 4471,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 4,
+      "characters": 3419,
+      "blue_chars": 308,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 5,
+      "characters": 3126,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 6,
+      "characters": 3129,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 7,
+      "characters": 3350,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 8,
+      "characters": 2692,
+      "blue_chars": 11,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 9,
+      "characters": 2903,
+      "blue_chars": 171,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 10,
+      "characters": 1650,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 11,
+      "characters": 1862,
+      "blue_chars": 159,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 12,
+      "characters": 3008,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 13,
+      "characters": 2087,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 14,
+      "characters": 2739,
+      "blue_chars": 622,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 15,
+      "characters": 2602,
+      "blue_chars": 2504,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 16,
+      "characters": 3151,
+      "blue_chars": 3053,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 17,
+      "characters": 3050,
+      "blue_chars": 1662,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 18,
+      "characters": 2131,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 19,
+      "characters": 4109,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 20,
+      "characters": 3391,
+      "blue_chars": 292,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 21,
+      "characters": 2360,
+      "blue_chars": 0,
+      "characters_outside_page": 0
+    },
+    {
+      "page": 22,
+      "characters": 4481,
+      "blue_chars": 130,
+      "characters_outside_page": 0
+    }
+  ],
+  "changed_phrases": [
+    {
+      "phrase": "Primary independent simulated tests",
+      "pages": [
+        2
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "counts observed states including the current state",
+      "pages": [
+        4
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "separate CSTR sensitivity experiments",
+      "pages": [
+        9
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "In the primary CSTR comparison",
+      "pages": [
+        11
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "Sensitivity to observed history length",
+      "pages": [
+        16
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "All 14 independent fits",
+      "pages": [
+        16
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "17 of the 18",
+      "pages": [
+        16
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "29.4%",
+      "pages": [
+        16
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "22.3%",
+      "pages": [
+        16
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "Total trainable parameters",
+      "pages": [
+        16
+      ],
+      "all_blue": true
+    },
+    {
+      "phrase": "On the primary independent simulated Lorenz and CSTR",
+      "pages": [
+        17
+      ],
+      "all_blue": true
+    }
+  ],
+  "new_experiment_table_body_all_blue": true,
+  "new_figure_all_text_blue": true,
+  "all_page_bounds_passed": true
+}

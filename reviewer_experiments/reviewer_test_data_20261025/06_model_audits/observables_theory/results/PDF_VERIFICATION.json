@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "pages": 28,
+  "all_pages_within_media_box": true,
+  "blue_regions": [
+    {
+      "page": 4,
+      "start": "The history argument also determines",
+      "end": "Given a history length",
+      "characters": 2143,
+      "all_blue": true
+    },
+    {
+      "page": 7,
+      "start": "Viewed as observable selection",
+      "end": "3.3. Causal AFT correction",
+      "characters": 1481,
+      "all_blue": true
+    },
+    {
+      "page": 27,
+      "start": "Brunton, S.L., Brunton, B.W.",
+      "end": "Chen, B., Wang, Y.",
+      "characters": 165,
+      "all_blue": true
+    },
+    {
+      "page": 27,
+      "start": "Hale, J.K., Verduyn Lunel",
+      "end": "Han, M., Li, Z.",
+      "characters": 133,
+      "all_blue": true
+    },
+    {
+      "page": 27,
+      "start": "Kamb, M., Kaiser, E.",
+      "end": "Koopman, B.O.",
+      "characters": 147,
+      "all_blue": true
+    },
+    {
+      "page": 28,
+      "start": "Takens, F., 1981.",
+      "end": "Val\u00e1bek, P., Wadinger",
+      "characters": 199,
+      "all_blue": true
+    }
+  ],
+  "existing_numbered_labels_preserved": 71,
+  "old_bibliography_entries_preserved": 25,
+  "no_new_overfull_boxes": true,
+  "visual_inspection_completed": true,
+  "visual_inspection_result": "Final rendered pages 4, 7, 27 and 28 checked: new prose and new references are blue, text is readable, and no new clipping or overlap was observed.",
+  "rendered_pages": [
+    4,
+    7,
+    27,
+    28
+  ]
+}

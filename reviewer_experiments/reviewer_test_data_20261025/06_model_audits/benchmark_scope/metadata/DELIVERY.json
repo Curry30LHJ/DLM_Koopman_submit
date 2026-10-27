@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "date": "2026-10-24",
+  "reviewer_item": "R2-7",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.pdf",
+  "pdf_pages": 32,
+  "sections": [
+    "Section 4 opening",
+    "Section 4.4",
+    "Section 5"
+  ],
+  "viewer_pages": [
+    10,
+    20,
+    21,
+    22
+  ],
+  "all_new_text_blue": true,
+  "previous_nine_rounds_preserved": true,
+  "new_paragraphs": 4,
+  "patch_insertions": 3,
+  "original_blocks_preserved": 163,
+  "original_label_numbers_preserved": 74,
+  "no_new_training_simulation_or_numerical_claim": true,
+  "next_item": "R1-2",
+  "next_item_started": false,
+  "output_sha256": {
+    "write\\\u7a3f\u4ef6\\main.tex": "64163bbf82872e7c6d22f3a0bcfbc6419d4ac7f71b94aabb168b785754894bc6",
+    "write\\\u7a3f\u4ef6\\main.pdf": "24b376c309517868244c5d62e4145ba3bb6ab51137b1354aab0f588dcefc832f",
+    "revision_experiments\\benchmark_scope_20261024\\reviewer_response_R2-7.html": "b62246baa2a13b9b1be9277d07733face7ea60c6ddc37dab44186e6bdf208f91",
+    "revision_experiments\\benchmark_scope_20261024\\reviewer_response_R2-7.txt": "04c9a7ad8bf04d13ebe17dd3b995f9a452c6d439543e749e05ed1c5b4c2a0977",
+    "revision_experiments\\benchmark_scope_20261024\\RESULTS_AND_REVISION.txt": "bea2c3b845c09f1e04ad4d3476d283c4827cc5f36d420c6928f7a9969f941bac",
+    "revision_experiments\\benchmark_scope_20261024\\PROTOCOL.json": "ed8ba90e307e3dcf5c3e984b2bcf08e02076313d8a87fa2a54662bc2918406fa",
+    "revision_experiments\\benchmark_scope_20261024\\results\\VERIFICATION.json": "563e4ef7f61c55978f10413d23243a1dbd10c994886364735fde592ffefbd305",
+    "revision_experiments\\benchmark_scope_20261024\\results\\PDF_VERIFICATION.json": "76023f5c54c17c3bca46b1424ffae41d4d027bfd0d4876fbe88553a660609770",
+    "revision_experiments\\benchmark_scope_20261024\\results\\INTEGRITY_REVIEW.json": "ad9402250bd04141527bed9674d2733e7cbcd44ee40cc89bf79ffa88d6cbc626",
+    "revision_experiments\\benchmark_scope_20261024\\results\\MANUSCRIPT_PATCH_LANDED.json": "43dc3f0389ba3fefc09b311867a46df21fed34e4f5bfda78844b3a4f74842608",
+    "revision_experiments\\benchmark_scope_20261024\\manuscript_revision.diff": "d038d7c7a5a77469c32541e72c5f7bb8b3c4eab10a1c6d118fdc291a557b7d43"
+  }
+}

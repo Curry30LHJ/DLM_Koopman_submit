@@ -1,0 +1,29 @@
+{
+  "reviewer_comment": "R2-2: What about differences is \"information\" storage needs for your approach compared to others?",
+  "scope": "Frozen primary Lorenz and CSTR models, Lh=M=20. No new scientific fitting or checkpoint changes.",
+  "frozen_at_utc": "2026-10-22T12:36:21.619874+00:00",
+  "float_bytes": 8,
+  "units": {
+    "KiB": 1024,
+    "MiB": 1048576
+  },
+  "batch_size": 256,
+  "inference_horizon": 60,
+  "training_horizon": 30,
+  "input": "First original training trajectory for each system, common origins 20..275; original train-fitted normalization. No test data.",
+  "inference_probe": "All neural and RBF inference on same GPU in float64. Neural code is unchanged except tensor dtype. RBF inference-only adapter validated against native float64 NumPy equations. This is a standardized allocation comparison, not native-precision memory or prediction-accuracy evidence.",
+  "training_probe": "All neural stages use float64 for unified accounting; one warmup and three full-step allocation probes on disposable copies, weights restored before measurements. Native neural training was float32. RBF fit arrays are reported at float64 for N=47500; no whole-fit peak or Adam-stage claim.",
+  "replicates": 3,
+  "warmup": 1,
+  "inference_peak_definition": "torch.cuda.max_memory_allocated minus resident model/input allocation immediately before rollout; includes outputs, diagnostic copies and auxiliary tensors; excludes caching-reserved memory, CUDA context, host dataset and Python metadata.",
+  "rbf_adapter_tolerances": {
+    "float64_rtol": 1e-08,
+    "float64_atol": 1e-09
+  },
+  "no_model_selection_or_hyperparameter_changes": true,
+  "source_before_sha256": "bad781ad8120dc3a25e18ad1f6b8dd4f5b06c005986216933b3b3e1d678e4540",
+  "precision": "float64",
+  "amended_at_utc": "2026-10-22T12:42:07.442434+00:00",
+  "supersedes_for_formal_comparison": "../PROTOCOL.json",
+  "amendment_reason": "Lorenz Markov RBF float32 H60 conversion failed the fixed output agreement threshold (max_abs_error=0.012777414307856838, RMS=0.00019661577631099078). Preserve pilot results; compare all models at float64 without downcasting the RBF models. No threshold relaxed and no model retrained."
+}

@@ -1,0 +1,54 @@
+Delay-aware latent-memory Koopman-structured modeling
+controlled dynamics and formulate predictive control with a control-Lyapunov-function-based auxiliary controller.
+For noisy identification, Woelk and Tang (2026) jointly identify lifted dynamics and noise components using a
+regularizedblock-coordinateformulation,withadistillation-columnapplication.Thesestudiesillustratehowcontroller
+stabilityrequirementsandexplicitnoisetreatmentshapeKoopmanmodelinginprocessengineering.Thepresentwork
+addresses a complementary representation problem: coupling observed-history initialization with model-generated
+latent memory for multi-step prediction of delayed dynamics.
+Historicalinformationcanbeincorporatedthroughhistory-conditionedinitializationorlatent-memorypropagation
+during forecasting. Delay-coordinate models augment the representation with lagged observations, whereas recurrent
+encoders summarize temporal dependence from observed histories. LSTM-based Koopman identification with input
+delayexemplifiestherecurrentapproach(Valábeketal.,2025).Otherstudiescombinedelayembeddingwithreduced-
+orderrealization(ChenandWang,2026)orlearnlag-awareslow–fastdynamicsforindustrialanomalydetection(Qin
+etal.,2026).Hanetal.(2024)constructprobabilisticKoopmanobservablesfromhistoricalstate–inputtrajectoriesfor
+uncertaindelayedsystems.Turningtothepropagationstage,Nagdietal.(2026)introduceattention-freelatent-memory
+corrections before Koopman updates and also consider dynamic re-encoding. These works motivate complementary
+roles for observed and model-generated histories. The design question considered here is how to connect a history-
+conditioned initial representation to subsequent latent-memory updates when future observations are unavailable.
+An informative lift must convert the observed temporal context into coordinates suitable for propagation.
+Kolmogorov–Arnoldnetworks(KANs)parameterizeconnectionswithlearnableunivariatefunctions(Liuetal.,2024),
+and temporal variants combine these representations with sequence processing or frequency decomposition (Genet
+and Inzirillo, 2024; Huang et al., 2025). HaKAN is a KAN-based model for multivariate time series forecasting that
+employs Hahn polynomial-based learnable activation functions (Hasan et al., 2026). Its residual Hahn–KAN blocks
+combine intra- and inter-patch layers to capture local temporal patterns and interactions across patches. Zhao et al.
+(2026)demonstratearelateduseofKAN-basedobservableconstructioninatransformer–Koopmanmodelforrobotic
+systems.InDLM–K,HaKANinsteadoperatesonthefulloutputsequenceofacausalLSTMencoderafterconditioning
+thatsequenceonalearnedprojectionofthecurrentstate.Thepatchesconsequentlycontainfeaturesofthejointstate–
+input evolution, providing the history-conditioned lift required by the subsequent latent-memory predictor.
+Observed history and predicted latent context serve distinct roles in DLM–K. At the prediction origin, LSTM–
+HaKAN encoding combines the observed history and current state to construct the initial lifted state. During free
+rollout,theencoderisnotcalledagain.Theinitialliftandrecursivelypredictedlatentstatesinsteadformarollingbuffer
+for an AFT-derived residual (Nagdi et al., 2026; Zhai et al., 2021). This buffer does not introduce new observations
+or recover unobserved process history. It retains intermediate model-generated representations, allowing later updates
+to depend on finite latent context rather than only the latest latent state. The residual becomes active once multiple
+latent states are available and precedes a shared linear transition, with an additional input term for prescribed future
+inputs. Unlike the state-encoder and trainable-decoder formulation of Nagdi et al., DLM–K retains the current state
+coordinates explicitly and uses a fixed projection for state readout. The resulting pathway couples observation-based
+initialization to prediction-based memory propagation for delayed dynamics without requiring new state observations
+during rollout.
+The main contributions are summarized as follows.
+1. A unified causal Koopman-structured prediction pathway couples observed-history initialization with predicted-
+latent memory propagation. The observed history and current state determine the initial lift, while a rolling buffer
+of the initial and recursively predicted latent states conditions subsequent updates without new state observations.
+This formulation connects recurrent history representation (Han et al., 2024) with AFT-derived latent-memory
+propagation (Nagdi et al., 2026) for delayed-system prediction.
+2. A history-conditioned LSTM–HaKAN lift with explicit state retention and a shared linear propagation core
+implement this pathway. Relative to HaKAN’s raw-series forecasting formulation (Hasan et al., 2026) and the
+transformer–Koopman construction of Zhao et al. (2026), the lift conditions the full recurrent history-feature
+sequenceonthecurrentstatebeforeconstructingnonlinearobservables,whileretainingafixedstatereadout.Zero-
+gated residual initialization and staged optimization train the coupled lift and latent-memory transition without
+re-encoding observations or predicted states during rollout.
+3. Independent simulated tests on delayed Lorenz and CSTR systems compare six frozen predictors on previously
+unused trajectories. Separate CSTR diagnostics characterize time-averaged accuracy and its dependence on future
+inputs and causal histories.
+H. Lin et al.:Preprint submitted to ElsevierPage 2 of 32

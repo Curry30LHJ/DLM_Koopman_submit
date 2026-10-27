@@ -1,0 +1,99 @@
+--- manuscript_before/main.tex
++++ write/manuscript/main.tex
+@@ -18,6 +18,7 @@
+ \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+ \DontPrintSemicolon
+ \hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
++\newcommand{\rev}[1]{{\color{blue}\hypersetup{linkcolor=blue,citecolor=blue}#1}}
+ 
+ \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+ \begin{document}
+@@ -296,7 +297,7 @@
+ \FloatBarrier
+ \section{Numerical experiments}\label{sec:numerical-experiments}
+ 
+-DLM--K is evaluated on an autonomous delayed Lorenz--63 system and an input-driven CSTR--separator process. Neural models are implemented in PyTorch and trained on an NVIDIA GeForce RTX 4090 GPU. Both benchmarks use a 20-observation history and a physical delay of five sampling intervals. Forecasts are generated in open loop without future observations; CSTR heat inputs are prescribed. Table~\ref{tab:benchmark-config} summarizes the DLM--K configuration.
++DLM--K is evaluated on an autonomous delayed Lorenz--63 system and an input-driven CSTR--separator process. Neural models are implemented in PyTorch and trained on an NVIDIA GeForce RTX 4090 GPU. \rev{Both primary benchmarks use a 20-observation history and a physical delay of five sampling intervals; the additional CSTR sensitivity experiment varies the delay while retaining this history length.} Forecasts are generated in open loop without future observations; CSTR heat inputs are prescribed. Table~\ref{tab:benchmark-config} summarizes the DLM--K configuration.
+ 
+ The five baselines are MLP--Koopman (MLP--K)~\citep{Lusch2018}, LSTM--Koopman (LSTM--K)~\citep{Han2024DRKO}, HaKAN--Koopman (HaKAN--K)~\citep{Hasan2026}, Markov RBF--EDMDc (Markov RBF)~\citep{Williams2015,Korda2018}, and delay-informed RBF--EDMDc (Delay--RBF)~\citep{Pan2020TimeDelay}. HaKAN--K uses neither LSTM nor AFT. Markov RBF uses current-state coordinates, whereas Delay--RBF also receives the known physical delay and is therefore an information-privileged reference. These are benchmark-specific implementations informed by the cited methods, not verbatim reproductions. Their construction and optimization details are given in Appendix~\ref{app:implementation}.
+ 
+@@ -393,7 +394,7 @@
+ \end{figure}
+ The nine states are the mass fractions $x_{Ai}$ and $x_{Bi}$ and temperature $T_i$ in each vessel, $i=1,2,3$. The heat duties $Q_1$, $Q_2$, and $Q_3$ are prescribed inputs. Only the recycle composition and temperature entering CSTR~1 are evaluated at $t-\tau$, so the delay represents material transport rather than delayed measurement. The governing equations, physical parameters, and input and noise generation procedures are given in Appendix~\ref{app:cstr-parameters}.
+ 
+-The transport delay is $0.025\,\mathrm{h}$, with integration and observation intervals of $0.001\,\mathrm{h}$ and $0.005\,\mathrm{h}$. A prediction horizon of 60 steps therefore covers $0.3\,\mathrm{h}$. The 12 independent test trajectories use new initial-state and input/noise realizations under the generation procedure specified in Appendix~\ref{app:cstr-parameters}.
++\rev{The baseline transport delay is $0.025\,\mathrm{h}$, with integration and observation intervals of $0.001\,\mathrm{h}$ and $0.005\,\mathrm{h}$.} A prediction horizon of 60 steps therefore covers $0.3\,\mathrm{h}$. The 12 independent test trajectories use new initial-state and input/noise realizations under the generation procedure specified in Appendix~\ref{app:cstr-parameters}.
+ 
+ All four neural predictors use 20 observed states, the preceding 19 inputs, and explicit current-state conditioning. MLP--K adds a learned current-state projection to its first hidden layer before GELU activation. LSTM--K initializes its recurrent hidden state from the current state, with a zero cell state, and lifts the flattened output sequence. HaKAN--K broadcasts a current-state projection onto its adapted history tokens. DLM--K uses Equation~\eqref{eq:current-conditioning} before HaKAN lifting. All four retain the current-state prefix and use 32 learned observables, giving a lifted dimension of 41; their parameter counts are not matched.
+ 
+@@ -445,9 +446,51 @@
+ 
+ The distributions distinguish typical accuracy from difficult conditions. DLM--K has a mean $J$ of 0.05152 and median 0.01249 under input-profile variation, compared with 0.01141 and 0.005774 under history variation. Both are lower than the corresponding Delay--RBF values (0.06714 and 0.03493 for input variation; 0.02597 and 0.01408 for history variation). However, the input-profile mean curves cross between steps 50 and 51, after which Delay--RBF has the lower error through step 60. DLM--K also has a larger 90th-percentile $J$ in this design, 0.1821 versus 0.1280. Thus, lower average and median errors do not imply an advantage at every prediction step or throughout the condition distribution. Under history variation, DLM--K has a lower condition-mean error than Delay--RBF at every evaluated step. Appendix~\ref{app:condition-distributions} reports the distribution summaries, including the full maxima.
+ 
++\paragraph{\textcolor{blue}{Sensitivity to recycle delay.}}\label{par:cstr-delay-sensitivity}
++\rev{The recycle delay is varied over $\tau\in\{0.010,0.025,0.050\}\,\mathrm{h}$, corresponding to 2, 5, and 10 sampling intervals. At each delay, all six predictors are fitted separately using 50 training and 12 validation trajectories. Initial states, heat-input sequences, and process-noise realizations are paired across delays by using the same generation seeds. The integration and sampling intervals, physical parameters, network architectures, history and memory lengths, optimization settings, and neural training seed remain unchanged. The training-state and input normalization scales from the original $0.025\,\mathrm{h}$ dataset are retained throughout, so errors at different delays use the same coordinate scales.}
++
++\rev{For DLM--K, the physical delay is not an explicit model input or a separately optimized scalar: the learned weights, including the lifting, linear-core, and memory parameters, are re-estimated from data at each delay. Its architecture retains 162,747 trainable parameters in all three cases. Delay--RBF receives the corresponding known lag of 2, 5, or 10 samples; its dictionary size, kernel width, ridge coefficient, and construction seed are fixed. After all fitted checkpoints are frozen, 12 new paired test trajectories per delay are generated. Evaluation uses the same 882 prediction origins per trajectory and the error definition in Equation~\eqref{eq:error}, with all trajectories retained. Thus, this experiment assesses performance after identification at each fixed delay.}
++
++\rev{DLM--K has the lowest mean error among the six predictors at all six pre-specified reporting steps for each delay. Its step-60 error increases from 0.004849 to 0.006862 and 0.01066 as the delay increases (Table~\ref{tab:cstr-delay-sensitivity}). These errors are 45.0\%, 64.9\%, and 55.7\% below the corresponding Delay--RBF errors, the lowest among the baselines at this step. The error curves in Figure~\ref{fig:cstr-delay-sensitivity} show that the advantage persists beyond the 30-step training horizon. Delay--RBF has lower errors at steps 2--4 for $0.010\,\mathrm{h}$ and steps 2--3 for $0.050\,\mathrm{h}$; DLM--K has the lowest error from step 5 through step 60 at all three delays. The direction of the delay dependence is model-specific: the three neural baselines have lower step-60 errors at longer delays, whereas DLM--K and the two RBF predictors have higher errors. Consequently, increasing the delay does not impose a common monotonic accuracy trend across predictor families, even under paired forcing and fixed model capacities.}
++
++\begin{table}[pos=!htbp]
++\color{blue}
++\colorlet{scolor}{blue}
++\captionsetup{labelfont={color=blue},textfont={color=blue}}
++\caption{\textcolor{blue}{Mean CSTR prediction error in the paired delay-sensitivity experiment. Each entry averages 12 new test trajectories after a separate fit at the indicated delay. Bold values are the lowest in each column.}}
++\label{tab:cstr-delay-sensitivity}
++\centering\small
++\setlength{\tabcolsep}{5pt}
++\begin{tabular}{@{}lrrrrrr@{}}
++\toprule
++& \multicolumn{2}{c}{$\tau=0.010\,\mathrm{h}$} & \multicolumn{2}{c}{$\tau=0.025\,\mathrm{h}$} & \multicolumn{2}{c}{$\tau=0.050\,\mathrm{h}$} \\
++\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(l){6-7}
++Model & step 30 & step 60 & step 30 & step 60 & step 30 & step 60 \\
++\midrule
++MLP--K & 0.04283 & 0.08389 & 0.03221 & 0.06833 & 0.0237 & 0.05141 \\
++LSTM--K & 0.04198 & 0.08236 & 0.03096 & 0.06748 & 0.0246 & 0.05352 \\
++HaKAN--K & 0.04281 & 0.0836 & 0.03128 & 0.0662 & 0.02374 & 0.05159 \\
++Markov RBF & 0.1003 & 0.1573 & 0.1616 & 0.2311 & 0.1874 & 0.2495 \\
++Delay--RBF & 0.007887 & 0.008819 & 0.01493 & 0.01957 & 0.01818 & 0.02408 \\
++DLM--K & \textbf{0.004406} & \textbf{0.004849} & \textbf{0.005376} & \textbf{0.006862} & \textbf{0.008039} & \textbf{0.01066} \\
++\bottomrule
++\end{tabular}
++\end{table}
++
++\begin{figure}[pos=!htbp]
++\color{blue}
++\colorlet{scolor}{blue}
++\captionsetup{labelfont={color=blue},textfont={color=blue}}
++\centering
++\includegraphics[width=\linewidth]{figures/fig_6_cstr_delay_sensitivity}
++\caption{\textcolor{blue}{CSTR prediction error for recycle delays of (a) $0.010\,\mathrm{h}$, (b) $0.025\,\mathrm{h}$, and (c) $0.050\,\mathrm{h}$. Each curve is the equal-weight mean of trajectory-level errors over 12 paired test trajectories after fitting at the indicated delay. All panels use the same logarithmic vertical scale. The dotted vertical line marks the 30-step horizon used in neural training and checkpoint selection.}}
++\label{fig:cstr-delay-sensitivity}
++\end{figure}
++
++\clearpage
+ \subsection{Discussion and limitations}\label{sec:discussion}
+ 
+-The independent simulated tests evaluate the frozen predictors on previously unused trajectories generated under the specified delays and operating rules. They provide evidence of generalization to new draws from these simulation distributions, rather than to different delays, broader operating regimes, or physical plant measurements. Variability across independently trained realizations was not assessed. The separate post-hoc CSTR diagnostics describe condition-dependent behavior and are not additional independent tests.
++\rev{The independent simulated tests evaluate new trajectories at specified fixed delays. The additional CSTR experiment extends this evaluation to three separately fitted delay conditions. All three delays lie within the $0.095\,\mathrm{h}$ span of the 20 observed states. This makes the delayed separator state available in the recorded history, but covering the delay alone establishes neither an approximation-error bound for the learned lift nor stability of the nonlinear memory-dependent recurrence. Prediction accuracy is therefore supported empirically for the tested conditions and horizons; a quantitative guarantee or transfer of a fixed predictor to an unseen delay is not established. Variability across independently trained realizations was not assessed. The separate post-hoc CSTR diagnostics describe condition-dependent behavior and are not additional independent tests.}
+ 
+ The comparisons concern complete predictors with different architectures, parameter counts, and optimization budgets. They do not isolate the marginal effect of current-state conditioning, LSTM encoding, HaKAN lifting, or AFT correction. The RBF references are frozen closed-form fits and do not receive the neural models' current-state projection or staged optimization. No direct comparison with the Koopman+AFT autoencoder of \citet{Nagdi2026AFTKoopman} is reported. Regularization of the linear core does not establish stability of the nonlinear memory-dependent predictor.
+ 
+@@ -457,7 +500,7 @@
+ A history-conditioned nonlinear lift constructs the initial predictive representation, while recursively available latent states inform subsequent transitions without new observations.
+ Recursively available latent states inform subsequent transitions without new observations. On the independent simulated Lorenz and CSTR test sets, DLM--K gives the lowest mean error among the six compared predictors at the tabulated steps. The Lorenz error nevertheless grows substantially when prediction is extended from 30 to 60 steps. Separate CSTR diagnostics further show that lower time-averaged error can coexist with a late-horizon disadvantage under input-profile variation.
+ 
+-These findings support the complete predictor for open-loop forecasting of new trajectories under the specified simulated dynamics. Further work may examine different delays, wider operating ranges, physical process data, and integration into state estimation and control.
++These findings support the complete predictor for open-loop forecasting of new trajectories under the specified simulated dynamics. \rev{With a fixed architecture and separate fits, the CSTR delay experiment retains DLM--K's lowest mean error at the six reported steps across delays of 2, 5, and 10 sampling intervals. Further work may examine transfer to unseen or time-varying delays, wider operating ranges, physical process data, and integration into state estimation and control.}
+ 
+ \FloatBarrier
+ \appendix
+@@ -618,7 +661,7 @@
+ 
+ The independent test evaluation uses 882 origins per CSTR trajectory, indices 19--900, and 880 origins per Lorenz trajectory, indices 20--899. These are fixed legal origins for the archived 100-step predictions, from which steps 1--60 are reported. The Lorenz illustration retains origin 20 of the first test trajectory. The CSTR illustration follows the post-hoc median-error rule described in Section~\ref{sec:cstr-experiment}; equidistant candidates are resolved by the lowest trajectory index and then the earliest origin. This selection does not alter the full-test metrics.
+ 
+-Both RBF families use a dictionary containing a constant, the embedding coordinates, and thin-plate radial basis functions, with kernel $r^2\log r$ for scaled distance $r>0$ and value zero at $r=0$. Markov RBF~\citep{Williams2015,Korda2018} embeds the current state. Delay--RBF~\citep{Pan2020TimeDelay} adds $x_2(k-5)$ and $x_3(k-5)$ for Lorenz, or the separator coordinates $x_{A3}(k-5)$, $x_{B3}(k-5)$, and $T_3(k-5)$ for CSTR. Table~\ref{tab:rbf-settings} gives the frozen dictionary and ridge-regression settings. These models retain their original coefficients and centers; they were not refitted or augmented with the neural current-state map. Dictionary construction uses random seed 6.
++Both RBF families use a dictionary containing a constant, the embedding coordinates, and thin-plate radial basis functions, with kernel $r^2\log r$ for scaled distance $r>0$ and value zero at $r=0$. Markov RBF~\citep{Williams2015,Korda2018} embeds the current state. Delay--RBF~\citep{Pan2020TimeDelay} adds $x_2(k-5)$ and $x_3(k-5)$ for Lorenz, or the separator coordinates $x_{A3}(k-5)$, $x_{B3}(k-5)$, and $T_3(k-5)$ for CSTR. Table~\ref{tab:rbf-settings} gives the frozen dictionary and ridge-regression settings. \rev{For the primary benchmark comparisons, these models retain their original coefficients and centers. In the additional CSTR delay experiment, both references are refitted using the same dictionary and regression settings, and Delay--RBF uses the corresponding lag of 2, 5, or 10 observations. The RBF models do not use the neural current-state map.} Dictionary construction uses random seed 6.
+ 
+ \begin{table}[pos=!htbp]
+ \caption{Frozen RBF reference configurations. The lifted dimension includes the constant, embedding coordinates, and RBF features.}

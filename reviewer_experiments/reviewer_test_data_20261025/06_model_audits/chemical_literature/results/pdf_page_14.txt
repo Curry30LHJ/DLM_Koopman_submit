@@ -1,0 +1,63 @@
+Delay-aware latent-memory Koopman-structured modeling
+from0.007565to0.02943inCSTRat𝛼= 0.05.Thecorrespondingdisplacementfromtheclean-inputpredictionwas
+0.2648and0.02833.Atthesameperturbationlevel,current-sample-onlydisplacementatstep1was0.04748(Lorenz)
+and0.04402(CSTR),whereaspast-history-onlydisplacementwas0.01130and0.003102.Thisseparatestheencoder’s
+sensitivitytopastobservationsfromtheexplicitcurrent-statechannel;itdoesnotimplythateithercontributionisstable
+under all sensor models. Figure 3 and the archived summary report the complete horizon and all six predictors. The
+distinction matters for identification. Sensor noise is an additive error in the observed regressors and can bias fitted
+linear operators, as analyzed for DMD by Dawson et al. (Dawson et al., 2016). Weak-form methods such as WSINDy
+replace pointwise derivatives with test-function integrals and can reduce measurement-noise sensitivity under their
+statedassumptions(MessengerandBortz,2021).Thoseresultsdonotgiveanoiseguaranteeforthenonlinearlearned
+liftorAFTrecurrencehere.Applyingweak-formornoise-awareKoopmanidentificationtodelayed,input-conditioned
+histories would require a separately specified estimator and fitted comparison.
+10 20 30 40 50 60
+Forecast step
+10−2
+10−1
+100
+Endpoint RMSE
+(a) Delayed Lorenz: total prediction error
+0%
+1%
+5%
+10%
+10 20 30 40 50 60
+Forecast step
+10−2
+10−1
+Endpoint RMSE
+(b) CSTR: total prediction error
+0%
+1%
+5%
+10%
+10 20 30 40 50 60
+Forecast step
+10−2
+10−1
+Prediction displacement
+(c) Delayed Lorenz: 5% perturbation
+All 20 samples
+Past 19 only
+Current sample only
+10 20 30 40 50 60
+Forecast step
+10−2
+Prediction displacement
+(d) CSTR: 5% perturbation
+All 20 samples
+Past 19 only
+Current sample only
+Figure 3:Frozen-checkpoint measurement-noise audit. Top: DLMK endpoint RMSE under additive history perturbations
+at 0%, 1%, 5%, and 10% of the training-state standard deviation. Bottom: prediction displacement relative to the clean-
+history rollout at 5%, with perturbations applied to all history samples, the past 19 samples only, or the current sample
+only. Curves use 12 paired new trajectories per system and 880 common origins; the dotted line marks the 30-step training
+horizon.
+An explicit noise-aware identification route is provided by Woelk and Tang (2026), who combine an EDMD-like
+formulation with a likelihood characterization of noise and joint estimation of model and noise components. This
+addresses model fitting from noisy data. The frozen-history perturbation audit above instead measures the sensitivity
+of already fitted predictors; it neither estimates noise components nor evaluates that identification procedure.
+4.3. CSTR–separator process with recycle delay
+The process consists of two CSTRs in series and a flash separator, with the separator vapor recycled to the first
+reactor(Figure4).Theconsecutivereactions𝐴→𝐵→𝐶takeplaceinthetworeactors.Weintroducearecycle-stream
+H. Lin et al.:Preprint submitted to ElsevierPage 13 of 32

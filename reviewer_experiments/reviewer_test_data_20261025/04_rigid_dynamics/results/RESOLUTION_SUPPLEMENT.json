@@ -1,0 +1,1995 @@
+{
+  "status": "PASS",
+  "spectral_method": "linear detrend, Hann window, one-sided power; fraction above ORIGINAL sampling Nyquist",
+  "summary": {
+    "CSTR": {
+      "trajectories": 12,
+      "state_series": 108,
+      "max_dominant_frequency": 1.6,
+      "mean_power_above_nyquist": 0.00042581755173827024,
+      "max_power_above_nyquist": 0.0047178922640990694
+    },
+    "Lorenz": {
+      "trajectories": 12,
+      "state_series": 36,
+      "max_dominant_frequency": 2.07,
+      "mean_power_above_nyquist": 1.4637021707433513e-07,
+      "max_power_above_nyquist": 3.526525751450402e-07
+    }
+  },
+  "spectra": [
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 4.6984090863213215e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.3640021002572833e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.00014759139128151677
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 9.67130920442743e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 3.106987929268771e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0003290570092691137
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 3.583710495186528e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.8694692748910946e-09
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 0,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.00016675249016711818
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 9.356011325124308e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 1.6,
+      "power_fraction_above_original_nyquist": 1.4765998954822008e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0020130573774107974
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.9978622460798855e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 1.6,
+      "power_fraction_above_original_nyquist": 3.7066354879368514e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0047178922640990694
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 8.04649168822829e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.6000000000000001,
+      "power_fraction_above_original_nyquist": 1.6355969222936695e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 1,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0028041079798509453
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 5.893121651515339e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 2.0368687879364833e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0002310143723852259
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.19690402391183e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 4.613763719516108e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0005122358550044495
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 4.261017449246e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 3.4854841357598946e-09
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 2,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0003230819324968462
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 2.2807462372096597e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 5.6037004151508165e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0008913691241199267
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 3.6458771772715044e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.0170976554861118e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0014568333325033044
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.2488807435333697e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.0899455815097853e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 3,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0010178609589423778
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.7505576968295871e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.6000000000000001,
+      "power_fraction_above_original_nyquist": 7.933005985020878e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.000652967677054421
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 3.399918214945019e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.6000000000000001,
+      "power_fraction_above_original_nyquist": 1.744261847868179e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0014662154379804576
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.173482052288958e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.3064138316501452e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 4,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0006530622305243077
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.571244458804569e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 2.781859522076994e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0004984263145090658
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 2.815244049236934e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 5.479607189343284e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.001084953757904093
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 9.970013844462493e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 4.573059062266227e-09
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 5,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0007537334454908834
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 2.5164701757263963e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.6000000000000001,
+      "power_fraction_above_original_nyquist": 6.561137096896341e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0009514478699385782
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 4.134956830115262e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.1983577872654785e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0016470687820335037
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.3890012559683022e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.5101212412529926e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 6,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.000938846159629139
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.6916660535303308e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 1.0,
+      "power_fraction_above_original_nyquist": 5.026620455085601e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0005378273104292332
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 2.6736339588106654e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 1.0,
+      "power_fraction_above_original_nyquist": 9.024377251213797e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.001013614298763978
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 9.693012555383597e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.013492236184428e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 7,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0006628390370207539
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 6.178655986611206e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.259550213608917e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0017249009571116232
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.1408508797950584e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 2.7633108005348193e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.003328881991314197
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 4.180489525431848e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 6.235529733567309e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 8,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0022591150895905636
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 2.1535564248359986e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.6000000000000001,
+      "power_fraction_above_original_nyquist": 8.170862270178849e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0008448911273563003
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 4.173678606772763e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.6000000000000001,
+      "power_fraction_above_original_nyquist": 1.677598801734173e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0017921746403697781
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.3708721624463752e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.2368947224136415e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 9,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0009865024883509352
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 3.4191819051900205e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.2258612502759771e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.001070087934697009
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 5.031087637252556e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 2.154518593536007e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0018299010903317955
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 1.8015922476826236e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 2.9526038079702615e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 10,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.2,
+      "power_fraction_above_original_nyquist": 0.0008226143774386065
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 0,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 4.6786888083345075e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 1,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 9.638161682728041e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 2,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.001406761901981671
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 3,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 7.758211332398471e-06
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 4,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 1.8649375961993305e-05
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 5,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.00255016461837485
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 6,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 2.78220755123458e-07
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 7,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 4.1072015100728755e-08
+    },
+    {
+      "system": "CSTR",
+      "trajectory": 11,
+      "state": 8,
+      "fine_dt": 0.00025,
+      "original_nyquist": 100.0,
+      "dominant_frequency": 0.4,
+      "power_fraction_above_original_nyquist": 0.0015215326131494422
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 0,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.03,
+      "power_fraction_above_original_nyquist": 3.1177667991756685e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 0,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.03,
+      "power_fraction_above_original_nyquist": 1.6787676109718072e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 0,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.04,
+      "power_fraction_above_original_nyquist": 1.6116783527747623e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 1,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.98,
+      "power_fraction_above_original_nyquist": 9.5381470091349e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 1,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.98,
+      "power_fraction_above_original_nyquist": 2.9650107790928667e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 1,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.5899999999999999,
+      "power_fraction_above_original_nyquist": 1.7317780870759969e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 2,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.06,
+      "power_fraction_above_original_nyquist": 3.705684253795528e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 2,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.95,
+      "power_fraction_above_original_nyquist": 1.6478897336868108e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 2,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.6199999999999999,
+      "power_fraction_above_original_nyquist": 1.3866166294403063e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 3,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 9.277187152005321e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 3,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 3.0427862652057153e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 3,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 2.484716136908405e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 4,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.03,
+      "power_fraction_above_original_nyquist": 3.3339359192559277e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 4,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.98,
+      "power_fraction_above_original_nyquist": 1.5607985936534362e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 4,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.5899999999999999,
+      "power_fraction_above_original_nyquist": 1.0955097253786218e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 5,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 1.1968780237312146e-08
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 5,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 3.526525751450402e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 5,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 1.9105357196479556e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 6,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.06,
+      "power_fraction_above_original_nyquist": 6.866062590159654e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 6,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.07,
+      "power_fraction_above_original_nyquist": 2.9100913626063135e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 6,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.5899999999999999,
+      "power_fraction_above_original_nyquist": 1.950334798489734e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 7,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.98,
+      "power_fraction_above_original_nyquist": 9.607118449558105e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 7,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.98,
+      "power_fraction_above_original_nyquist": 3.2427393621480794e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 7,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.65,
+      "power_fraction_above_original_nyquist": 2.1341857001689906e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 8,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.03,
+      "power_fraction_above_original_nyquist": 8.658664260628807e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 8,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 3.234646247488863e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 8,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.56,
+      "power_fraction_above_original_nyquist": 1.6422128284916942e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 9,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.03,
+      "power_fraction_above_original_nyquist": 4.640353364585434e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 9,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.03,
+      "power_fraction_above_original_nyquist": 2.1406253689994346e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 9,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.56,
+      "power_fraction_above_original_nyquist": 1.5564331510016375e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 10,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 8.701494874342552e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 10,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 2.612985230512304e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 10,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 2.01,
+      "power_fraction_above_original_nyquist": 1.4924128437437136e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 11,
+      "state": 0,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 0.06,
+      "power_fraction_above_original_nyquist": 6.5762790932089465e-09
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 11,
+      "state": 1,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.98,
+      "power_fraction_above_original_nyquist": 2.7163749908338795e-07
+    },
+    {
+      "system": "Lorenz",
+      "trajectory": 11,
+      "state": 2,
+      "fine_dt": 0.0016666666666666668,
+      "original_nyquist": 15.0,
+      "dominant_frequency": 1.6199999999999999,
+      "power_fraction_above_original_nyquist": 1.5577081369572825e-07
+    }
+  ],
+  "frozen_delay_tangent": [
+    {
+      "trajectory": 0,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9979451368585078,
+      "rightmost_discrete_rate": -2.0569772694161443,
+      "max_frozen_amplification_2norm": 4.073750725918373
+    },
+    {
+      "trajectory": 0,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.998972427259628,
+      "rightmost_discrete_rate": -2.056202110385353,
+      "max_frozen_amplification_2norm": 2.330027028324573
+    },
+    {
+      "trajectory": 0,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977199716842301,
+      "rightmost_discrete_rate": -2.2826315380299778,
+      "max_frozen_amplification_2norm": 2.2050663605551297
+    },
+    {
+      "trajectory": 0,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988597660641393,
+      "rightmost_discrete_rate": -2.28176899430003,
+      "max_frozen_amplification_2norm": 1.545229345514181
+    },
+    {
+      "trajectory": 0,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977295334936246,
+      "rightmost_discrete_rate": -2.2730479235413634,
+      "max_frozen_amplification_2norm": 2.4117043482130036
+    },
+    {
+      "trajectory": 0,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.998864519559978,
+      "rightmost_discrete_rate": -2.272251172700837,
+      "max_frozen_amplification_2norm": 1.6088687072145287
+    },
+    {
+      "trajectory": 1,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9978375457627526,
+      "rightmost_discrete_rate": -2.164795717583173,
+      "max_frozen_amplification_2norm": 2.1663775446022706
+    },
+    {
+      "trajectory": 1,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9989183999340225,
+      "rightmost_discrete_rate": -2.1643708348886896,
+      "max_frozen_amplification_2norm": 1.5505684783923437
+    },
+    {
+      "trajectory": 1,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977145668270797,
+      "rightmost_discrete_rate": -2.2880487612423597,
+      "max_frozen_amplification_2norm": 2.2542737956630208
+    },
+    {
+      "trajectory": 1,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988570304073604,
+      "rightmost_discrete_rate": -2.2872465610576773,
+      "max_frozen_amplification_2norm": 1.5501465522517217
+    },
+    {
+      "trajectory": 1,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977256959986054,
+      "rightmost_discrete_rate": -2.2768941586885987,
+      "max_frozen_amplification_2norm": 2.327692760170624
+    },
+    {
+      "trajectory": 1,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988626005939505,
+      "rightmost_discrete_rate": -2.2760934712974104,
+      "max_frozen_amplification_2norm": 1.573670232698861
+    },
+    {
+      "trajectory": 2,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977898711458278,
+      "rightmost_discrete_rate": -2.212574793506783,
+      "max_frozen_amplification_2norm": 2.930429685939533
+    },
+    {
+      "trajectory": 2,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988947170048285,
+      "rightmost_discrete_rate": -2.2117885417690557,
+      "max_frozen_amplification_2norm": 1.828739381089249
+    },
+    {
+      "trajectory": 2,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9976922148733943,
+      "rightmost_discrete_rate": -2.3104521667948568,
+      "max_frozen_amplification_2norm": 2.3958314560597067
+    },
+    {
+      "trajectory": 2,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988459009412258,
+      "rightmost_discrete_rate": -2.309531087871033,
+      "max_frozen_amplification_2norm": 1.6022023566414376
+    },
+    {
+      "trajectory": 2,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977258284492514,
+      "rightmost_discrete_rate": -2.2767614061317123,
+      "max_frozen_amplification_2norm": 2.3281872946493296
+    },
+    {
+      "trajectory": 2,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988626514844943,
+      "rightmost_discrete_rate": -2.2759915743148773,
+      "max_frozen_amplification_2norm": 1.5740311540416578
+    },
+    {
+      "trajectory": 3,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9976955327196673,
+      "rightmost_discrete_rate": -2.3071266514638653,
+      "max_frozen_amplification_2norm": 2.564756089263885
+    },
+    {
+      "trajectory": 3,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988474955464873,
+      "rightmost_discrete_rate": -2.3063381949790505,
+      "max_frozen_amplification_2norm": 1.6732598496601765
+    },
+    {
+      "trajectory": 3,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977475717497701,
+      "rightmost_discrete_rate": -2.2549687823689184,
+      "max_frozen_amplification_2norm": 2.4513876066258007
+    },
+    {
+      "trajectory": 3,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988735173745041,
+      "rightmost_discrete_rate": -2.254235167879721,
+      "max_frozen_amplification_2norm": 1.6256670227163998
+    },
+    {
+      "trajectory": 3,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.997728430161978,
+      "rightmost_discrete_rate": -2.2741537665775957,
+      "max_frozen_amplification_2norm": 2.4688408530676305
+    },
+    {
+      "trajectory": 3,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988639693949468,
+      "rightmost_discrete_rate": -2.2733527538901543,
+      "max_frozen_amplification_2norm": 1.6331243084866824
+    },
+    {
+      "trajectory": 4,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.997764700891517,
+      "rightmost_discrete_rate": -2.2378011187246902,
+      "max_frozen_amplification_2norm": 2.875862304309198
+    },
+    {
+      "trajectory": 4,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988821063203444,
+      "rightmost_discrete_rate": -2.237037977716125,
+      "max_frozen_amplification_2norm": 1.805241562937037
+    },
+    {
+      "trajectory": 4,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.997722457652481,
+      "rightmost_discrete_rate": -2.280139891852295,
+      "max_frozen_amplification_2norm": 2.1824769954704557
+    },
+    {
+      "trajectory": 4,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988610217407189,
+      "rightmost_discrete_rate": -2.279254775922229,
+      "max_frozen_amplification_2norm": 1.5433303409390537
+    },
+    {
+      "trajectory": 4,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977081034996124,
+      "rightmost_discrete_rate": -2.2945269150325114,
+      "max_frozen_amplification_2norm": 2.2468121117651028
+    },
+    {
+      "trajectory": 4,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988538223355582,
+      "rightmost_discrete_rate": -2.293670056825958,
+      "max_frozen_amplification_2norm": 1.5484743765430407
+    },
+    {
+      "trajectory": 5,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9979798782500963,
+      "rightmost_discrete_rate": -2.0221649479822643,
+      "max_frozen_amplification_2norm": 3.7516282866896384
+    },
+    {
+      "trajectory": 5,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9989897129530309,
+      "rightmost_discrete_rate": -2.0215954618300205,
+      "max_frozen_amplification_2norm": 2.186556484908778
+    },
+    {
+      "trajectory": 5,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977189664856423,
+      "rightmost_discrete_rate": -2.283639034244052,
+      "max_frozen_amplification_2norm": 2.3976170944175506
+    },
+    {
+      "trajectory": 5,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988592430328963,
+      "rightmost_discrete_rate": -2.282816251177701,
+      "max_frozen_amplification_2norm": 1.6028993275923495
+    },
+    {
+      "trajectory": 5,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977361795573781,
+      "rightmost_discrete_rate": -2.266386757969723,
+      "max_frozen_amplification_2norm": 2.3541055968498474
+    },
+    {
+      "trajectory": 5,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988678387990436,
+      "rightmost_discrete_rate": -2.265605159181124,
+      "max_frozen_amplification_2norm": 1.5847061721555993
+    },
+    {
+      "trajectory": 6,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9979442349099827,
+      "rightmost_discrete_rate": -2.057881075546732,
+      "max_frozen_amplification_2norm": 2.295799113620776
+    },
+    {
+      "trajectory": 6,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9989717295433207,
+      "rightmost_discrete_rate": -2.0575989788712103,
+      "max_frozen_amplification_2norm": 1.5601094851201258
+    },
+    {
+      "trajectory": 6,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977225365017399,
+      "rightmost_discrete_rate": -2.2800608626040506,
+      "max_frozen_amplification_2norm": 2.404474320430702
+    },
+    {
+      "trajectory": 6,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988610489465772,
+      "rightmost_discrete_rate": -2.279200302161853,
+      "max_frozen_amplification_2norm": 1.6061694641989566
+    },
+    {
+      "trajectory": 6,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977201160417457,
+      "rightmost_discrete_rate": -2.2824868506334517,
+      "max_frozen_amplification_2norm": 2.416684861294583
+    },
+    {
+      "trajectory": 6,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988598154448908,
+      "rightmost_discrete_rate": -2.281670120059731,
+      "max_frozen_amplification_2norm": 1.6111060167644966
+    },
+    {
+      "trajectory": 7,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9986473784311765,
+      "rightmost_discrete_rate": -1.3535371871276105,
+      "max_frozen_amplification_2norm": 2.909553019574748
+    },
+    {
+      "trajectory": 7,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9993236014650425,
+      "rightmost_discrete_rate": -1.353254791306096,
+      "max_frozen_amplification_2norm": 1.8203884821630294
+    },
+    {
+      "trajectory": 7,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977195543865714,
+      "rightmost_discrete_rate": -2.2830497894008643,
+      "max_frozen_amplification_2norm": 2.4226922644968547
+    },
+    {
+      "trajectory": 7,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988595328974501,
+      "rightmost_discrete_rate": -2.282235860069009,
+      "max_frozen_amplification_2norm": 1.6136903701035974
+    },
+    {
+      "trajectory": 7,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977161502430637,
+      "rightmost_discrete_rate": -2.286461719436847,
+      "max_frozen_amplification_2norm": 2.2645224254617293
+    },
+    {
+      "trajectory": 7,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988578157468362,
+      "rightmost_discrete_rate": -2.2856740854317477,
+      "max_frozen_amplification_2norm": 1.5504195541812933
+    },
+    {
+      "trajectory": 8,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9976959555533262,
+      "rightmost_discrete_rate": -2.3067028412376915,
+      "max_frozen_amplification_2norm": 2.304120901464596
+    },
+    {
+      "trajectory": 8,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988477006738764,
+      "rightmost_discrete_rate": -2.30592746687706,
+      "max_frozen_amplification_2norm": 1.5639672382926417
+    },
+    {
+      "trajectory": 8,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977135722654151,
+      "rightmost_discrete_rate": -2.2890456016147045,
+      "max_frozen_amplification_2norm": 2.3030771863911603
+    },
+    {
+      "trajectory": 8,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988565475246196,
+      "rightmost_discrete_rate": -2.288213431876653,
+      "max_frozen_amplification_2norm": 1.5636287268654132
+    },
+    {
+      "trajectory": 8,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977330063410114,
+      "rightmost_discrete_rate": -2.26956717928538,
+      "max_frozen_amplification_2norm": 2.4091023879581215
+    },
+    {
+      "trajectory": 8,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988662517622616,
+      "rightmost_discrete_rate": -2.2687828329055506,
+      "max_frozen_amplification_2norm": 1.6076792386079386
+    },
+    {
+      "trajectory": 9,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.997838258343623,
+      "rightmost_discrete_rate": -2.164081592704819,
+      "max_frozen_amplification_2norm": 2.8368558825330434
+    },
+    {
+      "trajectory": 9,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9989188600147887,
+      "rightmost_discrete_rate": -2.163449677244121,
+      "max_frozen_amplification_2norm": 1.7888397922890231
+    },
+    {
+      "trajectory": 9,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9976936034473513,
+      "rightmost_discrete_rate": -2.309060381863662,
+      "max_frozen_amplification_2norm": 2.239489708722341
+    },
+    {
+      "trajectory": 9,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988465734470993,
+      "rightmost_discrete_rate": -2.3081845225071334,
+      "max_frozen_amplification_2norm": 1.549443503694707
+    },
+    {
+      "trajectory": 9,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977317052565519,
+      "rightmost_discrete_rate": -2.27087122084717,
+      "max_frozen_amplification_2norm": 2.2909990716865196
+    },
+    {
+      "trajectory": 9,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988655934212314,
+      "rightmost_discrete_rate": -2.2701010098807712,
+      "max_frozen_amplification_2norm": 1.5581879742675684
+    },
+    {
+      "trajectory": 10,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977228761375813,
+      "rightmost_discrete_rate": -2.2797204515467615,
+      "max_frozen_amplification_2norm": 2.822856895448722
+    },
+    {
+      "trajectory": 10,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988612367937625,
+      "rightmost_discrete_rate": -2.2788241794413087,
+      "max_frozen_amplification_2norm": 1.782863343997256
+    },
+    {
+      "trajectory": 10,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977272043636888,
+      "rightmost_discrete_rate": -2.2753823564474955,
+      "max_frozen_amplification_2norm": 2.388479186482186
+    },
+    {
+      "trajectory": 10,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988633443165265,
+      "rightmost_discrete_rate": -2.2746043329541585,
+      "max_frozen_amplification_2norm": 1.5993171415428018
+    },
+    {
+      "trajectory": 10,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.997730059169499,
+      "rightmost_discrete_rate": -2.2725210515602736,
+      "max_frozen_amplification_2norm": 2.3205126303774084
+    },
+    {
+      "trajectory": 10,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988647690027006,
+      "rightmost_discrete_rate": -2.2717517201994064,
+      "max_frozen_amplification_2norm": 1.5705619443996948
+    },
+    {
+      "trajectory": 11,
+      "index": 5,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977545172373852,
+      "rightmost_discrete_rate": -2.248007639453159,
+      "max_frozen_amplification_2norm": 2.5552092961775363
+    },
+    {
+      "trajectory": 11,
+      "index": 5,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.998877016780864,
+      "rightmost_discrete_rate": -2.247228474501178,
+      "max_frozen_amplification_2norm": 1.669452957050043
+    },
+    {
+      "trajectory": 11,
+      "index": 500,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.9977109620734826,
+      "rightmost_discrete_rate": -2.2916617786613096,
+      "max_frozen_amplification_2norm": 2.44026373721297
+    },
+    {
+      "trajectory": 11,
+      "index": 500,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9988552584270676,
+      "rightmost_discrete_rate": -2.290794580064689,
+      "max_frozen_amplification_2norm": 1.620861317294035
+    },
+    {
+      "trajectory": 11,
+      "index": 995,
+      "h": 0.001,
+      "dimension": 84,
+      "spectral_radius": 0.997905450028574,
+      "rightmost_discrete_rate": -2.096746609064918,
+      "max_frozen_amplification_2norm": 2.1931233068469567
+    },
+    {
+      "trajectory": 11,
+      "index": 995,
+      "h": 0.0005,
+      "dimension": 159,
+      "spectral_radius": 0.9989524441025204,
+      "rightmost_discrete_rate": -2.0962099352935,
+      "max_frozen_amplification_2norm": 1.545410483390194
+    }
+  ],
+  "raw_sha256": {
+    "raw_resolution\\cstr_00.npz": "123cd485cac4457b88f316c4393c06881395217c2d94fe289959e96c3907941c",
+    "raw_resolution\\cstr_01.npz": "13f01bfe62e7d822996eb9148dd9a0a504e388d62e454bb01907ebcc53e06014",
+    "raw_resolution\\cstr_02.npz": "9a38d3dd5fb7cbeb4b3e0ef1d540ce59db81fd167313c3a86e62055e5e5b43e0",
+    "raw_resolution\\cstr_03.npz": "6fd68b00e047810dde4d3f54a062978ffeca6899f57b6ad27d80fb8501422ea4",
+    "raw_resolution\\cstr_04.npz": "c3d86117ee77479892fe3dbacbe0de8c0ea70706f0708ab6967c14d031483b75",
+    "raw_resolution\\cstr_05.npz": "549603715e125bcd41f872c7acc2f923f63ce75e92b5dc3c70e1c6a0c58e643d",
+    "raw_resolution\\cstr_06.npz": "406ec3aea3d357409bbf2940b37878ad2fc2951fd6e8b8a6317de306d50d1a88",
+    "raw_resolution\\cstr_07.npz": "8e1b3254feb5f34899cbba34b8c9d7135bf378100f3f08e43ffaab3a65d39bc1",
+    "raw_resolution\\cstr_08.npz": "1099965a078ef547a160491ec70e6e21b8f7f9ad0a31eb4786ce249c47bec196",
+    "raw_resolution\\cstr_09.npz": "2b467623be5e2f1f438c17059bdb837a3b9a7ddfc32f36057861c77a33eed811",
+    "raw_resolution\\cstr_10.npz": "f75d5f39bc33034b76854cb2361bc2a36c737ec71e8d80308d44400e38a62995",
+    "raw_resolution\\cstr_11.npz": "fb25aaf29a88aaadc7c3c582d2b9379f289f04a708b726a973d4f8c3075c6ac7",
+    "raw_resolution\\lorenz_00.npz": "dfecd5b8ae631a5ea19ea0560e2cdae340faa871bd917375ce2d2428d0707ecb",
+    "raw_resolution\\lorenz_01.npz": "a8bb72c4dd4604b320db733d9fb023bc3967c28a1900de10a274f8287ebb6354",
+    "raw_resolution\\lorenz_02.npz": "45545c3a67f152b316e26dc845b7aac3a4a28cb467758873f13db18dcb89187b",
+    "raw_resolution\\lorenz_03.npz": "9907e6a96f9ddd7d66a01b0f658a7a0ef80c38b2b0d43f09241166b011345fb9",
+    "raw_resolution\\lorenz_04.npz": "d9ddbdf577fcfe4fc473178fdc0dd25bed24e91e3bad42022134ebe57545cb58",
+    "raw_resolution\\lorenz_05.npz": "b44e06d3603b405aa4c136b1e2359c007c9100134250ba4680989305d1dce070",
+    "raw_resolution\\lorenz_06.npz": "285119414868406289cb2e6cbb031c8926fbfe085f39168750b0cb4600f74cc5",
+    "raw_resolution\\lorenz_07.npz": "ca5f17ddcb5ebe12502a85cdd652ee08436b331fe9c84274ea530e6ac1c7eb28",
+    "raw_resolution\\lorenz_08.npz": "88c48ad37a719fd914370519a337fddf268996378600cfdf19c642d240428aab",
+    "raw_resolution\\lorenz_09.npz": "ba8f280c952ac3995aaf9a14185deaf238df9752ee80cabcbc2e445f8f6f3f31",
+    "raw_resolution\\lorenz_10.npz": "aca93ed5f04e4b1cd0f34ffabe9a1308049d150deb1b2b6a374ef121dd52f5c7",
+    "raw_resolution\\lorenz_11.npz": "5a4bfb52fc2bf1bbc45f2377a84835c8c9a63cb767f09835d79589d3d8a75f81"
+  },
+  "limitations": "Finite-window spectra are descriptive. Held inputs and process noise are not bandlimited. CSTR spectra here exclude process noise. Frozen tangent radii are local discretized diagnostics, not global DDE or nonlinear-predictor stability certificates."
+}

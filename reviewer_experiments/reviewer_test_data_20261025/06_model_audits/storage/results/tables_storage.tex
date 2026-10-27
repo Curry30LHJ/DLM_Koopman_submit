@@ -1,0 +1,47 @@
+\begin{table}[pos=!htbp]
+\color{blue}\colorlet{scolor}{blue}
+\hypersetup{linkcolor=blue,citecolor=blue}
+\captionsetup{labelfont={color=blue},textfont={color=blue}}
+\caption{\textcolor{blue}{Learned model payload and compact information buffers at common float64 precision. Each cell gives Lorenz / CSTR. Buffers are per prediction origin; initialization and rollout columns describe successive phases and are not additive.}}
+\label{tab:storage-components}
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Predictor & Model payload (KiB) & Initial buffer (bytes) & Rollout buffer (bytes) \\
+\midrule
+MLP--K & 162.40 / 457.31 & 480 / 1,896 & 280 / 328 \\
+LSTM--K & 96.70 / 106.47 & 480 / 1,896 & 280 / 328 \\
+HaKAN--K & 1,208.20 / 1,214.59 & 480 / 1,896 & 280 / 328 \\
+Markov RBF & 3.97 / 54.22 & 24 / 72 & 24 / 72 \\
+Delay--RBF & 4.92 / 180.54 & 104 / 192 & 104 / 192 \\
+DLM--K & 1,250.86 / 1,271.46 & 480 / 1,896 & 5,600 / 6,560 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[pos=!htbp]
+\color{blue}\colorlet{scolor}{blue}
+\hypersetup{linkcolor=blue,citecolor=blue}
+\captionsetup{labelfont={color=blue},textfont={color=blue}}
+\caption{\textcolor{blue}{Extra peak tensor allocation (MiB) in standardized float64 probes with batch size 256: 60-step inference without gradients and a 30-step neural training update. Values are the maximum of three repetitions after warmup. Dashes indicate an inapplicable operation, not zero memory.}}
+\label{tab:storage-profiles}
+\centering\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{Inference} & \multicolumn{2}{c}{Training update} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Predictor / stage & Lorenz & CSTR & Lorenz & CSTR \\
+\midrule
+MLP--K & 4.63 & 6.38 & 4.59 & 6.70 \\
+LSTM--K & 11.51 & 12.19 & 21.95 & 23.68 \\
+HaKAN--K & 128.71 & 129.04 & 1,523.79 & 1,524.49 \\
+Markov RBF & 1.14 & 5.17 & --- & --- \\
+Delay--RBF & 1.21 & 11.22 & --- & --- \\
+DLM--K (joint) & 129.36 & 144.97 & 2,185.45 & 2,302.16 \\
+DLM--K (initialization) & --- & --- & 1,532.48 & 1,533.18 \\
+DLM--K (AFT only) & --- & --- & 714.27 & 831.29 \\
+\bottomrule
+\end{tabular}
+\end{table}

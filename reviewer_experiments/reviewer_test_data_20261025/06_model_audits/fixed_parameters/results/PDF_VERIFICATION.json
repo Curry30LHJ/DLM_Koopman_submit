@@ -1,0 +1,99 @@
+{
+  "page_count": 26,
+  "new_content_pages": [
+    4,
+    6,
+    10,
+    20,
+    21
+  ],
+  "new_content_printed_pages": [
+    3,
+    5,
+    9,
+    19,
+    20
+  ],
+  "all_new_content_blue": true,
+  "regions": [
+    {
+      "page": 4,
+      "start": "Equation (1) specifies",
+      "end": "Given a history length",
+      "characters": 531,
+      "all_blue": true
+    },
+    {
+      "page": 6,
+      "start": "Specifically,",
+      "end": "Overlapping patches are then",
+      "characters": 532,
+      "all_blue": true
+    },
+    {
+      "page": 10,
+      "start": "The coefficients 10",
+      "end": "At the selected Lorenz checkpoint",
+      "characters": 396,
+      "all_blue": true
+    },
+    {
+      "page": 20,
+      "start": "The CSTR balance structure is adapted",
+      "end": "B. Implementation and evaluation details",
+      "characters": 773,
+      "all_blue": true
+    },
+    {
+      "page": 20,
+      "start": "Prescribed settings and learned quantities.",
+      "end": null,
+      "characters": 316,
+      "all_blue": true
+    },
+    {
+      "page": 21,
+      "start": null,
+      "end": "Table B.1:",
+      "characters": 1364,
+      "all_blue": true
+    }
+  ],
+  "all_page_bounds_verified": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "equation_numbers": {
+    "eq:delayed-process": "1",
+    "eq:hahn-map": "6",
+    "eq:delayed-lorenz": "19",
+    "eq:spectral-loss": "17"
+  },
+  "no_unresolved_references": true,
+  "new_overfull_boxes": 0,
+  "visual_review_completed": true
+}

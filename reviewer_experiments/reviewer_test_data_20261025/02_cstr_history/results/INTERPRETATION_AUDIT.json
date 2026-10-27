@@ -1,0 +1,24 @@
+{
+  "coverage": "11/11 checked",
+  "formal_significance_tests": 0,
+  "confidence_intervals": null,
+  "training_seeds": 1,
+  "inferential_scope": "Descriptive comparison for fixed CSTR conditions and one training seed; no significance or seed-robustness claims.",
+  "paired_trajectory_counts": {
+    "L20_better_than_L6_at_h60": 12,
+    "L20_better_than_L40_at_h60": 11
+  },
+  "fallacy_scan": {
+    "Simpson_paradox": "Examined per-trajectory comparisons as well as equal-weight means; no pooling across histories. Individual exceptions are retained.",
+    "Ecological_fallacy": "Claims refer to mean error over the tested trajectories, not every origin or process.",
+    "Berkson_paradox": "All 12 pre-specified generated test trajectories retained; no outcome-based selection.",
+    "Collider_bias": "No outcome-dependent covariate adjustment or trajectory filtering.",
+    "Base_rate_neglect": "Not applicable to this continuous prediction metric; no diagnostic-classification claims.",
+    "Regression_to_mean": "Windows chosen before fitting; no selection of extreme test cases for retesting.",
+    "Survivorship_bias": "All 14 fits, 216 raw archives and all horizons retained; no nonfinite predictions observed.",
+    "Look_elsewhere": "Six reporting steps frozen in advance; all 108 entries retained including the adverse step-5 result.",
+    "Forking_paths": "No retraining or hyperparameter changes after test generation; H100 retained with pre-specified H60 reporting.",
+    "Causal_overclaim": "History-dependent capacity changes explicitly reported; no pure causal history effect or universal minimum claimed.",
+    "Reverse_causality": "History set before fitting; causal input chronology checked, with no future reference states supplied."
+  }
+}

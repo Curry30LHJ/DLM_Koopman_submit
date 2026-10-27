@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "pages": 32,
+  "pdf_sha256": "93ab3a4bf205a0a562043ecd6a8e770c717fe7a2a36cb0f5c953a1e269a4fba2",
+  "viewer_pages_with_new_content": [
+    4,
+    5,
+    6,
+    21,
+    31
+  ],
+  "printed_pages": [
+    3,
+    4,
+    5,
+    20,
+    30
+  ],
+  "visual_review_pages": [
+    4,
+    5,
+    6,
+    21,
+    31
+  ],
+  "blue_spot_checks": [
+    {
+      "viewer_page": 4,
+      "term": "several",
+      "blue": true
+    },
+    {
+      "viewer_page": 4,
+      "term": "physical",
+      "blue": true
+    },
+    {
+      "viewer_page": 4,
+      "term": "delays",
+      "blue": true
+    },
+    {
+      "viewer_page": 5,
+      "term": "temporal-coverage",
+      "blue": true
+    },
+    {
+      "viewer_page": 5,
+      "term": "refitting",
+      "blue": true
+    },
+    {
+      "viewer_page": 5,
+      "term": "noninteger",
+      "blue": true
+    },
+    {
+      "viewer_page": 6,
+      "term": "released",
+      "blue": true
+    },
+    {
+      "viewer_page": 6,
+      "term": "synchronized",
+      "blue": true
+    },
+    {
+      "viewer_page": 6,
+      "term": "missing-sensor",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "common",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "clock,",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "Asynchrony",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "timestamp-aware",
+      "blue": true
+    },
+    {
+      "viewer_page": 21,
+      "term": "variable-step",
+      "blue": true
+    },
+    {
+      "viewer_page": 31,
+      "term": "Purushotham",
+      "blue": true
+    },
+    {
+      "viewer_page": 31,
+      "term": "6085",
+      "blue": true
+    }
+  ],
+  "all_new_prose_and_new_reference_blue": true,
+  "prior_blue_reference_color_preserved": true,
+  "no_color_bleed_to_existing_black_reference": true,
+  "no_undefined_references_or_citations": true,
+  "no_new_overfull_boxes": true,
+  "preexisting_overfull_boxes": [
+    "117.0831pt too wide"
+  ],
+  "bibtex_warning": "Pre-existing empty pages field in Huang2025TimeKAN; that entry is unchanged.",
+  "layout": "Latest PNGs checked for all new paragraphs and reference: no clipped text, overlap or unreadable mathematical labels."
+}

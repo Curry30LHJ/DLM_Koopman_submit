@@ -1,0 +1,29 @@
+{
+  "status": "VERIFIED_FOR_THE_CITED_CONCEPTS",
+  "sources": [
+    {
+      "key": "Korda2018",
+      "existing_reference": true,
+      "primary_full_text": "https://arxiv.org/pdf/1611.03537",
+      "publisher": "https://www.sciencedirect.com/science/article/pii/S000510981830133X",
+      "doi": "10.1016/j.automatica.2018.03.046",
+      "inspected_version": "arXiv v3, March 2018",
+      "locator": "Sections 5.1-5.2, pp. 9-11: fixed linear lifted dynamics, quadratic program, causal receding-horizon initialization.",
+      "scope": "Supports the structural contrast with linear lifted MPC; no stability or runtime result transferred to AFT."
+    },
+    {
+      "key": "Rawlings2024MPC",
+      "existing_reference": false,
+      "primary_full_text": "https://sites.engineering.ucsb.edu/~jbraw/mpc/MPC-book-2nd-edition-5th-printing.pdf",
+      "inspected_edition": "Second edition, fifth printing, September 2024; copyright 2024; title and author pages verified.",
+      "authors": [
+        "James B. Rawlings",
+        "David Q. Mayne",
+        "Moritz M. Diehl"
+      ],
+      "publisher": "Nob Hill Publishing",
+      "locator": "Chapter 2, Assumption 2.14, pp. 114-115; Chapter 3, pp. 210-212; Chapter 8, single shooting pp. 533-534.",
+      "scope": "Terminal invariance/decrease is one conditional MPC design route; model/estimation errors require robustness treatment. No application theorem asserted for DLM-K."
+    }
+  ]
+}

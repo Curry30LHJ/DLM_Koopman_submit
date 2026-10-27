@@ -1,0 +1,21 @@
+{
+  "reviewer_comment": "R2-5: How many parameters do you optimize?",
+  "scope": "Read-only parameter and optimizer audit of the frozen submission models; no fitting or optimizer steps.",
+  "systems": [
+    "lorenz",
+    "three_tank"
+  ],
+  "manuscript_stages_to_code": {
+    "A": "A",
+    "B": "C",
+    "C": "D"
+  },
+  "counts": "Unique registered scalar parameter entries including biases; buffers and fixed maps excluded. Report actual optimizer group membership separately from gradient activity.",
+  "preserve": [
+    "prior delay revision",
+    "prior history revision",
+    "original code/data/checkpoints",
+    "unrelated worktree changes"
+  ],
+  "manuscript_before_sha256": "c2ba40b58df37331468298bd75bfb1341c5ffd9135f423380e8f90f06cc90480"
+}

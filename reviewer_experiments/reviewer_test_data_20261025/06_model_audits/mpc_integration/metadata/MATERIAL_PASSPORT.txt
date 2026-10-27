@@ -1,0 +1,7 @@
+Material Passport
+Origin Skill: academic-research-suite
+Origin Mode: local manuscript revision with frozen-input derivative audit
+Reviewer item: R1-5
+Date: 2026-10-24
+Verification Status: source/interface, archived derivatives, preservation, primary citations, compilation, blue-text and four-page visual checks PASS. Not a submission certification.
+Boundary: no MPC controller, fitting, new plant simulation, closed-loop stability theorem or real-time performance result. Only relevant sections of primary MPC sources inspected; no human-read certification.

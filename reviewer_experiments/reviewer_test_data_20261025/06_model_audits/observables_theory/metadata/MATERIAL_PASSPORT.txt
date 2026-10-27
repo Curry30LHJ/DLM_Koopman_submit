@@ -1,0 +1,6 @@
+Origin Skill: academic-research-suite
+Mode: theory/citation verification; local revision; inline integrity review
+Concern: R1-3
+Sources: six primary publications and original released model code
+Preservation: 147 previous manuscript blocks; six previous rounds; original bibliography prefix and rendered entries; original figures/tables/numbered equations
+Boundary: no finite-sample sufficiency theorem, no Koopman-invariance claim for DLM-K, no new performance comparison

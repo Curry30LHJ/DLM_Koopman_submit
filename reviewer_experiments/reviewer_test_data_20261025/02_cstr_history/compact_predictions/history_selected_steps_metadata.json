@@ -1,0 +1,34 @@
+{
+  "kind": "cstr_history",
+  "source": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\cstr_history_20261022\\results\\raw",
+  "conditions": [
+    "hist006",
+    "hist020",
+    "hist040"
+  ],
+  "models": [
+    "dlm_koopman",
+    "hakan_koopman",
+    "lstm_koopman",
+    "mlp_koopman",
+    "rbf_markov",
+    "rbf_physical_delay"
+  ],
+  "test_trajectories_per_condition": 12,
+  "origins_per_trajectory": 862,
+  "state_dimension": 9,
+  "original_horizon_steps": 100,
+  "retained_steps": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    60
+  ],
+  "original_prediction_dtype": "float64",
+  "compact_prediction_dtype": "float32",
+  "truth_deduplicated_across_models": true,
+  "nonfinite_selected_prediction_values": 0,
+  "source_files": 216
+}

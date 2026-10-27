@@ -1,0 +1,6 @@
+{
+  "restored_asset": "write\\\u7a3f\u4ef6\\thumbnails\\cas-email.jpeg",
+  "source": "D:\\lhj\\Reaserah\\History-Conditioned_Koopman_Network\\write\\jpc_manuscript\\thumbnails\\cas-email.jpeg",
+  "sha256": "51cadbff5919f51f76f6f9238b18c9b5d512ea9234cb6d7fef7b53d9767fa845",
+  "reason": "Current manuscript directory lacks the CAS email-icon asset required by its existing document class. Reused the local CAS template asset without changing manuscript content."
+}

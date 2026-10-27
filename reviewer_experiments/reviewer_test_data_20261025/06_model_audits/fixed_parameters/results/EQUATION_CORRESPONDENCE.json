@@ -1,0 +1,11 @@
+{
+  "reviewer_pdf_sha256": "d212d5ada353092df8a77d46621fdde8931007dee7230281ecde16cc724df374",
+  "old_desktop_pdf_sha256": "28d6f62e59f305cd8dcab4532c3e769ddd96068137fc18230f335850587cddf4",
+  "submitted_version_identity": "Not established: user previously could not confirm.",
+  "current_equation_1": "x[k+1] = F(x[k], u[k], H[k]); abstract unknown process map, no numerical parameter set.",
+  "desktop_equation_1": "Same abstract process-map expression.",
+  "current_hahn_equation": "6",
+  "desktop_hahn_equation": "5",
+  "physical_equations": "19 (Lorenz), A.2-A.7 (CSTR)",
+  "interpretation": "Do not assign the reviewer intention to Eq. 6. Address the fixed-parameter categories and explicitly use current numbering."
+}

@@ -1,0 +1,31 @@
+{
+  "lowest_at_all_18_prespecified_delay_horizon_combinations": true,
+  "values": [
+    {
+      "tau_h": 0.01,
+      "dlm_h30": 0.004406087247613697,
+      "dlm_h60": 0.004849488714790139,
+      "delay_rbf_h60": 0.008818639937499437,
+      "reduction_vs_delay_rbf_h60_percent": 45.008654972194805
+    },
+    {
+      "tau_h": 0.025,
+      "dlm_h30": 0.005375500397432904,
+      "dlm_h60": 0.006862163556852205,
+      "delay_rbf_h60": 0.019569101207286974,
+      "reduction_vs_delay_rbf_h60_percent": 64.93368047840168
+    },
+    {
+      "tau_h": 0.05,
+      "dlm_h30": 0.00803869345204478,
+      "dlm_h60": 0.010656935486461032,
+      "delay_rbf_h60": 0.024080618211610585,
+      "reduction_vs_delay_rbf_h60_percent": 55.74475957048834
+    }
+  ],
+  "figure_source": "results/SUMMARY.csv",
+  "reported_horizon_precommitted": 60,
+  "n_trajectories_per_condition": 12,
+  "n_training_seeds": 1,
+  "formal_significance_tests": 0
+}

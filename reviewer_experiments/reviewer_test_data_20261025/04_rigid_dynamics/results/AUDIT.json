@@ -1,0 +1,1645 @@
+{
+  "status": "PASS",
+  "systems": [
+    "delayed_lorenz",
+    "three_tank_recycle_delay"
+  ],
+  "cstr": {
+    "trajectories": 12,
+    "source": "cstr_history_20261022/holdout/test_*.npz",
+    "state_dim": 9,
+    "sample_dt_h": 0.005,
+    "integration_dt_h": 0.001,
+    "delay_h": 0.025,
+    "delay_samples": 5,
+    "action_hold_samples": 5,
+    "replay_noise": false,
+    "reference_h": 0.00025,
+    "convergence": [
+      {
+        "h": 0.0025,
+        "sample_steps": 2,
+        "delay_steps": 10,
+        "mean_standardized_rmse_to_finest": 0.021174470233173565,
+        "max_standardized_rmse_to_finest": 0.02892331709161343,
+        "mean_endpoint_standardized_rmse_to_finest": 0.01707911238753657,
+        "max_endpoint_standardized_rmse_to_finest": 0.02706038632592861,
+        "ratio_to_next_finer": 3.399001273578104
+      },
+      {
+        "h": 0.001,
+        "sample_steps": 5,
+        "delay_steps": 25,
+        "mean_standardized_rmse_to_finest": 0.006229615268982631,
+        "max_standardized_rmse_to_finest": 0.008642494125175877,
+        "mean_endpoint_standardized_rmse_to_finest": 0.005001658908318206,
+        "max_endpoint_standardized_rmse_to_finest": 0.007636600631202727,
+        "ratio_to_next_finer": 3.1140997024685513
+      },
+      {
+        "h": 0.0005,
+        "sample_steps": 10,
+        "delay_steps": 50,
+        "mean_standardized_rmse_to_finest": 0.00200045466240031,
+        "max_standardized_rmse_to_finest": 0.002788124440211217,
+        "mean_endpoint_standardized_rmse_to_finest": 0.0016038172770591094,
+        "max_endpoint_standardized_rmse_to_finest": 0.0024193259460182164,
+        "ratio_to_next_finer": null
+      },
+      {
+        "h": 0.00025,
+        "sample_steps": 20,
+        "delay_steps": 100,
+        "mean_standardized_rmse_to_finest": 0.0,
+        "max_standardized_rmse_to_finest": 0.0,
+        "mean_endpoint_standardized_rmse_to_finest": 0.0,
+        "max_endpoint_standardized_rmse_to_finest": 0.0
+      }
+    ],
+    "jacobian_sampling": {
+      "samples_per_trajectory": 100,
+      "finite_difference_relative_step": 1e-06,
+      "metrics": [
+        {
+          "trajectory": 0,
+          "metric": "max_abs_eig",
+          "mean": 156.4178815932306,
+          "p95": 186.18401344374593,
+          "max": 189.65229436799666
+        },
+        {
+          "trajectory": 0,
+          "metric": "max_real_eig",
+          "mean": -38.7819331766005,
+          "p95": -36.38200204902943,
+          "max": -36.25342357391078
+        },
+        {
+          "trajectory": 0,
+          "metric": "min_real_eig",
+          "mean": -156.4178815932306,
+          "p95": -144.94028157613118,
+          "max": -144.0918116531354
+        },
+        {
+          "trajectory": 0,
+          "metric": "euler_h_rho",
+          "mean": 0.15641788159323058,
+          "p95": 0.18618401344374594,
+          "max": 0.18965229436799666
+        },
+        {
+          "trajectory": 0,
+          "metric": "delay_gain_fro",
+          "mean": 180.68894156320945,
+          "p95": 210.87051032340824,
+          "max": 214.87382186333878
+        },
+        {
+          "trajectory": 0,
+          "metric": "delay_gain_2",
+          "mean": 171.74096111648393,
+          "p95": 202.7523749576723,
+          "max": 206.57353132305983
+        },
+        {
+          "trajectory": 0,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.031305749059502,
+          "p95": 4.133583132244551,
+          "max": 4.234911418066177
+        },
+        {
+          "trajectory": 1,
+          "metric": "max_abs_eig",
+          "mean": 148.2306467302222,
+          "p95": 150.95091880553306,
+          "max": 151.863728021073
+        },
+        {
+          "trajectory": 1,
+          "metric": "max_real_eig",
+          "mean": -36.95154384601412,
+          "p95": -36.05831627496975,
+          "max": -35.80975772850604
+        },
+        {
+          "trajectory": 1,
+          "metric": "min_real_eig",
+          "mean": -148.2306467302222,
+          "p95": -143.1090160127966,
+          "max": -141.1987759235959
+        },
+        {
+          "trajectory": 1,
+          "metric": "euler_h_rho",
+          "mean": 0.14823064673022218,
+          "p95": 0.15095091880553307,
+          "max": 0.151863728021073
+        },
+        {
+          "trajectory": 1,
+          "metric": "delay_gain_fro",
+          "mean": 172.37339723985642,
+          "p95": 175.42737412419405,
+          "max": 181.52585455602176
+        },
+        {
+          "trajectory": 1,
+          "metric": "delay_gain_2",
+          "mean": 163.2507538879136,
+          "p95": 166.440440475255,
+          "max": 172.73511440737389
+        },
+        {
+          "trajectory": 1,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.011310519751052,
+          "p95": 4.039681932568853,
+          "max": 4.051154066063471
+        },
+        {
+          "trajectory": 2,
+          "metric": "max_abs_eig",
+          "mean": 153.51780602516834,
+          "p95": 166.61195089120795,
+          "max": 169.2747105784382
+        },
+        {
+          "trajectory": 2,
+          "metric": "max_real_eig",
+          "mean": -38.040704942041295,
+          "p95": -36.295778583659235,
+          "max": -35.95504681712049
+        },
+        {
+          "trajectory": 2,
+          "metric": "min_real_eig",
+          "mean": -153.51780602516834,
+          "p95": -144.4883882169172,
+          "max": -142.36649824502197
+        },
+        {
+          "trajectory": 2,
+          "metric": "euler_h_rho",
+          "mean": 0.15351780602516832,
+          "p95": 0.16661195089120795,
+          "max": 0.1692747105784382
+        },
+        {
+          "trajectory": 2,
+          "metric": "delay_gain_fro",
+          "mean": 177.90923474018027,
+          "p95": 192.15330812100422,
+          "max": 195.1220530269473
+        },
+        {
+          "trajectory": 2,
+          "metric": "delay_gain_2",
+          "mean": 168.94497072783858,
+          "p95": 183.6723872341872,
+          "max": 186.64607291066403
+        },
+        {
+          "trajectory": 2,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.034752148789474,
+          "p95": 4.1187260816021904,
+          "max": 4.158624765624259
+        },
+        {
+          "trajectory": 3,
+          "metric": "max_abs_eig",
+          "mean": 150.64301858680983,
+          "p95": 154.6809944896327,
+          "max": 155.78951669858927
+        },
+        {
+          "trajectory": 3,
+          "metric": "max_real_eig",
+          "mean": -37.42574503104314,
+          "p95": -35.81762423473799,
+          "max": -35.772647725709675
+        },
+        {
+          "trajectory": 3,
+          "metric": "min_real_eig",
+          "mean": -150.64301858680983,
+          "p95": -142.29653000425674,
+          "max": -141.44789239618643
+        },
+        {
+          "trajectory": 3,
+          "metric": "euler_h_rho",
+          "mean": 0.15064301858680978,
+          "p95": 0.15468099448963268,
+          "max": 0.15578951669858926
+        },
+        {
+          "trajectory": 3,
+          "metric": "delay_gain_fro",
+          "mean": 174.84154757529473,
+          "p95": 179.1934685878567,
+          "max": 181.367209361417
+        },
+        {
+          "trajectory": 3,
+          "metric": "delay_gain_2",
+          "mean": 165.7961526555713,
+          "p95": 170.29593879203424,
+          "max": 172.66969506412156
+        },
+        {
+          "trajectory": 3,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.024605628515421,
+          "p95": 4.059157365600378,
+          "max": 4.074862033293556
+        },
+        {
+          "trajectory": 4,
+          "metric": "max_abs_eig",
+          "mean": 148.25891630336034,
+          "p95": 160.51265788262458,
+          "max": 162.97618099545278
+        },
+        {
+          "trajectory": 4,
+          "metric": "max_real_eig",
+          "mean": -36.9986892853835,
+          "p95": -35.96835244978036,
+          "max": -35.830049609235786
+        },
+        {
+          "trajectory": 4,
+          "metric": "min_real_eig",
+          "mean": -148.25891630336034,
+          "p95": -142.98126538006883,
+          "max": -141.65634964564236
+        },
+        {
+          "trajectory": 4,
+          "metric": "euler_h_rho",
+          "mean": 0.1482589163033603,
+          "p95": 0.1605126578826246,
+          "max": 0.16297618099545277
+        },
+        {
+          "trajectory": 4,
+          "metric": "delay_gain_fro",
+          "mean": 172.23227046064983,
+          "p95": 185.79746280846393,
+          "max": 188.11949897095928
+        },
+        {
+          "trajectory": 4,
+          "metric": "delay_gain_2",
+          "mean": 163.08822635894592,
+          "p95": 177.05279245373603,
+          "max": 179.4839857919996
+        },
+        {
+          "trajectory": 4,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.006448377347743,
+          "p95": 4.067626439956681,
+          "max": 4.109045719734592
+        },
+        {
+          "trajectory": 5,
+          "metric": "max_abs_eig",
+          "mean": 153.64433164980824,
+          "p95": 172.61640843847482,
+          "max": 175.2357305167635
+        },
+        {
+          "trajectory": 5,
+          "metric": "max_real_eig",
+          "mean": -38.10231678925379,
+          "p95": -36.822821985390675,
+          "max": -36.587142439683774
+        },
+        {
+          "trajectory": 5,
+          "metric": "min_real_eig",
+          "mean": -153.64433164980824,
+          "p95": -146.97094472392274,
+          "max": -145.48616154610278
+        },
+        {
+          "trajectory": 5,
+          "metric": "euler_h_rho",
+          "mean": 0.15364433164980823,
+          "p95": 0.17261640843847484,
+          "max": 0.17523573051676353
+        },
+        {
+          "trajectory": 5,
+          "metric": "delay_gain_fro",
+          "mean": 178.0384665035756,
+          "p95": 198.3920132744929,
+          "max": 201.45373795509875
+        },
+        {
+          "trajectory": 5,
+          "metric": "delay_gain_2",
+          "mean": 169.06560559304143,
+          "p95": 189.8734634265684,
+          "max": 193.16604174523107
+        },
+        {
+          "trajectory": 5,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.031412638262289,
+          "p95": 4.103315747087414,
+          "max": 4.197339280261153
+        },
+        {
+          "trajectory": 6,
+          "metric": "max_abs_eig",
+          "mean": 148.7265922935032,
+          "p95": 152.07891908798524,
+          "max": 153.0823762483652
+        },
+        {
+          "trajectory": 6,
+          "metric": "max_real_eig",
+          "mean": -37.06775743517587,
+          "p95": -36.26232823458653,
+          "max": -36.03401557599973
+        },
+        {
+          "trajectory": 6,
+          "metric": "min_real_eig",
+          "mean": -148.7265922935032,
+          "p95": -143.95863638040956,
+          "max": -142.67847677979228
+        },
+        {
+          "trajectory": 6,
+          "metric": "euler_h_rho",
+          "mean": 0.1487265922935032,
+          "p95": 0.15207891908798524,
+          "max": 0.1530823762483652
+        },
+        {
+          "trajectory": 6,
+          "metric": "delay_gain_fro",
+          "mean": 172.82983905644397,
+          "p95": 176.5114259939488,
+          "max": 181.5690000540821
+        },
+        {
+          "trajectory": 6,
+          "metric": "delay_gain_2",
+          "mean": 163.71684706182384,
+          "p95": 167.54296188117448,
+          "max": 172.5913790945616
+        },
+        {
+          "trajectory": 6,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.0121301638102045,
+          "p95": 4.04724034603089,
+          "max": 4.064891167651008
+        },
+        {
+          "trajectory": 7,
+          "metric": "max_abs_eig",
+          "mean": 153.05569213978524,
+          "p95": 165.634516201735,
+          "max": 167.20336618357277
+        },
+        {
+          "trajectory": 7,
+          "metric": "max_real_eig",
+          "mean": -37.95047852014311,
+          "p95": -36.56869766015357,
+          "max": -36.41131124210426
+        },
+        {
+          "trajectory": 7,
+          "metric": "min_real_eig",
+          "mean": -153.05569213978524,
+          "p95": -146.1529139504082,
+          "max": -144.51300367079608
+        },
+        {
+          "trajectory": 7,
+          "metric": "euler_h_rho",
+          "mean": 0.15305569213978526,
+          "p95": 0.165634516201735,
+          "max": 0.16720336618357276
+        },
+        {
+          "trajectory": 7,
+          "metric": "delay_gain_fro",
+          "mean": 177.29867562822213,
+          "p95": 190.81193049226667,
+          "max": 192.86503120320478
+        },
+        {
+          "trajectory": 7,
+          "metric": "delay_gain_2",
+          "mean": 168.31289725430415,
+          "p95": 182.19321731699335,
+          "max": 184.3955467917703
+        },
+        {
+          "trajectory": 7,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.032136841952381,
+          "p95": 4.105749479502213,
+          "max": 4.144791225111254
+        },
+        {
+          "trajectory": 8,
+          "metric": "max_abs_eig",
+          "mean": 148.65609966564026,
+          "p95": 151.9328231426211,
+          "max": 155.66026058095457
+        },
+        {
+          "trajectory": 8,
+          "metric": "max_real_eig",
+          "mean": -37.03929845251167,
+          "p95": -36.541585540455124,
+          "max": -36.47898596241331
+        },
+        {
+          "trajectory": 8,
+          "metric": "min_real_eig",
+          "mean": -148.65609966564026,
+          "p95": -145.90231242904161,
+          "max": -145.31445766348605
+        },
+        {
+          "trajectory": 8,
+          "metric": "euler_h_rho",
+          "mean": 0.14865609966564025,
+          "p95": 0.15193282314262108,
+          "max": 0.15566026058095458
+        },
+        {
+          "trajectory": 8,
+          "metric": "delay_gain_fro",
+          "mean": 172.72397811340576,
+          "p95": 176.2689152063499,
+          "max": 180.16142801885866
+        },
+        {
+          "trajectory": 8,
+          "metric": "delay_gain_2",
+          "mean": 163.61175542859567,
+          "p95": 167.2545989059156,
+          "max": 171.27868096801072
+        },
+        {
+          "trajectory": 8,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.013354394991374,
+          "p95": 4.041527037156825,
+          "max": 4.054081875259209
+        },
+        {
+          "trajectory": 9,
+          "metric": "max_abs_eig",
+          "mean": 148.44162656274605,
+          "p95": 157.24658910890693,
+          "max": 159.071531786664
+        },
+        {
+          "trajectory": 9,
+          "metric": "max_real_eig",
+          "mean": -37.008081165537774,
+          "p95": -36.05112033160212,
+          "max": -35.978334929433224
+        },
+        {
+          "trajectory": 9,
+          "metric": "min_real_eig",
+          "mean": -148.44162656274605,
+          "p95": -143.22939406957943,
+          "max": -142.79178078932912
+        },
+        {
+          "trajectory": 9,
+          "metric": "euler_h_rho",
+          "mean": 0.148441626562746,
+          "p95": 0.15724658910890693,
+          "max": 0.159071531786664
+        },
+        {
+          "trajectory": 9,
+          "metric": "delay_gain_fro",
+          "mean": 172.49857165941663,
+          "p95": 182.3024799843726,
+          "max": 184.60001678433943
+        },
+        {
+          "trajectory": 9,
+          "metric": "delay_gain_2",
+          "mean": 163.37126354184207,
+          "p95": 173.47689990582154,
+          "max": 175.906914011608
+        },
+        {
+          "trajectory": 9,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.010527722087928,
+          "p95": 4.0566204015597895,
+          "max": 4.087881480604369
+        },
+        {
+          "trajectory": 10,
+          "metric": "max_abs_eig",
+          "mean": 152.41019119761728,
+          "p95": 164.039266414226,
+          "max": 164.74702975863744
+        },
+        {
+          "trajectory": 10,
+          "metric": "max_real_eig",
+          "mean": -37.83712232785502,
+          "p95": -36.19548387471648,
+          "max": -35.86909022559053
+        },
+        {
+          "trajectory": 10,
+          "metric": "min_real_eig",
+          "mean": -152.41019119761728,
+          "p95": -144.29532078688914,
+          "max": -141.9802716433404
+        },
+        {
+          "trajectory": 10,
+          "metric": "euler_h_rho",
+          "mean": 0.15241019119761726,
+          "p95": 0.164039266414226,
+          "max": 0.16474702975863745
+        },
+        {
+          "trajectory": 10,
+          "metric": "delay_gain_fro",
+          "mean": 176.6944258789898,
+          "p95": 189.25489778253987,
+          "max": 190.57557148574335
+        },
+        {
+          "trajectory": 10,
+          "metric": "delay_gain_2",
+          "mean": 167.6874486287413,
+          "p95": 180.61387870266987,
+          "max": 181.9632124902338
+        },
+        {
+          "trajectory": 10,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.0271023149990555,
+          "p95": 4.08762912004559,
+          "max": 4.109281128391311
+        },
+        {
+          "trajectory": 11,
+          "metric": "max_abs_eig",
+          "mean": 149.4219522912829,
+          "p95": 156.12609535224627,
+          "max": 157.71870394678288
+        },
+        {
+          "trajectory": 11,
+          "metric": "max_real_eig",
+          "mean": -37.226072403860655,
+          "p95": -35.80597616204094,
+          "max": -35.701413108177746
+        },
+        {
+          "trajectory": 11,
+          "metric": "min_real_eig",
+          "mean": -149.4219522912829,
+          "p95": -142.1706222960549,
+          "max": -141.3908633019847
+        },
+        {
+          "trajectory": 11,
+          "metric": "euler_h_rho",
+          "mean": 0.14942195229128288,
+          "p95": 0.15612609535224628,
+          "max": 0.1577187039467829
+        },
+        {
+          "trajectory": 11,
+          "metric": "delay_gain_fro",
+          "mean": 173.5152509824053,
+          "p95": 180.79090769816966,
+          "max": 183.5956406541838
+        },
+        {
+          "trajectory": 11,
+          "metric": "delay_gain_2",
+          "mean": 164.4150546311612,
+          "p95": 171.92007776394675,
+          "max": 174.84437803793193
+        },
+        {
+          "trajectory": 11,
+          "metric": "negative_eigenvalue_ratio",
+          "mean": 4.0132355213746544,
+          "p95": 4.058994299398347,
+          "max": 4.073811547716233
+        }
+      ]
+    },
+    "sampling_alias_audit": {
+      "nyquist_cycles_per_h": 100.0,
+      "rows": [
+        {
+          "trajectory": 0,
+          "state": 0,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0012420222329092838
+        },
+        {
+          "trajectory": 0,
+          "state": 1,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0012039568559680926
+        },
+        {
+          "trajectory": 0,
+          "state": 2,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.003933887062675316
+        },
+        {
+          "trajectory": 0,
+          "state": 3,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0010408306135579924
+        },
+        {
+          "trajectory": 0,
+          "state": 4,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.005207749681169795
+        },
+        {
+          "trajectory": 0,
+          "state": 5,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0062949992217747235
+        },
+        {
+          "trajectory": 0,
+          "state": 6,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0013627332257159146
+        },
+        {
+          "trajectory": 0,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0015966423043300094
+        },
+        {
+          "trajectory": 0,
+          "state": 8,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0043416874853882985
+        },
+        {
+          "trajectory": 1,
+          "state": 0,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.0009584842078585953
+        },
+        {
+          "trajectory": 1,
+          "state": 1,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.0024579645597664853
+        },
+        {
+          "trajectory": 1,
+          "state": 2,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.020995357518719608
+        },
+        {
+          "trajectory": 1,
+          "state": 3,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.0016818577384768005
+        },
+        {
+          "trajectory": 1,
+          "state": 4,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.004598300884327151
+        },
+        {
+          "trajectory": 1,
+          "state": 5,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.04223883920797778
+        },
+        {
+          "trajectory": 1,
+          "state": 6,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.0037271981163184706
+        },
+        {
+          "trajectory": 1,
+          "state": 7,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.0013171090306631217
+        },
+        {
+          "trajectory": 1,
+          "state": 8,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.021234638988006687
+        },
+        {
+          "trajectory": 2,
+          "state": 0,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 1.8109108087567233e-05
+        },
+        {
+          "trajectory": 2,
+          "state": 1,
+          "dominant_cycles_per_h": 0.5994005994005994,
+          "dominant_fraction_of_nyquist": 0.005994005994005994,
+          "power_fraction_above_50_cycles_per_h": 0.0005638561049642078
+        },
+        {
+          "trajectory": 2,
+          "state": 2,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0039144414115404175
+        },
+        {
+          "trajectory": 2,
+          "state": 3,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 8.419468739746313e-05
+        },
+        {
+          "trajectory": 2,
+          "state": 4,
+          "dominant_cycles_per_h": 0.5994005994005994,
+          "dominant_fraction_of_nyquist": 0.005994005994005994,
+          "power_fraction_above_50_cycles_per_h": 0.009539911061712498
+        },
+        {
+          "trajectory": 2,
+          "state": 5,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.00806590969701361
+        },
+        {
+          "trajectory": 2,
+          "state": 6,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 7.376265591867317e-05
+        },
+        {
+          "trajectory": 2,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0002949975365047907
+        },
+        {
+          "trajectory": 2,
+          "state": 8,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.00655771892139166
+        },
+        {
+          "trajectory": 3,
+          "state": 0,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0006506503579596693
+        },
+        {
+          "trajectory": 3,
+          "state": 1,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.00524361258540663
+        },
+        {
+          "trajectory": 3,
+          "state": 2,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.010855849085553758
+        },
+        {
+          "trajectory": 3,
+          "state": 3,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.00024060359867812453
+        },
+        {
+          "trajectory": 3,
+          "state": 4,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.004015063907728358
+        },
+        {
+          "trajectory": 3,
+          "state": 5,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.017484667331788904
+        },
+        {
+          "trajectory": 3,
+          "state": 6,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0016259801607841154
+        },
+        {
+          "trajectory": 3,
+          "state": 7,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.00013886079005700025
+        },
+        {
+          "trajectory": 3,
+          "state": 8,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.011866515765555818
+        },
+        {
+          "trajectory": 4,
+          "state": 0,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0001195876193291151
+        },
+        {
+          "trajectory": 4,
+          "state": 1,
+          "dominant_cycles_per_h": 0.5994005994005994,
+          "dominant_fraction_of_nyquist": 0.005994005994005994,
+          "power_fraction_above_50_cycles_per_h": 0.0009695627721155016
+        },
+        {
+          "trajectory": 4,
+          "state": 2,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.010710992126795509
+        },
+        {
+          "trajectory": 4,
+          "state": 3,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0001215411912789312
+        },
+        {
+          "trajectory": 4,
+          "state": 4,
+          "dominant_cycles_per_h": 0.5994005994005994,
+          "dominant_fraction_of_nyquist": 0.005994005994005994,
+          "power_fraction_above_50_cycles_per_h": 0.004532994679243092
+        },
+        {
+          "trajectory": 4,
+          "state": 5,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.024466453326474843
+        },
+        {
+          "trajectory": 4,
+          "state": 6,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.00016728117613718226
+        },
+        {
+          "trajectory": 4,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0007803970689816087
+        },
+        {
+          "trajectory": 4,
+          "state": 8,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.013577931919510913
+        },
+        {
+          "trajectory": 5,
+          "state": 0,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0003996261691903742
+        },
+        {
+          "trajectory": 5,
+          "state": 1,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0018982209920731354
+        },
+        {
+          "trajectory": 5,
+          "state": 2,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.003596766142993674
+        },
+        {
+          "trajectory": 5,
+          "state": 3,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0005273857591779921
+        },
+        {
+          "trajectory": 5,
+          "state": 4,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.014648331940569654
+        },
+        {
+          "trajectory": 5,
+          "state": 5,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.01617676022948348
+        },
+        {
+          "trajectory": 5,
+          "state": 6,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.00034344366168033826
+        },
+        {
+          "trajectory": 5,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0003785605149846082
+        },
+        {
+          "trajectory": 5,
+          "state": 8,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.011528748680849273
+        },
+        {
+          "trajectory": 6,
+          "state": 0,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 7.345813848955698e-05
+        },
+        {
+          "trajectory": 6,
+          "state": 1,
+          "dominant_cycles_per_h": 1.3986013986013988,
+          "dominant_fraction_of_nyquist": 0.013986013986013988,
+          "power_fraction_above_50_cycles_per_h": 0.009505442494381325
+        },
+        {
+          "trajectory": 6,
+          "state": 2,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.01891333675055273
+        },
+        {
+          "trajectory": 6,
+          "state": 3,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.00052351917559019
+        },
+        {
+          "trajectory": 6,
+          "state": 4,
+          "dominant_cycles_per_h": 1.3986013986013988,
+          "dominant_fraction_of_nyquist": 0.013986013986013988,
+          "power_fraction_above_50_cycles_per_h": 0.002548416138953617
+        },
+        {
+          "trajectory": 6,
+          "state": 5,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0350820785638207
+        },
+        {
+          "trajectory": 6,
+          "state": 6,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0002692139632328355
+        },
+        {
+          "trajectory": 6,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.004201780833007859
+        },
+        {
+          "trajectory": 6,
+          "state": 8,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.018809940087580874
+        },
+        {
+          "trajectory": 7,
+          "state": 0,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0022145491470641804
+        },
+        {
+          "trajectory": 7,
+          "state": 1,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.005188761369470369
+        },
+        {
+          "trajectory": 7,
+          "state": 2,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.009853750184460535
+        },
+        {
+          "trajectory": 7,
+          "state": 3,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0013524730044120047
+        },
+        {
+          "trajectory": 7,
+          "state": 4,
+          "dominant_cycles_per_h": 0.7992007992007992,
+          "dominant_fraction_of_nyquist": 0.007992007992007992,
+          "power_fraction_above_50_cycles_per_h": 0.002405843453052597
+        },
+        {
+          "trajectory": 7,
+          "state": 5,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.01568506722140353
+        },
+        {
+          "trajectory": 7,
+          "state": 6,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0023680660665716794
+        },
+        {
+          "trajectory": 7,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.003215097252199606
+        },
+        {
+          "trajectory": 7,
+          "state": 8,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.009349855665441739
+        },
+        {
+          "trajectory": 8,
+          "state": 0,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0003889495779022952
+        },
+        {
+          "trajectory": 8,
+          "state": 1,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0033702127935786295
+        },
+        {
+          "trajectory": 8,
+          "state": 2,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.030470936629542193
+        },
+        {
+          "trajectory": 8,
+          "state": 3,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0005860389256174361
+        },
+        {
+          "trajectory": 8,
+          "state": 4,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.013134228079470641
+        },
+        {
+          "trajectory": 8,
+          "state": 5,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.05922053288774811
+        },
+        {
+          "trajectory": 8,
+          "state": 6,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0006704297171024852
+        },
+        {
+          "trajectory": 8,
+          "state": 7,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.00026435717965946607
+        },
+        {
+          "trajectory": 8,
+          "state": 8,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.028603012774189186
+        },
+        {
+          "trajectory": 9,
+          "state": 0,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 5.6408087392229405e-05
+        },
+        {
+          "trajectory": 9,
+          "state": 1,
+          "dominant_cycles_per_h": 1.3986013986013988,
+          "dominant_fraction_of_nyquist": 0.013986013986013988,
+          "power_fraction_above_50_cycles_per_h": 0.0023666622530663863
+        },
+        {
+          "trajectory": 9,
+          "state": 2,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.007779376787523695
+        },
+        {
+          "trajectory": 9,
+          "state": 3,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0005161500938317688
+        },
+        {
+          "trajectory": 9,
+          "state": 4,
+          "dominant_cycles_per_h": 1.3986013986013988,
+          "dominant_fraction_of_nyquist": 0.013986013986013988,
+          "power_fraction_above_50_cycles_per_h": 0.014955135919868258
+        },
+        {
+          "trajectory": 9,
+          "state": 5,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.028738445586151896
+        },
+        {
+          "trajectory": 9,
+          "state": 6,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 9.461081676108916e-05
+        },
+        {
+          "trajectory": 9,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 8.556275795791765e-06
+        },
+        {
+          "trajectory": 9,
+          "state": 8,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.013169058535458059
+        },
+        {
+          "trajectory": 10,
+          "state": 0,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0014224852695924506
+        },
+        {
+          "trajectory": 10,
+          "state": 1,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0008065383838569863
+        },
+        {
+          "trajectory": 10,
+          "state": 2,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.010205308892991637
+        },
+        {
+          "trajectory": 10,
+          "state": 3,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0027889191488885442
+        },
+        {
+          "trajectory": 10,
+          "state": 4,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0006895583022983676
+        },
+        {
+          "trajectory": 10,
+          "state": 5,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.018351997900880733
+        },
+        {
+          "trajectory": 10,
+          "state": 6,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0024300791122746418
+        },
+        {
+          "trajectory": 10,
+          "state": 7,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.0025240054787588596
+        },
+        {
+          "trajectory": 10,
+          "state": 8,
+          "dominant_cycles_per_h": 0.1998001998001998,
+          "dominant_fraction_of_nyquist": 0.001998001998001998,
+          "power_fraction_above_50_cycles_per_h": 0.008779695113961818
+        },
+        {
+          "trajectory": 11,
+          "state": 0,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0009181246123190281
+        },
+        {
+          "trajectory": 11,
+          "state": 1,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0020516466065322
+        },
+        {
+          "trajectory": 11,
+          "state": 2,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.038861754710805496
+        },
+        {
+          "trajectory": 11,
+          "state": 3,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0016641107113984322
+        },
+        {
+          "trajectory": 11,
+          "state": 4,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.030396262945558528
+        },
+        {
+          "trajectory": 11,
+          "state": 5,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.06933426305749742
+        },
+        {
+          "trajectory": 11,
+          "state": 6,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0014493806160107564
+        },
+        {
+          "trajectory": 11,
+          "state": 7,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.0007207430309135522
+        },
+        {
+          "trajectory": 11,
+          "state": 8,
+          "dominant_cycles_per_h": 0.3996003996003996,
+          "dominant_fraction_of_nyquist": 0.003996003996003996,
+          "power_fraction_above_50_cycles_per_h": 0.033666879260156775
+        }
+      ]
+    }
+  },
+  "lorenz": {
+    "solver_tests": {
+      "schema_version": 2,
+      "system": "delayed_lorenz",
+      "tests": [
+        {
+          "test": "tau0_reduction",
+          "max_abs_diff": 0.0,
+          "pass": true
+        },
+        {
+          "test": "delay_index",
+          "delay_sample_steps": 5,
+          "delay_integration_steps": 25,
+          "sampling_steps": 5,
+          "tau": 0.16666666666666666,
+          "sample_dt": 0.03333333333333333,
+          "internal_dt": 0.006666666666666667,
+          "pass": true
+        },
+        {
+          "test": "solver_repeatability",
+          "seed": 6,
+          "identical": true,
+          "pass": true
+        },
+        {
+          "test": "all_finite",
+          "n_trajectories": 5,
+          "results": [
+            {
+              "trajectory": 0,
+              "seed": 6,
+              "all_finite": true,
+              "is_constant": false,
+              "shape": [
+                1000,
+                3
+              ]
+            },
+            {
+              "trajectory": 1,
+              "seed": 1015,
+              "all_finite": true,
+              "is_constant": false,
+              "shape": [
+                1000,
+                3
+              ]
+            },
+            {
+              "trajectory": 2,
+              "seed": 2024,
+              "all_finite": true,
+              "is_constant": false,
+              "shape": [
+                1000,
+                3
+              ]
+            },
+            {
+              "trajectory": 3,
+              "seed": 3033,
+              "all_finite": true,
+              "is_constant": false,
+              "shape": [
+                1000,
+                3
+              ]
+            },
+            {
+              "trajectory": 4,
+              "seed": 4042,
+              "all_finite": true,
+              "is_constant": false,
+              "shape": [
+                1000,
+                3
+              ]
+            }
+          ],
+          "pass": true
+        },
+        {
+          "test": "convergence",
+          "duration": 0.2,
+          "step_sizes": [
+            0.013333333333333334,
+            0.006666666666666667,
+            0.0033333333333333335,
+            0.0016666666666666668
+          ],
+          "reference_step": 0.0016666666666666668,
+          "rows": [
+            {
+              "h": 0.013333333333333334,
+              "n_steps": 15,
+              "l2_error": 1.4265305241094006e-05,
+              "endpoint_error": 1.8339830536466385e-05,
+              "pair_l2_error_to_next_finer": 1.3473652157778773e-05,
+              "pair_endpoint_error_to_next_finer": 1.7859696503250426e-05,
+              "finite": true,
+              "empirical_order_to_next_finer": 4.019661709354536
+            },
+            {
+              "h": 0.006666666666666667,
+              "n_steps": 30,
+              "l2_error": 8.810720504258719e-07,
+              "endpoint_error": 1.2896175469213904e-06,
+              "pair_l2_error_to_next_finer": 8.307045405261351e-07,
+              "pair_endpoint_error_to_next_finer": 1.216242644505354e-06,
+              "finite": true,
+              "empirical_order_to_next_finer": 4.036038840597503
+            },
+            {
+              "h": 0.0033333333333333335,
+              "n_steps": 60,
+              "l2_error": 5.063814984605924e-08,
+              "endpoint_error": 7.337636979530624e-08,
+              "pair_l2_error_to_next_finer": 5.063814984605924e-08,
+              "pair_endpoint_error_to_next_finer": 7.337636979530624e-08,
+              "finite": true,
+              "empirical_order_to_next_finer": null
+            },
+            {
+              "h": 0.0016666666666666668,
+              "n_steps": 120,
+              "l2_error": 0.0,
+              "endpoint_error": 0.0,
+              "pair_l2_error_to_next_finer": null,
+              "pair_endpoint_error_to_next_finer": null,
+              "finite": true,
+              "empirical_order_to_next_finer": null
+            }
+          ],
+          "target_order": 4.0,
+          "target_order_tolerance": [
+            3.0,
+            5.5
+          ],
+          "target_order_pass": true,
+          "pass": true
+        },
+        {
+          "test": "timestamp_delay",
+          "n_internal_steps": 128,
+          "stage_query_count": 512,
+          "tau": 0.16666666666666666,
+          "internal_dt": 0.006666666666666667,
+          "delay_internal_steps": 25,
+          "max_timestamp_error": 0.0,
+          "all_timestamp_queries_exact": true,
+          "max_history_interpolation_error": 1.1102230246251565e-16,
+          "history_interpolation_exact": true,
+          "history_state_encodes_timestamp": true,
+          "pass": true
+        }
+      ],
+      "all_pass": true
+    },
+    "convergence": {
+      "duration": 0.2,
+      "step_sizes": [
+        0.013333333333333334,
+        0.006666666666666667,
+        0.0033333333333333335,
+        0.0016666666666666668
+      ],
+      "reference_step": 0.0016666666666666668,
+      "rows": [
+        {
+          "h": 0.013333333333333334,
+          "n_steps": 15,
+          "l2_error": 1.4265305241094006e-05,
+          "endpoint_error": 1.8339830536466385e-05,
+          "pair_l2_error_to_next_finer": 1.3473652157778773e-05,
+          "pair_endpoint_error_to_next_finer": 1.7859696503250426e-05,
+          "finite": true,
+          "empirical_order_to_next_finer": 4.019661709354536
+        },
+        {
+          "h": 0.006666666666666667,
+          "n_steps": 30,
+          "l2_error": 8.810720504258719e-07,
+          "endpoint_error": 1.2896175469213904e-06,
+          "pair_l2_error_to_next_finer": 8.307045405261351e-07,
+          "pair_endpoint_error_to_next_finer": 1.216242644505354e-06,
+          "finite": true,
+          "empirical_order_to_next_finer": 4.036038840597503
+        },
+        {
+          "h": 0.0033333333333333335,
+          "n_steps": 60,
+          "l2_error": 5.063814984605924e-08,
+          "endpoint_error": 7.337636979530624e-08,
+          "pair_l2_error_to_next_finer": 5.063814984605924e-08,
+          "pair_endpoint_error_to_next_finer": 7.337636979530624e-08,
+          "finite": true,
+          "empirical_order_to_next_finer": null
+        },
+        {
+          "h": 0.0016666666666666668,
+          "n_steps": 120,
+          "l2_error": 0.0,
+          "endpoint_error": 0.0,
+          "pair_l2_error_to_next_finer": null,
+          "pair_endpoint_error_to_next_finer": null,
+          "finite": true,
+          "empirical_order_to_next_finer": null
+        }
+      ],
+      "target_order": 4.0,
+      "target_order_tolerance": [
+        3.0,
+        5.5
+      ],
+      "target_order_pass": true
+    },
+    "internal_dt_h": 0.006666666666666667,
+    "sample_dt_h": 0.03333333333333333,
+    "delay_h": 0.16666666666666666,
+    "delay_internal_steps": 25,
+    "sample_internal_steps": 5
+  },
+  "interpretation": {
+    "spectral_radius_of_learned_core_is_not_plant_stiffness": true,
+    "cstr_classical_stiffness_claim": "not_assigned_without_a_stiffness-aware solver or a complete delayed-system stability analysis",
+    "convergence_scope": "deterministic integrator resolution with common initial states/actions; process-noise realization is not changed into a finer-grid stochastic process",
+    "aliasing_scope": "sampled plant trajectories and held inputs; no unresolved dominant spectral peak detected in the tested holdout trajectories"
+  }
+}

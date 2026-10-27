@@ -1,0 +1,25 @@
+Delay-aware latent-memory Koopman-structured modeling
+Proctor, J.L., Brunton, S.L., Kutz, J.N., 2018. Generalizing Koopman theory to allow for inputs and control. SIAM Journal on Applied Dynamical
+Systems 17, 909–930.
+Qin, Y., Yin, S., Liu, J., Qian, W., Cao, Y., Cao, L., 2026. Slow–fast dynamics-assisted Koopman network for anomaly detection in non-stationary
+industrial processes with time-lagged variables. Journal of Process Control 161, 103678.
+Rawlings, J.B., Mayne, D.Q., Diehl, M.M., 2024. Model Predictive Control: Theory, Computation, and Design. 2 ed., Nob Hill Publishing, Santa
+Barbara, CA. Fifth printing.
+Takeishi, N., Kawahara, Y., Yairi, T., 2017. Learning Koopman invariant subspaces for dynamic mode decomposition, in: Advances in Neural
+Information Processing Systems, pp. 1130–1140.
+Takens, F., 1981. Detecting strange attractors in turbulence, in: Rand, D., Young, L.S. (Eds.), Dynamical Systems and Turbulence, Warwick 1980.
+Springer, Berlin, Heidelberg. volume 898 ofLecture Notes in Mathematics, pp. 366–381.
+Valábek, P., Wadinger, M., Kvasnica, M., Klaučo, M., 2025. Deep dictionary-free method for identifying linear model of nonlinear system with
+input delay, in: Paulen, R., Fikar, M., Oravec, J. (Eds.), Proceedings of the 2025 25th International Conference on Process Control, IEEE. pp.
+13–18.
+Williams, M.O., Kevrekidis, I.G., Rowley, C.W., 2015. A data-driven approximation of the Koopman operator: Extending dynamic mode
+decomposition. Journal of Nonlinear Science 25, 1307–1346.
+Woelk, M., Tang, W., 2026. Identification of noisy Koopman models. Computers and Chemical Engineering 204, 109366.
+Yan,M.,Han,M.,Law,A.W.K.,Yin,X.,2025. Self-tuningmovinghorizonestimationofnonlinearsystemsviaphysics-informedmachinelearning
+koopman modeling. AIChE Journal 71, e18649.
+Zhai, S., Talbott, W., Srivastava, N., et al., 2021. An attention free transformer. arXiv preprint arXiv:2105.14103.
+Zhang, X., Han, M., Yin, X., 2023. Reduced-order Koopman modeling and predictive control of nonlinear processes. Computers and Chemical
+Engineering 179, 108440.
+Zhao, D., Li, W., She, J., Xu, L., Yan, S., 2026. Kolmogorov–Arnold transformer Koopman modeling approach to unknown nonlinear robotic
+systems. IEEE Transactions on Industrial Electronics 73, 3059–3070.
+H. Lin et al.:Preprint submitted to ElsevierPage 32 of 32

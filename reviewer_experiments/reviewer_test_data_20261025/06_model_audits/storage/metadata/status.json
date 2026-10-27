@@ -1,0 +1,7 @@
+{
+  "state": "completed",
+  "reviewer_comment": "R2-2",
+  "formal_results": "formal_fp64/results",
+  "pilot_status_preserved": "logs/pilot_status.json",
+  "delivered_at": "2026-10-22T12:55:44.330826+00:00"
+}

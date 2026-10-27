@@ -1,0 +1,90 @@
+{
+  "status": "complete",
+  "completed_at": "2026-10-22T10:33:58.281436+00:00",
+  "scope": [
+    "R2-1"
+  ],
+  "independent_fits": 14,
+  "new_test_trajectories": 12,
+  "raw_prediction_archives": 216,
+  "pdf_pages": 22,
+  "new_experiment_pdf_viewer_pages": [
+    16,
+    17
+  ],
+  "printed_pages": [
+    15,
+    16
+  ],
+  "table": 5,
+  "figure": 7,
+  "source_matches_final_ars_patch": true,
+  "previous_environments_preserved": {
+    "table": 7,
+    "figure": 6
+  },
+  "unchanged_bibliography_and_citations": true,
+  "new_table_error_values_verified": 36,
+  "new_parameter_counts_verified": 12,
+  "reply_reporting_step_values_verified": 108,
+  "visual_review_pages": [
+    2,
+    4,
+    8,
+    9,
+    11,
+    15,
+    16,
+    17
+  ],
+  "visual_review": "No clipping or overlapping text; blue revisions and captions verified; figure followed by discussion without a separate float-only page.",
+  "blue_text_audit": "results/BLUE_TEXT_AUDIT.json",
+  "numerical_audit": "results/INDEPENDENT_AUDIT.json",
+  "notes": [
+    "One training seed; history-dependent capacity changes reported; no universal minimum or seed-robustness claim.",
+    "All raw predictions and unfavorable comparisons retained; no experiment reruns or parameter changes.",
+    "Existing title-page and font warnings remain; no unresolved references/citations."
+  ],
+  "files": [
+    {
+      "path": "write\\稿件\\main.tex",
+      "sha256": "c2ba40b58df37331468298bd75bfb1341c5ffd9135f423380e8f90f06cc90480",
+      "bytes": 81438
+    },
+    {
+      "path": "write\\稿件\\main.pdf",
+      "sha256": "00ffa0152e41e15697b78c889a6558b6a3abbd6adce6e2138dfd7907405d7963",
+      "bytes": 979140
+    },
+    {
+      "path": "revision_experiments\\cstr_history_20261022\\reviewer_response_R2-1.html",
+      "sha256": "c78948810b299cc9f0d39874fadb1f36e2ea59bb934688d4cb9a369247966975",
+      "bytes": 7884
+    },
+    {
+      "path": "revision_experiments\\cstr_history_20261022\\reviewer_response_R2-1.txt",
+      "sha256": "16822a3d03b17a199892ad78ca53a4f0ddf1e8d667da4858447a9f23f32dec1f",
+      "bytes": 4108
+    },
+    {
+      "path": "revision_experiments\\cstr_history_20261022\\RESULTS_AND_REVISION.txt",
+      "sha256": "a7a902cd449b7f4b802c273c3cb0ad6cf8a35fda130129f5522419ade8f475e9",
+      "bytes": 3794
+    },
+    {
+      "path": "revision_experiments\\cstr_history_20261022\\results\\INDEPENDENT_AUDIT.json",
+      "sha256": "22b7ea25f94d558a7e10872bfa72a24fcac4676dedfe0fa199ed89c1b8f11af6",
+      "bytes": 40439
+    },
+    {
+      "path": "revision_experiments\\cstr_history_20261022\\results\\INTERPRETATION_AUDIT.json",
+      "sha256": "4e78e5f67980974f00fa40a7e060082af0bce69de7bbc557c9b05ebab148c179",
+      "bytes": 1783
+    },
+    {
+      "path": "revision_experiments\\cstr_history_20261022\\results\\SELECTED_STEPS.csv",
+      "sha256": "ee75c18782575fd0328453d3eeff5bd702b545144b4266c093465fccb704615a",
+      "bytes": 7513
+    }
+  ]
+}

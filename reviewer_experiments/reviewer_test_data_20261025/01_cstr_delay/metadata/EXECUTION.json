@@ -1,0 +1,9 @@
+{
+  "queue_session_id": 26698,
+  "queue_pid_from_own_process_namespace": 37644,
+  "automation_id": "cstr",
+  "heartbeat_interval_minutes": 30,
+  "python": "D:/project/anaconda/envs/LSTM_HaKAN_Koopman/python.exe",
+  "startup_note": "The first Start-Process launcher ended before queue initialization; the running queue is the foreground exec session listed here. Preparation importer-cache failure was archived as preparation_attempt_001; formal experimental settings did not change.",
+  "manuscript_status": "Unmodified pending verified experimental results."
+}

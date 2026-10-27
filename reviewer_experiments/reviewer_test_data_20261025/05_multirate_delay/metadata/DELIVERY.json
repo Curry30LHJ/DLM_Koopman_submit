@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "reviewer_item": "R1-2",
+  "date": "2026-10-24",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.pdf",
+  "pdf_pages": 32,
+  "sections": [
+    "2.1",
+    "3.1",
+    "4.4"
+  ],
+  "viewer_pages": [
+    4,
+    5,
+    6,
+    21,
+    31
+  ],
+  "new_paragraphs": 5,
+  "new_reference_keys": [
+    "Che2018GRUD"
+  ],
+  "all_new_text_and_reference_blue": true,
+  "previous_ten_rounds_preserved": true,
+  "original_blocks_preserved": 167,
+  "original_label_numbers_preserved": 74,
+  "original_reference_entries_preserved": 31,
+  "frozen_synthetic_api_probes": 2,
+  "new_training": false,
+  "new_plant_simulation": false,
+  "next_item": "R1-5",
+  "next_item_started": false,
+  "output_sha256": {
+    "write\\\u7a3f\u4ef6\\main.tex": "3b35187ec209fd982e25a2b9f0dedad4c76dee4f84fce7662d3458d2a472b36b",
+    "write\\\u7a3f\u4ef6\\main.pdf": "93ab3a4bf205a0a562043ecd6a8e770c717fe7a2a36cb0f5c953a1e269a4fba2",
+    "write\\\u7a3f\u4ef6\\references.bib": "f3e7967008f6eb8ded129d67b9a7065f044ee380e6f80fcaa1be059a76f32cdb",
+    "revision_experiments\\multi_rate_delay_20261024\\reviewer_response_R1-2.html": "955ae3b03a64791712bfa53318654d9e73c534b2cceeebb908450f1168e8b517",
+    "revision_experiments\\multi_rate_delay_20261024\\reviewer_response_R1-2.txt": "49b38bea8096d709a79e7e438b5d8b18fb7939b575d1ca199cff9391c5742bb9",
+    "revision_experiments\\multi_rate_delay_20261024\\RESULTS_AND_REVISION.txt": "28bf7ebc17169faf9608d26f91d161785f5caab685afba6d717353e404a81610",
+    "revision_experiments\\multi_rate_delay_20261024\\PROTOCOL.json": "e4b26afae8bca7323862c63b31338212d5756020f6984fd04788c4082fd9ada1",
+    "revision_experiments\\multi_rate_delay_20261024\\results\\INTERFACE_AUDIT.json": "ba90e1a5e018609c9e9acf23107233c4a839b6291b15413662d651e6b686780e",
+    "revision_experiments\\multi_rate_delay_20261024\\results\\CITATION_VERIFICATION.json": "7f9de55b50d9f5ff3b9e1e994ce1ac8358b4307bbc4519b2b417d84a050d42c8",
+    "revision_experiments\\multi_rate_delay_20261024\\results\\VERIFICATION.json": "60ee520048abc5af8dcc618897d088b703a7afe0c9c3422881d9386b8e42d83c",
+    "revision_experiments\\multi_rate_delay_20261024\\results\\PDF_VERIFICATION.json": "c74128373f67b97344f3a61a093db73bbb1017f870dda30880a8d7c6f3e707c2",
+    "revision_experiments\\multi_rate_delay_20261024\\results\\INTEGRITY_REVIEW.json": "ad67beab48de77462e54f1f2e07adece292e34ca59c4f44857f77e9d9cc0c9a7",
+    "revision_experiments\\multi_rate_delay_20261024\\results\\MANUSCRIPT_PATCH_LANDED.json": "04d9c87dcd84f57caa0195dc15e7426bff9de28bbb4d226453779c7367ba8152",
+    "revision_experiments\\multi_rate_delay_20261024\\manuscript_revision.diff": "4d47b6191cb5eeea501dca779d37923a49f0246623dae5ad8a2f9c2a546d765d"
+  }
+}

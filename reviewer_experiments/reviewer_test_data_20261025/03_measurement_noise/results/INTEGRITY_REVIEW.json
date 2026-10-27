@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "primary_experiment_archives": 624,
+  "nonfinite_archives": 0,
+  "verification_json": "PASS",
+  "information_flow_json": "PASS",
+  "raw_prediction_files": 624,
+  "trajectories": 24,
+  "origins_per_trajectory": 880,
+  "horizon": 60,
+  "retraining": false,
+  "future_noisy_state_assimilation": false,
+  "original_code_data_checkpoints_modified": false,
+  "source_snapshot_preserved": true,
+  "seven_previous_revision_rounds_preserved": true
+}

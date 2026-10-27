@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-22T01:16:50.624844+00:00",
+  "exec_session": 59246,
+  "queue_pid": 12440,
+  "automation_id": "cstr",
+  "automation_name": "R2-1 历史窗口实验与蓝色修稿",
+  "automation_status": "ACTIVE",
+  "followup_interval_minutes": 30,
+  "formal_status": "running",
+  "preflight_status": "passed",
+  "setup_audit_status": "passed",
+  "manuscript_status": "unchanged_pending_verified_results",
+  "next_action": "Monitor existing queue; after 14 fits and evaluation, audit results and blue-mark R2-1 revisions",
+  "priority_file": "../REVISION_PRIORITY.txt"
+}

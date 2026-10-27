@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Local evidence-to-claim review of R2-3; performed inline, not an independent peer review or submission certification.",
+  "assertions": [
+    "All numerical manuscript entries trace to retained raw trajectories and recomputed summaries.",
+    "Integration interval, observation interval, and transport delay are distinguished.",
+    "Lorenz time units are not labeled as CSTR hours.",
+    "Short smooth-history convergence is not used as long-time chaotic pointwise convergence.",
+    "Deterministic CSTR refinement is not called stochastic convergence.",
+    "Fine-grid, not only already-sampled, spectra support the sampling discussion.",
+    "Current Jacobian, delayed tangent map, learned A, and full nonlinear predictor are distinguished.",
+    "No stiff-system accuracy theorem, no global stability guarantee, and no alias-free guarantee is asserted.",
+    "Previous eight rounds and original benchmark predictions are preserved."
+  ],
+  "original_artifacts_unchanged": 68,
+  "original_blocks_preserved": 155
+}

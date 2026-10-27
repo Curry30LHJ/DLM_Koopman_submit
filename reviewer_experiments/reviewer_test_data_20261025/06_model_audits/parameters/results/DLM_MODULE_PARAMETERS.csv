@@ -1,0 +1,25 @@
+system,module,parameters
+lorenz,A,1225
+lorenz,B,0
+lorenz,LSTM,1344
+lorenz,Patch positional embedding,256
+lorenz,Patch projection,192
+lorenz,Intra-patch Hahn coefficients,20480
+lorenz,Inter-patch Hahn coefficients,1280
+lorenz,Observable projection,131104
+lorenz,Current-state projection,48
+lorenz,AFT positional bias,400
+lorenz,AFT gate,1
+lorenz,AFT Q/K/V projections,3780
+three_tank,A,1681
+three_tank,B,123
+three_tank,LSTM,1920
+three_tank,Patch positional embedding,256
+three_tank,Patch projection,192
+three_tank,Intra-patch Hahn coefficients,20480
+three_tank,Inter-patch Hahn coefficients,1280
+three_tank,Observable projection,131104
+three_tank,Current-state projection,144
+three_tank,AFT positional bias,400
+three_tank,AFT gate,1
+three_tank,AFT Q/K/V projections,5166

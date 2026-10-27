@@ -1,0 +1,51 @@
+{
+  "status": "COMPLETE",
+  "reviewer_item": "R1-5",
+  "date": "2026-10-24",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.pdf",
+  "pdf_pages": 33,
+  "sections": [
+    "4.4",
+    "Appendix B"
+  ],
+  "viewer_pages": [
+    22,
+    23,
+    30,
+    33
+  ],
+  "new_paragraphs": 6,
+  "new_reference_keys": [
+    "Rawlings2024MPC"
+  ],
+  "all_new_text_and_reference_blue": true,
+  "previous_eleven_rounds_preserved": true,
+  "original_blocks_preserved": 173,
+  "original_label_numbers_preserved": 74,
+  "original_reference_entries_preserved": 32,
+  "frozen_derivative_probe_horizon": 8,
+  "new_training": false,
+  "new_plant_simulation": false,
+  "mpc_controller_implemented": false,
+  "closed_loop_experiment": false,
+  "next_item": "R1-7",
+  "next_item_started": false,
+  "output_sha256": {
+    "write\\\u7a3f\u4ef6\\main.tex": "3a03474a58ce8eec7c89c9ab6078bd26bd99089a5cb6af54dce41b740ff7030f",
+    "write\\\u7a3f\u4ef6\\main.pdf": "dbca4eebb66ab475abc119c208b1a63928b2da25f194b11e17144174f9406eec",
+    "write\\\u7a3f\u4ef6\\references.bib": "79c784a8389eff2348a3c295135cf490d6f172637cde0ff5d611a02eea233176",
+    "revision_experiments\\mpc_integration_20261024\\reviewer_response_R1-5.html": "50d98fd467e5a7cb8b1e89ecd6d8353d1870821471c55d71547de33de387908f",
+    "revision_experiments\\mpc_integration_20261024\\reviewer_response_R1-5.txt": "6ec2c6ccb48fa5d78ef01e7bcc2fc4ef88ad5f64ba5005c22d3330d47de55af4",
+    "revision_experiments\\mpc_integration_20261024\\RESULTS_AND_REVISION.txt": "798753f8cd2dde7f16c85f172b7b41b44fc1a2214fd84ab3636731577a379863",
+    "revision_experiments\\mpc_integration_20261024\\PROTOCOL.json": "ae433293f103039286471fe1737516974c1c9171129c2d44f0432b6335e5a8fb",
+    "revision_experiments\\mpc_integration_20261024\\results\\MPC_INTERFACE_AUDIT.json": "b0a3649204b4dc6e185544184c84c64580bf1eb08f7e638f133ea61874ff6bc8",
+    "revision_experiments\\mpc_integration_20261024\\results\\CITATION_VERIFICATION.json": "c0c87d8cd0c8ea55bc9a64915bab0bcf02b93abe4609abf406945ee52c930228",
+    "revision_experiments\\mpc_integration_20261024\\results\\VERIFICATION.json": "2ef8655e35218ab6a2dc1cda54d769d4c03a8f96aabc2d50d9a999c5030d6b9c",
+    "revision_experiments\\mpc_integration_20261024\\results\\PDF_VERIFICATION.json": "d7fd271256bc323ac5d8c8f210bff93ba010fcdb01b481adf25459616cec6032",
+    "revision_experiments\\mpc_integration_20261024\\results\\INTEGRITY_REVIEW.json": "0a0603d9ba4c2ca56b3bc153578fcd57e4c3b7a3376f56f72476eb73912cc517",
+    "revision_experiments\\mpc_integration_20261024\\results\\MANUSCRIPT_PATCH_LANDED.json": "b37aaf98b558d3af105e6e4546fa23cbca031e59601575e4b360ebc0e93693e5",
+    "revision_experiments\\mpc_integration_20261024\\manuscript_revision.diff": "72ede909cf2cb6d806787df2709db79e42d719b9ddec41385a6c5e3990e6a4a4",
+    "revision_experiments\\mpc_integration_20261024\\raw_interface\\cstr_input_derivatives.npz": "7aee863a0cc9e94acda42d4ead09fd9a4fb9b9171c1729d1e6e86f9d7ee7c2dd"
+  }
+}

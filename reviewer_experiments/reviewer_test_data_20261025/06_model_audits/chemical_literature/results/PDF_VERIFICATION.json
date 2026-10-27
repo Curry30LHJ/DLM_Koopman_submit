@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "pages": 33,
+  "printed_pages_total": 32,
+  "pdf_sha256": "a9d0911fcb63eca742e381bf3b759759d175004f42d8f1a630587ba0baa3a4a8",
+  "viewer_pages_with_new_content": [
+    2,
+    3,
+    14,
+    23,
+    32,
+    33
+  ],
+  "printed_pages": [
+    1,
+    2,
+    13,
+    22,
+    31,
+    32
+  ],
+  "visual_review_pages": [
+    2,
+    3,
+    14,
+    23,
+    32,
+    33
+  ],
+  "blue_spot_checks": [
+    {
+      "viewer_page": 2,
+      "term": "Chemical-process",
+      "blue": true
+    },
+    {
+      "viewer_page": 2,
+      "term": "Narasingam",
+      "blue": true
+    },
+    {
+      "viewer_page": 2,
+      "term": "(2019)",
+      "blue": true
+    },
+    {
+      "viewer_page": 2,
+      "term": "bilinear",
+      "blue": true
+    },
+    {
+      "viewer_page": 3,
+      "term": "Woelk",
+      "blue": true
+    },
+    {
+      "viewer_page": 3,
+      "term": "(2026)",
+      "blue": true
+    },
+    {
+      "viewer_page": 3,
+      "term": "distillation-column",
+      "blue": true
+    },
+    {
+      "viewer_page": 3,
+      "term": "complementary",
+      "blue": true
+    },
+    {
+      "viewer_page": 14,
+      "term": "explicit",
+      "blue": true
+    },
+    {
+      "viewer_page": 14,
+      "term": "likelihood",
+      "blue": true
+    },
+    {
+      "viewer_page": 14,
+      "term": "joint",
+      "blue": true
+    },
+    {
+      "viewer_page": 14,
+      "term": "neither",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "process-control",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "auxiliary",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "assumptions.",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "guarantees",
+      "blue": true
+    },
+    {
+      "viewer_page": 32,
+      "term": "Narasingam,",
+      "blue": true
+    },
+    {
+      "viewer_page": 32,
+      "term": "e16743.",
+      "blue": true
+    },
+    {
+      "viewer_page": 32,
+      "term": "stabilisation",
+      "blue": true
+    },
+    {
+      "viewer_page": 32,
+      "term": "770\u2013781.",
+      "blue": true
+    },
+    {
+      "viewer_page": 33,
+      "term": "Woelk,",
+      "blue": true
+    },
+    {
+      "viewer_page": 33,
+      "term": "109366.",
+      "blue": true
+    }
+  ],
+  "all_three_new_paragraphs_and_references_blue": true,
+  "prior_blue_references_preserved": true,
+  "no_color_bleed_to_black_references": true,
+  "no_undefined_references_or_citations": true,
+  "no_new_overfull_boxes": true,
+  "preexisting_overfull_boxes": [
+    "117.0831pt too wide"
+  ],
+  "layout": "All six latest PNGs visually reviewed: no clipped text, overlap, or reference layout problems.",
+  "existing_bibtex_warning": "Unchanged empty pages in Huang2025TimeKAN."
+}

@@ -1,0 +1,30 @@
+Reviewer 1, Comment 7
+
+Comment:
+Finally, there has been a growing body of research on Koopman-based modeling and control in chemical engineering, including applications to nonlinear process systems and MPC. I would encourage the authors to consider citing a few additional studies from the chemical engineering literature to better highlight the relevance of the proposed framework to this community.
+https://aiche.onlinelibrary.wiley.com/doi/full/10.1002/aic.16743
+https://www.sciencedirect.com/science/article/pii/S0098135425003692
+https://www.tandfonline.com/doi/full/10.1080/00207179.2021.2013541
+
+Response:
+Thank you for these references. We have checked the three suggested studies and added them to the chemical-process modeling and control background in the Introduction. We also connect the noise-identification study to Section 4.2 and the Lyapunov-based control studies to the MPC discussion in Section 4.4. The additions distinguish their identification or control objectives from the delayed-system prediction task evaluated here.
+
+Narasingam and Kwon (2019), Koopman Lyapunov-based model predictive control of nonlinear chemical process systems, combines EDMD-based linear prediction with Lyapunov-based MPC and illustrates chemical reactor stabilization. Narasingam, Son, and Kwon (2023), Data-driven feedback stabilisation of nonlinear systems: Koopman-based model predictive control, uses Koopman eigenfunction coordinates and bilinear controlled dynamics together with a control-Lyapunov-function-based auxiliary controller. These studies provide relevant process-control precedents and show how stability requirements enter controller construction. Their respective control guarantees are not consequences of prediction accuracy alone and are not transferred to the nonlinear history-dependent DLM-K rollout. Our Section 4.4 explains that adapting this design route would require checking its assumptions for the predictor and its feedback reinitialization.
+
+Woelk and Tang (2026), Identification of noisy Koopman models, addresses noisy model identification using an EDMD-like formulation, a likelihood characterization of noise, and regularized block-coordinate estimation of model and noise components; it includes a distillation-column example. We cite this work as an explicit noise-aware identification approach. In Section 4.2, we distinguish fitting such a model from perturbing the observed histories supplied to frozen predictors. Our existing sensitivity audit does not jointly estimate noise components or evaluate their identification procedure.
+
+The Introduction now places these task-specific developments alongside the present focus on observed-history initialization and model-generated latent memory for multi-step delayed-system prediction. All three references are used as methodological and chemical-engineering context. We have not added an unsupported quantitative comparison or claimed to reproduce their noise estimator or controllers.
+
+We use the completed journal issue metadata consistently. The three entries are AIChE Journal 65(11), e16743 (2019); Computers and Chemical Engineering 204, 109366 (2026); and International Journal of Control 96(3), 770-781 (2023). The second article was available online in 2025 and the third in 2022; their DOI year strings do not replace the assigned issue years used in these citations.
+
+The three added paragraphs are blue and appear on PDF viewer pages 2-3, 14, and 23 (printed pages 1-2, 13, and 22). The three new bibliography entries are also blue, on viewer pages 32-33 (printed pages 31-32). The preceding twelve revision rounds and all existing figures, tables, numbered labels, and bibliography entries have been preserved.
+
+References:
+Narasingam, A. and Kwon, J. S.-I. (2019). Koopman Lyapunov-based model predictive control of nonlinear chemical process systems. AIChE Journal 65(11), e16743.
+https://doi.org/10.1002/aic.16743
+
+Woelk, M. and Tang, W. (2026). Identification of noisy Koopman models. Computers and Chemical Engineering 204, 109366.
+https://doi.org/10.1016/j.compchemeng.2025.109366
+
+Narasingam, A., Son, S. H. and Kwon, J. S.-I. (2023). Data-driven feedback stabilisation of nonlinear systems: Koopman-based model predictive control. International Journal of Control 96(3), 770-781.
+https://doi.org/10.1080/00207179.2021.2013541

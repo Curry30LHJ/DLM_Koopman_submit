@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "pages": 33,
+  "printed_pages_total": 32,
+  "pdf_sha256": "dbca4eebb66ab475abc119c208b1a63928b2da25f194b11e17144174f9406eec",
+  "viewer_pages_with_new_content": [
+    22,
+    23,
+    30,
+    33
+  ],
+  "printed_pages": [
+    21,
+    22,
+    29,
+    32
+  ],
+  "visual_review_pages": [
+    22,
+    23,
+    30,
+    33
+  ],
+  "blue_spot_checks": [
+    {
+      "viewer_page": 22,
+      "term": "Prediction",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "candidate",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "nonlinear",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "recycled",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "Closed-loop",
+      "blue": true
+    },
+    {
+      "viewer_page": 22,
+      "term": "terminal",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "Computational",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "single-shooting",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "derivative",
+      "blue": true
+    },
+    {
+      "viewer_page": 23,
+      "term": "deadline.",
+      "blue": true
+    },
+    {
+      "viewer_page": 30,
+      "term": "MPC",
+      "blue": true
+    },
+    {
+      "viewer_page": 30,
+      "term": "interface",
+      "blue": true
+    },
+    {
+      "viewer_page": 30,
+      "term": "float64",
+      "blue": true
+    },
+    {
+      "viewer_page": 30,
+      "term": "directional",
+      "blue": true
+    },
+    {
+      "viewer_page": 30,
+      "term": "5.62",
+      "blue": true
+    },
+    {
+      "viewer_page": 30,
+      "term": "optimization,",
+      "blue": true
+    },
+    {
+      "viewer_page": 33,
+      "term": "Rawlings,",
+      "blue": true
+    },
+    {
+      "viewer_page": 33,
+      "term": "Fifth",
+      "blue": true
+    },
+    {
+      "viewer_page": 33,
+      "term": "printing.",
+      "blue": true
+    }
+  ],
+  "all_six_new_paragraphs_and_new_reference_blue": true,
+  "prior_blue_reference_preserved": true,
+  "no_bleed_to_black_reference": true,
+  "no_undefined_references_or_citations": true,
+  "no_new_overfull_boxes": true,
+  "preexisting_overfull_boxes": [
+    "117.0831pt too wide"
+  ],
+  "layout": "Latest four PNGs visually reviewed: readable formulas and text; no clipping or overlap.",
+  "existing_bibtex_warning": "Unchanged empty pages in Huang2025TimeKAN."
+}

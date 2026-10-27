@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-10-21T19:44:16.750690+00:00",
+  "trained_models": 18,
+  "test_trajectories": 36,
+  "raw_archives": 216,
+  "nonfinite_predictions": 0,
+  "manuscript_revision": "complete",
+  "revision_completed_at": "2026-10-21T20:12:59.797951+00:00",
+  "delivery_manifest": "DELIVERY.json"
+}

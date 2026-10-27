@@ -1,0 +1,21 @@
+Reviewer 2, Comment 5
+
+5.-How many parameters do you optimize?
+
+Response:
+
+Thank you for this question. We have added explicit parameter accounting in Section 3.4 and Appendix B. For the primary configurations with 20 observed states and a latent-memory length of 20, DLM–K has 160,110 registered scalar parameters for Lorenz and 162,747 for CSTR. New Table B.2 provides a module-by-module breakdown and the corresponding counting formulas, including the LSTM, current-state projection, patch embeddings, Hahn coefficients, observable projection, linear transition/input maps, and AFT branch.
+
+New Table B.3 distinguishes the full predictor from the parameters supplied to Adam in each stage:
+
+Stage | Lorenz | CSTR
+A: initialization | 155,929 | 157,180
+B: AFT-only optimization | 4,181 | 5,567
+C: joint fine-tuning | 160,110 | 162,747
+
+Joint fine-tuning reuses the two disjoint parameter groups, so the stage counts are not added together. The transferred encoder and linear-core group uses a learning rate of 10⁻⁴, while the AFT group uses 10⁻³. The entire transferred group, including the current-state projection and transition/input maps, is frozen during AFT-only optimization. We checked the counts against the released model definitions and checkpoints, the recorded optimizer groups and learning rates, and the unchanged transferred weights across the AFT-only stage. The three optimization stages are named A/C/D in the released training code and A/B/C in the manuscript; code step B performs transfer and zero-gate initialization without an optimizer update.
+
+Our counting convention includes scalar weights and biases once and excludes the fixed state readout C, causal-mask buffer, normalization statistics, physical coefficients, and prescribed hyperparameters. These are registered-parameter counts, rather than a claim that every entry has a nonzero gradient. The dense 20 × 20 AFT positional array includes 190 causally masked entries and one unused singleton entry; the remaining 209 entries participate across context lengths 2–20. The registered key bias is also included although its common shift cancels in the temporal softmax. At zero-gate initialization, the gate can receive a gradient before gradients reach the branch weights. Appendix B now makes these distinctions explicit. The verified total counts for the three neural comparison models remain in Table B.1.
+
+All additions and replacements are marked in blue. Locations: Section 3.4 (printed page 7; PDF viewer page 8); Appendix B, parameter-accounting paragraphs and Tables B.2–B.3 (printed pages 19–20; PDF viewer pages 20–21). The previous delay and history-length revisions are retained.
+

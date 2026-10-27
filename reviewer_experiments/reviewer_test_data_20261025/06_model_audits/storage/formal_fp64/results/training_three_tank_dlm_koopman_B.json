@@ -1,0 +1,40 @@
+{
+  "system": "three_tank",
+  "model": "dlm_koopman",
+  "stage": "B",
+  "kind": "training",
+  "batch": 256,
+  "horizon": 30,
+  "precision": "float64",
+  "registered_model_parameters": 162747,
+  "active_parameters": 5567,
+  "adam_moment_bytes": 89072,
+  "weights_restored": true,
+  "checkpoint_written": false,
+  "records": [
+    {
+      "rep": 0,
+      "resident_bytes": 19687424,
+      "peak_bytes": 891355136,
+      "extra_peak_bytes": 871667712,
+      "loss": 6.236332518326371e-05,
+      "gradient_bytes": 44536
+    },
+    {
+      "rep": 1,
+      "resident_bytes": 19687424,
+      "peak_bytes": 891355136,
+      "extra_peak_bytes": 871667712,
+      "loss": 6.236332518326371e-05,
+      "gradient_bytes": 44536
+    },
+    {
+      "rep": 2,
+      "resident_bytes": 19687424,
+      "peak_bytes": 891355136,
+      "extra_peak_bytes": 871667712,
+      "loss": 6.236332518326371e-05,
+      "gradient_bytes": 44536
+    }
+  ]
+}

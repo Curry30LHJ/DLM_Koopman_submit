@@ -1,0 +1,9 @@
+Origin Skill: academic-research-suite
+Origin Mode: experiment execution/validation and local manuscript revision; inline roles
+Concern: Reviewer 1, Comment 4
+Source manuscript: write/稿件/main.tex; before snapshot preserved
+Evidence: original simulator and predictor source, frozen primary benchmark checkpoints, training-only scales, new paired measurement perturbations, two verified primary publications
+Authorization: user requests noise audit, experiments if needed, blue revisions and English response; continue without repeated approval
+Scope: test-time measurement sensitivity and conceptual noise-aware identification; no retraining, noise-based model selection or sensor-filter performance claim
+Preservation: seven previous rounds, original code/data/checkpoints, existing bibliography entries and figures
+Verification: COMPLETE; 624 frozen cases, raw recomputation, information-flow replay, manuscript compilation and visual inspection PASS

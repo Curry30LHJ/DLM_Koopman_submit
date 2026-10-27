@@ -1,0 +1,14 @@
+{
+  "source_before_sha256": "ff2e77ddac0520b304aecd26f023254c5244b0d52a574847d9dabd0e198bdf2b",
+  "source_after_sha256": "a2a8d40a274de559d581d901695c5b99491cd7f3270f8af657abb28448914e69",
+  "no_external_edits": true,
+  "previous_tables_and_figures_preserved": true,
+  "citations_unchanged": true,
+  "patch_operations": 6,
+  "concerns": [
+    "R2-1"
+  ],
+  "final_source_sha256": "c2ba40b58df37331468298bd75bfb1341c5ffd9135f423380e8f90f06cc90480",
+  "final_revision_round": 2,
+  "final_apply_report": "phase6_revision/draft.rev2.md.apply-report.json"
+}

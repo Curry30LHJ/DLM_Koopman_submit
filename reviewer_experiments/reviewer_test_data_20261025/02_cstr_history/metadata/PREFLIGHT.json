@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "completed_at": "2026-10-22T01:15:34.908039+00:00",
+  "records": [
+    {
+      "history_length": 6,
+      "model": "dlm_koopman",
+      "parameters": 46575,
+      "loss": 8.877317428588867,
+      "latent_memory_length": 20,
+      "patches": 1
+    },
+    {
+      "history_length": 6,
+      "model": "mlp_koopman",
+      "parameters": 23256,
+      "loss": 8.425871849060059,
+      "latent_memory_length": null
+    },
+    {
+      "history_length": 6,
+      "model": "lstm_koopman",
+      "parameters": 6460,
+      "loss": 8.549120903015137,
+      "latent_memory_length": null
+    },
+    {
+      "history_length": 6,
+      "model": "hakan_koopman",
+      "parameters": 39296,
+      "loss": 9.327293395996094,
+      "latent_memory_length": null,
+      "patches": 1
+    },
+    {
+      "history_length": 20,
+      "model": "dlm_koopman",
+      "parameters": 162747,
+      "loss": 8.412455558776855,
+      "latent_memory_length": 20,
+      "patches": 8
+    },
+    {
+      "history_length": 20,
+      "model": "mlp_koopman",
+      "parameters": 58536,
+      "loss": 8.510124206542969,
+      "latent_memory_length": null
+    },
+    {
+      "history_length": 20,
+      "model": "lstm_koopman",
+      "parameters": 13628,
+      "loss": 8.421075820922852,
+      "latent_memory_length": null
+    },
+    {
+      "history_length": 20,
+      "model": "hakan_koopman",
+      "parameters": 155468,
+      "loss": 9.227697372436523,
+      "latent_memory_length": null,
+      "patches": 8
+    },
+    {
+      "history_length": 40,
+      "model": "dlm_koopman",
+      "parameters": 332107,
+      "loss": 8.958087921142578,
+      "latent_memory_length": 20,
+      "patches": 18
+    },
+    {
+      "history_length": 40,
+      "model": "mlp_koopman",
+      "parameters": 108936,
+      "loss": 8.151629447937012,
+      "latent_memory_length": null
+    },
+    {
+      "history_length": 40,
+      "model": "lstm_koopman",
+      "parameters": 23868,
+      "loss": 8.329168319702148,
+      "latent_memory_length": null
+    },
+    {
+      "history_length": 40,
+      "model": "hakan_koopman",
+      "parameters": 324828,
+      "loss": 8.621963500976562,
+      "latent_memory_length": null,
+      "patches": 18
+    }
+  ],
+  "matched_targets_and_known_delay_embedding": true,
+  "train_windows": 46600,
+  "val_windows": 11184,
+  "largest_full_validation_passed": true,
+  "smoke_checkpoints_excluded_from_formal_runs": true,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "2.1.2+cu121",
+  "numpy": "1.26.4"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE",
+  "date": "2026-10-24",
+  "reviewer_item": "R2-3",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\\u7a3f\u4ef6\\main.pdf",
+  "pdf_pages": 30,
+  "new_table": "B.7",
+  "viewer_pages": [
+    11,
+    13,
+    20,
+    28
+  ],
+  "all_new_content_blue": true,
+  "previous_eight_rounds_preserved": true,
+  "no_new_model_fitting": true,
+  "raw_convergence_archives": 12,
+  "raw_fine_grid_archives": 24,
+  "verification": "results/VERIFICATION.json",
+  "next_item": "R2-7",
+  "next_item_started": false,
+  "output_sha256": {
+    "write\\\u7a3f\u4ef6\\main.tex": "5640bf07c59ffe349a868a635526dfab53785c4e4e98b6719d5a21f5f35ebbd1",
+    "write\\\u7a3f\u4ef6\\main.pdf": "415e2170cf4c5eeaf7fb9afe4477208c91db8638d158dc8e24832b75a32e2b92",
+    "revision_experiments\\rigid_dynamics_20261023\\reviewer_response_R2-3.html": "b3777852ef2734713d4b2e60abe1e39fc7643c26b71aabd92ecfb86dc029ab03",
+    "revision_experiments\\rigid_dynamics_20261023\\reviewer_response_R2-3.txt": "0cd2ee635d5ce07da66e2d2870cf0df195a8462bf2708645e517c2dd3b9a7c0d",
+    "revision_experiments\\rigid_dynamics_20261023\\RESULTS_AND_REVISION.txt": "79a2194145e4c1ebce25cab2360d0f2f90cddad8b274211f84cf3b9636aec5b4",
+    "revision_experiments\\rigid_dynamics_20261023\\results\\VERIFICATION.json": "b2f2eeab62d3943d66c39f4843a2a9b33ba4e06a41e0d1b8f260f4a714a7eb3c",
+    "revision_experiments\\rigid_dynamics_20261023\\results\\PDF_VERIFICATION.json": "c958fafb570102526d2a699d3eee8232c1706cd683b2db808fe073de9ba711be",
+    "revision_experiments\\rigid_dynamics_20261023\\results\\INTEGRITY_REVIEW.json": "a871f1e40eac40cba42ee07bcc175084350efa125365084964f6092e25f2fcb2",
+    "revision_experiments\\rigid_dynamics_20261023\\results\\MANUSCRIPT_PATCH_LANDED.json": "a6ab0497589bb6aefa55d40dc45b888ab07c229a3b3eddcb8a2111ffc000bf94",
+    "revision_experiments\\rigid_dynamics_20261023\\manuscript_revision.diff": "cc2263fe0b2de642012dadadc971b9ca24dcde237b0f4ae58cbf6b72628a0a68",
+    "revision_experiments\\rigid_dynamics_20261023\\results\\AUDIT_REPLAY.json": "cc533f7ea449acbff950ae9cbf20cfe74799ed65ac4766781b0aa12a2872ccff",
+    "revision_experiments\\rigid_dynamics_20261023\\results\\RESOLUTION_SUPPLEMENT.json": "a818a05dcfda53b479c90e98d3a2f82897dcddaf023bfdab0f037b3d4c2b0439",
+    "revision_experiments\\rigid_dynamics_20261023\\PROTOCOL.json": "5d557b6de8c003b9a1c80c58e6043b0a5ba7802488330404ab9bc18afcdffd49"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "method": "Inline academic-research-suite revision and rebuttal audit; no independent subagent review claimed",
+  "comment_exact": "5.-How many parameters do you optimize?",
+  "all_subrequests_addressed": [
+    "total scalar parameters",
+    "module scalar parameters",
+    "actual stage optimizer groups",
+    "English reply",
+    "all manuscript additions/replacements blue",
+    "previous revisions preserved"
+  ],
+  "evidence": "AUDIT.json and PDF_VERIFICATION.json",
+  "manuscript_locations": [
+    "Section 3.4",
+    "Appendix B, Tables B.2 and B.3"
+  ],
+  "visual_review_pages": [
+    8,
+    20,
+    21
+  ],
+  "caption_cross_reference_blue_fixed": true,
+  "new_unresolved_references": 0,
+  "new_overfull_boxes": 0,
+  "prior_source_figures_and_bibliography_unchanged": true,
+  "conclusion": "Ready for author review"
+}

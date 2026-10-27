@@ -1,0 +1,13 @@
+system,model,learned_numeric_scalars,model_payload_float32_bytes,model_payload_native_bytes,fixed_mask_bytes,normalization_float32_bytes,required_initial_information_scalars,required_initial_information_float32_bytes,compact_recurrence_scalars,compact_recurrence_float32_bytes,released_history_payload_scalars,released_full_latent_list_at_H60_scalars,released_rolling_physical_history_scalars,output_H60_scalars,input_H60_scalars
+lorenz,mlp_koopman,20787,83148,83148,0,24,60,240,35,140,60,2135,0,180,0
+lorenz,lstm_koopman,12377,49508,49508,0,24,60,240,35,140,60,2135,0,180,0
+lorenz,hakan_koopman,154649,618596,618596,0,24,60,240,35,140,60,2135,0,180,0
+lorenz,dlm_koopman,160110,640440,640440,400,24,60,240,700,2800,60,2135,0,180,0
+three_tank,mlp_koopman,58536,234144,234144,0,96,237,948,41,164,237,2501,0,540,180
+three_tank,lstm_koopman,13628,54512,54512,0,96,237,948,41,164,237,2501,0,540,180
+three_tank,hakan_koopman,155468,621872,621872,0,96,237,948,41,164,237,2501,0,540,180
+three_tank,dlm_koopman,162747,650988,650988,400,96,237,948,820,3280,237,2501,0,540,180
+three_tank,rbf_markov,6940,27760,55520,0,96,9,36,9,36,180,0,180,540,180
+three_tank,rbf_physical_delay,23109,92436,184872,0,96,24,96,24,96,180,0,180,540,180
+lorenz,rbf_markov,508,2032,4064,0,24,3,12,3,12,60,0,60,180,0
+lorenz,rbf_physical_delay,630,2520,5040,0,24,13,52,13,52,60,0,60,180,0

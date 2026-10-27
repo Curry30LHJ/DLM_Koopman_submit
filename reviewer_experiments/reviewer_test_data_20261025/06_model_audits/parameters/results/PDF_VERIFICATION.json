@@ -1,0 +1,233 @@
+{
+  "page_count": 23,
+  "pages": [
+    {
+      "page": 1,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 2,
+      "blue_chars": 32,
+      "bounds_passed": true
+    },
+    {
+      "page": 3,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 4,
+      "blue_chars": 308,
+      "bounds_passed": true
+    },
+    {
+      "page": 5,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 6,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 7,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 8,
+      "blue_chars": 404,
+      "bounds_passed": true
+    },
+    {
+      "page": 9,
+      "blue_chars": 182,
+      "bounds_passed": true
+    },
+    {
+      "page": 10,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 11,
+      "blue_chars": 159,
+      "bounds_passed": true
+    },
+    {
+      "page": 12,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 13,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 14,
+      "blue_chars": 622,
+      "bounds_passed": true
+    },
+    {
+      "page": 15,
+      "blue_chars": 2504,
+      "bounds_passed": true
+    },
+    {
+      "page": 16,
+      "blue_chars": 3053,
+      "bounds_passed": true
+    },
+    {
+      "page": 17,
+      "blue_chars": 1662,
+      "bounds_passed": true
+    },
+    {
+      "page": 18,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 19,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 20,
+      "blue_chars": 1912,
+      "bounds_passed": true
+    },
+    {
+      "page": 21,
+      "blue_chars": 1361,
+      "bounds_passed": true
+    },
+    {
+      "page": 22,
+      "blue_chars": 0,
+      "bounds_passed": true
+    },
+    {
+      "page": 23,
+      "blue_chars": 130,
+      "bounds_passed": true
+    }
+  ],
+  "changed_phrases": [
+    {
+      "phrase": "For the primary benchmark configurations",
+      "pages": [
+        8
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "The parameters supplied to Adam",
+      "pages": [
+        8
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "the stage counts are not additive",
+      "pages": [
+        8
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "Total registered neural parameters",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "Parameter accounting.",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "We count each scalar entry",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "The patch projection",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "positional embedding are shared across channels",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "The AFT-only stage freezes",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "intervening step B transfers",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "registered parameter entries and optimizer membership",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "190 upper-",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "The other 209 entries",
+      "pages": [
+        20
+      ],
+      "blue": true
+    },
+    {
+      "phrase": "At zero-gate initialization",
+      "pages": [
+        20
+      ],
+      "blue": true
+    }
+  ],
+  "new_tables_all_characters_blue": true,
+  "new_prose_all_characters_blue": true,
+  "module_counts_present_in_pdf": true,
+  "changed_pdf_pages": [
+    8,
+    20,
+    21
+  ],
+  "changed_printed_pages": [
+    7,
+    19,
+    20
+  ]
+}

@@ -1,0 +1,30 @@
+Reviewer 2, Comment 2
+
+2. What about differences is "information”" storage needs for your approach compared to others?
+
+Response:
+
+Thank you for raising this point. We now compare four storage components explicitly: learned model payload, observed-history buffers, recurrent latent or physical-state buffers, and working storage during inference and training. The new Tables B.5 and B.6 cover all six predictors on both benchmarks, with separate results for DLM–K initialization, AFT-only optimization, and joint fine-tuning.
+
+We use a common float64 precision (eight bytes per scalar) and binary KiB/MiB units. The original neural models use float32 and the RBF models use float64. A preliminary float32 conversion of Lorenz Markov RBF did not meet the pre-specified agreement tolerance over 60 steps (maximum absolute difference 0.01278), so we retained that record and adopted float64 for every formal storage comparison. We did not relax the tolerance, modify the original model weights, or replace any reported prediction-accuracy results. The common-precision figures should therefore not be interpreted as native-precision deployment measurements.
+
+Table B.5 counts neural weights and biases, and RBF regression matrices and centers. Fixed normalization vectors and the Boolean AFT mask are reported separately. The neural initialization buffer contains L_h n_x + (L_h − 1)n_u scalars. After encoding, the three neural baselines require one latent state, while DLM–K reads up to M latent states. Markov RBF requires the current physical state; Delay–RBF requires the current state and five preceding values of each delayed coordinate. These compact buffers describe successive phases and are not added together. For CSTR DLM–K, the common-float64 learned payload is 1.24 MiB, the initialization buffer is 1,896 bytes, and the compact latent context is 6,560 bytes (6.41 KiB) per origin.
+
+We also checked the released implementation rather than inferring runtime memory solely from these compact buffers. Its neural rollout retains all H + 1 latent states and diagnostic tensors, although AFT reads only the latest M. The RBF rollout retains 20 physical states. The current AFT calculation materializes batch × context × context × latent-dimension tensors; one such tensor uses 32.03 MiB for CSTR at batch 256 and M = 20. Thus, a bounded latent context does not imply that the complete implementation uses memory independent of the rollout length.
+
+Table B.6 reports standardized allocation probes on the same RTX 4090 with PyTorch 2.1.2/CUDA 12.1, batch size 256, 60-step inference without gradients, and the original 30-step neural objective and Adam groups. We used a batch from the original training data, one warmup, and three measured repetitions. Neural operations retain their released diagnostics; an inference-only RBF PyTorch adapter was checked against the original NumPy float64 implementation on the same batch, with maximum absolute difference below 1.2 × 10⁻¹¹. Checkpoint weights were restored before each measured training update on disposable copies; no revised predictor was fitted or saved. The following CSTR values illustrate the extra peak allocations in MiB:
+
+Predictor | Inference extra peak (MiB) | Training extra peak (MiB)
+MLP–K | 6.38 | 6.70
+LSTM–K | 12.19 | 23.68
+HaKAN–K | 129.04 | 1,524.49
+Markov RBF | 5.17 | Not applicable
+Delay–RBF | 11.22 | Not applicable
+DLM–K (joint) | 144.97 | 2,302.16
+
+Extra peak means the maximum allocated CUDA tensor memory during an operation minus its resident allocation immediately beforehand. Resident memory includes model/input tensors, initialized Adam moments for training, and cached backend workspace. Extra peaks include outputs, gradients, diagnostics, and working tensors; host datasets, Python metadata, CUDA-context memory, and reserved-but-unused allocator memory are excluded. These allocation probes show the additional storage associated with DLM–K and do not claim a memory advantage over the comparison models.
+
+Training storage is treated separately. We give the parameter-side formula 8P_θ + 24P_opt bytes for weights, gradients, and Adam’s two moments at float64, excluding scalar step counters. The AFT-only stage freezes the transferred parameters and reduces the extra training allocation to 831.29 MiB for CSTR. RBF has no Adam training stage: we instead report the sizes of its distance, lifted-data, and regression-design arrays as functions of the number of fitting pairs. At a common illustrative N = 47,500, the CSTR distance arrays alone require 208.74 MiB for Markov RBF and 556.64 MiB for Delay–RBF. These analytical array sizes are clearly distinguished from a measured total fitting peak, which would also include clustering, solver and dataset storage.
+
+All additions are marked in blue in Section 4.3 (printed page 16; PDF viewer page 17) and Appendix B, Tables B.5–B.6 and the surrounding explanation (printed pages 21–22; PDF viewer pages 22–23). The preceding delay, history-length and parameter-count revisions are preserved.
+

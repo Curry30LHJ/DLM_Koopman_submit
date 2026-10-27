@@ -1,0 +1,13 @@
+system,model,precision,bytes_per_real,learned_model_payload_bytes,native_learned_model_payload_bytes,compact_initial_buffer_bytes,compact_rollout_buffer_bytes,fixed_mask_bytes,normalization_bytes,released_H60_latent_list_per_origin_bytes,released_RBF_physical_history_per_origin_bytes
+lorenz,mlp_koopman,float64,8,166296,83148,480,280,0,48,17080,0
+lorenz,lstm_koopman,float64,8,99016,49508,480,280,0,48,17080,0
+lorenz,hakan_koopman,float64,8,1237192,618596,480,280,0,48,17080,0
+lorenz,dlm_koopman,float64,8,1280880,640440,480,5600,400,48,17080,0
+three_tank,mlp_koopman,float64,8,468288,234144,1896,328,0,192,20008,0
+three_tank,lstm_koopman,float64,8,109024,54512,1896,328,0,192,20008,0
+three_tank,hakan_koopman,float64,8,1243744,621872,1896,328,0,192,20008,0
+three_tank,dlm_koopman,float64,8,1301976,650988,1896,6560,400,192,20008,0
+three_tank,rbf_markov,float64,8,55520,55520,72,72,0,192,0,1440
+three_tank,rbf_physical_delay,float64,8,184872,184872,192,192,0,192,0,1440
+lorenz,rbf_markov,float64,8,4064,4064,24,24,0,48,0,480
+lorenz,rbf_physical_delay,float64,8,5040,5040,104,104,0,48,0,480

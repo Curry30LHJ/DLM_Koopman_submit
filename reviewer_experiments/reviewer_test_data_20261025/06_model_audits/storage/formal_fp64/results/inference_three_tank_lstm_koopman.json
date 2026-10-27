@@ -1,0 +1,38 @@
+{
+  "system": "three_tank",
+  "model": "lstm_koopman",
+  "kind": "inference",
+  "batch": 256,
+  "horizon": 60,
+  "precision": "float64",
+  "implementation": "released neural code including diagnostics",
+  "adapter_parity": null,
+  "source_weights_unchanged": true,
+  "maximum_history_length_passed_to_advance": 60,
+  "records": [
+    {
+      "rep": 0,
+      "resident_bytes": 9489920,
+      "peak_bytes": 22267392,
+      "extra_peak_bytes": 12777472,
+      "output_bytes": 1105920,
+      "retained_after_output_release_bytes": 1245184
+    },
+    {
+      "rep": 1,
+      "resident_bytes": 9489920,
+      "peak_bytes": 22267392,
+      "extra_peak_bytes": 12777472,
+      "output_bytes": 1105920,
+      "retained_after_output_release_bytes": 1245184
+    },
+    {
+      "rep": 2,
+      "resident_bytes": 9489920,
+      "peak_bytes": 22267392,
+      "extra_peak_bytes": 12777472,
+      "output_bytes": 1105920,
+      "retained_after_output_release_bytes": 1245184
+    }
+  ]
+}

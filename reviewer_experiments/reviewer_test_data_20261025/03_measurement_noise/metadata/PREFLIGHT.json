@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "zero_noise_checks": [
+    {
+      "system": "lorenz",
+      "model": "mlp_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.23399999999674037
+    },
+    {
+      "system": "lorenz",
+      "model": "lstm_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.046000000002095476
+    },
+    {
+      "system": "lorenz",
+      "model": "hakan_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.046999999998661224
+    },
+    {
+      "system": "lorenz",
+      "model": "dlm_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.1569999999992433
+    },
+    {
+      "system": "lorenz",
+      "model": "rbf_markov",
+      "zero_noise_identical": true,
+      "seconds": 0.014999999999417923
+    },
+    {
+      "system": "lorenz",
+      "model": "rbf_physical_delay",
+      "zero_noise_identical": true,
+      "seconds": 0.0
+    },
+    {
+      "system": "three_tank",
+      "model": "mlp_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.031000000002677552
+    },
+    {
+      "system": "three_tank",
+      "model": "lstm_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.0
+    },
+    {
+      "system": "three_tank",
+      "model": "hakan_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.01600000000325963
+    },
+    {
+      "system": "three_tank",
+      "model": "dlm_koopman",
+      "zero_noise_identical": true,
+      "seconds": 0.06300000000192085
+    },
+    {
+      "system": "three_tank",
+      "model": "rbf_markov",
+      "zero_noise_identical": true,
+      "seconds": 0.014999999999417923
+    },
+    {
+      "system": "three_tank",
+      "model": "rbf_physical_delay",
+      "zero_noise_identical": true,
+      "seconds": 0.0
+    }
+  ],
+  "synthetic_arrays_not_formal_data": true,
+  "cstr_process_increment_max_error": 1.1102230246251565e-16,
+  "observation_matches_internal_state": true,
+  "unused_observation_noise_argument_does_not_inject_noise": true
+}

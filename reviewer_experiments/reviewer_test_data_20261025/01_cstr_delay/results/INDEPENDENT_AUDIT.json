@@ -1,0 +1,1572 @@
+{
+  "verification_status": "VERIFIED_ARCHIVED_PREDICTIONS_AND_METRICS",
+  "training_repeated": false,
+  "source_and_input_hashes_verified": true,
+  "checkpoint_hashes_verified": 18,
+  "paired_test_trajectories": 36,
+  "prediction_archives_verified": 216,
+  "nonfinite_predictions": 0,
+  "clamped_test_trajectories": 0,
+  "per_trajectory_metric_rows": 21600,
+  "aggregate_metric_rows": 1800,
+  "max_absolute_metric_recomputation_difference": 1.52587890625e-05,
+  "max_absolute_metric_difference_reported_h1_h60": 8.326672684688674e-17,
+  "max_relative_metric_difference_all_horizons": 5.942656767298567e-15,
+  "archive_note": "At tau=.010 h Markov RBF trajectory 3 diverges near the end of the archived H100 rollout. All predictions are retained. The H60 reporting limit was frozen before training and was not chosen after seeing this behavior.",
+  "all_truth_arrays_match_holdout": true,
+  "checks": [
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "trajectory": 11,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 0,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 1,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 2,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 3,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 4,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 5,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 6,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 7,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 8,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 9,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 10,
+      "passed": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "trajectory": 11,
+      "passed": true
+    }
+  ],
+  "training": [
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "selection": "final_joint_stage_best",
+      "stage": "D",
+      "epoch": 42,
+      "validation_h30_mse": 2.880124156945385e-05,
+      "stage_epochs": {
+        "A": 212,
+        "C": 40,
+        "D": 53
+      },
+      "selected_joint_epoch_one_based": 43
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "epoch": 226,
+      "validation_h30_mse": 0.001311376690864563,
+      "epochs": 276
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "epoch": 321,
+      "validation_h30_mse": 0.0012866482138633728,
+      "epochs": 371
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "epoch": 208,
+      "validation_h30_mse": 0.0012996969744563103,
+      "epochs": 258
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_markov",
+      "system": "three_tank",
+      "seed": null,
+      "fit_random_seed": 6,
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      },
+      "history_horizon": 20,
+      "validation_horizon": 20,
+      "train_windows": 48100,
+      "val_windows": 11544,
+      "selector": 0.002660738870181513,
+      "selector_metric": "MSE",
+      "validation_rmse": 0.051582350374731016,
+      "synthetic_smoke": false,
+      "frozen_weight_equality_not_asserted": true
+    },
+    {
+      "condition": "tau010",
+      "model": "rbf_physical_delay",
+      "system": "three_tank",
+      "seed": null,
+      "fit_random_seed": 6,
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 2,
+        "physical_delay_variant": "separator_state"
+      },
+      "history_horizon": 20,
+      "validation_horizon": 20,
+      "train_windows": 48100,
+      "val_windows": 11544,
+      "selector": 4.369554466998983e-05,
+      "selector_metric": "MSE",
+      "validation_rmse": 0.006610260559916668,
+      "synthetic_smoke": false,
+      "frozen_weight_equality_not_asserted": true
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "selection": "final_joint_stage_best",
+      "stage": "D",
+      "epoch": 35,
+      "validation_h30_mse": 4.784249540534802e-05,
+      "stage_epochs": {
+        "A": 330,
+        "C": 40,
+        "D": 46
+      },
+      "selected_joint_epoch_one_based": 36
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "epoch": 326,
+      "validation_h30_mse": 0.0008312164572998881,
+      "epochs": 376
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "epoch": 321,
+      "validation_h30_mse": 0.0008378360653296113,
+      "epochs": 371
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "epoch": 198,
+      "validation_h30_mse": 0.0008384965476579964,
+      "epochs": 248
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_markov",
+      "system": "three_tank",
+      "seed": null,
+      "fit_random_seed": 6,
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      },
+      "history_horizon": 20,
+      "validation_horizon": 20,
+      "train_windows": 48100,
+      "val_windows": 11544,
+      "selector": 0.00820516689710292,
+      "selector_metric": "MSE",
+      "validation_rmse": 0.09058237630523346,
+      "synthetic_smoke": false,
+      "frozen_weight_equality_not_asserted": true
+    },
+    {
+      "condition": "tau025",
+      "model": "rbf_physical_delay",
+      "system": "three_tank",
+      "seed": null,
+      "fit_random_seed": 6,
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 5,
+        "physical_delay_variant": "separator_state"
+      },
+      "history_horizon": 20,
+      "validation_horizon": 20,
+      "train_windows": 48100,
+      "val_windows": 11544,
+      "selector": 0.00011715683248424318,
+      "selector_metric": "MSE",
+      "validation_rmse": 0.010823900982743846,
+      "synthetic_smoke": false,
+      "frozen_weight_equality_not_asserted": true
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "selection": "final_joint_stage_best",
+      "stage": "D",
+      "epoch": 74,
+      "validation_h30_mse": 9.703000978333876e-05,
+      "stage_epochs": {
+        "A": 585,
+        "C": 40,
+        "D": 80
+      },
+      "selected_joint_epoch_one_based": 75
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "epoch": 709,
+      "validation_h30_mse": 0.0007308192434720695,
+      "epochs": 759
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "epoch": 688,
+      "validation_h30_mse": 0.0007279922720044851,
+      "epochs": 738
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "epoch": 595,
+      "validation_h30_mse": 0.0007137317443266511,
+      "epochs": 645
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_markov",
+      "system": "three_tank",
+      "seed": null,
+      "fit_random_seed": 6,
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      },
+      "history_horizon": 20,
+      "validation_horizon": 20,
+      "train_windows": 48100,
+      "val_windows": 11544,
+      "selector": 0.015363074071147887,
+      "selector_metric": "MSE",
+      "validation_rmse": 0.12394786836064542,
+      "synthetic_smoke": false,
+      "frozen_weight_equality_not_asserted": true
+    },
+    {
+      "condition": "tau050",
+      "model": "rbf_physical_delay",
+      "system": "three_tank",
+      "seed": null,
+      "fit_random_seed": 6,
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 10,
+        "physical_delay_variant": "separator_state"
+      },
+      "history_horizon": 20,
+      "validation_horizon": 20,
+      "train_windows": 48100,
+      "val_windows": 11544,
+      "selector": 0.0001851935105140238,
+      "selector_metric": "MSE",
+      "validation_rmse": 0.013608582237471462,
+      "synthetic_smoke": false,
+      "frozen_weight_equality_not_asserted": true
+    }
+  ]
+}

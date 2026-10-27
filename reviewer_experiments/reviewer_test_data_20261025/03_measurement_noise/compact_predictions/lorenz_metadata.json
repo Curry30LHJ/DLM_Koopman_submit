@@ -1,0 +1,31 @@
+{
+  "system": "lorenz",
+  "source": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\measurement_noise_20261023\\predictions\\lorenz",
+  "source_files": 312,
+  "models": [
+    "dlm_koopman",
+    "hakan_koopman",
+    "lstm_koopman",
+    "mlp_koopman",
+    "rbf_markov",
+    "rbf_physical_delay"
+  ],
+  "origins_per_file": 880,
+  "state_dimension": 3,
+  "retained_steps": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    60
+  ],
+  "original_prediction_dtype": "float32",
+  "compact_prediction_dtype": "float32",
+  "diagnostic_scopes_retained": [
+    "all",
+    "current",
+    "past"
+  ],
+  "initial_lift_retained_for_dlm": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "archives": 624,
+  "primary_cases": 576,
+  "diagnostic_cases": 48,
+  "no_refitting": true,
+  "all_raw_retained": true,
+  "protocol_sha256": "ee94b5519ebb3f9da858d4cacf6328b1c0b9b00adbdb25e19a5b632a1240df7e",
+  "summary_sha256": "4812586a6cc992f5e47a1331c32c7a133f031aae33a9519bd126067b4f86d5db"
+}

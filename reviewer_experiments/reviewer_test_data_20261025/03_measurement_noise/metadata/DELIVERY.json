@@ -1,0 +1,30 @@
+{
+  "reviewer_item": "R1-4",
+  "status": "COMPLETE",
+  "experiment_dir": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\measurement_noise_20261023",
+  "experiment": "measurement_noise_20261023",
+  "archives": 624,
+  "primary_cases": 576,
+  "diagnostic_cases": 48,
+  "verification": "results/VERIFICATION.json PASS",
+  "information_flow": "results/INFORMATION_FLOW.json PASS",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.pdf",
+  "pdf_pages": 30,
+  "blue_changes": [
+    "Section 4.2 noise distinction and audit",
+    "Figure 3 caption",
+    "implementation appendix noise statement",
+    "two bibliography entries"
+  ],
+  "previous_rounds_preserved": true,
+  "original_sources_unchanged": true,
+  "files": [
+    "reviewer_response_R1-4.html",
+    "reviewer_response_R1-4.txt",
+    "RESULTS_AND_REVISION.txt",
+    "results/MANUSCRIPT_PATCH_LANDED.json",
+    "results/PDF_VERIFICATION.json",
+    "results/INTEGRITY_REVIEW.json"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "concern": "R2-2",
+  "completed_at_utc": "2026-10-22T12:55:44.330826+00:00",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.pdf",
+  "pdf_pages": 25,
+  "manuscript_sha256": "8b6f58ba18c3066b813dd9ce17e655f7c58920a8573970e4943f960b11341e50",
+  "pdf_sha256": "02360d5612d013a39cd73517042fe55a8f2df2378b43119aabd28a6edd20f02d",
+  "response": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\storage_audit_20261022\\reviewer_response_R2-2.html",
+  "response_text": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\storage_audit_20261022\\reviewer_response_R2-2.txt",
+  "explanation": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\storage_audit_20261022\\RESULTS_AND_REVISION.txt",
+  "formal_precision": "float64",
+  "inference_cases": 12,
+  "neural_training_cases": 12,
+  "new_predictor_fits": 0,
+  "all_original_inputs_unchanged": true,
+  "prior_three_revisions_preserved": true,
+  "new_tables": [
+    "B.5",
+    "B.6"
+  ],
+  "changed_pdf_pages": [
+    17,
+    22,
+    23
+  ],
+  "pdf_all_new_content_blue": true,
+  "next_concern": "R2-4",
+  "next_concern_started": false
+}

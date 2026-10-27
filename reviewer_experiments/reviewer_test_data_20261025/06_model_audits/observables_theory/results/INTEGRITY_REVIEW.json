@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "mode": "inline second pass, not independent peer review",
+  "verified_claims": [
+    {
+      "claim": "History interval versus finite samples",
+      "basis": "Hale primary pages plus direct distinction between functions and sampled vectors",
+      "status": "verified; no universal sufficiency claim"
+    },
+    {
+      "claim": "Full finite-lag discrete stack gives a Markov map",
+      "basis": "Direct shift algebra under the stated exactly finite-memory discrete model, q >= 1",
+      "status": "verified; not asserted for arbitrary sampled DDEs"
+    },
+    {
+      "claim": "Finite linear closure",
+      "basis": "Dictionary-span invariance criterion",
+      "status": "verified condition, not established for DLM-K"
+    },
+    {
+      "claim": "Learned encoder versus explicit lag samples",
+      "basis": "Original DLM and RBF source plus synthetic two-system data-flow checks",
+      "status": "verified; no accuracy comparison inferred"
+    },
+    {
+      "claim": "AFT buffers are model-generated",
+      "basis": "One encoder call and exact buffer-prefix/prediction equality in both systems",
+      "status": "verified; not additional observed history"
+    },
+    {
+      "claim": "Hybrid explicit/learned history features",
+      "basis": "Proposed architecture direction only",
+      "status": "requires separate fit and validation"
+    }
+  ],
+  "primary_source_count": 6,
+  "new_reference_count": 4,
+  "no_new_fit": true,
+  "original_evidence_files_unchanged": 68,
+  "reviewed_boundaries": [
+    "Continuous-time history state distinguished from finite sampled predictor.",
+    "Exact discrete finite-memory premise stated before shift augmentation.",
+    "Invariant-span condition separated from state reconstruction.",
+    "Takens smooth diffeomorphism/observation/compact-manifold assumptions explicit.",
+    "Input conditioning and additive predictor approximation distinguished.",
+    "Learned history encoder and model-generated latent buffer not claimed to identify a physical delay."
+  ]
+}

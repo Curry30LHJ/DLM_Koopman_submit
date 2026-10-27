@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "reviewer_item": "R1-5",
+  "previous_eleven_rounds_preserved": true,
+  "original_blocks_preserved": 173,
+  "preserved_original_ratio": 1.0,
+  "original_label_numbers_preserved": 74,
+  "original_reference_entries_preserved": 32,
+  "original_evidence_files_unchanged": 72,
+  "figure_assets_unchanged": 23,
+  "new_reference_keys": [
+    "Rawlings2024MPC"
+  ],
+  "frozen_input_derivative_probe": true,
+  "horizon": 8,
+  "future_input_forbidden_jacobian_max": 0.0,
+  "directional_derivative_scaled_error": 5.622955781547923e-10,
+  "cached_initialization_value_and_gradient_exactly_equal": true,
+  "nonlinear_midpoint_defect_max": 2.8275405673738874e-05,
+  "no_training_or_plant_simulation": true,
+  "no_mpc_controller_or_closed_loop_claim": true,
+  "source_hashes_checked": true,
+  "raw_derivative_arrays_recomputed": true,
+  "conceptual_checks": [
+    "Causal history through x[k] and u[k-1]; candidate current action u[k|k].",
+    "No future state targets enter prediction; candidate future inputs are decisions.",
+    "Nonlinear input-dependent latent memory prevents a general convex QP claim.",
+    "Frozen weights still permit input differentiation; value/gradient equality for cached initial lift.",
+    "Physical recycle delay differs from actuator/sensor delay.",
+    "Longer delay/horizon does not imply a universal monotone accuracy law.",
+    "Recursive feasibility and plant closed-loop stability need appropriate augmented-state/controller assumptions.",
+    "Repeated optimizer evaluations and derivative/solver costs differ from forecast latency or training memory.",
+    "Current re-encoding and singleton-context reset must be included in controller analysis."
+  ]
+}

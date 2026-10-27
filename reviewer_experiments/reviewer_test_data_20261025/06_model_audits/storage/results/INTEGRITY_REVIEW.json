@@ -1,0 +1,23 @@
+{
+  "method": "Inline academic-research-suite revision and rebuttal review; no independent-agent review claimed",
+  "reviewer_comment": "R2-2",
+  "all_six_models_both_systems_included": true,
+  "common_precision_and_batch_explicit": true,
+  "compact_buffers_distinct_from_released_allocations": true,
+  "native_precision_distinct_from_probe_precision": true,
+  "RBF_array_estimates_distinct_from_measured_neural_update_peaks": true,
+  "RBF_GPU_adapter_verified": true,
+  "failed_pilot_preserved_and_excluded_from_formal_table": true,
+  "new_model_training_results_claimed": false,
+  "original_artifacts_hash_verified": true,
+  "all_three_prior_revision_rounds_preserved": true,
+  "all_new_manuscript_content_blue_verified": true,
+  "visual_review_pages": [
+    17,
+    22,
+    23
+  ],
+  "unresolved_citations_or_references": 0,
+  "new_overfull_boxes": 0,
+  "status": "READY_FOR_AUTHOR_REVIEW"
+}

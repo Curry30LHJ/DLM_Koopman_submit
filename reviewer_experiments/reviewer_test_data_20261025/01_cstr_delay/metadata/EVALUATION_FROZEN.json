@@ -1,0 +1,217 @@
+{
+  "created_at": "2026-10-21T19:23:57.173366+00:00",
+  "models": [
+    {
+      "condition": "tau010",
+      "system": "three_tank",
+      "model": "dlm_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau010/dlm_koopman/stage_d_best.pt",
+      "checkpoint_sha256": "3d539d9d8ab5c0ac45e25efdd1b3d511b40b3c018e06a302f24f2015a2670d75"
+    },
+    {
+      "condition": "tau010",
+      "system": "three_tank",
+      "model": "mlp_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau010/mlp_koopman/best_model.pt",
+      "checkpoint_sha256": "89e7d206d8173063c34e21b02bd7fe7bd56094ab0a90fcce9a0f36ba26f1eeb3"
+    },
+    {
+      "condition": "tau010",
+      "system": "three_tank",
+      "model": "lstm_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau010/lstm_koopman/best_model.pt",
+      "checkpoint_sha256": "ceaa1bf973f017059500d9ec82f8f631bbc26f3c3a1e9fa2cd1b3a894c722bbe"
+    },
+    {
+      "condition": "tau010",
+      "system": "three_tank",
+      "model": "hakan_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau010/hakan_koopman/best_model.pt",
+      "checkpoint_sha256": "e7f935cdeac446f4720145d26cff473a17be3cf808206cefbb8796c459c4ed60"
+    },
+    {
+      "condition": "tau010",
+      "system": "three_tank",
+      "model": "rbf_markov",
+      "seed": null,
+      "checkpoint": "models/tau010/rbf_markov/best_model.npz",
+      "checkpoint_sha256": "37ada1692f8aa7b12cbc61496a32f7d7c0e949c4011f327f450ca6f0364c1329",
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "condition": "tau010",
+      "system": "three_tank",
+      "model": "rbf_physical_delay",
+      "seed": null,
+      "checkpoint": "models/tau010/rbf_physical_delay/best_model.npz",
+      "checkpoint_sha256": "b5eb14886c31290fc7dd241c3b6d4646048e3011f460793b9b0a0b30efb5452b",
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 2,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "condition": "tau025",
+      "system": "three_tank",
+      "model": "dlm_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau025/dlm_koopman/stage_d_best.pt",
+      "checkpoint_sha256": "7581573a9b9d4e6105138ed8f2e5531b8d76a1d364f7e0fa3ff0e9304fa9be71"
+    },
+    {
+      "condition": "tau025",
+      "system": "three_tank",
+      "model": "mlp_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau025/mlp_koopman/best_model.pt",
+      "checkpoint_sha256": "e9a5c1934563929cf7c71f8267b7f4d26b41ce0dedf939baf7aa28985e7f69f4"
+    },
+    {
+      "condition": "tau025",
+      "system": "three_tank",
+      "model": "lstm_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau025/lstm_koopman/best_model.pt",
+      "checkpoint_sha256": "286131efef0f45bc90920dd6bafd450871d30388f3116bc0566b68b7ec44b5d3"
+    },
+    {
+      "condition": "tau025",
+      "system": "three_tank",
+      "model": "hakan_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau025/hakan_koopman/best_model.pt",
+      "checkpoint_sha256": "a213b3fb6e09c85021cc20adb8d43c47b36f52f9c9a95124f96b4c0eef65f069"
+    },
+    {
+      "condition": "tau025",
+      "system": "three_tank",
+      "model": "rbf_markov",
+      "seed": null,
+      "checkpoint": "models/tau025/rbf_markov/best_model.npz",
+      "checkpoint_sha256": "f63fa0b268b725c3da080f990c6e9260bcde764e3c48245cedef68b3d18f261c",
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "condition": "tau025",
+      "system": "three_tank",
+      "model": "rbf_physical_delay",
+      "seed": null,
+      "checkpoint": "models/tau025/rbf_physical_delay/best_model.npz",
+      "checkpoint_sha256": "61af7c7aef4e7e82d8ebaecaec2145a7061c47af095349a849348ea84158fe94",
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 5,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "condition": "tau050",
+      "system": "three_tank",
+      "model": "dlm_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau050/dlm_koopman/stage_d_best.pt",
+      "checkpoint_sha256": "757b153701683c3ea2ab8f7c7debd643d4767c55b814b1c370d385e005971b33"
+    },
+    {
+      "condition": "tau050",
+      "system": "three_tank",
+      "model": "mlp_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau050/mlp_koopman/best_model.pt",
+      "checkpoint_sha256": "a1c60007c7a8ad320ef4b71e8d7094ddf44b46698fc3a37ca2895e5ef5071cf0"
+    },
+    {
+      "condition": "tau050",
+      "system": "three_tank",
+      "model": "lstm_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau050/lstm_koopman/best_model.pt",
+      "checkpoint_sha256": "22d168267e5b214efacdfa2440dd912264bc039364d8eb7927b2feddddc55c15"
+    },
+    {
+      "condition": "tau050",
+      "system": "three_tank",
+      "model": "hakan_koopman",
+      "seed": 2,
+      "checkpoint": "models/tau050/hakan_koopman/best_model.pt",
+      "checkpoint_sha256": "31cc34b6270b38c3227a2820fde4c54d9164db855a0731002c3e608980a7d70d"
+    },
+    {
+      "condition": "tau050",
+      "system": "three_tank",
+      "model": "rbf_markov",
+      "seed": null,
+      "checkpoint": "models/tau050/rbf_markov/best_model.npz",
+      "checkpoint_sha256": "1967c80f2c738e5bb69230a187e09005a5c203323fa310921a11e05f12e84030",
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "condition": "tau050",
+      "system": "three_tank",
+      "model": "rbf_physical_delay",
+      "seed": null,
+      "checkpoint": "models/tau050/rbf_physical_delay/best_model.npz",
+      "checkpoint_sha256": "7e1d0f73de4cd231c110932bb2f66f335b7708602b86aa093459649e9aa9dbe4",
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 10,
+        "physical_delay_variant": "separator_state"
+      }
+    }
+  ],
+  "test_seeds": [
+    2026102101,
+    2026103110,
+    2026104119,
+    2026105128,
+    2026106137,
+    2026107146,
+    2026108155,
+    2026109164,
+    2026110173,
+    2026111182,
+    2026112191,
+    2026113200
+  ]
+}

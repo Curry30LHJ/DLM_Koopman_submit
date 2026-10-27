@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "reviewer_item": "R1-2",
+  "previous_ten_rounds_preserved": true,
+  "original_blocks_preserved": 167,
+  "preserved_original_ratio": 1.0,
+  "original_label_numbers_preserved": 74,
+  "original_evidence_files_unchanged": 72,
+  "old_reference_entries_preserved": 31,
+  "new_reference_keys": [
+    "Che2018GRUD"
+  ],
+  "old_bibliography_source_preserved_as_exact_prefix": true,
+  "figure_assets_unchanged": 23,
+  "frozen_interface_probes": 2,
+  "metadata_only_prediction_max_difference": 0.0,
+  "missing_time_metadata_is_not_natively_used": true,
+  "no_training_or_multirate_plant_simulation": true,
+  "no_new_accuracy_or_stability_claim": true,
+  "conceptual_checks": [
+    "Multiple fixed physical delays are distinct from acquisition frequency and arrival latency.",
+    "Lag-window coverage is not a sufficient-history guarantee.",
+    "Common-clock, acquisition/arrival availability and causal alignment are explicit.",
+    "Interpolation and held values are not presented as fresh or recovered observations.",
+    "Current-state conditioning/prefix and missing targets require additional treatment.",
+    "Irregular observation encoding with fixed-grid rollout is distinct from irregular-step propagation.",
+    "All extension routes are clearly described as requiring changed interfaces, fitting and validation."
+  ]
+}

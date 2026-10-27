@@ -1,0 +1,218 @@
+{
+  "created_at": "2026-10-22T09:56:35.436363+00:00",
+  "models": [
+    {
+      "system": "three_tank",
+      "condition": "hist006",
+      "history_length": 6,
+      "model": "dlm_koopman",
+      "checkpoint": "models/hist006/dlm_koopman/stage_d_best.pt",
+      "checkpoint_sha256": "f75ad25840dd736e724583edb8e9f28b3faad8f42ae649962faf92929f68c7fe"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist006",
+      "history_length": 6,
+      "model": "mlp_koopman",
+      "checkpoint": "models/hist006/mlp_koopman/best_model.pt",
+      "checkpoint_sha256": "bc5608e1aa06d84c5aa1c07518df05511d618a203a7a5f534770a8b160c5d3fc"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist006",
+      "history_length": 6,
+      "model": "lstm_koopman",
+      "checkpoint": "models/hist006/lstm_koopman/best_model.pt",
+      "checkpoint_sha256": "3b5ed43c62db20ff2fbdce27fd8929ac8d99298d43abd6bc04e058407ae7c561"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist006",
+      "history_length": 6,
+      "model": "hakan_koopman",
+      "checkpoint": "models/hist006/hakan_koopman/best_model.pt",
+      "checkpoint_sha256": "ce6cf3e78a3e402da8c43ebbaa00042fac761e5100748826897d66662492f051"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist006",
+      "history_length": 6,
+      "model": "rbf_markov",
+      "checkpoint": "models/shared/rbf_markov/best_model.npz",
+      "checkpoint_sha256": "4bee35771c8ef97a4e9644154f9af2ee8186143d3bc73aa1f5ceabc5e96cec92",
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist006",
+      "history_length": 6,
+      "model": "rbf_physical_delay",
+      "checkpoint": "models/shared/rbf_physical_delay/best_model.npz",
+      "checkpoint_sha256": "205dd844e951c69636250c5090083f0b230eeebdb485f035f5def8c97ae934ea",
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 5,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist020",
+      "history_length": 20,
+      "model": "dlm_koopman",
+      "checkpoint": "models/hist020/dlm_koopman/stage_d_best.pt",
+      "checkpoint_sha256": "b59f806478270c6d509928628c15e19a46687659c0c9d3a1b33b030dfa70e882"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist020",
+      "history_length": 20,
+      "model": "mlp_koopman",
+      "checkpoint": "models/hist020/mlp_koopman/best_model.pt",
+      "checkpoint_sha256": "3a407bc90866416c5ba6b8783df694c05faac4f6e0ceaeba738f729279e7ed16"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist020",
+      "history_length": 20,
+      "model": "lstm_koopman",
+      "checkpoint": "models/hist020/lstm_koopman/best_model.pt",
+      "checkpoint_sha256": "9a4ebe3bed1e4ccf42d42e4da5e3c47bd794bb6876bfca365285f46733259104"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist020",
+      "history_length": 20,
+      "model": "hakan_koopman",
+      "checkpoint": "models/hist020/hakan_koopman/best_model.pt",
+      "checkpoint_sha256": "f1724f53ee92e62922c0bbf79444818587e09a669b600ed7ba0d514b46a4ec82"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist020",
+      "history_length": 20,
+      "model": "rbf_markov",
+      "checkpoint": "models/shared/rbf_markov/best_model.npz",
+      "checkpoint_sha256": "4bee35771c8ef97a4e9644154f9af2ee8186143d3bc73aa1f5ceabc5e96cec92",
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist020",
+      "history_length": 20,
+      "model": "rbf_physical_delay",
+      "checkpoint": "models/shared/rbf_physical_delay/best_model.npz",
+      "checkpoint_sha256": "205dd844e951c69636250c5090083f0b230eeebdb485f035f5def8c97ae934ea",
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 5,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist040",
+      "history_length": 40,
+      "model": "dlm_koopman",
+      "checkpoint": "models/hist040/dlm_koopman/stage_d_best.pt",
+      "checkpoint_sha256": "84bcfde3b55e8e210329e6586a893c7a6fd5a36acba4f3f7388907a3c0ef8ac9"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist040",
+      "history_length": 40,
+      "model": "mlp_koopman",
+      "checkpoint": "models/hist040/mlp_koopman/best_model.pt",
+      "checkpoint_sha256": "3744693b6cb7b06acc51d842502460f36380b9abfabe6ed4d0ab406dd88520a5"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist040",
+      "history_length": 40,
+      "model": "lstm_koopman",
+      "checkpoint": "models/hist040/lstm_koopman/best_model.pt",
+      "checkpoint_sha256": "5db63fa0ac95a10a43a2b678642953724249e16263e24e55326380cf9747ff10"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist040",
+      "history_length": 40,
+      "model": "hakan_koopman",
+      "checkpoint": "models/hist040/hakan_koopman/best_model.pt",
+      "checkpoint_sha256": "51312dd36d2320d6e9c5f022f456799625876822a8efa0e5af7c091e77abcc01"
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist040",
+      "history_length": 40,
+      "model": "rbf_markov",
+      "checkpoint": "models/shared/rbf_markov/best_model.npz",
+      "checkpoint_sha256": "4bee35771c8ef97a4e9644154f9af2ee8186143d3bc73aa1f5ceabc5e96cec92",
+      "config": {
+        "mode": "markov",
+        "n_centers": 64,
+        "kernel_width": 2.0,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": null,
+        "physical_delay_variant": "separator_state"
+      }
+    },
+    {
+      "system": "three_tank",
+      "condition": "hist040",
+      "history_length": 40,
+      "model": "rbf_physical_delay",
+      "checkpoint": "models/shared/rbf_physical_delay/best_model.npz",
+      "checkpoint_sha256": "205dd844e951c69636250c5090083f0b230eeebdb485f035f5def8c97ae934ea",
+      "config": {
+        "mode": "physical_delay",
+        "n_centers": 128,
+        "kernel_width": 0.5,
+        "ridge_alpha": 0.0001,
+        "random_seed": 6,
+        "physical_delay_steps": 5,
+        "physical_delay_variant": "separator_state"
+      }
+    }
+  ],
+  "independent_checkpoints": 14,
+  "test_seeds": [
+    2026102201,
+    2026103210,
+    2026104219,
+    2026105228,
+    2026106237,
+    2026107246,
+    2026108255,
+    2026109264,
+    2026110273,
+    2026111282,
+    2026112291,
+    2026113300
+  ]
+}

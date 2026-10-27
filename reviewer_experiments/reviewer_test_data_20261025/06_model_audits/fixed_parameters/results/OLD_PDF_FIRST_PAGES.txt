@@ -1,0 +1,257 @@
+Highlights
+A delay-aware latent-memory Koopman-structured model for nonlinear system identification
+and prediction
+Haojie Lin, Xuyang Lou, Xiasheng Shi
+• Causal state–input encoding and HaKAN construct history-conditioned observables.
+• A causal attention-free residual uses only recursively available latent states.
+• A shared prediction pathway accommodates autonomous and input-driven systems.
+• DLM–K has the lowest mean error at the six tabulated steps in both systems.
+A delay-aware latent-memory Koopman-structured model for
+nonlinear system identification and prediction
+Haojie Lina,∗, Xuyang Loua and Xiasheng Shia
+aSchool of Automation and Intelligent Science, Jiangnan University, Wuxi, 214122, China
+A R T I C L E I N F O A B S T R A C T
+Keywords: Accurate multi-step prediction of delayed nonlinear systems requires models that capture both
+Koopman modeling nonlinear interactions and causal history. This paper develops a delay-aware latent-memory
+Time-delay systems Koopman-structured model (DLM–K) for data-driven system identification and open-loop
+System identification prediction. A unidirectional long short-term memory network encodes observed histories,
+Multi-step prediction including associated inputs when present, and a Hahn Kolmogorov–Arnold network maps
+Latent-memory correction the resulting temporal features to nonlinear observables. The current state is retained in the
+lifted representation and recovered through a fixed projection. After one-time initialization,
+an attention-free residual aggregates recursively available latent states in a rolling buffer once
+multiple states are present, before propagation by a shared linear core. Prescribed inputs are
+incorporated for input-driven systems. Independent tests on a delayed Lorenz–63 system and
+a continuous stirred-tank reactor–separator process show lower mean prediction errors than
+the compared predictors at the reported forecast horizons. Further analysis reveals increasing
+absolute errors at longer horizons and operating-condition-dependent relative performance under
+variations in future inputs and causal histories. The results support the combined use of history-
+conditioned lifting and latent-memory propagation for recursive prediction under the evaluated
+delayed dynamics.
+1. Introduction
+Transport and recycle delays introduce history dependence into nonlinear process dynamics: systems with the
+same instantaneous state can evolve differently because their preceding trajectories differ. Learning a predictive model
+therefore requires a representation of both nonlinear interactions and the relevant history. The challenge becomes
+more pronounced during open-loop forecasting, when new observations are unavailable and errors in the initial
+representation and subsequent updates accumulate recursively. Reliable multi-step prediction is consequently a more
+demanding identification objective than a close fit to local, one-step transitions. This issue arises in both autonomous
+delayed dynamics and input-driven processes.
+The Koopman framework represents nonlinear dynamics through linear evolution in a space of observables [1].
+Finite-dimensional approximations include extended dynamic mode decomposition [2] and Koopman formulations
+with exogenous inputs [3, 4]. Recent studies have clarified admissible Koopman forms for nonlinear systems with
+inputs and have extended neural Koopman learning to time-varying dynamics and input-augmented nonlinear process
+models [5–7]. Neural lifting avoids prescribing a fixed dictionary, but recursively applying a finite-dimensional latent
+transition can still accumulate approximation error over long horizons [8, 9]. Process-oriented developments include
+reduced-order representations and physics-informed models for industrial prediction and state estimation [10–12].
+For delayed systems, temporal information can enter the predictor through either its initialization or its recursive
+updates. Delay-coordinate models augment the representation with lagged observations, whereas recurrent encoders
+summarize temporal dependence from observed histories. LSTM-based Koopman identification with input delay
+provides an example of recurrent history encoding [13]. Other approaches combine delay embedding with reduced-
+order realization [14] or model lag-aware slow–fast dynamics for industrial anomaly detection [15]. Han et al. [16]
+developed a deep recurrent Koopman approach that constructs probabilistic observables from historical state–input
+trajectories for uncertain systems with time delays. A complementary approach uses the latent history generated during
+prediction. Nagdi et al. [17] introduced attention-free latent-memory corrections before Koopman propagation and also
+∗Corresponding author.
+linhj@stu.jiangnan.edu.cn (H. Lin)
+ORCID(s):
+H. Lin et al.: Preprint submitted to Elsevier Page 1 of 15
+Delay-aware latent-memory Koopman prediction
+considered dynamic re-encoding. Building on this mechanism, the present study couples latent-memory propagation
+with history-conditioned initialization for delayed systems.
+The initial representation must translate temporal features into observables suitable for recursive prediction.
+Kolmogorov–Arnold networks parameterize network connections using learnable univariate functions [18]; temporal
+variants combine such representations with sequence processing, frequency decomposition, and patch-based operations
+[19–21]. In particular, HaKAN uses Hahn-polynomial mappings and residual intra- and inter-patch operations. Here,
+the full LSTM output sequence is retained so that HaKAN can process both local temporal features and interactions
+across history segments when constructing the initial observables. Zhao et al. [22] provide a related example of KAN-
+based lifting in a transformer–Koopman model for robotic systems. Our design instead uses LSTM-conditioned patches
+to initialize a causal latent-memory predictor.
+Observed history and predicted latent context serve different roles in delayed-system forecasting. The former
+conditions the predictive state at the forecast origin; the latter supplies context for subsequent transitions after new
+observations become unavailable. DLM–K combines these roles in one prediction pathway. An LSTM–HaKAN
+encoding of the observed state–input history constructs the initial observables, while an AFT-derived residual [17, 23]
+operates on the recursively available latent sequence. Unlike the state-encoder and trainable-decoder formulation of
+Nagdi et al., the lifted representation retains the current physical state as a prefix, with a fixed projection for state
+readout. A shared linear propagation core accommodates either autonomous evolution or prescribed future inputs.
+The design objective is thus to connect history-conditioned initialization with subsequent latent-memory updates in a
+common formulation for both classes of delayed systems.
+The main contributions are summarized as follows.
+1. A history-conditioned lifting architecture couples an LSTM encoder with Hahn–KAN patch processing and an
+explicit state prefix. It constructs the initial predictive representation from the preceding state–input evolution while
+retaining a fixed state readout.
+2. A causal rollout formulation couples the history-conditioned lift to an AFT-derived latent-memory residual and an
+input-aware linear propagation core. Zero-gated residual initialization and staged optimization train the complete
+predictor without re-encoding the observation history during rollout.
+3. Independent evaluations on delayed Lorenz and CSTR systems, supplemented by separate CSTR cross-condition
+diagnostics, characterize aggregate prediction accuracy and its dependence on forecast horizon, future inputs, and
+causal histories.
+The comparisons concern complete predictor families. Section 2 formulates the prediction task, Section 3 describes
+DLM–K, and Section 4 presents the experiments and their interpretation.
+2. Problem formulation
+2.1. Delayed nonlinear systems with optional exogenous inputs
+Let 𝒙 𝑘 ∈ ℝ𝑛 𝑥 denote the sampled system state and let 𝒖 𝑘 ∈ ℝ𝑛 𝑢 denote a prescribed exogenous input, when present.
+The unknown delayed dynamics are represented as
+𝒙 = 𝐹 ( 𝒙 , 𝒖 ,  ) , (1)
+𝑘+1 𝑘 𝑘 𝑘
+where  denotes the finite causal history required to represent the delayed dependence. For an autonomous system,
+𝑘
+𝑛 = 0, and the input argument and all input-related terms are omitted. All state, input, observable, correction, and
+𝑢
+lifted-state vectors are represented as column vectors.
+Given a history length 𝐿 , the information available at forecast origin 𝑘 is
+ℎ
+{
+{(𝒙 , 𝒖 ), … , (𝒙 , 𝒖 ), 𝒙 }, 𝑛 > 0,
+ = 𝑘−𝐿 ℎ+1 𝑘−𝐿 ℎ+1 𝑘−1 𝑘−1 𝑘 𝑢 (2)
+𝑘
+{𝒙 , … , 𝒙 , 𝒙 }, 𝑛 = 0.
+𝑘−𝐿 ℎ+1 𝑘−1 𝑘 𝑢
+The identification task is to learn a history-conditioned dynamical predictor from observed trajectories by minimizing
+the state-prediction losses defined in Section 3.4. The learned model generates an 𝐻-step open-loop forecast 𝒙̂
+𝑘+1∶𝑘+𝐻
+from  and, when present, the prescribed future input sequence {𝒖 , … , 𝒖 }. Future reference states are used
+𝑘 𝑘 𝑘+𝐻−1
+only as loss or evaluation targets and are never supplied to the predictor after the forecast origin.
+H. Lin et al.: Preprint submitted to Elsevier Page 2 of 15
+Delay-aware latent-memory Koopman prediction
+2.2. Free-rollout requirement
+After initialization, the model generates 𝒙̂ , … , 𝒙̂ recursively. Reference states beyond 𝑘 are used only to
+𝑘+1 𝑘+𝐻
+compute the loss and evaluation metrics; they are never supplied to the encoder, latent-memory module, or state update.
+This causal separation is necessary because teacher-forced one-step accuracy does not establish recursive prediction
+accuracy.
+3. Delay-aware latent-memory Koopman-structured prediction
+Figure 1 summarizes DLM–K. Here, delay-aware denotes the representation of delay-dependent dynamics through
+causal history and latent memory, rather than explicit estimation of the physical delay. Given the causal window 
+𝑘
+and a prescribed future input sequence when present, the model encodes the observed history, constructs nonlinear
+observables, and propagates the lifted state with a causal latent-memory correction. The three stages form a single
+prediction pathway. The history encoder retains information distributed across the observation window, HaKAN maps
+this representation to nonlinear observables, and AFT operates only on the recursively generated latent trajectory. No
+future reference state enters the model after the forecast origin.
+States and inputs, when present, are standardized coordinate-wise using means and standard deviations estimated
+from the training trajectories and kept fixed thereafter. The model, loss, and error expressions retain 𝒙, 𝒖, and 𝒙̂ for
+these standardized quantities. The benchmark equations and state-trajectory plots use the original physical coordinates.
+3.1. Causal state–input history encoding
+For an input-driven system, define the joint state–input token as the column vector 𝝃 𝑖 = [𝒙⊤ 𝑖 𝒖⊤ 𝑖 ]⊤ ∈ ℝ𝑛 𝑥+𝑛 𝑢 . For
+an autonomous system, 𝝃 = 𝒙 and 𝑛 = 0. The ordered token matrix stacks the transposed tokens by time,
+𝑖 𝑖 𝑢
+𝝃⊤
+𝚵 =
+⎡
+⎢
+𝑘−
+⋮
+𝐿 ℎ+1⎤
+⎥ ∈ ℝ(𝐿 ℎ−1)×(𝑛 𝑥+𝑛 𝑢). (3)
+𝑘
+⎢ 𝝃⊤ ⎥
+⎣ 𝑘−1 ⎦
+The current state 𝒙 is excluded from this token sequence and retained explicitly in the lifted state. The encoder
+𝑘
+therefore represents the preceding state–input evolution, while the process variables to be predicted remain directly
+accessible in the lifted coordinates.
+An 𝑁 -layer unidirectional LSTM with hidden width 𝑑 maps the causal token sequence to
+𝐿 ℎ
+𝒉⊤
+𝑯 = LSTM (𝚵 ) =
+⎡
+⎢
+𝑘−
+⋮
+𝐿 ℎ+1⎤
+⎥ ∈ ℝ(𝐿 ℎ−1)×𝑑 ℎ. (4)
+𝑘 𝜃 𝑘
+𝐿 ⎢ 𝒉⊤ ⎥
+⎣ 𝑘−1 ⎦
+All 𝐿 − 1 output vectors are retained for nonlinear lifting instead of using only the terminal hidden state. The matrix
+ℎ
+𝑯 consequently preserves position-specific information across the delay history, enabling the lifting stage to represent
+𝑘
+both local evolution and interactions between separated portions of the observation window.
+3.2. HaKAN-based nonlinear lifting
+HaKAN provides the nonlinear lifting stage. In its original forecasting setting, HaKAN acts directly on raw
+time series; DLM–K instead applies it to 𝑯 , the LSTM representation of the joint state–input history. The learned
+𝑘
+observables can therefore depend on local temporal patterns and interactions between separated parts of the causal
+window. The LSTM represents input-conditioned temporal evolution, while HaKAN reorganizes these features at patch
+and cross-patch scales before mapping them to Koopman observables.
+The backbone retains the Hahn-polynomial KAN parameterization and the residual intra-/inter-patch organization
+of HaKAN [21]. For a scalar input coordinate 𝑣, each Hahn–KAN connection is parameterized as
+𝐷
+𝜙 (𝑣) =
+∑𝐻
+𝜃 𝑃 Hahn( tanh(𝑣); 𝛼 , 𝛽 , 𝑁 ) , (5)
+𝑎𝑏 𝑎𝑏,𝑑 𝑑 𝐻 𝐻 𝐻
+𝑑=0
+where 𝐷 is the polynomial degree and 𝜃 is the trainable coefficient associated with the connection from input
+𝐻 𝑎𝑏,𝑑
+coordinate 𝑎 to output coordinate 𝑏. Equation (5) replaces a fixed pointwise activation with a learnable univariate
+H. Lin et al.: Preprint submitted to Elsevier Page 3 of 15
+Delay-aware latent-memory Koopman prediction
+function on every KAN connection. It retains the Hahn-polynomial parameterization and residual patch-processing
+structure of HaKAN [21], but omits the original raw-series forecasting head and RevIN normalization because its
+inputs are learned history features produced by the causal LSTM rather than raw process variables.
+Overlapping patches are then formed separately for each of the 𝑑 LSTM channels. Let 𝑃 and 𝑆 denote the patch
+ℎ
+length and stride, respectively, and let 𝑁 denote the resulting number of overlapping patches. When no padding is
+𝑝
+used,
+⌊ ⌋
+𝐿 − 1 − 𝑃
+𝑁 = 1 + ℎ . (6)
+𝑝 𝑆
+Each patch is linearly embedded in 𝑑 dimensions and augmented with a learned positional embedding. A stack of 𝑁
+𝑚 𝑏
+residual Hahn–KAN blocks is then applied. For block 𝑟,
+𝑬(𝑟+1) = 𝑬(𝑟) + 
+(
+[ ( 𝑬(𝑟))]⊤
+)⊤
+, (7)
+inter intra
+where  acts on the 𝑑 embedding coordinates within each patch and  acts across the patch positions. The
+intra 𝑚 inter
+transpose symbols exchange the patch and embedding axes while leaving the channel axis unchanged. Their residual
+composition combines feature interactions within local history segments with dependencies across segments. Unlike
+the channel-independent raw-series patches in the original HaKAN formulation, the patches used here contain history
+features that already represent the joint state–input trajectory.
+The 𝑑 × 𝑁 × 𝑑 backbone output is flattened and linearly mapped to the column-vector observable 𝝍 ∈ ℝ𝑑 𝜓 .
+ℎ 𝑝 𝑚 𝑘
+The current physical state is retained explicitly in the lifted state,
+[ ]
+𝒙
+𝒛 = 𝑘 ∈ ℝ𝑛 𝑧, (8)
+𝑘 𝝍
+𝑘
+where 𝑛 𝑧 = 𝑛 𝑥 + 𝑑 𝜓 . The fixed projection 𝒙̂ 𝑘 = 𝑪𝒛 𝑘 , with 𝑪 = [𝑰 𝑛 𝟎] ∈ ℝ𝑛 𝑥×𝑛 𝑧 , extracts the state coordinates. This
+physical-state prefix removes the need for a separately learned decod𝑥er and links the reported process variables directly
+to the lifted coordinates. The model of Zhao et al. [22] motivates the use of KAN functions for expressive Koopman
+lifting; the present architecture adapts a history-conditioned HaKAN lift to delayed-system prediction.
+3.3. Causal AFT correction and input-aware Koopman propagation
+At rollout step 𝑠, let
+𝑚 = min(𝑠 + 1, 𝑀), 𝒁 = [𝒛 ⋯ 𝒛 ] ∈ ℝ𝑛 𝑧×𝑚 𝑠, (9)
+𝑠 𝑘+𝑠 𝑘+𝑠−𝑚 𝑠+1 𝑘+𝑠
+where 𝑀 is the maximum latent-memory length. The buffer starts with the encoded state 𝒛 , appends recursively
+𝑘
+predicted latent states, and retains at most the latest 𝑀 entries. The memory module projects this sequence into queries,
+keys, and values,
+𝑾 𝒁 + 𝒃 𝟏⊤ 𝑾 𝒁 + 𝒃 𝟏⊤
+𝑸 = 𝜎(𝑾 𝒁 + 𝒃 𝟏⊤ ), 𝑲 = 𝐾 𝑘+𝑠 𝐾 𝑚 𝑠 , 𝑽 = 𝑉 𝑘+𝑠 𝑉 𝑚 𝑠 , (10)
+𝑄 𝑘+𝑠 𝑄 𝑚 𝑠 √ 𝑛 √ 𝑛
+𝑧 𝑧
+where 𝑾 𝑄 , 𝑾 𝐾 , 𝑾 𝑉 ∈ ℝ𝑛 𝑧×𝑛 𝑧 , 𝒃 𝑄 , 𝒃 𝐾 , 𝒃 𝑉 ∈ ℝ𝑛 𝑧 , and 𝟏 𝑚 ∈ ℝ𝑚 𝑠 is the all-ones column vector. Here 𝜎 is an
+elementwise sigmoid, ⊙ denotes the Hadamard product, and𝑠 the scalar positional bias 𝑝 is broadcast over latent
+𝑖𝑗
+coordinates. Thus, the 𝑗th columns 𝒒 𝑗 , 𝒌 𝑗 , and 𝒗 𝑗 are column vectors in ℝ𝑛 𝑧 . For query position 𝑖, the learned scalar
+position bias 𝑝 and a causal mask whose admissible region is lower triangular produce the coordinate-wise weights
+𝑖𝑗
+𝟎, 𝑚 < 2,
+⎧ 𝑠
+𝝎 𝑖𝑗 = sof tmax 𝑗≤𝑖 ( 𝒌 𝑗 + 𝑝 𝑖𝑗 ) , 𝒓 𝑘+𝑠 = ⎪ ⎨𝛾 𝒒 ⊙ ∑ 𝑚 𝑠 𝝎 ⊙ 𝒗 , 𝑚 ≥ 2. (11)
+⎪ 𝑚 𝑠 𝑚 𝑠 𝑗 𝑗 𝑠
+⎩ 𝑗=1
+The softmax in Equation (11) is evaluated independently for each latent coordinate, with 𝝎 = 𝟎 for 𝑗 > 𝑖. The
+𝑖𝑗
+implementation evaluates all query rows under this mask and uses the terminal row 𝑖 = 𝑚 to form 𝒓 ; hence, no
+𝑠 𝑘+𝑠
+H. Lin et al.: Preprint submitted to Elsevier Page 4 of 15

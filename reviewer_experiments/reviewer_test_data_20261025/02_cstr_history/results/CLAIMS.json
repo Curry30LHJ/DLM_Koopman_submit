@@ -1,0 +1,37 @@
+{
+  "dlm_h60": [
+    0.010809415679421945,
+    0.007630420432827988,
+    0.009331492409692629
+  ],
+  "reduction_L20_vs_L6_percent": 29.409501316947782,
+  "increase_L40_vs_L20_percent": 22.293292903575825,
+  "lowest_reported_combinations": 17,
+  "exceptions": {
+    "6": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "20": [],
+    "40": [
+      2
+    ]
+  },
+  "neural_baseline_h60_range": [
+    0.06911641263050992,
+    0.07619679626543584
+  ],
+  "formal_significance_tests": 0,
+  "training_seeds": 1,
+  "report_steps": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    60
+  ],
+  "raw_archive_horizon": 100
+}

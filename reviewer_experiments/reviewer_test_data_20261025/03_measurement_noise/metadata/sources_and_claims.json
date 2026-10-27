@@ -1,0 +1,51 @@
+{
+  "concern": "R1-4",
+  "mode": "primary-source verification and direct implementation audit",
+  "sources": [
+    {
+      "key": "Messenger2021WeakSINDy",
+      "authors": "Daniel A. Messenger and David M. Bortz",
+      "title": "Weak SINDy: Galerkin-Based Data-Driven Model Selection",
+      "year": 2021,
+      "journal": "Multiscale Modeling & Simulation",
+      "volume": 19,
+      "issue": 3,
+      "pages": "1474-1497",
+      "doi": "10.1137/20M1343166",
+      "publisher": "https://epubs.siam.org/doi/10.1137/20M1343166",
+      "primary_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10795802/",
+      "read_locations": "Sections 1, 2.1-2.3; equations 2.1-2.3; residual-bias discussion",
+      "supports": "Integration against compactly supported test functions moves the derivative onto the known test function. Quadrature, support, residual correlation, and nonlinear noise bias remain relevant.",
+      "boundary": "Original examples are autonomous ODEs. Extension to known-delay/input terms is a proposed weak-form identity and requires a newly specified identification problem; no published DLM-K noise guarantee is inferred."
+    },
+    {
+      "key": "Dawson2016SensorNoise",
+      "authors": "Scott T. M. Dawson, Maziar S. Hemati, Matthew O. Williams and Clarence W. Rowley",
+      "title": "Characterizing and correcting for the effect of sensor noise in the dynamic mode decomposition",
+      "year": 2016,
+      "journal": "Experiments in Fluids",
+      "volume": 57,
+      "article": 42,
+      "doi": "10.1007/s00348-016-2127-7",
+      "publisher": "https://link.springer.com/article/10.1007/s00348-016-2127-7",
+      "primary_full_text": "https://arxiv.org/pdf/1507.02264",
+      "read_locations": "Sections 2.2-2.5, sensor-noise model, bias, corrected/forward-backward/TLS formulations",
+      "supports": "Sensor noise differs from process noise; noisy regressors can bias a fitted linear DMD operator; noise-aware identification exists.",
+      "boundary": "A result for linear DMD does not automatically extend to the nonlinear learned lift and AFT recurrence. The current supplemental experiment perturbs test inputs only and measures no identification bias."
+    }
+  ],
+  "implementation_evidence": [
+    "CSTR holdout_generation.simulate_trajectory calls env.step(action, noise=True) and returns internal states without added sensor noise.",
+    "CSTR step adds process_noise*h inside each integration step before state bounding; observation_noise parameter is unused on this path.",
+    "Lorenz holdout generation is deterministic given the initial-history seed and contains no process or measurement noise.",
+    "DLM encoding concatenates the current observed state with learned features; the current-state projection also conditions the feature branch.",
+    "DLM encodes once, first transition has zero AFT correction, subsequent AFT contexts contain initial/predicted latent states only."
+  ],
+  "claim_boundaries": [
+    "Fixed-checkpoint input sensitivity is separate from training on noisy measurements.",
+    "Prediction displacement is not the difference of two RMSE values.",
+    "No filtering or weak-form model is trained or claimed to improve these results.",
+    "One model-training seed and 12 trajectory/noise pairs do not establish robustness over training seeds or all noise processes.",
+    "The exact two-rollout difference equation does not imply contraction or monotone error growth."
+  ]
+}

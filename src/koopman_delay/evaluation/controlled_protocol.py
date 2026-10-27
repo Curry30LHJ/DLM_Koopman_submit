@@ -44,7 +44,7 @@ def clip_actions(act_phys):
     env = _env()
     lo, hi = np.asarray(env.action_low, float), np.asarray(env.action_high, float)
     clipped = np.clip(act_phys, lo, hi)
-    # exact comparison (rtol=0, atol=0) per boss §9 -- heat-duty values ~1e6
+    # Use exact equality for the archived fixed-input condition; heat-duty values are O(1e6).
     changed = act_phys != clipped
     n = int(np.count_nonzero(changed))
     return clipped, n

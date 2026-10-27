@@ -1,0 +1,15 @@
+Response to Reviewer 1, Comment 4 (measurement noise)
+
+We agree that process noise and measurement noise must be separated. The original CSTR simulator adds a prescribed process perturbation to the state increment during integration, changing the plant trajectory and delayed recycle history; it does not add a sensor perturbation. The delayed Lorenz trajectories are deterministic. Therefore the original benchmark did not claim measurement-noise robustness.
+
+We added a frozen-checkpoint paired audit: 12 new trajectories per system; additive perturbations only in the observed history at 0%, 1%, 5%, and 10% of the training-state standard deviation; unchanged future actions, truth, scales, checkpoints, and 880 origins; no noisy future states, re-encoding, assimilation, or refitting. The audit has 576 primary cases plus 48 DLM-K current/past diagnostics, 624 finite archives in total.
+
+At step 60 and 5% history noise, DLM-K RMSE changed 0.7731 -> 0.7901 in Lorenz and 0.007565 -> 0.02943 in CSTR. Clean-input displacement was 0.2648 and 0.02833. At step 1, current-only displacement was 0.04748 (Lorenz) and 0.04402 (CSTR), while past-only displacement was 0.01130 and 0.003102. At step 60, past-only displacement was 0.1769 and 0.003301, while current-only displacement was 0.2162 and 0.02808. These results separate initial history encoding from later recursive propagation, but do not claim retraining-based robustness.
+
+The manuscript now states the scope of noise-aware identification. Dawson et al. support the sensor-noise distinction and DMD corrections; Messenger and Bortz support weak test-function formulations under stated assumptions. Neither gives an automatic guarantee for the nonlinear learned lift and AFT recurrence; a delayed, input-conditioned noise-aware estimator would require a separate fitted comparison.
+
+Location: Section 4.2 and blue Figure 3 caption; implementation appendix; blue Dawson and Messenger references. Seven previous revision rounds and original code/data/checkpoints were preserved.
+
+Sources:
+https://doi.org/10.1007/s00348-016-2127-7
+https://doi.org/10.1137/20M1343166

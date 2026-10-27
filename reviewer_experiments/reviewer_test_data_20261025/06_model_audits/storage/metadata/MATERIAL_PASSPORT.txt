@@ -1,0 +1,7 @@
+Origin Skill: academic-research-suite
+Mode: scoped storage audit, allocation probes, local manuscript revision and rebuttal audit
+Concern: R2-2
+Sources: frozen submission code/checkpoints, original training data and stage artifacts
+Verification: common float64 census, all 24 probe cases, CPU/GPU RBF parity, all original input hashes, unchanged prior blue content/assets, PDF numbers/colors/layout
+Excluded interpretation: no memory-minimality, independent statistical repetition, full-process peak, native-precision peak, or whole-RBF-fitting peak claim
+Prior revisions preserved: cstr_delay_20261021, cstr_history_20261022, parameter_audit_20261022

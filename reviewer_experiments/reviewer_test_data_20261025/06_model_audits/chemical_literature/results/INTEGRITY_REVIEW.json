@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Local inline citation-to-claim, preservation and output review; not independent peer review or submission certification.",
+  "all_three_original_urls_resolved": true,
+  "formal_issue_years_used": [
+    2019,
+    2026,
+    2023
+  ],
+  "exact_pii_doi_match_for_second": true,
+  "final_three_author_list_for_third": true,
+  "primary_abstract_and_full_text_access_limits_recorded": true,
+  "no_preprint_only_theorem_attributed_to_final_article": true,
+  "no_unperformed_numerical_comparison_or_guarantee_transfer": true,
+  "previous_twelve_rounds_preserved": true,
+  "no_new_experiments": true
+}

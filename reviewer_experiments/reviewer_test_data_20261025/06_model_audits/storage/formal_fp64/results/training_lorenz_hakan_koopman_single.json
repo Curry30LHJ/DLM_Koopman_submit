@@ -1,0 +1,40 @@
+{
+  "system": "lorenz",
+  "model": "hakan_koopman",
+  "stage": "single",
+  "kind": "training",
+  "batch": 256,
+  "horizon": 30,
+  "precision": "float64",
+  "registered_model_parameters": 154649,
+  "active_parameters": 154649,
+  "adam_moment_bytes": 2474384,
+  "weights_restored": true,
+  "checkpoint_written": false,
+  "records": [
+    {
+      "rep": 0,
+      "resident_bytes": 21069824,
+      "peak_bytes": 1618880512,
+      "extra_peak_bytes": 1597810688,
+      "loss": 0.023341832235053983,
+      "gradient_bytes": 1237192
+    },
+    {
+      "rep": 1,
+      "resident_bytes": 21069824,
+      "peak_bytes": 1618880512,
+      "extra_peak_bytes": 1597810688,
+      "loss": 0.023341832235053983,
+      "gradient_bytes": 1237192
+    },
+    {
+      "rep": 2,
+      "resident_bytes": 21069824,
+      "peak_bytes": 1618880512,
+      "extra_peak_bytes": 1597810688,
+      "loss": 0.023341832235053983,
+      "gradient_bytes": 1237192
+    }
+  ]
+}

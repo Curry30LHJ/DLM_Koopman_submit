@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "concern": "R2-4",
+  "completed_at_utc": "2026-10-22T13:42:38.197261+00:00",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.pdf",
+  "pdf_pages": 26,
+  "manuscript_sha256": "48baf5be0cba0172bc50812aa43c96e8f3521551ed0781b31189cff8e924b105",
+  "pdf_sha256": "4d7c1df8ced397a54fbcacf6b19e544d36afc468cf66aa568cc289fbb8d0a106",
+  "response": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\fixed_parameters_20261022\\reviewer_response_R2-4.html",
+  "response_text": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\fixed_parameters_20261022\\reviewer_response_R2-4.txt",
+  "explanation": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\fixed_parameters_20261022\\RESULTS_AND_REVISION.txt",
+  "new_content_pdf_pages": [
+    4,
+    6,
+    10,
+    20,
+    21
+  ],
+  "previous_four_revisions_preserved": true,
+  "new_fits": 0,
+  "original_inputs_unchanged": true,
+  "reviewer_version_identity_confirmed": false,
+  "next_concern": "R1-1",
+  "next_concern_started": false
+}

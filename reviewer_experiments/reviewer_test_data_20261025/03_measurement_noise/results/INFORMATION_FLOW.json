@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "systems": [
+    {
+      "system": "lorenz",
+      "checks": [
+        {
+          "scope": "all",
+          "recurrence_max_residual": 4.7466510787880223e-07,
+          "initial_learned_feature_change": 0.6291715980090221,
+          "one_encoding_call": true
+        },
+        {
+          "scope": "past",
+          "recurrence_max_residual": 5.037026237983411e-07,
+          "initial_learned_feature_change": 0.3754427702582775,
+          "one_encoding_call": true
+        },
+        {
+          "scope": "current",
+          "recurrence_max_residual": 4.753830407204507e-07,
+          "initial_learned_feature_change": 0.4758210183569654,
+          "one_encoding_call": true
+        }
+      ],
+      "first_step_no_AFT": true,
+      "subsequent_inputs_contain_no_future_measurement": true
+    },
+    {
+      "system": "three_tank",
+      "checks": [
+        {
+          "scope": "all",
+          "recurrence_max_residual": 1.009579541924599e-06,
+          "initial_learned_feature_change": 0.6558657298948386,
+          "one_encoding_call": true
+        },
+        {
+          "scope": "past",
+          "recurrence_max_residual": 1.1088492656054216e-06,
+          "initial_learned_feature_change": 0.09429550762258575,
+          "one_encoding_call": true
+        },
+        {
+          "scope": "current",
+          "recurrence_max_residual": 1.191653406826254e-06,
+          "initial_learned_feature_change": 0.6419645817099123,
+          "one_encoding_call": true
+        }
+      ],
+      "first_step_no_AFT": true,
+      "subsequent_inputs_contain_no_future_measurement": true
+    }
+  ],
+  "replays": [
+    {
+      "system": "lorenz",
+      "model": "mlp_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "lorenz",
+      "model": "lstm_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "lorenz",
+      "model": "hakan_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "lorenz",
+      "model": "dlm_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "three_tank",
+      "model": "mlp_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "three_tank",
+      "model": "lstm_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "three_tank",
+      "model": "hakan_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "three_tank",
+      "model": "dlm_koopman",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "three_tank",
+      "model": "rbf_markov",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "three_tank",
+      "model": "rbf_physical_delay",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "lorenz",
+      "model": "rbf_markov",
+      "exact_prediction_replay": true
+    },
+    {
+      "system": "lorenz",
+      "model": "rbf_physical_delay",
+      "exact_prediction_replay": true
+    }
+  ]
+}

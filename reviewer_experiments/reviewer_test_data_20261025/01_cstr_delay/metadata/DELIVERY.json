@@ -1,0 +1,73 @@
+{
+  "completed_at": "2026-10-21T20:12:59.797951+00:00",
+  "scope": [
+    "R2-6",
+    "R1-6"
+  ],
+  "status": "complete",
+  "trained_models": 18,
+  "new_test_trajectories": 36,
+  "raw_prediction_archives": 216,
+  "pdf_pages": 22,
+  "revision_viewer_pages": [
+    8,
+    11,
+    14,
+    15,
+    16,
+    19
+  ],
+  "source_matches_final_patch": true,
+  "original_environments_preserved": {
+    "table": 6,
+    "figure": 5
+  },
+  "original_citations_and_bibliography_preserved": true,
+  "new_table_values_checked": 36,
+  "figure_assets_match": true,
+  "blue_text_audit": "results/BLUE_TEXT_AUDIT.json",
+  "visual_review": "Final revised pages inspected; no clipping or overlap; captions and changed text blue.",
+  "numerical_audit": "results/INDEPENDENT_AUDIT.json",
+  "notes": [
+    "Separate refit at each delay; one neural training seed; no cross-delay transfer claim.",
+    "All 100-step predictions retained, including tau010 Markov RBF trajectory 3 divergence near step 100.",
+    "Existing title-page TeX warnings retained; no undefined references or citations in final build."
+  ],
+  "files": [
+    {
+      "path": "write\\稿件\\main.tex",
+      "sha256": "ff2e77ddac0520b304aecd26f023254c5244b0d52a574847d9dabd0e198bdf2b",
+      "bytes": 75383
+    },
+    {
+      "path": "write\\稿件\\main.pdf",
+      "sha256": "a00ab7afb499d3123e889f7b405d43d23a75381ca31832f6ce92724033497048",
+      "bytes": 953182
+    },
+    {
+      "path": "revision_experiments\\cstr_delay_20261021\\reviewer_response_R1-6_R2-6.html",
+      "sha256": "3ec6500873ffcdb1a56ff9880febc938000f4bde997a836e07ece3d60dbadced",
+      "bytes": 6622
+    },
+    {
+      "path": "revision_experiments\\cstr_delay_20261021\\RESULTS_AND_REVISION.txt",
+      "sha256": "9272ff13a8ad9573324e2951f2789a5dcb9b8ce7b4b4b65a1ae571e568892ded",
+      "bytes": 8644
+    },
+    {
+      "path": "revision_experiments\\cstr_delay_20261021\\results\\INDEPENDENT_AUDIT.json",
+      "sha256": "3444a96f5b1255648661de15ba86fb4cf392da9760729041f58b2b76c56d52d5",
+      "bytes": 34774
+    },
+    {
+      "path": "revision_experiments\\cstr_delay_20261021\\results\\SUMMARY.csv",
+      "sha256": "de8d5bc9b817f669773aee2f4eb428341863c90d54b1c899ab69f3ea4a019010",
+      "bytes": 127048
+    },
+    {
+      "path": "revision_experiments\\cstr_delay_20261021\\results\\SELECTED_STEPS.csv",
+      "sha256": "e2e50d2ccd2c7602002f75d6d8329ad2353a9c62e7ce7bbc24eb9d68007ff0c9",
+      "bytes": 7700
+    }
+  ]
+}

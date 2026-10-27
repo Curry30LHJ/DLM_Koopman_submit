@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "concern": "R1-3",
+  "completed_at_utc": "2026-10-23T01:20:57.666794+00:00",
+  "manuscript": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.tex",
+  "pdf": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\write\\稿件\\main.pdf",
+  "pdf_pages": 28,
+  "manuscript_sha256": "9be413d1fb5e895f60bd789039b7cd8c99302fb0e50be529b19301afecad18ae",
+  "pdf_sha256": "5e85c63551ea03f216675af35bd2c9f3ae865e06b15e14cfe0e1d12f25222ae1",
+  "bibliography_sha256": "c93da5103a0cc65655c59f3bbaf86e66a7e8f16124b0cceca4cb7867c8499929",
+  "response": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\observables_theory_20261023\\reviewer_response_R1-3.html",
+  "response_text": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\observables_theory_20261023\\reviewer_response_R1-3.txt",
+  "explanation": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\observables_theory_20261023\\RESULTS_AND_REVISION.txt",
+  "source_audit": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\observables_theory_20261023\\sources_and_claims.json",
+  "new_content_pdf_pages": [
+    4,
+    7
+  ],
+  "new_reference_pdf_pages": [
+    27,
+    28
+  ],
+  "previous_six_revisions_preserved": true,
+  "new_fits": 0,
+  "new_performance_experiments": 0,
+  "original_inputs_unchanged": true,
+  "next_concern": "R1-4",
+  "next_concern_started": false
+}

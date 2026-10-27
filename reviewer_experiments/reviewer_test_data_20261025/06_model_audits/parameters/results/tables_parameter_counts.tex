@@ -1,0 +1,53 @@
+\begin{table}[pos=!htbp]
+\color{blue}
+\colorlet{scolor}{blue}
+\captionsetup{labelfont={color=blue},textfont={color=blue}}
+\caption{\textcolor{blue}{DLM--K parameter counts by module for the primary benchmarks ($L_h=M=20$). Counts include weights and biases; the two bias vectors per LSTM gate are counted separately. Shared maps are counted once.}}
+\label{tab:dlm-module-parameters}
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{.34\linewidth}p{.36\linewidth}rr@{}}
+\toprule
+Module & Scalar-count formula & Lorenz & CSTR \\
+\midrule
+LSTM (one layer) & $4d_h(n_x+n_u+d_h+2)$ & 1,344 & 1,920 \\
+Current-state map $\bm W_c$ & $n_xd_h$ & 48 & 144 \\
+Shared patch projection & $(P+1)d_m$ & 192 & 192 \\
+Patch positional embedding & $N_pd_m$ & 256 & 256 \\
+Intra-patch Hahn coefficients & $N_bd_m^2(D_H+1)$ & 20,480 & 20,480 \\
+Inter-patch Hahn coefficients & $N_bN_p^2(D_H+1)$ & 1,280 & 1,280 \\
+Observable projection & $(d_hN_pd_m+1)d_\psi$ & 131,104 & 131,104 \\
+Linear transition $\bm A$ & $n_z^2$ & 1,225 & 1,681 \\
+Input map $\bm B$ & $n_un_z$ & 0 & 123 \\
+AFT query/key/value maps & $3n_z(n_z+1)$ & 3,780 & 5,166 \\
+AFT positional bias array & $M^2$ & 400 & 400 \\
+AFT gate $\gamma$ & $1$ & 1 & 1 \\
+\midrule
+Encoder and linear core & Subtotal excluding AFT & 155,929 & 157,180 \\
+AFT branch & $3n_z(n_z+1)+M^2+1$ & 4,181 & 5,567 \\
+\textbf{Complete predictor} & \textbf{Total} & \textbf{160,110} & \textbf{162,747} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[pos=!htbp]
+\color{blue}
+\colorlet{scolor}{blue}
+\captionsetup{labelfont={color=blue},textfont={color=blue}}
+\caption{\textcolor{blue}{DLM--K parameters included in Adam at each training stage. Stage labels follow Section~\ref{sec:training}; the two groups in Stage C are disjoint.}}
+\label{tab:dlm-stage-parameters}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lp{.41\linewidth}crr@{}}
+\toprule
+Stage & Optimizer group & Learning rate & Lorenz & CSTR \\
+\midrule
+A & Encoder, $\bm W_c$, lift, $\bm A$, $\bm B$ & $10^{-4}$ & 155,929 & 157,180 \\
+B & AFT only; transferred group frozen & $10^{-3}$ & 4,181 & 5,567 \\
+C & Transferred group & $10^{-4}$ & 155,929 & 157,180 \\
+C & AFT group & $10^{-3}$ & 4,181 & 5,567 \\
+\midrule
+C & Total across both groups & & 160,110 & 162,747 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,7 @@
+package_location,source_workspace,reviewer_items,contents
+01_cstr_delay,D:\lhj\Reaserah\LSTM_HaKAN_Koopman\revision_experiments\cstr_delay_20261021,R1.6/R2.6,"protocol, train/validation data, holdout, summaries, compact report-step predictions"
+02_cstr_history,D:\lhj\Reaserah\LSTM_HaKAN_Koopman\revision_experiments\cstr_history_20261022,R2.1,"protocol, train/validation data, holdout, summaries, compact report-step predictions"
+03_measurement_noise,D:\lhj\Reaserah\LSTM_HaKAN_Koopman\revision_experiments\measurement_noise_20261023,R1.4,"protocol, clean/noise data, summaries, compact report-step predictions"
+04_rigid_dynamics,D:\lhj\Reaserah\LSTM_HaKAN_Koopman\revision_experiments\rigid_dynamics_20261023,R2.3,raw resolution/convergence data and summaries
+05_multirate_delay,D:\lhj\Reaserah\LSTM_HaKAN_Koopman\revision_experiments\multi_rate_delay_20261024,R1.2,raw interface data and summaries
+06_model_audits,D:\lhj\Reaserah\LSTM_HaKAN_Koopman\revision_experiments,R1.1/R1.3/R1.5/R1.7/R2.2/R2.4/R2.5/R2.7,small audit result files and response evidence

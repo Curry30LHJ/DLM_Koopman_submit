@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "pages": 27,
+  "blue_regions": [
+    {
+      "page": 18,
+      "characters": 1343,
+      "all_blue": true
+    },
+    {
+      "page": 24,
+      "characters": 289,
+      "all_blue": true
+    },
+    {
+      "page": 25,
+      "characters": 1731,
+      "all_blue": true
+    }
+  ],
+  "all_pages_within_media_box": true,
+  "existing_label_numbers_unchanged": true,
+  "label_count": 71,
+  "no_new_overfull_boxes": true,
+  "visual_inspection_pages": [
+    18,
+    24,
+    25
+  ],
+  "visual_result": "Blue prose, formulas and links readable; no overlap or clipped new content."
+}

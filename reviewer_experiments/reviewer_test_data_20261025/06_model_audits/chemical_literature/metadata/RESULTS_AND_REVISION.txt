@@ -1,0 +1,45 @@
+R1-7：三篇化工文献的核验与背景补充（2026-10-24）
+
+审稿人的意思：把论文放回化工过程建模与控制的研究背景中，说明和已有 Koopman 化工研究的联系。这里需要按实际内容选择引用位置，不需要把三篇不同任务的论文全部当成数值基线，也不应照搬它们的稳定性或误差保证。
+
+本轮已完成三篇文献标识、作者、期刊、卷页/文章号、引用年份及本轮所用方法概述的核对，新增三个蓝色正文段落和三条蓝色参考文献，保留前十二轮修改。未增加或修改任何实验、检查点、模型或控制器。
+
+1. Narasingam 与 Kwon（2019）
+题名：Koopman Lyapunov-based model predictive control of nonlinear chemical process systems
+期刊：AIChE Journal 65(11), e16743
+DOI：https://doi.org/10.1002/aic.16743
+内容与用途：将 EDMD 识别的线性预测器结合到 Lyapunov 型 MPC 中，包含化学反应器稳定化案例。它适合作为化工过程 Koopman 预测控制的背景，也为上一轮讨论的“还需设计稳定化约束和反馈控制器”提供具体先例。
+边界：其模型与控制设计有自身条件，不能仅因 DLM-K 有 Koopman 线性核就移植其闭环结论。
+
+2. Woelk 与 Tang（2026）
+题名：Identification of noisy Koopman models
+期刊：Computers and Chemical Engineering 204, 109366
+审稿人 PII：S0098135425003692，与 DOI 已精确对应。
+DOI：https://doi.org/10.1016/j.compchemeng.2025.109366
+内容与用途：在 EDMD 类表述中结合噪声的似然刻画，通过正则化的分块坐标方法联合识别模型和噪声成分，包含含噪精馏塔案例。因此它首先属于含噪建模/识别背景，不应仅因审稿意见提到 MPC 就误写成另一篇 MPC 论文。
+边界：我们的测量噪声实验是冻结模型后的历史扰动敏感性检查，没有重新拟合噪声成分，也没有复现这篇识别方法。正文已明确区分。
+年份：2025 年已在线出现、DOI 也含2025，但完整卷期为2026年1月第204卷。引用采用正式卷期年份2026，并与出版社登记及作者论文列表一致。
+
+3. Narasingam、Son 与 Kwon（2023）
+题名：Data-driven feedback stabilisation of nonlinear systems: Koopman-based model predictive control
+期刊：International Journal of Control 96(3), 770–781
+DOI：https://doi.org/10.1080/00207179.2021.2013541
+内容与用途：在 Koopman 特征函数坐标下构造受控双线性动力学，用基于控制 Lyapunov 函数的辅助控制器形成预测控制。它与第一篇共同补充控制设计背景，但不宜笼统写成所有 Koopman MPC 都是线性凸优化。
+边界：DLM-K 的输入加性项及非线性潜记忆不是该文双线性模型；相应条件需要重新核验。
+年份及作者：接受稿为2021年、在线发表于2022年、正式卷期为2023年。本轮采用2023和三位正式作者。已查看的2020年相关 arXiv 预印本只有两位作者，不能用它替换正式文章作者或照搬仅在预印本中出现的定理。
+
+核验材料与可见范围
+第一篇已查看出版社摘要及 NSF 提供的12页正式文章中与建模、LMPC和反应器案例相关的内容。第二篇已核对出版社收录的摘要/Highlights、作者上传的 SSRN 摘要、Crossref 精确 PII/DOI 题录及作者论文列表；工具未取得其正式全文。第三篇已核对正式出版社摘要、Crossref 最终题录，并查看相关早期预印本作方法背景。本轮新增陈述严格限于这些已查看材料支持的内容，没有声称通读全部三篇正式全文，也没有引入未核验的证明细节或性能数字。
+
+正文修改
+— Introduction：一段概述三篇的任务与本文“观测历史初始化＋模型生成潜记忆”的联系，阅读器2–3页（印刷1–2页）。
+— Section 4.2：一段区分含噪数据识别与冻结模型的噪声敏感性评估，阅读器14页（印刷13页）。
+— Section 4.4：一段说明 Lyapunov 型控制先例及将其用于 DLM-K 时需核验的模型/反馈条件，阅读器23页（印刷22页）。
+— References：三条新题录标蓝，阅读器32–33页（印刷31–32页）。
+
+保留与检查
+前十二轮180个原有正文块、74个编号标签、33条旧参考文献、23个图文件及72个受保护证据文件均保留。参考文献现在共36条，正文与文末一一对应，无新增未定义引用。PDF仍为33个阅读器页面；编译、蓝色、六页布局核验通过。
+
+交付：reviewer_response_R1-7.html / reviewer_response_R1-7.txt、修订后的 main.tex / main.pdf。
+核验记录：results/CITATION_VERIFICATION.json、VERIFICATION.json、PDF_VERIFICATION.json；本轮修改差异为 manuscript_revision.diff。
+本条完成。本轮没有自动开展全文重写、投稿、提交审稿回复或新的实验。

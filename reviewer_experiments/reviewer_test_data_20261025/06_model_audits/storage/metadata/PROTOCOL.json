@@ -1,0 +1,27 @@
+{
+  "reviewer_comment": "R2-2: What about differences is \"information\" storage needs for your approach compared to others?",
+  "scope": "Frozen primary Lorenz and CSTR models, Lh=M=20. No new scientific fitting or checkpoint changes.",
+  "frozen_at_utc": "2026-10-22T12:36:21.619874+00:00",
+  "float_bytes": 4,
+  "units": {
+    "KiB": 1024,
+    "MiB": 1048576
+  },
+  "batch_size": 256,
+  "inference_horizon": 60,
+  "training_horizon": 30,
+  "input": "First original training trajectory for each system, common origins 20..275; original train-fitted normalization. No test data.",
+  "inference_probe": "Same CUDA device and float32; original neural code including diagnostics. RBF inference-only torch adapter reproduces original numpy equations and H20 rolling history; float64 native parity and float32 deviation checked before comparison.",
+  "training_probe": "Original neural loss and Adam groups, one warmup and three measured full steps on disposable in-memory copies; restores checkpoint weights before each measured step. No saved model updates. Report allocator peak including moment state and separate incremental peak beyond resident model/batch/Adam. RBF is closed-form: analytic main-array sizes at common N=47500, not a measured Adam or total fitting peak.",
+  "replicates": 3,
+  "warmup": 1,
+  "inference_peak_definition": "torch.cuda.max_memory_allocated minus resident model/input allocation immediately before rollout; includes outputs, diagnostic copies and auxiliary tensors; excludes caching-reserved memory, CUDA context, host dataset and Python metadata.",
+  "rbf_adapter_tolerances": {
+    "float64_rtol": 1e-08,
+    "float64_atol": 1e-09,
+    "float32_rtol": 0.001,
+    "float32_atol": 0.0001
+  },
+  "no_model_selection_or_hyperparameter_changes": true,
+  "source_before_sha256": "bad781ad8120dc3a25e18ad1f6b8dd4f5b06c005986216933b3b3e1d678e4540"
+}

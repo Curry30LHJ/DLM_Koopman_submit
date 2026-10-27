@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "condition": "tau010",
+      "model": "dlm_koopman",
+      "parameters": 162747,
+      "loss": 3.955778121948242
+    },
+    {
+      "condition": "tau010",
+      "model": "mlp_koopman",
+      "parameters": 58536,
+      "loss": 21.658527374267578
+    },
+    {
+      "condition": "tau010",
+      "model": "lstm_koopman",
+      "parameters": 13628,
+      "loss": 22.63373565673828
+    },
+    {
+      "condition": "tau010",
+      "model": "hakan_koopman",
+      "parameters": 155468,
+      "loss": 23.59592056274414
+    },
+    {
+      "condition": "tau025",
+      "model": "dlm_koopman",
+      "parameters": 162747,
+      "loss": 3.891740322113037
+    },
+    {
+      "condition": "tau025",
+      "model": "mlp_koopman",
+      "parameters": 58536,
+      "loss": 22.01923179626465
+    },
+    {
+      "condition": "tau025",
+      "model": "lstm_koopman",
+      "parameters": 13628,
+      "loss": 22.92641830444336
+    },
+    {
+      "condition": "tau025",
+      "model": "hakan_koopman",
+      "parameters": 155468,
+      "loss": 23.950172424316406
+    },
+    {
+      "condition": "tau050",
+      "model": "dlm_koopman",
+      "parameters": 162747,
+      "loss": 4.087814807891846
+    },
+    {
+      "condition": "tau050",
+      "model": "mlp_koopman",
+      "parameters": 58536,
+      "loss": 22.089574813842773
+    },
+    {
+      "condition": "tau050",
+      "model": "lstm_koopman",
+      "parameters": 13628,
+      "loss": 23.254972457885742
+    },
+    {
+      "condition": "tau050",
+      "model": "hakan_koopman",
+      "parameters": 155468,
+      "loss": 24.190610885620117
+    }
+  ],
+  "torch": "2.1.2+cu121",
+  "numpy": "1.26.4",
+  "python": "3.10.21",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cpu_threads": 4,
+  "dlm_config": {
+    "smoke": false,
+    "rollout_horizon": 30,
+    "seed": 2,
+    "stage_a_epochs": 800,
+    "stage_c_epochs": 40,
+    "stage_d_epochs": 80,
+    "patience_limit": 0,
+    "stage_a_patience": 50,
+    "stage_c_patience": 10,
+    "stage_d_patience": 10,
+    "batch_size": 256,
+    "current_state_conditioning": true,
+    "spectral_radius_weight": 0.0,
+    "spectral_radius_max": 1.0
+  }
+}

@@ -1,0 +1,21 @@
+system,model,array,shape,entries,dtype
+three_tank,rbf_markov,A,"[74, 74]",5476,float64
+three_tank,rbf_markov,B,"[3, 74]",222,float64
+three_tank,rbf_markov,C,"[74, 9]",666,float64
+three_tank,rbf_markov,centers,"[64, 9]",576,float64
+three_tank,rbf_markov,config,[],1,<U97
+three_tank,rbf_physical_delay,A,"[141, 141]",19881,float64
+three_tank,rbf_physical_delay,B,"[3, 141]",423,float64
+three_tank,rbf_physical_delay,C,"[141, 9]",1269,float64
+three_tank,rbf_physical_delay,centers,"[128, 12]",1536,float64
+three_tank,rbf_physical_delay,config,[],1,<U178
+lorenz,rbf_markov,config,[],1,<U171
+lorenz,rbf_markov,A,"[20, 20]",400,float64
+lorenz,rbf_markov,B,"[0, 20]",0,float64
+lorenz,rbf_markov,C,"[20, 3]",60,float64
+lorenz,rbf_markov,centers,"[16, 3]",48,float64
+lorenz,rbf_physical_delay,config,[],1,<U179
+lorenz,rbf_physical_delay,A,"[22, 22]",484,float64
+lorenz,rbf_physical_delay,B,"[0, 22]",0,float64
+lorenz,rbf_physical_delay,C,"[22, 3]",66,float64
+lorenz,rbf_physical_delay,centers,"[16, 5]",80,float64

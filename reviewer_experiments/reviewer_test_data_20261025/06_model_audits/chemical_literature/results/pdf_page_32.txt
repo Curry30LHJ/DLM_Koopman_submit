@@ -1,0 +1,56 @@
+Delay-aware latent-memory Koopman-structured modeling
+Funding
+ThisworkwassupportedbythePostgraduateResearch&PracticeInnovationProgramofJiangsuProvince(Grant
+No. 26CXJH4548).
+Data and code availability
+The training and validation datasets, frozen model checkpoints, independent simulated test trajectories, evalua-
+tion code, and associated prediction archives are available athttps://github.com/Curry30LHJ/DLM_Koopman_
+submit.
+Ethics statement
+Thisstudyusesnumericalsimulationsonlyandinvolvesnohumanparticipants,animals,orpersonallyidentifiable
+data; ethics approval was therefore not required.
+References
+Brunton,S.L.,Brunton,B.W.,Proctor,J.L.,Kutz,J.N.,2016. Koopmaninvariantsubspacesandfinitelinearrepresentationsofnonlineardynamical
+systems for control. PLOS ONE 11, e0150171.
+Che,Z.,Purushotham,S.,Cho,K.,Sontag,D.,Liu,Y.,2018. Recurrentneuralnetworksformultivariatetimeserieswithmissingvalues. Scientific
+Reports 8, 6085.
+Chen,B.,Wang,Y.,2026. Minimalrealizationtime-delaykoopmananalysisforstochasticdynamicalsystemidentification. AdvancesinStructural
+Engineering. OnlineFirst.
+Dawson, S.T.M., Hemati, M.S., Williams, M.O., Rowley, C.W., 2016. Characterizing and correcting for the effect of sensor noise in the dynamic
+mode decomposition. Experiments in Fluids 57, 42.
+Genet, R., Inzirillo, H., 2024. A temporal kolmogorov-arnold transformer for time series forecasting. arXiv preprint arXiv:2406.02486.
+Hale, J.K., Verduyn Lunel, S.M., 1993. Introduction to Functional Differential Equations. volume 99 ofApplied Mathematical Sciences. Springer,
+New York.
+Han,M.,Li,Z.,Yin,X.,Yin,X.,2024. Robustlearningandcontroloftime-delaynonlinearsystemswithdeeprecurrentKoopmanoperators. IEEE
+Transactions on Industrial Informatics 20, 4675–4684.
+Hao, W., Huang, B., Pan, W., Wu, D., Mou, S., 2024. Deep koopman learning of nonlinear time-varying systems. Automatica 159, 111372.
+Hasan, M.Z., Hamza, A.B., Bouguila, N., 2026. Time series forecasting with Hahn Kolmogorov–Arnold networks, in: Khan, E., Li, Y., Solin, A.,
+Ramdas,A.(Eds.),Proceedingsofthe29thInternationalConferenceonArtificialIntelligenceandStatistics,PMLR300,PMLR.pp.2188–2196.
+URL:https://proceedings.mlr.press/v300/hasan26a.html.
+Huang,S.,Zhao,Z.,Li,C.,Bai,L.,2025. Timekan:Kan-basedfrequencydecompositionlearningarchitectureforlong-termtimeseriesforecasting,
+in: International Conference on Learning Representations.
+Iacob, L.C., Tóth, R., Schoukens, M., 2024. Koopman form of nonlinear systems with inputs. Automatica 162, 111525.
+Kamb, M., Kaiser, E., Brunton, S.L., Kutz, J.N., 2020. Time-delay observables for Koopman: Theory and applications. SIAM Journal on Applied
+Dynamical Systems 19, 886–917.
+Koopman, B.O., 1931. Hamiltonian systems and transformation in Hilbert space. Proceedings of the National Academy of Sciences of the United
+States of America 17, 315–318.
+Korda,M.,Mezić,I.,2018. Linearpredictorsfornonlineardynamicalsystems:Koopmanoperatormeetsmodelpredictivecontrol. Automatica93,
+149–160.
+Li,Q.,Zhang,J.,Wan,H.,Zhao,Z.,Liu,F.,2024a. Physics-informedneuralnetworksformulti-stageKoopmanmodelingofmicrobialfermentation
+processes. Journal of Process Control 143, 103315.
+Li, Z., Han, M., Vo, D.N., Yin, X., 2024b. Machine learning-based input-augmented koopman modeling and predictive control of nonlinear
+processes. Computers & Chemical Engineering 191, 108854.
+Liu, H., Yan, G., Cao, L., Ma, S., Zhao, G., Liu, Z., 2025. Physics-informed koopman networks for industrial process time-series prediction.
+Industrial & Engineering Chemistry Research 64, 18328–18346.
+Liu, Z., Wang, Y., Vaidya, S., et al., 2024. KAN: Kolmogorov–Arnold networks. arXiv preprint arXiv:2404.19756.
+Lusch,B.,Kutz,J.N.,Brunton,S.L.,2018. Deeplearningforuniversallinearembeddingsofnonlineardynamics. NatureCommunications9,4950.
+Messenger,D.A.,Bortz,D.M.,2021. WeakSINDy:Galerkin-baseddata-drivenmodelselection. MultiscaleModeling&Simulation19,1474–1497.
+Nagdi, M., Nikolados, E.M., Yermakov, A., Gao, M., Kutz, N., Menolascina, F., 2026. Learning the Koopman operator using attention free
+transformers. arXiv preprint arXiv:2606.23957. URL:https://arxiv.org/abs/2606.23957v1. version 1.
+Narasingam, A., Kwon, J.S.I., 2019. Koopman Lyapunov-based model predictive control of nonlinear chemical process systems. AIChE Journal
+65, e16743.
+Narasingam, A., Son, S.H., Kwon, J.S.I., 2023. Data-driven feedback stabilisation of nonlinear systems: Koopman-based model predictive control.
+International Journal of Control 96, 770–781.
+Pan, S., Duraisamy, K., 2020. On the structure of time-delay embedding in linear models of non-linear dynamical systems. Chaos: An
+Interdisciplinary Journal of Nonlinear Science 30, 073135.
+H. Lin et al.:Preprint submitted to ElsevierPage 31 of 32

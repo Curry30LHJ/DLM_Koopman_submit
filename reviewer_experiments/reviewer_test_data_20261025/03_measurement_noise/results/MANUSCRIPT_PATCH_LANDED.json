@@ -1,0 +1,23 @@
+{
+  "reviewer_item": "R1-4",
+  "status": "COMPLETE",
+  "previous_seven_rounds_preserved": true,
+  "previous_blocks": 153,
+  "ops_applied": 3,
+  "preserved_ratio": 0.9935,
+  "old_numbered_structures_unchanged": true,
+  "old_bibliography_preserved_as_exact_prefix": true,
+  "new_bibliography_keys": [
+    "Messenger2021WeakSINDy",
+    "Dawson2016SensorNoise"
+  ],
+  "assets_sha256": {
+    "figures/measurement_noise.pdf": "f459e1ba0e119c829f395f19dcc88617d558a19c23571459028d330170051380",
+    "figures/measurement_noise.png": "8d6db1b743260203a3c61c71f8b836e493d73b7d5cbbe71df5946d3dd2964693"
+  },
+  "source_before_sha256": "9be413d1fb5e895f60bd789039b7cd8c99302fb0e50be529b19301afecad18ae",
+  "source_after_sha256": "9220c4d6083595af9400fd1f453e97d6f3f8503ff435bb210bd2340f8e475e62",
+  "bibliography_after_sha256": "44ebffaa13002b1a8b603a9fc1d1f068a5aed335c27b17c0a0c2fe1866ff34ac",
+  "compile": "pdflatex/bibtex/pdflatex/pdflatex PASS; 30 pages",
+  "verification": "results/VERIFICATION.json PASS; results/INFORMATION_FLOW.json PASS"
+}

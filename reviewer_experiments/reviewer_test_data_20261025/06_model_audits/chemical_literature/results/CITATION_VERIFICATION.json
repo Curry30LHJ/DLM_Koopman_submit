@@ -1,0 +1,88 @@
+{
+  "status": "PASS_FOR_THE_STATED_CLAIMS",
+  "reviewer_item": "R1-7",
+  "all_three_reviewer_identifiers_resolved": true,
+  "primary_content_scope_explicit": true,
+  "full_body_of_all_three_not_claimed": true,
+  "sources": [
+    {
+      "key": "Narasingam2019KLMPC",
+      "reviewer_url": "https://aiche.onlinelibrary.wiley.com/doi/full/10.1002/aic.16743",
+      "doi": "10.1002/aic.16743",
+      "title": "Koopman Lyapunov\u2010based model predictive control of nonlinear chemical process systems",
+      "authors": [
+        "Abhinav Narasingam",
+        "Joseph Sang-Il Kwon"
+      ],
+      "journal": "AIChE Journal",
+      "year": 2019,
+      "volume": "65",
+      "issue": "11",
+      "article": "e16743",
+      "primary_text": "https://par.nsf.gov/servlets/purl/10188668",
+      "local_text": "primary_sources/Narasingam2019.txt",
+      "inspected": "Publisher abstract and public 12-page journal article; Introduction, Sections 2-3, and CSTR application introduction.",
+      "supported_claim": "EDMD-based linear Koopman prediction combined with Lyapunov-based MPC; chemical reactor stabilization under the stated controller assumptions.",
+      "relation": "Chemical-process predictive-control background and a controller-design precedent.",
+      "boundary": "No quantitative superiority comparison or stability guarantee transferred to DLM-K."
+    },
+    {
+      "key": "Woelk2026Noisy",
+      "reviewer_url": "https://www.sciencedirect.com/science/article/pii/S0098135425003692",
+      "pii": "S0098135425003692",
+      "doi": "10.1016/j.compchemeng.2025.109366",
+      "title": "Identification of noisy Koopman models",
+      "authors": [
+        "Moritz Woelk",
+        "Wentao Tang"
+      ],
+      "journal": "Computers and Chemical Engineering",
+      "year": 2026,
+      "volume": "204",
+      "article": "109366",
+      "primary_text": "https://www.sciencedirect.com/science/article/pii/S0098135425003692",
+      "author_preprint": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5292570",
+      "inspected": "Publisher-indexed abstract/highlights, author-posted SSRN abstract, Crossref publisher-deposited exact PII/DOI mapping, and author publication list. Full journal body was not available through these tools.",
+      "supported_claim": "EDMD-like noisy identification; likelihood characterization of noise; block-coordinate regularized joint identification of model and noise components; distillation-column case.",
+      "relation": "Noise-aware model identification rather than a frozen-checkpoint sensor-perturbation audit.",
+      "boundary": "Cited at abstract-supported scope only; no theorem details, exact noise assumptions, delayed-system guarantee, or numerical performance comparison asserted.",
+      "year_resolution": "DOI/PII use 2025 and online appearance was in 2025; assigned journal issue is January 2026, volume 204. Use 2026 consistently with the completed journal citation."
+    },
+    {
+      "key": "Narasingam2023Feedback",
+      "reviewer_url": "https://www.tandfonline.com/doi/full/10.1080/00207179.2021.2013541",
+      "doi": "10.1080/00207179.2021.2013541",
+      "title": "Data-driven feedback stabilisation of nonlinear systems: Koopman-based model predictive control",
+      "authors": [
+        "Abhinav Narasingam",
+        "Sang Hwan Son",
+        "Joseph Sang-Il Kwon"
+      ],
+      "journal": "International Journal of Control",
+      "year": 2023,
+      "volume": "96",
+      "issue": "3",
+      "pages": "770-781",
+      "primary_text": "https://www.tandfonline.com/doi/full/10.1080/00207179.2021.2013541",
+      "related_preprint": "https://arxiv.org/pdf/2005.09741",
+      "local_related_preprint": "primary_sources/Narasingam2020_preprint.txt",
+      "inspected": "Published publisher abstract and Crossref final issue metadata; related arXiv v2 inspected for the bilinear/CLF design context, not used as final journal bibliographic metadata.",
+      "supported_claim": "Koopman eigenfunction coordinates and bilinear controlled dynamics; predictive control using a CLF-based bounded auxiliary controller.",
+      "relation": "Data-driven stabilization design background, distinct from an additive-input nonlinear-memory predictor.",
+      "boundary": "The two-author 2020 preprint differs from the final three-author paper. No preprint-only inverse-map theorem is attributed to the final article.",
+      "year_resolution": "Accepted-author version in December 2021, online publication January 2022, assigned issue March 2023. Use 2023 for volume 96(3), pp.770-781."
+    }
+  ],
+  "source_artifact_sha256": {
+    "primary_sources\\crossref_cace_2025.json": "07fea4c7cc1f766f93075a9a886d99145d80fbb90507882b7f4267805f851ac8",
+    "primary_sources\\crossref_Narasingam2019.json": "5682fc0b3263c9e463f31ebda6cb1a9cf8a99eb07ab9047354c7639aa1d08746",
+    "primary_sources\\crossref_Narasingam2023.json": "0ce00dc01c883649c80162ed2d3d1c5350898dc2e843150e10a4559a6db55799",
+    "primary_sources\\crossref_Woelk2026.json": "41781ec32326652f54f84aa6b276476867319364c4fefc0f35f1602238346725",
+    "primary_sources\\DOWNLOAD_LOG.json": "49a7dfa25c046425288a3123ee091fd55db45da0fd2617129710cc177a0dbe28",
+    "primary_sources\\Narasingam2019.pdf": "39f0e6b5a23abe68c0580286d798b4d2ff98e40a014b89c08d0d4fac2f35cff9",
+    "primary_sources\\Narasingam2019.txt": "1708eed009183b0da66b1e0f24e170a9663892c52fc51d3c6c16f7aa55a272cc",
+    "primary_sources\\Narasingam2020_preprint.pdf": "56da1caa7b609021cf5ea0d70954774140b048ccdde22a53a93d96696c14d43c",
+    "primary_sources\\Narasingam2020_preprint.txt": "7e548d6abb44b1455a48bb0ab620458a6a16f7dda6521b07e66b37413bd67845",
+    "primary_sources\\Tang_publications.html": "2cb0c86f01404bcf2d308d40a2f86aa83a480220003116d96878ac5aab61d826"
+  }
+}

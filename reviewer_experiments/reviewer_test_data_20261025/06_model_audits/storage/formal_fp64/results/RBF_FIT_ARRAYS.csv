@@ -1,0 +1,29 @@
+system,model,N,array,shape,float32_bytes,native_float64_bytes,is_peak_estimate
+three_tank,rbf_markov,47500,Phi,"(47500, 74)",14060000,28120000,False
+three_tank,rbf_markov,47500,Phi_next,"(47500, 74)",14060000,28120000,False
+three_tank,rbf_markov,47500,design,"(47500, 77)",14630000,29260000,False
+three_tank,rbf_markov,47500,distance_scaled,"(47500, 64, 9)",109440000,218880000,False
+three_tank,rbf_markov,47500,radius,"(47500, 64)",12160000,24320000,False
+three_tank,rbf_markov,47500,Gram,"(77, 77)",23716,47432,False
+three_tank,rbf_markov,47500,cross_product,"(77, 74)",22792,45584,False
+three_tank,rbf_physical_delay,47500,Phi,"(47500, 141)",26790000,53580000,False
+three_tank,rbf_physical_delay,47500,Phi_next,"(47500, 141)",26790000,53580000,False
+three_tank,rbf_physical_delay,47500,design,"(47500, 144)",27360000,54720000,False
+three_tank,rbf_physical_delay,47500,distance_scaled,"(47500, 128, 12)",291840000,583680000,False
+three_tank,rbf_physical_delay,47500,radius,"(47500, 128)",24320000,48640000,False
+three_tank,rbf_physical_delay,47500,Gram,"(144, 144)",82944,165888,False
+three_tank,rbf_physical_delay,47500,cross_product,"(144, 141)",81216,162432,False
+lorenz,rbf_markov,47500,Phi,"(47500, 20)",3800000,7600000,False
+lorenz,rbf_markov,47500,Phi_next,"(47500, 20)",3800000,7600000,False
+lorenz,rbf_markov,47500,design,"(47500, 20)",3800000,7600000,False
+lorenz,rbf_markov,47500,distance_scaled,"(47500, 16, 3)",9120000,18240000,False
+lorenz,rbf_markov,47500,radius,"(47500, 16)",3040000,6080000,False
+lorenz,rbf_markov,47500,Gram,"(20, 20)",1600,3200,False
+lorenz,rbf_markov,47500,cross_product,"(20, 20)",1600,3200,False
+lorenz,rbf_physical_delay,47500,Phi,"(47500, 22)",4180000,8360000,False
+lorenz,rbf_physical_delay,47500,Phi_next,"(47500, 22)",4180000,8360000,False
+lorenz,rbf_physical_delay,47500,design,"(47500, 22)",4180000,8360000,False
+lorenz,rbf_physical_delay,47500,distance_scaled,"(47500, 16, 5)",15200000,30400000,False
+lorenz,rbf_physical_delay,47500,radius,"(47500, 16)",3040000,6080000,False
+lorenz,rbf_physical_delay,47500,Gram,"(22, 22)",1936,3872,False
+lorenz,rbf_physical_delay,47500,cross_product,"(22, 22)",1936,3872,False

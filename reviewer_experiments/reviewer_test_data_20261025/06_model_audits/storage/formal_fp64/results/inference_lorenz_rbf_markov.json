@@ -1,0 +1,47 @@
+{
+  "system": "lorenz",
+  "model": "rbf_markov",
+  "kind": "inference",
+  "batch": 256,
+  "horizon": 60,
+  "precision": "float64",
+  "implementation": "torch RBF adapter",
+  "adapter_parity": [
+    {
+      "precision": "float64",
+      "max_abs_error": 5.819678072782608e-12,
+      "rms_error": 1.151110261153957e-13,
+      "passed": true,
+      "atol": 1e-09,
+      "rtol": 1e-08
+    }
+  ],
+  "source_weights_unchanged": true,
+  "maximum_history_length_passed_to_advance": null,
+  "records": [
+    {
+      "rep": 0,
+      "resident_bytes": 8647168,
+      "peak_bytes": 9839104,
+      "extra_peak_bytes": 1191936,
+      "output_bytes": 368640,
+      "retained_after_output_release_bytes": 0
+    },
+    {
+      "rep": 1,
+      "resident_bytes": 8647168,
+      "peak_bytes": 9839104,
+      "extra_peak_bytes": 1191936,
+      "output_bytes": 368640,
+      "retained_after_output_release_bytes": 0
+    },
+    {
+      "rep": 2,
+      "resident_bytes": 8647168,
+      "peak_bytes": 9839104,
+      "extra_peak_bytes": 1191936,
+      "output_bytes": 368640,
+      "retained_after_output_release_bytes": 0
+    }
+  ]
+}

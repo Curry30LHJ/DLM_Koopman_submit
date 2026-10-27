@@ -61,4 +61,14 @@ python scripts/evaluate_figure5.py --protocol evaluation/figure5/PROTOCOL.json -
 
 The replay output must be new. Historical non-independent simulation arrays were never included in this submission repository; the natural fresh-holdout archive and training/validation datasets remain intact.
 
+## Reviewer supplementary experiments
+
+The compact archive in [reviewer_experiments](reviewer_experiments/README.md) contains the data, predictions, metrics and audit tables used for the revision. It covers CSTR delay sensitivity, observation-history length, measurement noise, integration and rigid-dynamics checks, multirate delay evaluation, and the model audits supporting the reviewer responses. The package retains the six report steps (1, 5, 10, 20, 30 and 60) and non-finite results, while excluding neural checkpoints, optimizer state, manuscript backups and rendered PDF caches.
+
+Verify every archived file against its SHA-256 manifest from the repository root:
+
+```sh
+python scripts/verify_reviewer_experiments.py
+```
+
 License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).

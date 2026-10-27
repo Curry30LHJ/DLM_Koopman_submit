@@ -1,0 +1,146 @@
+[
+  {
+    "system": "lorenz",
+    "trajectory": 0,
+    "path": "data\\lorenz_00.npz",
+    "sha256": "2c834b04af2161d500c6a1486cc7ec08396d25fb67bbaf1a8cbb83120f7cf1a2"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 1,
+    "path": "data\\lorenz_01.npz",
+    "sha256": "7b14b71bf8d64f84a812f73e5a3bc44d7462b96865b1603ed5b5ea995b0716d9"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 2,
+    "path": "data\\lorenz_02.npz",
+    "sha256": "031827c036408a7886dc3e1b1895719660c4d6b908a33cbc072b1c82ee99d296"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 3,
+    "path": "data\\lorenz_03.npz",
+    "sha256": "075b8c6243d3c198a03184a14a9cdc89a568658873b76074f27e0cbd37a1da0e"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 4,
+    "path": "data\\lorenz_04.npz",
+    "sha256": "6482c886de8605dd2ea73bc67ba7712b86ae9ab0c02ecd3ada21c10f088796ba"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 5,
+    "path": "data\\lorenz_05.npz",
+    "sha256": "27c0335ad94fe43c39082106de612de4ce82e7b924b4e11c1ffcd3b42c53ec95"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 6,
+    "path": "data\\lorenz_06.npz",
+    "sha256": "d6068821ac6d943cca7e95bf66348369d96ff6b0015e4c3b0fb47643d57c03e3"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 7,
+    "path": "data\\lorenz_07.npz",
+    "sha256": "c781fd89184b668f201bcf783d20543d85b5e2a370b2b38f4e5c465e4f87c7c8"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 8,
+    "path": "data\\lorenz_08.npz",
+    "sha256": "294894e77a0b45893e19193b133202002d23d7d3bee11dc0acca1fad5da2581a"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 9,
+    "path": "data\\lorenz_09.npz",
+    "sha256": "b0dc3057f65d1261627f08c3d0f912f5027cee7660132769bef6118339db02f7"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 10,
+    "path": "data\\lorenz_10.npz",
+    "sha256": "242816b90cf992c25dc5b9c252de649aaf5c431e910212caa2b1a039ce072a03"
+  },
+  {
+    "system": "lorenz",
+    "trajectory": 11,
+    "path": "data\\lorenz_11.npz",
+    "sha256": "2d2250a1cdae9a6f6e0c82d593a75b80b801aeff5eecba00fd986e1acd56d3b5"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 0,
+    "path": "data\\three_tank_00.npz",
+    "sha256": "92b4caf4403884df90cb9f4422f2992848e43856b0799f6e120a77cbc7cd4999"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 1,
+    "path": "data\\three_tank_01.npz",
+    "sha256": "73280744e0391aae90032d87f8b6a15e06cfed26a2bddac3c2a65d919b414f44"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 2,
+    "path": "data\\three_tank_02.npz",
+    "sha256": "0d3ce839e864862d49e164e67c38b66ae818d8376771475e2e9cfcc8828ace21"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 3,
+    "path": "data\\three_tank_03.npz",
+    "sha256": "8365d7018adfee592083c5864d4a0d839c07dc0e847af4abbea21b33edc0d301"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 4,
+    "path": "data\\three_tank_04.npz",
+    "sha256": "3e73b24822bdec1db7e9ec697f0c9c868a041ffd773d4782424ef8a1a8c88a7b"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 5,
+    "path": "data\\three_tank_05.npz",
+    "sha256": "f5db9404fcb2bb6b32ef87c30f45423abafd133b56c5320cbe5918784791b878"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 6,
+    "path": "data\\three_tank_06.npz",
+    "sha256": "41d6a93b630ed6c9a607753957242da1e95d43e454e106705ead9f00eb06a793"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 7,
+    "path": "data\\three_tank_07.npz",
+    "sha256": "8f4f48aae09e50f6df9fa2bb5e56cc76fafcbc07f77080669ee31ef6a0b6989e"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 8,
+    "path": "data\\three_tank_08.npz",
+    "sha256": "3565e6fe254d8e2d6a2c188211380c591bc3158884af2586b97951139c35e07d"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 9,
+    "path": "data\\three_tank_09.npz",
+    "sha256": "514d612195ebcaa111a2f731fa9643034623afafed2eb698fc3ee26d6ced492c"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 10,
+    "path": "data\\three_tank_10.npz",
+    "sha256": "5c4e7a568aa329f8baef1888f04e8aae0d15d5c39056f29ef9f6453732685ac1"
+  },
+  {
+    "system": "three_tank",
+    "trajectory": 11,
+    "path": "data\\three_tank_11.npz",
+    "sha256": "a25211cdb496ed3ad7a15cf995d26b464ff576f6b7035a4a43b32f12ecbc2fa3"
+  }
+]
