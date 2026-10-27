@@ -1,0 +1,36 @@
+{
+  "trajectory": "fresh_003",
+  "origin_zero_based": 43,
+  "window_index_zero_based": 24,
+  "trajectory_error": 0.0054802843214769,
+  "trajectory_median": 0.00567681555582655,
+  "trajectory_ties": [
+    "fresh_003",
+    "fresh_010"
+  ],
+  "window_error": 0.005102084708725229,
+  "window_median": 0.005107678410519858,
+  "window_ties": [
+    43,
+    857
+  ],
+  "trajectory_metric_max_abs_regression_delta": 9.8879238130678e-17,
+  "displayed_steps": [
+    1,
+    60
+  ],
+  "displayed_time_h": [
+    0.005,
+    0.3
+  ],
+  "models": [
+    "mlp",
+    "lstm",
+    "hakan",
+    "m6",
+    "m8",
+    "m5"
+  ],
+  "raw_records": 3240,
+  "source_commit": "c12e955b8fe80030ac1e6c7dc131e8f4ec91cc44"
+}

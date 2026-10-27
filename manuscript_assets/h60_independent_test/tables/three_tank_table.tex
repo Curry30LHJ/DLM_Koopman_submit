@@ -1,0 +1,15 @@
+\begin{table}[pos=!htbp]
+\caption{Mean CSTR prediction error on the independent simulated test set. Bold values are the lowest among the six compared predictors.}
+\label{tab:primary}
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Model & step 1 & step 5 & step 10 & step 20 & step 30 & step 60 \\\midrule
+MLP--K~\cite{Lusch2018} & 0.003163 & 0.01379 & 0.01483 & 0.02097 & 0.03248 & 0.06686 \\
+LSTM--K~\cite{Han2024DRKO} & 0.004334 & 0.01681 & 0.01504 & 0.02068 & 0.03361 & 0.07219 \\
+HaKAN--K~\cite{Hasan2026} & 0.003091 & 0.01498 & 0.01625 & 0.02217 & 0.03425 & 0.07032 \\
+Markov RBF~\cite{Williams2015,Korda2018} & 0.01382 & 0.05974 & 0.08231 & 0.1147 & 0.1392 & 0.1943 \\
+Delay--RBF~\cite{Pan2020TimeDelay} & 0.004501 & 0.009262 & 0.009699 & 0.01161 & 0.01311 & 0.01635 \\
+DLM--K & \textbf{0.002222} & \textbf{0.006179} & \textbf{0.00434} & \textbf{0.004477} & \textbf{0.004838} & \textbf{0.006058} \\
+\bottomrule\end{tabular}
+\end{table}
