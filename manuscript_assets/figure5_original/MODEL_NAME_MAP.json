@@ -1,0 +1,26 @@
+{
+  "mlp_koopman": {
+    "legacy_model_id": "M1",
+    "archive_prediction_key": "prediction_mlp"
+  },
+  "lstm_koopman": {
+    "legacy_model_id": "M2",
+    "archive_prediction_key": "prediction_lstm"
+  },
+  "hakan_koopman": {
+    "legacy_model_id": "M3",
+    "archive_prediction_key": "prediction_hakan"
+  },
+  "dlm_koopman": {
+    "legacy_model_id": "M5",
+    "archive_prediction_key": "prediction_m5"
+  },
+  "rbf_markov": {
+    "legacy_model_id": "M6",
+    "archive_prediction_key": null
+  },
+  "rbf_physical_delay": {
+    "legacy_model_id": "M8",
+    "archive_prediction_key": "prediction_m8"
+  }
+}

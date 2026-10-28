@@ -1,6 +1,6 @@
 # DLM-Koopman model source
 
-This repository contains model definitions, system equations, neural training, RBF fitting and evaluation code. Training defaults, both systems' frozen training/validation trajectories and their normalization statistics are included. Frozen selected weights and a new simulated holdout evaluation are also included. Historical formal-public/confirmation arrays and previous result archives are not included.
+This repository contains model definitions, system equations, neural training, RBF fitting and evaluation code. Training defaults, both systems' frozen training/validation trajectories and their normalization statistics are included. Frozen selected weights, a new simulated holdout evaluation, and the original manuscript Figure 5 diagnostic are also included. The full historical formal-public and confirmation trajectory archives are not included.
 
 ## Installation and interface
 
@@ -43,14 +43,18 @@ python scripts/evaluate_fresh_holdout.py --protocol evaluation/fresh_holdout/PRO
 ```
 
 Both directories must be new; the archived inputs/results are never overwritten. This repeats the published fixed-seed test, not a new independent test. See [INPUTS.md](INPUTS.md) for other evaluation inputs.
-## Figure 5: controlled A/B conditions
+## Manuscript Figure 5: original diagnostics
 
-[Figure 5 summary](evaluation/figure5/SUMMARY_H20_H30_H50_H60_H100.csv) and [condition manifest](evaluation/figure5/CONDITIONS.csv) archive both panels:
+[Figure 5 data and verification](manuscript_assets/figure5_original/) contains the original figure and its two 100-condition post-hoc diagnostics. These data reproduce the manuscript figure and its reported condition summaries. They are separate from the independent simulated test set used in the primary comparison.
+
+## Additional 84-condition holdout experiment
+
+This separate extension is not the source of the manuscript's Figure 5. Its [summary](evaluation/figure5/SUMMARY_H20_H30_H50_H60_H100.csv) and [condition manifest](evaluation/figure5/CONDITIONS.csv) archive both panels:
 
 - A: fix each of 12 causal histories; vary its future inputs across seven profiles (base and each Q channel plus/minus one training standard deviation).
 - B: fix each of the seven future-input profiles from `fresh_000`; apply it to all 12 histories with the same future noise. Histories include different terminal current states; this is not an isolated memory-only intervention.
 
-Each panel has 84 conditions (12 x 7), rather than the historical 77 (11 x 7). All six frozen models are included: 1008 model-condition predictions. Full past replay rebuilds the 26-state internal delay buffer; base continuation is checked at absolute tolerance 1e-10. Applied inputs are clipped to plant bounds and shared with every model. `evaluation/figure5/inputs/` saves complete branch buffers, past actions, original process noise, future noise, histories, requested/applied inputs and new plant truth. Model NPZ files retain all H100 predictions and condition IDs. H60/H100 curves, per-state/per-condition metrics and grouped mean/min/max are supplied; min/max are condition ranges, not confidence intervals. No images are generated.
+Each panel has 84 conditions (12 x 7). All six frozen models are included: 1008 model-condition predictions. Full past replay rebuilds the 26-state internal delay buffer; base continuation is checked at absolute tolerance 1e-10. Applied inputs are clipped to plant bounds and shared with every model. `evaluation/figure5/inputs/` saves complete branch buffers, past actions, original process noise, future noise, histories, requested/applied inputs and new plant truth. Model NPZ files retain all H100 predictions and condition IDs. H60/H100 curves, per-state/per-condition metrics and grouped mean/min/max are supplied; min/max are condition ranges, not confidence intervals. No images are generated.
 
 These are pre-frozen operating-condition extensions on the same fresh holdout already reported in the natural evaluation, not a second previously unseen confirmation sample. Models were not retrained or selected using these tests. See [REPORT.md](evaluation/figure5/REPORT.md) and [PROTOCOL.json](evaluation/figure5/PROTOCOL.json).
 
@@ -59,7 +63,7 @@ python scripts/verify_figure5.py
 python scripts/evaluate_figure5.py --protocol evaluation/figure5/PROTOCOL.json --output-dir outputs/figure5-replay --device cpu
 ```
 
-The replay output must be new. Historical non-independent simulation arrays were never included in this submission repository; the natural fresh-holdout archive and training/validation datasets remain intact.
+The replay output must be new. Strict replay requires the code at commit `0e02e3170d23b820490554ad965ea2341255fe3c`; two source files have since received comment-only changes, as explained in the [84-condition archive](evaluation/figure5/README.md). The natural fresh-holdout archive and training/validation datasets remain intact.
 
 ## Reviewer supplementary experiments
 
@@ -75,4 +79,4 @@ License selection remains pending; see [LICENSE_STATUS.md](LICENSE_STATUS.md).
 
 ## Manuscript Tables 2/3 and Figures 2/4
 
-[Independent-test manuscript assets](manuscript_assets/h60_independent_test/README.md) archive the six-model table data, accepted Figure 2/4 PDF/SVG/600 dpi PNG files, portable rendering and verification scripts, and Figure 4's post-hoc median-error selection records. The scientific source remains `c12e955b8fe80030ac1e6c7dc131e8f4ec91cc44`; these assets reuse stored predictions without training, simulation or inference. The separate Figure 5 archive above is unchanged.
+[Independent-test manuscript assets](manuscript_assets/h60_independent_test/README.md) archive the six-model table data, accepted Figure 2/4 PDF/SVG/600 dpi PNG files, portable rendering and verification scripts, and Figure 4's post-hoc median-error selection records. The scientific source remains `c12e955b8fe80030ac1e6c7dc131e8f4ec91cc44`; these assets reuse stored predictions without training, simulation or inference. The original Figure 5 diagnostic and the additional 84-condition holdout experiment are described separately above.

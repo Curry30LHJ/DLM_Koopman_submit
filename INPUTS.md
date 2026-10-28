@@ -30,7 +30,9 @@ Use `scripts/evaluate_fresh_holdout.py` with the frozen protocol, not the legacy
 
 The frozen evaluation uses 882 origins for three-tank and 880 for Lorenz, H100 predictions, H60 main reporting, float32 neural inference in batches of 128 and float64 metrics. Per-trajectory RMS is followed by an equal mean over all 12 trajectories. Nonfinite predictions are retained and counted, never clipped or excluded; a nonfinite generated trajectory stops execution after data preservation, without seed replacement. Summary CSVs can contain nonfinite entries if a model fails.
 
-## Figure 5 A/B archive
+## Additional 84-condition A/B archive
+
+This extension is separate from the manuscript's original [100-condition Figure 5 diagnostic](manuscript_assets/figure5_original/).
 
 `evaluation/figure5/PROTOCOL.json` freezes the six selected model identities, 12 existing holdout files, origin459/window440 and seven input profiles before condition scoring. A uses each history's own base future and own future noise. B uses fresh_000's seven profiles and its one shared future noise segment. Original process noise is generated in the canonical seed order; full past action replay restores the delay buffer. The future noise segment comprises internal indices2295..2794. The archive is a conditional extension of the same holdout, not a new independent dataset.
 
