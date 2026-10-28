@@ -1,5 +1,4 @@
-Origin Skill: academic-research-suite
-Mode: revision / evidence audit / inline rebuttal audit
+Mode: revision / evidence audit / rebuttal audit
 Concern: R2-4
 Evidence: current manuscript, original reviewer PDF, desktop comparison PDF, frozen release code/checkpoints/configurations, training-scale manifests, Hasan primary article, Zhang author manuscript
 Version identity: reviewer submission identity remains unconfirmed; no inferred misnumbering

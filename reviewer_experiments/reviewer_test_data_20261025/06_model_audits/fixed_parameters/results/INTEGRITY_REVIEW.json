@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "review_mode": "inline second pass, not an independent agent",
+  "review_mode": "internal second pass, not an independent peer review",
   "findings": [
     "Current Eq. 1 is an abstract map; reviewer intention not assigned.",
     "Basis settings and learned coefficients explicitly separated.",

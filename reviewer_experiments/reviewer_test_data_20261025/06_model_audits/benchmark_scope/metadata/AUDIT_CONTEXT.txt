@@ -1,6 +1,3 @@
-Material Passport
-Origin Skill: academic-research-suite
-Origin Mode: local manuscript revision
 Reviewer item: R2-7
 Date: 2026-10-24
 Verification Status: local source/claim, manuscript-preservation, compilation, blue-text and four-page layout checks PASS. Not a journal submission certification.

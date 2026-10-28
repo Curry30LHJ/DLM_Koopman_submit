@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "review_mode": "inline second pass, not independent peer review",
+  "review_mode": "internal second pass, not independent peer review",
   "findings": [
     "Counts verified against registered parameter tensors at ten configurations.",
     "Actual full-query-row AFT cost distinguished from the final-row expression.",

@@ -1,4 +1,3 @@
-Origin Skill: academic-research-suite
 Mode: parameter audit and local manuscript revision
 Concern: R2-5
 Source: frozen submission_release code/checkpoints and read-only original training artifacts

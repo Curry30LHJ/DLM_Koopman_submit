@@ -2,8 +2,8 @@
   "generated_at": "2026-10-25T15:47:36.351980+00:00",
   "package_directory": "D:\\lhj\\Reaserah\\LSTM_HaKAN_Koopman\\revision_experiments\\reviewer_test_data_20261025",
   "file_count": 669,
-  "directory_bytes": 224900820,
-  "directory_gib": 0.2094552107155323,
+  "directory_bytes": 224899612,
+  "directory_gib": 0.20945408567786217,
   "files": [
     {
       "path": "00_metadata/reviewer_issue_map.csv",
@@ -252,8 +252,8 @@
     },
     {
       "path": "01_cstr_delay/metadata/RESULTS_AND_REVISION.txt",
-      "bytes": 8644,
-      "sha256": "9272ff13a8ad9573324e2951f2789a5dcb9b8ce7b4b4b65a1ae571e568892ded"
+      "bytes": 8508,
+      "sha256": "5cae096662d3c432f1214989e30c7216917cec280a43c6364471f26339b565e2"
     },
     {
       "path": "01_cstr_delay/metadata/reviewer_response_R1-6_R2-6.html",
@@ -1911,9 +1911,9 @@
       "sha256": "70704ed54a88cd5d89cfed40eb7867b311263627dc6e946558e6a239816a7e05"
     },
     {
-      "path": "03_measurement_noise/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 964,
-      "sha256": "6be208c644ecf96f5f6675144d78a98956d8b183b8ae70369f00284a068d4fdd"
+      "path": "03_measurement_noise/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 697,
+      "sha256": "7561fafeabefb93a2cee1f5389f4e2ae4238fc43cf7f5c307f5ef39780d195ff"
     },
     {
       "path": "03_measurement_noise/metadata/PREFLIGHT.json",
@@ -2146,9 +2146,9 @@
       "sha256": "686687ac8856c4b7f7f3121e4687bff25c35b08ed7d32854b12f95f8977de225"
     },
     {
-      "path": "04_rigid_dynamics/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 468,
-      "sha256": "7f0e4850dc22363ae58b6eaac0eb451ec635daab41801045abc8b5e662c0e737"
+      "path": "04_rigid_dynamics/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 361,
+      "sha256": "c3f5c533542983da643e1ad079715e9866747dbb6631f2e609ad78fc76a014f5"
     },
     {
       "path": "04_rigid_dynamics/metadata/PROTOCOL.json",
@@ -2416,9 +2416,9 @@
       "sha256": "d2b8ea80648aab1ddaa74a0d5915772c0b7714a8b907c11070818c768f033135"
     },
     {
-      "path": "05_multirate_delay/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 458,
-      "sha256": "99f66d2d29397051504a28d125d2405bc25a5d921b0ad5ce08e112c6478320f3"
+      "path": "05_multirate_delay/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 351,
+      "sha256": "5e8da0364b3d7f20cee781279a3f0b2497ada9b4b12ef3a1fb7f8d74a5d403ac"
     },
     {
       "path": "05_multirate_delay/metadata/PROTOCOL.json",
@@ -2491,9 +2491,9 @@
       "sha256": "c4e501a068c56b12f3858268dd279a53d8ef04b0c89fd8df9303c41530e611ef"
     },
     {
-      "path": "06_model_audits/benchmark_scope/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 413,
-      "sha256": "d1a3adf969efb86dc1597465be38e74b28dcf926e5a94a3b3d661222fd4772d9"
+      "path": "06_model_audits/benchmark_scope/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 315,
+      "sha256": "9334342a4587bf46fa71b690e29bbfd8fc89c426213d4c65a10187b963e5e18d"
     },
     {
       "path": "06_model_audits/benchmark_scope/metadata/PROTOCOL.json",
@@ -2551,9 +2551,9 @@
       "sha256": "d471c0433d1a0f508141271bb7cb73745f20a852965e4846afd45b8ced04295d"
     },
     {
-      "path": "06_model_audits/chemical_literature/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 656,
-      "sha256": "8c79bec69f6820b8a582d4ad9d7e4dfcfd390fd4c59fb3f36b1a168154bb077a"
+      "path": "06_model_audits/chemical_literature/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 531,
+      "sha256": "8281ee08602297dec4a3e7b057a661d7668fe93b0022de1611c8bf5aabed0e62"
     },
     {
       "path": "06_model_audits/chemical_literature/metadata/PROTOCOL.json",
@@ -2646,9 +2646,9 @@
       "sha256": "fb859293931f8fc1272c077c1217bb550e4e970d67137eb5def40b27329ca4e2"
     },
     {
-      "path": "06_model_audits/fixed_parameters/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 553,
-      "sha256": "9d009eeeb3bc85ead63c3cd23462cc6dca22c43022f41e45ffe3b3f2d28cd4dc"
+      "path": "06_model_audits/fixed_parameters/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 507,
+      "sha256": "81f36f1965bc227c941b96d5bd9a3489d3ed88fdd3b57c09b776f0f596d4b941"
     },
     {
       "path": "06_model_audits/fixed_parameters/metadata/RESULTS_AND_REVISION.txt",
@@ -2677,8 +2677,8 @@
     },
     {
       "path": "06_model_audits/fixed_parameters/results/INTEGRITY_REVIEW.json",
-      "bytes": 595,
-      "sha256": "441c8329f9cdf40f127b55335784048fd1f1f3028bcea2e3722eb4cb22d30df1"
+      "bytes": 603,
+      "sha256": "d9cfe0ae878c92a8021d63102fd3d8775da6c55c1cf7b56b2ace76181f50a168"
     },
     {
       "path": "06_model_audits/fixed_parameters/results/MANUSCRIPT_PATCH_LANDED.json",
@@ -2721,9 +2721,9 @@
       "sha256": "2bbecfe3c4ca6c98b8250ecf04301c68bb88934e59ed5ac6878678cba584bafc"
     },
     {
-      "path": "06_model_audits/mpc_integration/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 566,
-      "sha256": "1ba34c62a7d5fcd4c3fbe214d9ab2cec51e15a1691ff924f2b8ed30968710018"
+      "path": "06_model_audits/mpc_integration/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 433,
+      "sha256": "abea95a1a26a774188bb197975cbe107008396cdb640e48bd4696e08500eb184"
     },
     {
       "path": "06_model_audits/mpc_integration/metadata/PROTOCOL.json",
@@ -2786,9 +2786,9 @@
       "sha256": "40e3e4388cd38864428b0bf5d465f3a7d1c934218044019d2712958d46ce0953"
     },
     {
-      "path": "06_model_audits/observables_theory/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 479,
-      "sha256": "5b84f69a125b29bfb6918f6c9df2ada982dd6a8bf4651da823ca2bea21f44d61"
+      "path": "06_model_audits/observables_theory/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 442,
+      "sha256": "0c23f0a2b657ed2281a3fc0aae5a77925879d383d8328e473375b2a9d0d18ed7"
     },
     {
       "path": "06_model_audits/observables_theory/metadata/RESULTS_AND_REVISION.txt",
@@ -2822,8 +2822,8 @@
     },
     {
       "path": "06_model_audits/observables_theory/results/INTEGRITY_REVIEW.json",
-      "bytes": 2087,
-      "sha256": "601510e304bdda2d0c35763e7ddc119eab192f44e28f4953819b19d822b2f60d"
+      "bytes": 2089,
+      "sha256": "116a529b22d56fcfa8fc69d4ed8797d58c86ad652c00982bd7b01ae1323a1f17"
     },
     {
       "path": "06_model_audits/observables_theory/results/MANUSCRIPT_PATCH_LANDED.json",
@@ -2871,9 +2871,9 @@
       "sha256": "6f356d897f4e820ebb20ec259d6241232d596ca478e85c69924517352ee14579"
     },
     {
-      "path": "06_model_audits/parameters/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 536,
-      "sha256": "6ede6428a763ac413ea862e9270b4aa2ba0b4ca169f4941ecb935dd208aae541"
+      "path": "06_model_audits/parameters/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 497,
+      "sha256": "bea1300aa0d58ab3528a7fb909ef22f0234fbfbbb84e8293ba62dc52552a5e02"
     },
     {
       "path": "06_model_audits/parameters/metadata/PROTOCOL.json",
@@ -2912,8 +2912,8 @@
     },
     {
       "path": "06_model_audits/parameters/results/INTEGRITY_REVIEW.json",
-      "bytes": 856,
-      "sha256": "fb619b07e342b161e7be45d6dc99944d33b46bee62b127955c23bcabc8966172"
+      "bytes": 830,
+      "sha256": "d76f79accefa5ee5058142c892bffca6cd248c23b863550505f33eee61d15acd"
     },
     {
       "path": "06_model_audits/parameters/results/MANUSCRIPT_PATCH_LANDED.json",
@@ -2956,9 +2956,9 @@
       "sha256": "c1af4594109b76418fc3da88a858a2f8ee110cfc79c8f74b0d182a3267bddae3"
     },
     {
-      "path": "06_model_audits/scalability/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 493,
-      "sha256": "04d0b64369de45feb17c77dfc03e6d2d59a1cc449da81997629c58f5570a3f1b"
+      "path": "06_model_audits/scalability/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 456,
+      "sha256": "0ff7ad0071ae63891f480f8f423c4124c3913266834a3aab7b5ff95c1952127e"
     },
     {
       "path": "06_model_audits/scalability/metadata/RESULTS_AND_REVISION.txt",
@@ -2997,8 +2997,8 @@
     },
     {
       "path": "06_model_audits/scalability/results/INTEGRITY_REVIEW.json",
-      "bytes": 10390,
-      "sha256": "48461d7d19d1c13cbdec016929094b147db11c99462eadbce1a4d98a65baa1c8"
+      "bytes": 10392,
+      "sha256": "7fd5e6c5fe13405c64a90f1a3caaee6c3a35b819db159fc97081e33b1b2af216"
     },
     {
       "path": "06_model_audits/scalability/results/MANUSCRIPT_PATCH_LANDED.json",
@@ -3226,9 +3226,9 @@
       "sha256": "0c61b7eb7d0004ffd80f7b8040fbe7bf64929c17ea23768378d5e9935aeeb37e"
     },
     {
-      "path": "06_model_audits/storage/metadata/MATERIAL_PASSPORT.txt",
-      "bytes": 659,
-      "sha256": "ac7763b079f68ff6a9ba65a9e42f633f85955a139ef8ce89c9848f169ca91f77"
+      "path": "06_model_audits/storage/metadata/AUDIT_CONTEXT.txt",
+      "bytes": 620,
+      "sha256": "8f5d8ceea61cb3f0f9fc62813eca1fa98f38019f82d3ce938497585e069bdf56"
     },
     {
       "path": "06_model_audits/storage/metadata/PROTOCOL.json",
@@ -3312,8 +3312,8 @@
     },
     {
       "path": "06_model_audits/storage/results/INTEGRITY_REVIEW.json",
-      "bytes": 918,
-      "sha256": "e9ce5cd26969f5a33c18125ddd963390576d30ce46dd8591c4402ca2d150005d"
+      "bytes": 895,
+      "sha256": "fa3e9704ac9120559d429ce5dcae4fd792c2c7e90456e6010f8a26bb650ae8bf"
     },
     {
       "path": "06_model_audits/storage/results/MANUSCRIPT_PATCH_LANDED.json",
@@ -3350,5 +3350,6 @@
       "bytes": 2800,
       "sha256": "499d0420e2b5482f94325900474090a47d50be63f273a022e6749abd86af43e6"
     }
-  ]
+  ],
+  "metadata_revision": "Descriptive context filenames and wording were updated; predictions, numerical summaries, and experiment protocols were not changed."
 }

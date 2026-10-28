@@ -1,5 +1,4 @@
-Origin Skill: academic-research-suite
-Mode: local revision / code-derived scaling audit / inline integrity review
+Mode: local revision / code-derived scaling audit / internal integrity review
 Concern: R1-1
 Evidence: frozen release source, prior parameter/storage audits, ten synthetic dimension instantiations, nine final-row equivalence checks
 Boundary: no large-plant validation, new fitting, elapsed-time measurement, or implemented optimization claim

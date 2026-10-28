@@ -1,6 +1,6 @@
 # Manuscript Figure 5: original 100-condition diagnostics
 
-This archive contains the data and the figure used in the submitted and revised manuscripts. The separate [84-condition holdout extension](../../evaluation/figure5/) uses a different set of conditions and was not used to draw this figure.
+This archive contains the data and the figure used in the submitted and revised manuscripts.
 
 The figure contains two post-hoc CSTR diagnostics, each with 100 conditions and five frozen predictors: MLP-K, LSTM-K, HaKAN-K, Delay-RBF and DLM-K. The input-profile panel varies ten future-input profiles for each of ten histories. The history panel compares ten histories under each of ten fixed future-input/noise pairs. Conditions sharing histories or input/noise are not independent replicates. The historical test windows in this diagnostic are separate from the independent simulated test set used in the primary comparison. The delay buffer was reconstructed for the controlled interventions; these are not exact natural-trajectory restarts.
 

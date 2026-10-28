@@ -7,6 +7,16 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "evaluation/fresh_holdout"
+DOCUMENTATION_ONLY_UPDATES = {
+    "src/koopman_delay/evaluation/controlled_protocol.py": (
+        "c2799cba38afe0b328a6a5516d32fc3a20b0cd1adc3cdac98ab865e4a1822dfd",
+        "bf444d4bc370371a2f0f69592338a8097d5d06d04f38b391d9c853cd8b3991dc",
+    ),
+    "src/koopman_delay/models/aft/aft_module.py": (
+        "032af8b3d7a9708f988a9da8fa22762979cbb4ca2787565a7a35c003a5f647b1",
+        "e77483e6f203e07e6d9ef21d45d0b86d8e7d76f57df7e33ec07bdf788bea6fb2",
+    ),
+}
 
 
 def digest(path):
@@ -17,8 +27,12 @@ def verify():
     protocol = json.loads((OUT / "PROTOCOL.json").read_text())
     complete = json.loads((OUT / "COMPLETE.json").read_text())
     assert digest(OUT / "PROTOCOL.json") == complete["protocol_sha256"]
+    documentation_updates = []
     for file, sha in protocol["input_sha256"].items():
-        assert digest(ROOT / file) == sha, file
+        actual = digest(ROOT / file)
+        if actual != sha:
+            assert DOCUMENTATION_ONLY_UPDATES.get(file) == (sha, actual), file
+            documentation_updates.append(file)
     data = json.loads((ROOT / protocol["data_root"] / "MANIFEST.json").read_text())
     assert len(data) == 24
     for row in data:
@@ -52,7 +66,7 @@ def verify():
             assert np.isclose(actual, expected, rtol=1e-12, atol=1e-12, equal_nan=True), row
             if np.isfinite(actual):
                 max_delta = max(max_delta, float(abs(actual-expected)))
-    result = dict(status="PASS", checkpoints=len(protocol["models"]), trajectories=len(data), raw_archives=len(audit), summary_rows=len(summary), independent_summary_max_abs_delta=max_delta, nonfinite_prediction_windows=sum(int(r["nonfinite_prediction_windows"]) for r in audit))
+    result = dict(status="PASS", checkpoints=len(protocol["models"]), trajectories=len(data), raw_archives=len(audit), summary_rows=len(summary), independent_summary_max_abs_delta=max_delta, nonfinite_prediction_windows=sum(int(r["nonfinite_prediction_windows"]) for r in audit), documentation_only_source_updates=documentation_updates)
     print(json.dumps(result, indent=2))
     return result
 

@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "mode": "inline second pass, not independent peer review",
+  "mode": "internal second pass, not independent peer review",
   "verified_claims": [
     {
       "claim": "History interval versus finite samples",

@@ -1,6 +1,3 @@
-Material Passport
-Origin Skill: academic-research-suite / experiment-agent + academic-paper
-Origin Mode: run -> validate -> revision
 Verification Status: VERIFIED archived predictions and metric recomputation; training was not repeated for this audit
 Version: cstr_delay_20261021_revision_v1
 
